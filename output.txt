@@ -1,0 +1,181 @@
+adam smith wealth of nations
+The precision is0.7407407 The recall is 2.0
+This is document 1 pitchfork.txt
+This is document 2 sciencedirect.txt
+This is document 3 solipsism.txt
+This is document 4 builtin.txt
+This is document 5 geeksforgeeks c language.txt
+This is document 6 iai.txt
+This is document 7 hookedtobooks.txt
+
+c language
+The precision is0.7407407 The recall is 2.0
+This is document 1 pitchfork.txt
+This is document 2 sciencedirect.txt
+This is document 3 solipsism.txt
+This is document 4 builtin.txt
+This is document 5 geeksforgeeks c language.txt
+This is document 6 iai.txt
+This is document 7 hookedtobooks.txt
+
+how do microwaves work
+The precision is0.7407407 The recall is 2.0
+This is document 1 pitchfork.txt
+This is document 2 sciencedirect.txt
+This is document 3 solipsism.txt
+This is document 4 builtin.txt
+This is document 5 geeksforgeeks c language.txt
+This is document 6 iai.txt
+This is document 7 hookedtobooks.txt
+
+how to overhead press
+The precision is0.7407407 The recall is 2.0
+This is document 1 pitchfork.txt
+This is document 2 sciencedirect.txt
+This is document 3 solipsism.txt
+This is document 4 builtin.txt
+This is document 5 geeksforgeeks c language.txt
+This is document 6 iai.txt
+This is document 7 hookedtobooks.txt
+
+how to play the guitar
+The precision is0.7407407 The recall is 2.0
+This is document 1 pitchfork.txt
+This is document 2 sciencedirect.txt
+This is document 3 solipsism.txt
+This is document 4 builtin.txt
+This is document 5 geeksforgeeks c language.txt
+This is document 6 iai.txt
+This is document 7 hookedtobooks.txt
+
+how to squat
+The precision is0.7407407 The recall is 2.0
+This is document 1 pitchfork.txt
+This is document 2 sciencedirect.txt
+This is document 3 solipsism.txt
+This is document 4 builtin.txt
+This is document 5 geeksforgeeks c language.txt
+This is document 6 iai.txt
+This is document 7 hookedtobooks.txt
+
+how-the-ps3-hypervisor-was-hacked
+The precision is0.7407407 The recall is 2.0
+This is document 1 pitchfork.txt
+This is document 2 sciencedirect.txt
+This is document 3 solipsism.txt
+This is document 4 builtin.txt
+This is document 5 geeksforgeeks c language.txt
+This is document 6 iai.txt
+This is document 7 hookedtobooks.txt
+
+modern warfare reviews
+The precision is0.7407407 The recall is 2.0
+This is document 1 pitchfork.txt
+This is document 2 sciencedirect.txt
+This is document 3 solipsism.txt
+This is document 4 builtin.txt
+This is document 5 geeksforgeeks c language.txt
+This is document 6 iai.txt
+This is document 7 hookedtobooks.txt
+
+numbers don't exist
+The precision is0.7407407 The recall is 2.0
+This is document 1 pitchfork.txt
+This is document 2 sciencedirect.txt
+This is document 3 solipsism.txt
+This is document 4 builtin.txt
+This is document 5 geeksforgeeks c language.txt
+This is document 6 iai.txt
+This is document 7 hookedtobooks.txt
+
+philosophic books to read
+The precision is0.7407407 The recall is 2.0
+This is document 1 pitchfork.txt
+This is document 2 sciencedirect.txt
+This is document 3 solipsism.txt
+This is document 4 builtin.txt
+This is document 5 geeksforgeeks c language.txt
+This is document 6 iai.txt
+This is document 7 hookedtobooks.txt
+
+ps4 uart
+The precision is0.7407407 The recall is 2.0
+This is document 1 pitchfork.txt
+This is document 2 sciencedirect.txt
+This is document 3 solipsism.txt
+This is document 4 builtin.txt
+This is document 5 geeksforgeeks c language.txt
+This is document 6 iai.txt
+This is document 7 hookedtobooks.txt
+
+ps5
+The precision is0.6451613 The recall is 1.0
+This is document 1 techradar.txt
+This is document 2 eurogamer.txt
+This is document 3 gamesradar.txt
+This is document 4 thesun.txt
+This is document 5 tomsguide.txt
+This is document 6 bgr.txt
+This is document 7 whathifi.txt
+This is document 8 wccftech.txt
+This is document 9 trustedreviews.txt
+This is document 10 gamespot.txt
+This is document 11 digitaltrends.txt
+
+return oriented programming
+The precision is0.7407407 The recall is 2.0
+This is document 1 pitchfork.txt
+This is document 2 sciencedirect.txt
+This is document 3 solipsism.txt
+This is document 4 builtin.txt
+This is document 5 geeksforgeeks c language.txt
+This is document 6 iai.txt
+This is document 7 hookedtobooks.txt
+
+segmentation fault
+The precision is0.95238096 The recall is 20.0
+This is document 1 wiki.c2.txt
+
+simulation theory nick bostrom
+The precision is0.7407407 The recall is 2.0
+This is document 1 pitchfork.txt
+This is document 2 sciencedirect.txt
+This is document 3 solipsism.txt
+This is document 4 builtin.txt
+This is document 5 geeksforgeeks c language.txt
+This is document 6 iai.txt
+This is document 7 hookedtobooks.txt
+
+solipisim
+The precision is0.7407407 The recall is 2.0
+This is document 1 pitchfork.txt
+This is document 2 sciencedirect.txt
+This is document 3 solipsism.txt
+This is document 4 builtin.txt
+This is document 5 geeksforgeeks c language.txt
+This is document 6 iai.txt
+This is document 7 hookedtobooks.txt
+
+stack smash
+The precision is0.95238096 The recall is 20.0
+This is document 1 wiki.txt
+
+tool band
+The precision is0.90909094 The recall is 10.0
+This is document 1 toolband.txt
+This is document 2 wikipedia toolband.txt
+
+turing completeness
+The precision is0.95238096 The recall is 20.0
+This is document 1 wiki.c2 tc.txt
+
+wrist pain
+The precision is0.7407407 The recall is 2.0
+This is document 1 pitchfork.txt
+This is document 2 sciencedirect.txt
+This is document 3 solipsism.txt
+This is document 4 builtin.txt
+This is document 5 geeksforgeeks c language.txt
+This is document 6 iai.txt
+This is document 7 hookedtobooks.txt
+

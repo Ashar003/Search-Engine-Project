@@ -1,0 +1,117 @@
+	Hacker News new | past | comments | ask | show | jobs | submit	login
+Hello hypervisor, I'm geohot (PS3 hacked by the guy who hacked the iPhone) (geohotps3.blogspot.com)
+92 points by aw3c2 on Jan 23, 2010 | hide | past | web | favorite | 17 comments
+
+
+	
+crocowhile on Jan 23, 2010 [-]
+
+This is they guy, btw: http://en.wikipedia.org/wiki/George_Hotz Born 1989
+
+	
+rikthevik on Jan 24, 2010 [-]
+
+1989? Damn I feel old, and I'm 27.
+
+	
+anigbrowl on Jan 24, 2010 [-]
+
+Great news. Gotta hand it to Sony and their partners though, that hypervisor security sat in place for a good long time considering how long it's been out.
+
+	
+Maven911 on Jan 24, 2010 [-]
+
+what skills would you need to be able to do what he does ?
+
+	
+zyb09 on Jan 24, 2010 [-]
+
+basic reverse engineering skills, very strong C / C++ skills, ASM & how to use a debugger, being able to look at Memdumps and making any sense of it, little electronics helps too.
+
+	
+cnvogel on Jan 24, 2010 [-]
+
+While those are a basic requirement for sure, in my opinion it's much more important to be able to recognize the links between the many different interfaces any sufficiently complicated device (here: PS3 or iPhone) has (both in software and hardware).
+If you have a look at geohots's blog, he talks about crude hardware glitching, buffer overflows or programming internal PPC registers via the SPI interface this CPU apparently has. We might now speculate that he used some or all those things to affect operation of the running hypervisor. Being able to grasp how these things interact is much more important than being a good C-coder.
+
+If you look around blogs or watch videos from conferences, you can find many people that are fluent in specific areas of a particular technology, but I think there are much fewer that can jump between a diverse set of abstractions or interfaces.
+
+Being able to do this is something I'd really love to be.
+
+
+	
+matt1 on Jan 23, 2010 [-]
+
+What will this enable people to do?
+
+	
+Skriticos on Jan 23, 2010 [-]
+
+Run Linux on their PS3 with full graphics acceleration..
+No, just kidding, most will play cracked games.
+
+
+	
+zitterbewegung on Jan 23, 2010 [-]
+
+I want to use PS3 as a compute node for shits and giggles because I don't use it anymore as a senior in computer science.
+
+	
+sukuriant on Jan 24, 2010 [-]
+
+don't worry, when you enter the working world, you might find a revived interest in video games on your time off :P
+
+	
+zitterbewegung on Jan 24, 2010 [-]
+
+Maybe, I do game with my laptop but I don't have enough $$$ or time to play PS3 games even when I have time off.
+
+	
+skorgu on Jan 23, 2010 [-]
+
+I'd use it as a bluray player and hope Boxee gets ported and can make use of the juice to accelerate media playback.
+I haven't bought one mostly because of the restrictions on linux ports.
+
+
+	
+gvb on Jan 23, 2010 [-]
+
+Whatever they wish to, within the limits of the PS3 hardware.
+While the PS3 supports linux, it is run under a hypervisor which restricts its access to the RSX 'Reality Synthesizer,' the graphics processing unit (GPU). The Wikipedia entry also notes that "support for the "Other OS" install option was removed by Sony in the PS3 Slim."
+
+References:
+
+* http://en.wikipedia.org/wiki/Linux_on_the_PlayStation_3
+
+* http://en.wikipedia.org/wiki/RSX_Reality_Synthesizer
+
+
+	
+chrischen on Jan 24, 2010 [-]
+
+And even if you do have a linux-compatible PS3 it's pretty useless. It's tough to find a PowerPC compatible flash player that works for the PS3 so you can't even use it for Hulu (which is blocked in the regular PS3 browser).
+
+	
+Zilioum on Jan 23, 2010 [-]
+
+To play hacked games, like on the xbox 360. Wondering if you'll have to copy the downloaded game onto a blue-ray or if its enough to copy it onto the harddrive. Not shure anyway if I'll hack mine, apparently a lot of people ran into a lot of trouble hacking their xbox (got banned from online gaming etc.)
+
+	
+CrazedGeek on Jan 23, 2010 [-]
+
+Ignore: Sony hasn't done anything with hacked PSPs that accessed the PlayStation Network, so that's a good sign.
+I just remembered that they restricted access to the Store (and possibly the whole Network). That was solved by a change in the version string, if I recall correctly.
+
+
+	
+freakwit on Jan 24, 2010 [-]
+
+I'm hoping for PS2 backwards-compatibility
+
+
+
+
+
+Guidelines | FAQ | Support | API | Security | Lists | Bookmarklet | Legal | Apply to YC | Contact
+
+Search: 

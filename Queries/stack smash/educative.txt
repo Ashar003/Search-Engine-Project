@@ -1,0 +1,63 @@
+
+a shot of dev knowledge
+
+
+
+
+What is the "stack smashing detected" error?
+stack smashing
+errors
+Usually, the compiler generates the stack smashing detected error in response to its defense mechanism against buffer overflows.
+
+A buffer​ overflow occurs when the user input exceeds the buffer capacity. The following C code can cause the buffer to overflow if the user enters more than ten characters. In such a ​case, the compiler will throw the stack smashing detected error.
+
+12345678910
+#include<stdio.h>
+void get_name(){
+  char buffer[10];
+  gets(buffer);
+}
+int main() {
+    printf("Please enter your name.");
+    get_name();
+    return 0;
+}
+
+A buffer overflow
+The following illustration explains the concept of a buffer overflow:
+
+1 of 5
+
+
+
+
+
+
+Using canaries
+A buffer overflow is dangerous, so the compiler uses various protection mechanisms to guard against it. One such mechanism is a canary. A canary is a randomly generated value, ​and in the case of a buffer overflow, the canary is overwritten; when, upon comparison with the known value, the compiler detects that the stack was compromised it throws the stack smashing detected error.
+
+The following demonstrates how canaries are used:
+
+1 of 2
+
+
+
+
+
+
+License: Creative Commons -Attribution -ShareAlike 4.0 (CC-BY-SA 4.0)
+Home
+Contact Us
+Become An Author
+Team
+Published Authors
+Blog
+Edpresso
+Careers
+FAQ
+Become An Affiliate
+GitHub Student Developer Pack
+Terms of Service
+Enterprise Terms of Service
+Privacy Policy
+Copyright ©2019 Educative, Inc. All rights reserved.

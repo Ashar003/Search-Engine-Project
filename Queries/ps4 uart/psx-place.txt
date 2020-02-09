@@ -1,0 +1,65 @@
+PS4 Reseach by JaiCrab (UART ports on board SAA-001+ Jaibrute v1 Tool)
+Discussion in 'PS4 News' started by STLcardsWS, Jul 3, 2015.
+
+0
+By STLcardsWS on Jul 3, 2015 at 12:47 AM
+PlayStation 4 (PS4)
+Console Hacker JaiCrab has recently release some research on the PlayStation 4 specifically models with the SAA-001+ motherboard, the developer documents and does some research on the "UART ports" of that board and also has released a tool for developer called Jaibrute v1. This is a tool for developer to further research the console. You can view all the details of this research and release [break]ss[/break] in the documentation provided below:
+
+
+20131016-JAPAN-0563_edit-660x440.jpg​
+
+UART ports on board SAA-001
+
+​
+At the plate I found two UART ports for different purpose. One is used for the operating system. Should show charging of system and kernel.
+
+The other port is discovered CXD90025G port (MediaCon). It closely resembles the UART port of the PS3 SYSCON.
+
+Both ports TTL RS232 adapter is connected to 3.3v. RaspberryPi any, Pirate or USBtoSerial bus adapter. You only need 3 wires. RX, TX, GND. The configuration is also the same for both: 115200, n, 8.1
+
+
+
+gen_uart.jpg UARTs.jpg
+​
+
+
+UART0 console
+-------------
+Used by the system to show the charging process and record events core, such as a newly connected USB connection or action ACPI shutdown.
+Everything goes reflected. But Sony has attempted to leave unused.
+
+
+The port transmits data through the port. But all the characters originals are replaced by 0x20. The "space". Character So only we can see how it moves the cursor while the kernel is showing events. (It is useless).
+
+The console if that reflects the echo of what is sent. The system receives commands from the port but not sure you ignore. The ECO system do what is sent is a good sign.
+
+
+Console MediaCon
+----------------
+He accepts commands as happened with the PS3. The system of command and hash is the same. The sum of all bytes and applying & 0xff. Byte is added
+After hexadecimal command. For example errlog: 8B. If we listen to the harbor and nourish the system appears within 10 seconds
+appears ... "OK 00000000: 3A" ...According to psdevwiki it means "Power applied (standby mode)."
+
+
+It does not seem to work any command found in the PS3, except errlog command.
+
+I have discovered a reply:
+* NG E0000004: 4E Bad Checksum
+* NG F0000006 51 Command not found
+* F0000001 NG: Incorrect argument 4C
+​
+
+
+I designed a program to discover brute force commands accepted. It can be used to console mode or dictionary mode. Dictionaries can be generated with "crunch".
+
+Capture:
+56625d1435627530-jaibrute.jpg
+​
+
+This program sends commands per minute to 800 and only records MediaCon different answers to "NG F0000006: 51". Public interest would be discovered all commands.
+
+
+Download: JaiBrute v1 (MD5: f7a7e0f970d5e86ef110d2d4ff0ed1b1)
+
+Source: jaicrab.org

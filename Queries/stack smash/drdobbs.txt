@@ -1,0 +1,259 @@
+Informa
+Subscribe
+Newsletters
+Digital Library
+RSS
+Search:  Site  Source Code
+
+
+HomeArticlesNewsBlogsSource CodeWebinars & Events
+FacebookTwitter
+CloudMobileParallel.NETJVM LanguagesC/C++ToolsDesignTestingWeb DevJolt Awards
+
+RSS
+SECURITY
+Share
+Permalink
+Anatomy of a Stack Smashing Attack and How GCC Prevents It
+By Oliver Mueller, June 19, 2012
+
+4 Comments
+
+The use of special prologues and epilogues around functions can easily detect attacks that rely on stack overflows. Here is how "stack smashing" is actually performed and how its occurrence is detected.
+Even today, buffer overflows are a threat to computer-system security. Over the last few years, vendors of operating systems have set up their products with different strategies to prevent buffer overflow attacks. Address space layout randomization (ASLR) and non-executable stacks are two such improvements that try to prevent attackers from using vulnerabilities based on buffer overflows for a successful intrusion.
+
+In addition, compiler vendors added techniques against buffer overflows, especially stack overflows, to their products. All major vendors of C and C++ compilers have added detectors to their compilers that can sense stack smashing — the willful use of stack overflows to gain control of a system — before any harm can be done. They cannot prevent the stack from being smashed, but they can detect the smashing and avoid executing the malware payload. Such "buffer protectors" include Stack Smashing Protector (SSP) for GNU's gcc, ProPolice for IBM's XLC, and Buffer Security Check for Microsoft's Visual compilers (option /GS). In this article, I examine in detail how stack overflows occur, how stack smashing attacks work, and how they can be detected. I also examine the implementation of the GNU SSP and show the methods it employs to thwart these attacks.
+
+Understanding the Problem
+Before discussing a solution, you have to understand the problem : What happens in the case of a stack overflow and why is it so dangerous?
+
+Whenever a program calls a subroutine by a CPU instruction CALL or BRANCH, it saves the current instruction pointer (IP) onto the stack. It marks its position before it branches, so it knows where to return after termination of the subroutine. This saved address on the stack is called a return address.
+
+A high-level programming language like C or C++ also puts local variables of the subroutine on top of the stack (Figure 1). Thus, the subroutine gets its own memory area on the stack where it can store its own data. This principle is also the key of recursive routine calls because every new call to the subroutine gets its own return address and its own local variables on the stack.
+
+
+
+Figure 1: Stack layout.
+
+Upon termination of the subroutine, high-level languages first clean up the stack by removing all local variables. After that, the stack pointer (SP) again points to the saved return address. At a RET or RETURN instruction, the processor reads the return address from stack, jumps back to the former IP position, and continues the original program flow.
+
+This flexible layout allows theoretically infinite levels of recursion, but several problems are also inherent. If a program does not check the boundaries of local variables at writing, it could write beyond the intended space of these variables. In the best case (from an operating system's perspective), this will overwrite other variables. In the worst case, it will overwrite the return address. Why? On most systems, including state-of-the-art systems, the stack and heap of a program are growing toward the same point in memory. Where the heap grows from lower to higher addresses, the stack grows from higher to lower addresses (see Figure 2). In other words: The stack stands upside down.
+
+
+
+Figure 2: The memory layout of a process.
+
+Even if the stack grows from higher to lower addresses, the local variables on the stack work the "normal" way: They grow from lower to higher addresses. Any string and any array store their values of lower indexes at lower addresses and higher ones at higher addresses.
+
+Let's assume a program writes data to a local string variable, by strcpy() for example. strcpy() does not check for any boundary. It copies data to the destination variable until it reads a null byte from the source variable. Thus, it is able to write more bytes onto the stack than there is space dedicated to the provided string variable. As a result, it might overwrite other data in higher addresses in memory and therefore below the destination variable on "lower addresses" on the stack (see Figure 3). If the copy process is not stopped, sooner or later, the program will overwrite the return address, too. The return address will be destroyed, or more precisely, given a new value.
+
+
+Figure 3: A stack overflow.
+
+At termination of the subroutine, when the program retrieves the return address, that address has changed. Under normal circumstances, the program flow jumps to an unpredictable address. Chances are very good that the jump leads into a segment outside the program's own memory. The system detects a segmentation violation and kills the process with signal number 11 (SIGSEGV). The program crashes and leaves a core file.
+
+So far, so good. But what happens if the target of the changed return address is not outside the program's own memory? In this case, the jump might succeed and execution will go on. If there is valid machine code, it will be executed. If not, the processor will create an illegal instruction exception.
+
+Footprint of a Stack Overflow Attack
+Attackers change the return address via a buffer overflow — not to an unpredictable location, but to a specific address. In other words: They can control where the jump goes. A classic attack includes a so-called "payload" (also called a "cuckoo's egg") in the overflowing data, which consists of three parts:
+
+An NOP sled
+A shell code
+A new return address
+The NOP sled consists of a repeated processor instruction, called NOP (no operation). This instruction does nothing but increase the IP by one. In other words, it’s a do-nothing filler byte.
+
+The shell code is a little program written by the attacker in assembly language and machine code, respectively. Normally, it utilizes system calls to gain a root shell. This is why it is called "shell" code.
+
+Last but not least, the new return address is provided, which points somewhere into the NOP sled. If the subroutine terminates, the program flow will jump into the NOP sled and execute the NOPs until it reaches the shell code (see Figure 4). The shell code opens a root shell and the attacker gains control over the system.
+
+
+
+Figure 4: A stack overflow attack.
+
+The NOP sled is simply a way to avoid knowing the precise address of the shell code on the stack. Systems differ, and calculating the exact return address is an art of its own. It is easier to jump somewhere into the middle of the NOP sled. Stack layout will differ from system to system and from program execution to execution. It won't matter if the payload lays a bit higher or lower on the stack. As long as the jump goes inside the NOP sled, the exploit will work. For the same reason, the return address is not simply one single value. It is a concatenation of repetitions of the intended return address. One of these repeated addresses will overwrite the original return address on the stack.
+
+Attacks with shell code in the stack segment don't work on contemporary systems anymore. Features like non-executable stacks, provided by the hardware or operating system, prevent execution of injected code on the stack. But the threat is not yet removed entirely. There are other tricks that an attacker can use. The "Return to libc" is one such trick. Such attacks also rely on stack overflows, but they are a bit more complicated. For a stack smashing protector, it makes no difference whether it is a classic or modern attack. So I'll concentrate on classic attacks for the sake of simplicity.
+
+Protecting Canaries
+The classic stack overflow attack and most of its modern successors are organized in two steps. The first step is a preparation stage in which the payload overwrites the return address. After this, the attacker has to wait while the "normal" algorithm of the vulnerable subroutine goes on. Only when the subroutine terminates will the prepared return address force the CPU to start the real attack with its harmful impact.
+
+Thus, there is a temporal and operational gap between the preparation and the implicit invocation of the injected code. For a protection mechanism, this gap is predestined to get a closer look on the stack before returning from the subroutine. In no case can an attacker change the code of the subroutine itself. So the subroutine's code always stays intact.
+
+The aforementioned stack smashing protectors of contemporary compilers use exactly these two findings — the gap and the untouched code of the subroutine in this gap. They add additional code to the subroutine as a prologue and an epilogue that detect stack overflows.
+
+A typical subroutine of a language like C or C++ consists of four parts at the machine level:
+
+Initialization: the preparation of space on the stack for local variables.
+Subroutine body: the subroutine's implemented algorithm.
+Clean-up: removing local variables from the stack.
+Return: jump back to the original address before the branch.
+Stack smashing protectors (SSP) add two additional parts to this schema. A special prologue, which is placed before the initialization, and an epilogue, which fits between clean-up and return. This leads to the following new layout of a subroutine:
+
+SSP's prolog
+Initialization
+Clean-up
+SSP's epilog
+Return
+The idea is to add a barrier on the stack between the return address and the local variables. In case of a buffer overflow on the stack, the barrier will be crossed and destroyed. SSP's epilog will detect this invalid barrier. The barrier is simply an integer value and is called a "canary" in SSP's own wording. Before the return address is destroyed, the canary will be destroyed (see Figure 5).
+
+
+Figure 5: Destroyed canary indicating stack smashing.
+
+The destroyed canary indicates stack smashing. A simple comparison with the SSP's epilog shows the changed canary and uncovers the overflow and a potential attack, respectively. All this is detected before any branch based upon whether a changed return address might occur. The program doesn't lose control and it can stop its process in the SSP epilog before the return step and before any potential damage is done.
+
+
+
+1 2 3 Next
+Related Reading
+News
+Commentary
+News
+SmartBear Supports Selenium WebDriver
+Parasoft DevTest Shifts To Continuous
+Applause Launches Mobile Beta Management
+Mac OS Installer Platform From installCore
+More News»
+Commentary
+Things That Go Boom
+Application Intelligence For Advanced Dummies
+Did Barcode Reading Just Get Interesting?
+Farewell, Dr. Dobb's
+More Commentary»
+Slideshow
+Video
+Slideshow
+Jolt Awards 2015: Coding Tools
+Jolt Awards 2014: The Best Programmer Libraries
+Jolt Awards: The Best Programming Utilities
+Developer Reading List: The Must-Have Books for JavaScript
+More Slideshows»
+Video
+Master the Mainframe World Championship
+Dr. Dobb's Readers Invited to Judge at ISEF 2014
+Intel at Mobile World Congress
+Amazon Connection: Broadband in the Rainforest
+More Videos»
+Most Popular
+Most Popular
+So You Want To Write Your Own Language?
+Building Scalable Web Architecture and Distributed Systems
+Jolt Awards 2015: Coding Tools
+A Gentle Introduction to OpenCL
+More Popular»
+More Insights
+White Papers
+9 Ways Data Vampires Are Bleeding Your Sensitive Information
+[Dark Reading Tech Digest] Navigating the Deluge of Security Data
+More >>
+Reports
+2019 Threat Hunting Report
+Getting Started With Emerging Technologies
+More >>
+Webcasts
+12 Things You May Not Know About Microsoft Azure
+Cloud Sprawl: It's Worse Than You Think
+More >>
+INFO-LINK
+
+
+ 
+Disqus Tips	To upload an avatar photo, first complete your Disqus profile. | View the list of supported HTML tags you can use to style comments. | Please read our commenting policy.
+ 
+
+Security Recent Articles
+Dr. Dobb's Archive
+5 Steps to Protect Mobile Apps from Attacks
+Jolt Awards: The Best Books
+The Internet of Overhyped Things
+Security Issues in Swift: What the New Language Did Not Fix
+Most Popular
+StoriesBlogs
+A Simple and Efficient FFT Implementation in C++:
+Part I
+Jolt Awards: The Best Books
+Writing Lock-Free Code: A Corrected Queue
+Anatomy of a Stack Smashing Attack and How GCC Prevents It
+Dr. Dobb's Archive
+This month's Dr. Dobb's Journal
+Dr. Dobb's Digital Digest - October 2014
+This month, Dr. Dobb's Journal is devoted to mobile programming. We introduce you to Apple's new Swift programming language, discuss the perils of being the third-most-popular mobile platform, revisit SQLite on Android , and much more!
+
+Download the latest issue today. >>
+
+
+Upcoming Events
+Live EventsWebCasts
+Featured Reports
+  What's this?
+The Future of Network Security is in the Cloud
+Rethinking Enterprise Data Defense
+The Definitive Guide to Managed Detection and Response (MDR)
+2019 Threat Hunting Report
+Getting Started With Emerging Technologies
+More >>
+Featured Whitepapers
+  What's this?
+9 Ways Data Vampires Are Bleeding Your Sensitive Information
+[Dark Reading Tech Digest] Navigating the Deluge of Security Data
+Tech Digest: How to Get Started with Emerging Tech
+[Infographic] Are You Maximizing Value of the Cloud?
+2019 State of DevOps
+More >>
+Most Recent Premium Content
+Digital Issues
+2014
+Dr. Dobb's Journal
+November - Mobile Development
+August - Web Development
+May - Testing
+February - Languages
+
+Dr. Dobb's Tech Digest
+DevOps
+Open Source
+Windows and .NET programming
+The Design of Messaging Middleware and 10 Tips from Tech Writers
+Parallel Array Operations in Java 8 and Android on x86: Java Native Interface and the Android Native Development Kit
+
+2013
+January - Mobile Development
+February - Parallel Programming
+March - Windows Programming
+April - Programming Languages
+May - Web Development
+June - Database Development
+July - Testing
+August - Debugging and Defect Management
+September - Version Control
+October - DevOps
+November- Really Big Data
+December - Design
+
+2012
+January - C & C++
+February - Parallel Programming
+March - Microsoft Technologies
+April - Mobile Development
+May - Database Programming
+June - Web Development
+July - Security
+August - ALM & Development Tools
+September - Cloud & Web Development
+October - JVM Languages
+November - Testing
+December - DevOps
+
+
+DISCOVER MORE FROM INFORMA TECH
+InformationWeek Interop Dark Reading Data Center Knowledge Network Computing IT Pro Today
+WORKING WITH US
+Contact Us About Us Advertise
+FOLLOW DR. DOBB'S ON SOCIAL
+ 
+ 
+ 
+ 
+alt text of the logo Home Cookie Policy Privacy Terms
+Copyright © 2019 Informa PLC. Informa PLC is registered in England and Wales with company number 8860726 whose registered and head office is 5 Howick Place, London, SW1P 1WG.
+
+

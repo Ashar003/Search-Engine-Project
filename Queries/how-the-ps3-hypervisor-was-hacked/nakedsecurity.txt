@@ -1,0 +1,399 @@
+by
+PRODUCTS
+FREE TOOLS
+SEARCH
+FREE SOPHOS HOME
+Award-winning computer security news 
+Sony PS3 hacked “for good” – master keys revealed
+25 OCT 2012 
+37
+Cryptography, Vulnerability
+Get the latest security news in your inbox.
+you@example.com
+Don't show me this again
+
+Previous: Thieves rig Barnes & Noble PIN pads to steal credit card data
+Next: IP theft attacks can hide on networks for years, unspotted by corporate victims, report claims
+by Paul Ducklin
+Sony’s PS3 has been hacked.
+
+Perhaps “hacked” is the wrong word, because it can imply both criminality and lawful exploration. But we’ll stick with “hacked” here, in the sense of “some reverse engineers have figured out how you can adapt, or jailbreak, your PS3 to make it interoperable with software of your own choice.”
+
+The PS3 has been hacked before, but Sony was able to inhibit the hack with an update to its own firmware. This is much like the history of jailbreaking on Apple’s iOS, where hackers typically uncover a security vulnerability and exploit it, whereupon Apple patches the hole and suppresses the jailbreak.
+
+But the latest PS3 break is being dubbed unpatchable and the final hack.
+
+That’s because this hack isn’t giving you an exploit to use against a programming hole. It’s giving you Sony’s so-called LV0 (level zero) cryptographic keys.
+
+The PS3 system software loads up as shown in the picture below:
+
+
+
+
+Diagram derived from this article on popular PS3 development website ps3devwiki.
+
+The Level Zero (LV0) loader is the mother of all field-updatable firmware components in the PS3 bootstrap process. It orchestrates the loading, and the cryptographic verification, of all the modules underneath it. As long as the LV0 loader remains the way Sony wants it, you get to run only what Sony wants you to.
+
+Pirated games won’t load, which is good for rights holders. But Linux, for example, won’t run either, which is bad for you. Why shouldn’t you run lawfully-acquired software of your choice on your own computer? [*]
+
+With the LV0 keys now published, you can – at least in theory – replace the LV0 loader and run whatever you like, because you can authorise your own custom firmware (CFW). The PS3’s most-secret cat is out of the bag.
+
+Incidentally, the publication of the LV0 keys was not without some controversy and finger-pointing amongst the reverse engineering and CFW community.
+
+It seems as though a hacking and reversing posse known as the Three Musketeers worked out the LV0 keys some time ago. Since they were, in their own words, “done with PS3 now anyways,” they just sat on the information.
+
+But some turncoat leaked it, and it eventually reached a Chinese hacking group, BlueDisk­CFW.
+
+Well, well.
+
+BlueDisk­CFW didn’t just use someone else’s work to publish a custom firmware that was unashamedly aimed at violating others’ intellectual property. They planned to charge for it! Knock me down with a feather! Dishonourable software pirates! Thieves and rascals!
+
+The Three Musketeers took exception to that.
+
+
+
+Let’s hope, when the PS4 comes out, that Sony will give up on trying to lock out jailbreakers permanently, and instead provide a way for those who want to run alternative software to do so in official safety.
+
+When King Cnut famously ordered the tide back and failed, he wasn’t an arrogant absolute ruler trying to show off.
+
+He knew he would fail, and thereby demonstrated that to hold back the tide was impossible – and, in any case, unnecessary – even for a king.
+
+[*] That’s a rhetorical question. There isn’t a good reason why you shouldn’t. Most people don’t want to, and won’t even try. But that’s no reason why you shouldn’t have the choice.
+
+Follow @NakedSecurity on Twitter for the latest computer security news.
+
+Follow @NakedSecurity on Instagram for exclusive pics, gifs, vids and LOLs!
+
+Free tools
+Sophos Home
+Sophos Home
+for Windows and Mac
+Hitman Pro
+Hitman Pro
+ 
+Sophos Mobile Security for Android
+Sophos Mobile Security
+for Android
+Virus Removal Tool
+Virus Removal Tool
+Antivirus for Linux
+Antivirus
+for Linux
+Previous: Thieves rig Barnes & Noble PIN pads to steal credit card data
+Next: IP theft attacks can hide on networks for years, unspotted by corporate victims, report claims
+37 comments on “Sony PS3 hacked “for good” – master keys revealed”
+Robert Persson October 25, 2012 at 9:21 am
+I'm glad to read someone telling the truth about King Cnut who has got a very bad press over the centuries from people with a poor sense of irony. He was sick of his fawning advisors telling him how great he was so he forced them to watch while he put it to the test. I would have loved to see the look on their faces. Cnut was a performance artist.
+
+ 6 4 Rate This
+Reply
+S.Miller October 25, 2012 at 12:12 pm
+I'm glad Sony have finally lost this battle. Hopefully they'll learn something from this, if you take something (OtherOS) away from people then they'll get it back, sooner or later.
+
+ 15 3 Rate This
+Reply
+Matthais October 25, 2012 at 12:15 pm
+It is sad that it has come to this.
+
+Whilst it was certainly a mistake on the part of Sony to remove OtherOS, it was a far greater evil for GeoHot and his ilk to publish their work.
+
+As a member of the legit scene for nigh on 20 years, I have always felt that the greater good is far better served when we work with the IP holders to produce a more positive environment for all those who have invested in it; be it financially, emotionally or intellectually.
+
+Throwing keys out there like a petulant monkey flings faeces at the zoo keeper is only going to harm our world.
+
+These so called hackers would do well to take an ethics course.
+
+ 6 21 Rate This
+Reply
+Paul Ducklin October 25, 2012 at 2:22 pm
+As you probably know, not least because I do like to go on about it a fair bit, I'm strongly against irresponsible disclosure, piracy and disrespect for other people's IP. I'm against criminal hacking ("digital breaking and entering", even for so-called fun.
+
+But I've always struggled to understand how there can be a moral or ethical issue with hacking into your _own_ computer to use it for a lawful purpose of your own choosing.
+
+Help me here…why do you think it was a mistake for Sony to remove OtherOS? And if it was a mistake to remove it, why was George Hotz "evil" to go out of his way to try to get it back?
+
+Do we really want a future in which the cool and groovy computers we buy are _all_ locked down like the iPad, or (until this week 🙂 the PS3, or Microsoft's forthcoming ARM-based Windows 8 RT kit?
+
+We keep hearing that walled gardens of this sort will invariably improve security. That seems unlikely, since at least some of that sort of security is achieved through obscurity..
+
+ 10 2 Rate This
+Reply
+Corporate_Serf October 25, 2012 at 3:41 pm
+"I'm strongly against irresponsible disclosure, piracy and disrespect for other people's IP. I'm against criminal hacking ("digital breaking and entering", even for so-called fun. "
+
+Me too, but corporations aren't people.
+
+ 16 5 Rate This
+Reply
+njorl October 25, 2012 at 6:17 pm
+My heart's with you on this, and Matthais's choice of simile makes me wonder.
+
+However, I think the case rests on the distinction between purchased and licensed. We, as ordinarily people, have grown up with the concept of purchasing being very familiar to us. Licensing, on the other hand, has been, outside of the commercial sector, a fairly alien concept.
+
+When you run your choice of application on the PS3, it is heavily dependent upon the device's hardware, microcode, firmware, and operating system. (If you're running an independent OS, strike the last item off the list, of course.) Some of these may, in whole or in part, have been supplied to you under restrictive licence terms. It may be, then, that you have not bought the right to use them in that way. If so, what, really, is wrong with the device maker and rights owners employing techniques to prevent you from doing something that you are contractually barred from doing anyway?
+
+I suspect companies aren't making enough effort to help us understand for what, specifically, we are paying. (We all just hand over the cash, pocket the shiny device, and think that's the end of the matter.) Once we have sufficient transparency, market forces will sort out what we're getting for our money.
+
+ 7 1 Rate This
+Reply
+Paul Ducklin October 25, 2012 at 9:15 pm
+Last year I was at a conference in Melbourne, Australia at which a chap from the country's new National Broadband Network company spoke glowingly about the CPE (customer premises equipment) they'll be using, and how it runs Linux and uses virtualisation to keep the various services it offers logically separate.
+
+I naively asked where the source code could be download from…of course, it can't. The device isn't *yours*. It's in your house, but it's part of their network up to the ethernet ports that you plug in to – a bit like an embassy or consulate in some foreign land.
+
+So I get your point about licensing.
+
+Does this concept apply (and does consumer law let it apply) to something you buy as a boxed hardware item at a shop, bring home and then install, configure and use yourself? There may be a subscription service that comes along with it, but the boxed item certainly *feels* like something you've purchased, not licensed…
+
+PS. I'm not arguing here that vendors shouldn't be allowed to software-lock their devices, though. Just that [a] they might end up with much more goodwill if they don't and [b] if they do, it oughtn't to be considered some kind of great social evil to unlock them, provided that you are not doing so in order to rip anybody off. (Didn't the US Library of Congress recently rule that [b] was not evil and, in fact, ought to be considered a statutory right?)
+
+ 1 2 Rate This
+Reply
+Chris October 30, 2012 at 6:05 am
+The undertanding partially comes from reading the included EULAs. However, companies are anything but neutral parties, so any explanation they give you about your ownership or rights will be heavily biased in their favor compaired to a vanilla interpretation of the law. For example, don't expect them to mention that until you actually click that "I Agree" button, you are under no contractual obligations. Untill you enter into the licensing agreement, you still own the device and any software it came with. If someone buys a console with the sole purpose of reverse-engineering it, and doesn't actively agree to the license, they could do their work and the license wouldn't matter since it wouldn't be in effect for them.
+
+ 1 1 Rate This
+Reply
+Vasia October 25, 2012 at 11:39 pm
+Let me subscribe to Pauls, comments here.
+Closed systems have no future in the industry. We can see this using Android as an example, which, effectively, whipping out Apple's closed proprietary ecosphere.
+
+ 3 1 Rate This
+Reply
+Matthais October 26, 2012 at 12:43 pm
+Whilst I used the OtherOS option only once on my first PS3, it was utilised as a selling point and a a point of differentiation for the console in the early days of the life cycle.
+
+To remove it, even though the reasons were understandable, was akin to telling children that they can't have a cheeseburger and a can of Coke after allowing them to gorge themselves on said fare for several months.
+
+I think that it would have been a better strategy to look at engaging in a discourse with old matey and his ilk and seeking their assistance to remedy the breach.
+
+I didn't describe the recalcitrant Mr Hotz as evil, rather suggested that his motives were less than pure.
+
+"De duobus malis minus est semper eligendum"
+
+Both parties should perhaps have considered such a sentiment prior to their actions.
+
+I am, as are you, against irresponsible disclosure, piracy and abuse of IP. I am also vehemently opposed to the Apple model, though I understand it; they are catering for the lowest common denominator (LCD) and need to protect their bottom line from the garden variety idiot.
+
+Perhaps it is simply greed that is driving companies to lock down their systems, evolution continues to create a more complex idiot, idiots break things and call support lines.
+
+All of the above said, I have no solution. I did think that Sony got it right with the PS3 initially, allowing for hobbyists to have a space on the console whilst everything else was locked down and raising the ire of the "community".
+
+Their response was poor, though nowhere near as morally bankrupt of those nameless muppets who chose to vandalise their network in "protest".
+
+ 1 6 Rate This
+Reply
+Chris October 30, 2012 at 5:46 am
+On the contrary, caring more about playing games than supporting those who choose to exersise their legal rights is the far less ethical position. If someone cheats, by all means scorn them but that is not what GeoHot did.
+
+ 4 0 Rate This
+Reply
+Anonymous December 2, 2014 at 5:39 am
+well said.
+
+ 1 0 Rate This
+Reply
+dee October 25, 2012 at 3:47 pm
+I think if you buy it …it is your's to use…and no one should try to keep you from using it….hack away ….good going …we need more hacker to put greedy corporations in their place
+
+ 6 2 Rate This
+Reply
+Eliot October 25, 2012 at 4:23 pm
+How will this affect gaming on the PS3? I don't mind the crack as long as people (normally 12-16 year-olds who like to mess the games up for everyone else) aren't able to alter the games.
+
+ 2 2 Rate This
+Reply
+CM October 25, 2012 at 8:36 pm
+GOOD! I don’t feel bad for Sony one bit. I have never seen a company destroy their own reputation so quickly before, over just a few short years of stunts like putting rootkits on their CDs.
+
+ 5 1 Rate This
+Reply
+Tim October 25, 2012 at 10:17 pm
+Ownership of products really is getting ‘blurry’. The phone that I’m typing this on isn’t mine unless I have root access to it but my computer is mine because I can pull it to bits and do whatever I want to it. I can install whatever I want on it but am subject to the conditions of that company. If I pull that software to pieces then I’m (probably) breaking those conditions and am liable for civil offense (or even criminal if I distribute the fruits of my labour)
+Soon (Aus govt depending) I’ll have, as Mr Ducklin mentioned, a CPE device in my home that will be the frontline of my LAN that I won’t be able to secure/configure or even monitor because it’s not mine.
+On the flip side one way of looking at things is that I never owned the money I earned to buy these things that I don’t own in a rented unit that I don’t own. Not even my artworks could be considered mine as they are created with materials purchased with cash that’s not mine.
+I need a drink methinks but even that isn’t mine!
+
+ 3 1 Rate This
+Reply
+TheCrow January 16, 2015 at 3:55 pm
+Dude I’m so Fn’ Voting for you for presidency! I totally agree with you!! <<>>…. But don’t worry even if we don’t own it cux they say so …. we do own it cux we think so! … so hax away! if everyone were saints then everything would be free but they aren’t so they sell stuff and then wanna make it so that you have to keep coming back to buy more shit, they don’t want you to make use of what you got for too long. Hence most of the time whatever you buy is obsolete or needs improvement soon after…and of course they wanna make money off of that too…that’s their right as well as is our right to find ways around their evil and ambitious schemes!
+
+ 2 0 Rate This
+Reply
+MasterofOne October 26, 2012 at 12:05 am
+If you don't like the restrictive licensing, don't buy a PS3, or 4. njorl is right on. When you purchase the box, you buy it as is under Sony's terms. Nobody is forcing you to buy it. And if you want to install your own software, then you should create your own box from the ground up. Theft is theft.
+
+ 2 12 Rate This
+Reply
+Paul Ducklin October 26, 2012 at 2:08 am
+I'm still trying to understand where the "theft" is. You purchase the box (your choice of words). It's yours. You zap the software that's on it and run your own, duly-licensed software instead.
+
+The only other alternative is that when you want to stop running the vendor's software, you throw the box away, or else you're being evil. (Presumably you can't sell it, since in your scenario it's hard to see how you could own it free and clear.) Bit wasteful, wouldn't you say?
+
+Weird. It's a bit like a retaurant refusing to give me a doggy bag of leftover food I've already paid for, and which would otherwise be wasted, because to do so would amount to authorising me to "steal" it.
+
+Nope. I've really tried hard. I simply can't see the theft aspect of this…
+
+PS. What about the people who bought PS3s when OtherOS *was* supported, but had that rug pulled out from under their feet? Are *they* allowed to continue jailbreaking?
+
+ 6 1 Rate This
+Reply
+ben October 26, 2012 at 6:55 am
+I bought a PS3 over competing products _because_ of the OtherOS capability.
+
+It sure felt like there was a theft going on when I discovered the removal of that capability.
+
+ 5 1 Rate This
+Reply
+Kenneth Smith October 28, 2012 at 9:22 pm
+I wonder when they will tell me that I can't replace or modify the engine in my car because it too is theft? If I install a performance chip and alter the system is that theft? It doesn't really matter as they are now trying to pass a law in America that anything you buy that is imported to America isn't yours to sell without paying the company that made it their SHARE of your profit.
+
+ 3 1 Rate This
+Reply
+njorl October 26, 2012 at 5:14 pm
+The people who don't like you taping your sister's CDs call it "theft" in a cynical ploy to exploit the fact that the vast majority of us are firmly against theft.
+
+That type of thing isn't theft (as Paul has pointed out, several times, most recently in a comment on https://nakedsecurity.sophos.com/2012/10/15/facebo…
+
+We must stand against the insidious advance of Newspeak.
+
+ 3 1 Rate This
+Reply
+Chris October 30, 2012 at 6:34 am
+What a mindjob Sony has done on some people. They've actually convinced people that it's possible to simultaneously buy something and steal it. Hat's off to them. Truth is, you purchase the box and then later optionally agree to Sony's terms (to play the games and use the PSN). The third option is always available and that's simply to not accept the license after you buy it. Then it's yours to do whatever you want with.
+
+Don't confuse copyright infringment (law) with what a company doesn't want you to do (licensing terms). Again, companies are not neutral parties so don't expect their stance to reflect your true legal rights. As consumers, your interests (most product for least money) are by definition directly opposed to that of companies (least product for most money). Why any consumer would take the position of a company is beyond me. Manipulation is manipulation.
+
+ 7 2 Rate This
+Reply
+Dante October 26, 2012 at 12:17 pm
+Hackers who do this shit are just absolute wankers! Get off your arse and get a real job you pricks! You wanna play all these awesome games for free. You like these games don’t you? Yeah? Well how about you show the publisher some respect you cheap bastards! Piracy is wrong. End of. And people who agree it’s for the “greater good” should executed in front of their families.
+
+A few weeks before Black Ops 2 too. Selfish c***s!
+
+ 5 12 Rate This
+Reply
+Anon November 19, 2012 at 12:34 pm
+There is this thing called "homebrew" people like to run on their systems.
+
+ 3 1 Rate This
+Reply
+supermorph May 14, 2013 at 12:17 pm
+i get what you say, but not everyone wants to use them to play ps3 games, or films, some like to use it for other purposes, homebrew is one, other oses is another, piracy is the evil people picking up the hacks available and using them to thier advantage, which is not the original hackers intended purpose.
+if companies just made ways to do whatever, but prevent piracy with no downsides to the "its your product, just dont steal things" then things would be a better place, unfortunatley, this isnt an ideal world.
+
+ 1 2 Rate This
+Reply
+Guest October 26, 2012 at 12:38 pm
+The issue is that most people will use this to simply pirate games. I can't really blame Sony for trying to keep things locked down. Sure, it prevents people from doing things like homebrew, and while i agree the removal of the OtherOS was not fair, can you really say that Sony is wrong for trying to prevent software piracy on its system?
+
+ 2 2 Rate This
+Reply
+Bob October 29, 2012 at 3:31 pm
+Sigh…not good logic here. So because people use knives in crime, they’re now illegal to carry in England. Why not just outlaw cars too, since they’re used in crime as well? 😀
+
+While I get what you’re saying, Sony DID advertise/sell a product with a certain capability, then removed that capability after the product was purchased. I’d say that violates some kind of trade law (though IANAL), and I’m a bit surprised they haven’t been sued over it.
+
+Also, some courts have determined that license agreements don’t always hold water (i.e. you can’t remove “ownership” from the purchaser via the license agreement). It’s still murky, but licenses aren’t as watertight as Sony would us believe.
+
+Sony does have a right to try to prevent copyright violation of their product, but NOT through bait-and-switch (which OpenOS was). At most Sony should be able to refuse support for a modified product. They should have no authority over a consumer’s system, UNLESS they’re asking for support. Pretty simple.
+
+.
+
+ 2 1 Rate This
+Reply
+Guest October 30, 2012 at 12:42 pm
+I'm not arguing the fairness of the removal of OtherOS or making knives illegal :).
+
+Pretty much everything can be used for good or bad things, but you'd have a hard time convincing me that a large majority of the people who take advantage of this would use it for more than pirating games.
+
+Is that unfair for homebrew? Yes. Is Sony crazy for trying to stop this? No. If it could be used for things like homebrew and not piracy would Sony still try to prevent it? Maybe, but, I'm not trying to delve in to all the 'what if' scenarios.
+
+ 0 2 Rate This
+Reply
+@undefined October 29, 2012 at 12:24 am
+I have to say thank you to Paul Ducklin for such a great article.
+
+My name is GregoryRasputin, im not a reverse engineer or coder, but i am somewhat a big part of the PS3 scene and i find myself having to defend the actions of the PS3 Underground Scene, many, many times, not important, but here is my about.me page: http://about.me/GregoryRasputin
+You will see that i am quite dedicated to the PS3 Scene 🙂
+
+Many sites outright call us pirates, they state that all we want our consoles hacked for is to pirate games, which is simply not true, with CFW installed on my PS3, i was able to regain back OtherOS that Sony took away from anyone who owned a Fat PS3 Console, i was able to play many of the awesome homebrew games, all whilst playing my legitimately bought games from my HDD, which made my PS3 experience all the more enjoyable.
+
+Jailbreaking a PS3 is no different than Jailbreaking an IOS device or Rooting an Android device, we paid a lot of money for these devices, we should be allowed to do what we chose with them.
+
+So thanks again Paul for not jumping all over us and thank you for not scaring people about this hack like so many other news sites have done 🙂
+
+ 5 2 Rate This
+Reply
+VFAC October 29, 2012 at 2:10 am
+Systems that tolerate tinkerers generally do better due to more informed customer feedback and free research and development. Companies tend to reabsorb the good ideas back into a product. You can bet your first born that apple is very aware of what is going on in the jailbreak realm and is looking for the popular mods for inspiration for future Os updates. Making it against the terms of use is common sense, you can't be held responsible for people using a device in a manner other than intended.
+
+From a legislative viewpoint, generally regulators shy away from laws that encourage the contradiction of human rights and have law enforcement meddling in the private affairs of citizens. Regulating how someone plays with their playstation is really on the edge of this.
+
+ 4 0 Rate This
+Reply
+8675309 October 29, 2012 at 6:06 pm
+i seen the otherday @ bestbuy that datel have finally released an action replay for wii(no clue if they will sell it thru their own site). it requires you to register your m.a.c. address though which is a little troublesome to know because it means they could co operate with nintendo to ban users who use it in multiplayer mode who other players report about it
+
+ 1 0 Rate This
+Reply
+roy jones jr November 5, 2012 at 10:38 pm
+While I'm no supporter of "the company is too big to fail" it seems more like a group of people being pardon the expression "butthurt" over something really small. And the way they make a big deal is tossing legal lingo around in some effort to make Sony change its mind (which they should know won't happen). You can go back and forth over semantics all day but what has Sony recently reported that they will do?
+
+ 0 3 Rate This
+Reply
+Rüya tabirleri December 21, 2012 at 2:48 pm
+I really understand strategy of Sony here.. PS3 is a great platform but not perfect, at least hackers are not able to hack online gaming yet for Ps3. Is there any news on Ps4?
+
+ 1 2 Rate This
+Reply
+PepperJack December 29, 2012 at 6:54 am
+I think people should be able to do whatever they want with their personal things. I just don't think that a hacked ps3 should be able to connect to psn. that should be a place for honest gameplayers who spend lots of money to play honest games. it's a simple question of morals. why cheat other players. cheat the computer and even yourself but not others.
+
+ 1 5 Rate This
+Reply
+Ami February 7, 2013 at 1:03 pm
+I've been hearing these sad story for an year. Still only Ps3 that can be hacked is below 3.55 firmware. No one can hack Ps3 now.
+
+ 1 5 Rate This
+Reply
+Stephen Lane July 2, 2013 at 8:12 pm
+I agree in the most part with many, many ppl here, that SONY have blown the whole system hacking out of proportion [let;'s face it SONY have been through this sh*t once before with the old phatt playstation portables, so they returned to the drawing board with 3 other versions of the PSP, and now with the PSVita, they soon got bored of trying to patch the psp system (and the CFW continues to this day), that aside – the same should be said of the ps3 phatt and the last ps3 [slim] (not the ultra-slim, as far as i know). I may not know much about hacking or anything about how CFW works, but in saying that what i do know is that SONY and every other company like them ALL plagerize other pplz bright ideas no matter what they are, and to that end ONY and other companies like them use reverse engineering and hacking skills to redisign and re-use old software and ideas [as already stated "PLAGERISM", they change it just enough to stop it from being illegal / criminal. when i buy something i am in a sense buying the rights to that property, to do as i want and wish with that property. But as usual and once again it ALL comes down to "CONTROL" & "CENSORSHIP".
+
+ 7 0 Rate This
+Reply
+Leave a Reply
+Enter your comment here...
+Recommended reads
+AUG
+20BY PAUL DUCKLIN
+11
+Apple iOS update ends in jailbroken iPhones (if that’s what you want)
+JUN
+29BY JOSHUA LONG
+29
+How secure are Apple’s iPhone and iPad from malware, really?
+DEC
+03BY CHESTER WISNIEWSKI
+6
+EFF asks US Copyright Office to exempt jailbreaking from DMCA
+About Naked Security
+About Sophos
+Send us a tip
+Cookies
+Privacy
+Legal
+Intercept X
+Intercept X for Server
+SafeGuard Encryption
+XG Firewall
+Sophos Wireless
+Sophos Email
+Cloud Optix
+Sophos Mobile
+Phish Threat
+UTM
+Secure Web Gateway
+© 1997 - 2019 Sophos Ltd. All rights reserved. Powered by WordPress.com VIP
+:)

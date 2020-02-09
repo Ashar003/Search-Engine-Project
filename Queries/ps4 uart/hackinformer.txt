@@ -1,0 +1,53 @@
+Breaking news! Discovered two communication ports UART on Playstation 4.
+Rocco Antonio Cannale June 24, 2015 News, PlayStation 4
+
+Good news everyone!
+
+
+ 
+The Spanish developer and hacker Jaicrab made an exceptional discovery, the presence of two UART ports on board SAA-001 of the Playstation 4.
+
+
+One of these two ports UART (Universal Asynchronous Receiver / Transmitter) is used by the operating system, and should somehow show the boot with it’s kernel.
+The other door that was discovered has to do with the processor Mediacon CXD90025G and substantially closely resembles the Syscon UART port of the Playstation 3.
+
+
+ 
+Both ports make a connection to RS232 TTL to 3.3v, you can just use a Raspberry Pi in order to hack Bus or through any card USB to Serial.
+
+You will only need to solder only three wires, RX, TX and GND, and the configuration is the same for both: 115200, n, 8,1.
+
+
+ 
+Roughly translated from Spanish
+
+Console UART0
+
+It is used by the system to show the charging process by recording the events of the nucleus, as a USB connection can be reconnected or operating off ACPI. Everything goes in reflection. But Sony has tried to leave it unused.
+
+The port transmits data via the port. But all the original characters are replaced by 0x20. The character “space” we can only see how it moves the cursor, while the kernel shows the event. (It’s useless).
+
+The console reflects the ECO of what is sent. The system receives commands from the door, but the developer Jaicrab says is not safe to ignore it. It seems that the system indicates the ECO what is sent and this is a good sign.
+Console Mediacon
+
+The console accepts commands as happened with the Playstation 3. The system of command and hash is the same. The sum of all the bytes and the application and 0xFF. He adds hexadecimal bytes after the command.
+
+For example ErrLog: CB. If you listen to the door and we feed the system appears after about 10 seconds the following message appears on the screen … “OK 00000000: 3A” … This according psdevwiki means “with power (on standby).”
+Currently other commands from the Playstation 3 does not seem to work, except just the command ErrLog.
+
+I found an answer:
+
+* NG E0000004: 4E Bad checksum
+
+* NG F0000006: 51 Command not found
+
+* NG F0000001: 4C Incorrect argument
+
+I designed a program of brute force to find the commands supported. It can be used in console mode or dictionary mode. Dictionaries can be generated with the “crunch”.
+
+
+This program sends 800 commands per minute on Mediacon and only records the different answers to different “NG F0000006: 51”. Our interest is to find out all the commands.
+
+Download: Jaibrute v.1
+
+MD5: F7A7E0F970D5E86EF110D2D4FF0ED1B1

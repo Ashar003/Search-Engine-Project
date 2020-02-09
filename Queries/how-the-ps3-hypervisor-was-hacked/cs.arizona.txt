@@ -1,0 +1,87 @@
+
+PlayStation 3 Jailbreak
+From Wikipedia, the free encyclopedia
+Jump to navigationJump to search
+
+This article has multiple issues. Please help improve it or discuss these issues on the talk page. (Learn how and when to remove these template messages)
+This article needs additional citations for verification. (September 2010)
+This article contains content that is written like an advertisement. (December 2010)
+This article needs to be updated. (January 2018)
+A PSJailb
+A PS Jailbreak USB dongle
+PlayStation Jailbreak was the first Universal Serial Bus chipset that allows unauthorized code execution, such as homebrew, on the PlayStation 3. It bypasses a system security check using a memory exploit which occurs with USB devices that allows the execution of unsigned code. One of the most popular pieces of homebrew software used with the device is Backup Manager, which allows users to copy game titles from the optical media to the hard drive of the PlayStation 3. Backup Manager can also be used to run homebrew applications that are created to run in the console's native mode.
+
+Multiple devices to perform code execution exist, such as the open sourced versions (e.g. PSgroove, PSfreedom). Most of these only work on PlayStation 3 system software v3.41 or lower as PlayStation's System Software v3.42 patches the mod chip exploit on the console. The creators of PS3 Jailbreak also released PSDowngrade which enables downgrading of PlayStation 3's System Software to v3.41 (Or lower) from v3.42, v3.50, and v3.55.
+
+
+Contents
+1	Present and future support
+2	Legality
+3	See also
+4	References
+Present and future support
+In August, 2011, information about hardware that was downgrading PlayStations on system software v3.70 was being released.[citation needed] These hardware mods were Nand/Nor chip flashers that would either be soldered or clipped onto the PlayStation's chips on Nand/Nor chip located on the PlayStation's motherboard.[citation needed] It would then flash the memory off the chip and backup the PlayStation's firmware hence downgrading the console when the hard-drive was formatted.[citation needed] These flashers still work on the latest system software version and can be purchased online.[citation needed]
+
+In October, 2012, a hacking group known as The Three Musketeers released the Level 0 keys for the PlayStation 3.[citation needed] These were the same keys that would have allowed a Chinese hacking group known as "BlueDisk" to release a purchasable CFW (custom firmware) for 4.21 and above.[citation needed] Shortly after, a well-known PlayStation 3 developer, "Rogero," released his free of charge 4.21 CFW.[citation needed] There are now different developers releasing CFWs for the latest versions of PlayStation 3's firmware.[citation needed] These custom firmware render the PlayStation Jailbreak obsolete.[citation needed] They cannot, however, be installed unless the PlayStation 3 is on system software version 3.55 or below.[citation needed]
+
+On June 26, 2013, the 3.60+ loader keys were released to the public by "The Great Unicorns" and on the same day hard-drive encryption for PHAT consoles were released by a developer called "flatz."[citation needed] Following this the Lv1ldr crypto keys were released for 4.21-4.46.[citation needed]
+
+Legality
+PS3 Jailbreak was outlawed in Australia as it was considered to be in violation of copyright law. The ban states that PS Jailbreak cannot be imported, distributed to another person or offered to the public.[1]
+However, no case has been made against an individual by the Sony corporation on the matter of downgrading one's PS3.[citation needed] Nor has any development team that works on downgrading tools (downgrading to the jailbreak capable 3.55 OFW) been presented with litigation by Sony (E3 Flasher Limited, Progskeet, etc.)[citation needed] However Sony attempted to sue GeoHot for his 3.55 Jailbreak.
+Sony, after questionable collection of IP addresses and personal information of users even just viewing any of Hotz's sites, Twitter, Facebook, etc., reached settlement with Hotz out of court.[citation needed]
+
+See also
+PlayStation 3 homebrew
+Game backup device
+Modchip
+Privilege escalation
+George Hotz
+PlayStation 3 system software
+References
+ "PS3 Modchipserritories like the US, Europe, and Asia to block its sale. Suits are filed against retailers selling the device".
+vte
+PlayStation 3
+vte
+Embedded systems
+Categories: Hardware restrictionsPlayStation 3Video game hardware
+Navigation menu
+Not logged inTalkContributionsCreate accountLog inArticleTalkReadEditView historySearch
+Search Wikipedia
+Main page
+Contents
+Featured content
+Current events
+Random article
+Donate to Wikipedia
+Wikipedia store
+Interaction
+Help
+About Wikipedia
+Community portal
+Recent changes
+Contact page
+Tools
+What links here
+Related changes
+Upload file
+Special pages
+Permanent link
+Page information
+Wikidata item
+Cite this page
+Print/export
+Create a book
+Download as PDF
+Printable version
+
+Languages
+العربية
+Español
+فارسی
+Italiano
+Nederlands
+Edit links
+This page was last edited on 14 November 2019, at 21:04 (UTC).
+Text is available under the Creative Commons Attribution-ShareAlike License; additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.
+Privacy policyAbout WikipediaDisclaimersContact WikipediaDevelopersStatisticsCookie statementMobile viewWikimedia FoundationPowered by MediaWiki

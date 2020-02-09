@@ -1,0 +1,12 @@
+Long-Time Scene Developer 'XORLoser' Returns With A Nice Splash Of Key PlayStation 4 Information For All To Enjoy!
+[​IMG]​
+
+@modrobert writes: "After fitting a bunch of PS4 consoles with serial ports and flash pinouts, xorloser shared a diagram on Twitter showing the motherboard points to serial UART and Syscon for PS4, PS4 Slim and PS4 Pro consoles. You can find attached below ready to download directly. I have a feeling this will lead to something big, respect and thanks for sharing. xorloser also posted the flash pins used by the first PS4 modchip MTX Key:"
+MTX install points:
+CS
+SCLK
+SI
+SO
+VCC (3V)
+GND
+As my friend @modrobert from EurAsia points out above, this could lead to something 'big', we already seen the MTX Key chip, the china clone E3 Share from E3-Tech, and even tho Sony blocked the early versions with v4.72, I think we will soon seen better ones!

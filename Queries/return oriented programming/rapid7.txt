@@ -1,0 +1,101 @@
+[Live Webcast] What Does 2020 Have in Store for Cybersecurity?
+TUESDAY, DECEMBER 10TH AT 2PM ET/11AM PT
+REGISTER NOW
+MAIN MENU
+Products
+Services
+Partners
+Research
+Blog
+Support
+Contact
+FREE TRIAL
+Search all the things
+HELPFUL LINKS
+Product Support
+Product Pricing
+Resource Library
+Events & Webcasts
+Training & Certification
+News & Press Releases
+About Rapid7
+Rapid7 logo
+Products
+
+
+
+
+
+
+
+
+
+
+
+
+Services
+Partners
+Research
+HomeResourcesExploit Explained: Return Oriented Processing (ROP)
+EN
+ 
+Blog
+ 
+Support
+ 
+Contact
+ 
+Sign In
+FREE TRIAL
+Return Oriented Programming (ROP) Exploits Explained
+August 17, 2016
+
+Product: Metasploit
+In today’s Whiteboard Wednesday, David Maloney, Sr. Security Researcher at Rapid7, will discuss the ROP exploit technique for buffer overflow vulnerabilities.
+
+Watch this week’s Whiteboard Wednesday to learn more
+
+Video Transcript
+Hello and welcome to this week's Whiteboard Wednesday. I'm David Maloney, Senior Security Researcher on the Metasploit team here at Rapid7. And today we are going to be continuing our ongoing series on exploit techniques for buffer overflows and the mitigations that help protect you against them.
+
+Show more
+Rapid7 Penetration Testing Services
+Know your weaknesses (and how to fix them): Let Rapid7 experts simulate a real-world attack on your organization.
+
+GET MORE INFO
+Search all the things
+BACK TO TOP
+Rapid7 logo
+CUSTOMER SUPPORT
++1-866-390-8113 (Toll Free)
+SALES SUPPORT
++1-866-7RAPID7 (Toll Free)
+Need immediate help with a breach?
++1-844-RAPID-IR
+SOLUTIONS
+All Solutions
+Industry Solutions
+Compliance Solutions
+SUPPORT & RESOURCES
+Product Support
+Resource Library
+Customer Stories
+Events & Webcasts
+Training & Certification
+IT & Security Fundamentals
+Vulnerability & Exploit Database
+ABOUT US
+Company
+Leadership
+News & Press Releases
+Customers
+Public Policy
+Investors
+CONNECT WITH US
+Contact
+Blog
+Support Login
+Careers
+   
+© Rapid7 Legal Terms   |   Privacy Policy   |   Export Notice   |   Trust
+CONTACT US

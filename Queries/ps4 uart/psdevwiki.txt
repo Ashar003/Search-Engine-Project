@@ -1,0 +1,192 @@
+Internal
+Contents
+1	Internal Pads
+1.1	pads 1 (GbLAN)
+1.2	pads 2 (MediaCon)
+1.3	pads 3 (A01-C0L)
+2	UART
+2.1	UART0 Console
+2.2	UART MediaCon
+Internal Pads
+
+CUH-10xxA SAA-001 pads 1 (GbLAN)
+
+ 
+
+CUH-10xxA SAA-001 pads 2 (MediaCon)
+
+ 
+
+CUH-10xxA SAA-001 pads 3 (A01-C0L)
+
+At this moment it is not yet documented what use the pads have (e.g. Service Connectors, SPI, I2C, JTAG, PCIe etc.)
+
+pads 1 (GbLAN)
+
+CUH-10xxA SAA-001 pads1/14 pins - img1
+
+
+CUH-10xxA SAA-001 pads1/14 pins - img1
+GbLAN MDIO
+
+Pin	Name	Description
+1	Vcc	Internal +5V
+2	Vcc	Internal +5V
+3	Vcc	Internal +5V
+4	Vcc	Internal +5V
+5		
+6		
+7	Gnd	Internal ground
+8		
+9	Gnd	Internal ground
+10		
+11	Gnd	Internal ground
+12		
+13	Gnd	Internal ground
+14	Gnd	Internal ground
+
+
+pads 2 (MediaCon)
+
+CUH-10xxA SAA-001 pads2/20 pins - img1
+
+
+CUH-10xxA SAA-001 pads2/20 pins - img2
+MediaCon debug (No activity was detected so far. It looks to be disabled / turned off)
+
+Pin	Name	Description
+1		
+2	Gnd	Internal ground
+3		
+4		
+5		
+6		
+7		
+8	Gnd	Internal ground
+9		
+10	Gnd	Internal ground
+11		3.3V when console is started
+12		
+13		
+14		
+15		
+16		
+17	Gnd	Internal ground
+18		
+19	Gnd	Internal ground
+20	Vcc	+3.3V_STBY power (always on, including the deep standby)
+
+
+pads 3 (A01-C0L)
+
+CUH-10xxA SAA-001 pads3/30 pins - img1
+
+
+CUH-10xxA SAA-001 pads3/30 pins - img2
+A01-C0L
+
+Pin	Name	Description
+1		
+2		
+3		
+4		
+5		
+6	Gnd	Internal ground
+7	I2C	I2C bus (100 kHz clock)
+8	Gnd	Internal ground
+9		
+10		
+11		
+12		
+13	Gnd	Internal ground
+14		
+15		
+16		
+17	Gnd	Internal ground
+18		
+19		
+20		
+21		
+22	Gnd	Internal ground
+23		
+24		
+25	Gnd	Internal ground
+26		
+27		
+28		
+29		
+30		
+UART
+
+UART0 Console - UART MediaCon as seen on SAA-001 (same layout on SAA-K23, SAB-K02, and SAB-001)
+Same layout is used for SAA-K23, SAB-K02 / SAA-001, SAB-001 (pads are present on SAC-001 too, but layout slightly differs)
+
+3.3V CMOS TTL - 115200, n, 8.1
+
+JaiBrute v2 MD5:f71e4beebbbb859f74dc536c9e824acb
+JaiBrute v1 MD5:f7a7e0f970d5e86ef110d2d4ff0ed1b1
+UART0 Console
+Pin	Name	Description
+GND	Ground
+U0C_TX	UART0 Console Transmit
+U0C_RX	UART0 Console Receive
+Note: quite useless, as the output is zeroed out by "spaces" on retail models
+
+UART MediaCon
+Pin	Name	Description
+GND	Ground
+UMC_TX	UART MediaCon Transmit
+UMC_RX	UART MediaCon Receive
+Note: quite simular to PS3 Syscon UART
+
+
+ve
+Motherboard Components
+APU	
+CXD90026G  ·   CXD90026AG  ·   CXD90037G  ·   CXD90043GB  ·  
+
+Aeolia	
+CXD90025G  ·   CXD90036G
+RAM	
+Main
+K4G41325FC-HC03  ·   K4G80325FB-HC03  ·   K4G80325FB-HC28  ·  
+Other
+K4B2G1646E-BCK0  ·   K4B2G1646Q-BCMA  ·   K4B2G1646F-BCMA  ·  
+Flash	
+Main
+MX25L25635FMI-10G  ·   MX25L25635FZ2I-10G  ·  
+Hubs
+MX25L1006E  ·   25X10CLYA1
+SATA	
+MB86C311B
+Wireless	
+88W8797  ·   2614B 315BB  ·   20H091  ·  
+Software Wireless BT	
+SAA-001 BT  ·   SAB-001 BT  ·   SAC-001 BT  ·   SAD-001 BT  ·  
+Syscon	
+A01-C0L  ·   A02-C0L  ·   A00-C0L2  ·   A01-C0L2  ·  
+Uncategorised	
+TI 53123A  ·   39A207  ·   miscellaneous 8pin IC  ·  
+Connectors	
+GbLAN
+88EC060-NN82
+HDMI
+MN86471A  ·   MN864729  ·  
+TOSLINK
+Productcode
+USB 3.0
+GL3520
+Aux
+Productcode
+Internal
+PCIe · Service Connectors
+Motor driver
+BD7764MUV  ·  
+Cooling	
+Fans
+KSB0912HE
+Heatsinks
+B02  ·   C01  ·   F22  ·  
+Diverse	
+Protection · Regulators · Thermal · Timebases
+Categories: Motherboard ComponentsMain

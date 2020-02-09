@@ -1,0 +1,106 @@
+
+Search for questions, people, and topics
+What numbers don't exist?
+Ad by Wikibuy
+What hack do you use to book cheap plane tickets?
+You should use Wikibuy. It automatically applies discounts when you book plane tickets and hotels.
+Start Now
+3 Answers
+Eric Platt
+Eric Platt, PhD in Mathematics
+Answered Apr 15 · Author has 1k answers and 1.6m answer views
+This depends entirely on what you are calling numbers. We call certain algebraic structures numbers. An object that could be called a number may not exist in one structure, while existing in another. Context is everything.
+
+We start off with the natural numbers. These are the nonnegative whole numbers. For convenience sake zero is usually considered a natural number.
+
+ℕ={0,1,2,3,...}
+
+There doesn’t exist a natural number that when you add it to 3 you get 0. However we can work with the integers which include the negative whole numbers as well and then we do have a number with that property.
+
+ℤ={...,−3,−2,−1,0,1,2,3,...}
+
+Similarly if we want a number that when multiplied by 2 we get 3 it doesn’t exist as an integer, but it does exist as a rational number and we call it 32 .
+
+ℚ={0,1,−1,2,−2,12,−12,...}
+
+Now what if we want a number that when squared gives us 2? There doesn’t exist a rational number that does this, but once again when we work with a larger structure called the real numbers we have the real number 2‾√.
+
+The real numbers are what we get when we complete the rational numbers. They are the limits of sequences of rational numbers where the terms get arbitrarily close to each other.
+
+ℝ=ℚ⎯⎯⎯⎯⎯
+
+Now suppose we want a value that when it is squared we get −1? There doesn’t exist a real number that does this, but there does exist a complex number that does. We call it 𝑖, the imaginary unit.
+
+Complex numbers are a sum of a real part and an imaginary part. The complex numbers lie on a plane.
+
+ℂ={𝑎+𝑏𝑖:𝑎,𝑏∈ℝ},𝑖2=−1
+
+And so on.
+
+There are other algebraic structures that include objects called numbers such as the hyperreal numbers, surreal numbers, and surcomplex numbers. There are also other structures where objects can be composed with each other, added, and multiplied. These are magmas, monoids, groups, rings, fields, algebras over rings, modules, and more.
+
+There are also the quaternions which generalize complex numbers to four dimensions, and also the octonions to eight dimensions. You lose the commutative properties with them; and associativity with octonions as well.
+
+725 views · View 5 Upvoters
+Related QuestionsMore Answers Below
+Does God exist?
+While Natural numbers exist (according for example to set theory), Do real numbers exist?
+Where do numbers exist?
+Why do imaginary numbers exist/not exist?
+What are numbers? Do numbers exist? Where are numbers? If numbers exist, why do they exist?
+Tom Fyfield
+Tom Fyfield, studied Pure Elemental Mathematics
+Answered Aug 18, 2019 · Author has 385 answers and 57.8k answer views
+All numbers actually do truly exist.
+
+There is however fake/non-existent numbers that have made their way into the mathematics community.
+
+Negative numbers are fake numbers that do not exist.
+
+Negative square roots are fake and don’t exist.
+
+Zero is known as an integer when it is not because it is completely irrational so it’s fake as well.
+
+Infinity is being pushed as a number and it has insanely got different sizes. Infinity is irrational and does not exist so therefore it’s fake as well.
+
+The disinformation about these so called numbers has destroyed the true beauty and nature of numbers and mathema...(more)
+Sponsored by Pitney Bowes
+Sending should be simple. Print, send, save with SendPro Online®.
+Simplify your business shipping and sending with a powerful software. Start your 30-day free trial.
+Free Trial
+Robby Goetschalckx
+Robby Goetschalckx, Computer scientist for 11+ years and passionate about math since childhood.
+Answered Apr 11, 2019 · Author has 4.1k answers and 2.5m answer views
+A better question is: what numbers do exist?
+
+Numbers are abstract mathematical constructs. They are outside of our physical reality.
+
+Now, in mathematics, we do often use the phrase “there exists a number such that …” but that is just shorthand. This means that we are considering a set of numbers (either clearly specified or clear from context) for which the subset of numbers that hold a particular property is not empty. This is important: we need to already have a set of numbers before we can talk about “existence”.
+
+532 views · View 7 Upvoters
+Related Questions
+Does God exist?
+While Natural numbers exist (according for example to set theory), Do real numbers exist?
+Where do numbers exist?
+Why do imaginary numbers exist/not exist?
+What are numbers? Do numbers exist? Where are numbers? If numbers exist, why do they exist?
+How can 1/7 actually exist if the number never ends?
+What are numbers, and do they really exist?
+What if a mobile number doesn’t exist?
+How can math be used to do science if numbers don't actually exist?
+How many sexual identities are there?
+Do numbers exist in the real world? If so, how?
+What is the last number in the world? If it exists or don't exist, I still want to know.
+If numbers don't exist, why is a person's age important?
+Are most of real named numbers in mathematics don't truly exist at all?
+Would numbers exist without people to count?
+Related Questions
+Does God exist?
+While Natural numbers exist (according for example to set theory), Do real numbers exist?
+Where do numbers exist?
+Why do imaginary numbers exist/not exist?
+What are numbers? Do numbers exist? Where are numbers? If numbers exist, why do they exist?
+How can 1/7 actually exist if the number never ends?
+
+About · Careers · Privacy · Terms · Contact
+

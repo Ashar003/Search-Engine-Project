@@ -1,0 +1,651 @@
+Skip to main content
+THE SOURCE FOR TECH BUYING ADVICESearchRSSUS Edition
+ 
+Black Friday
+ 
+How To
+ 
+Phones
+ 
+TVs
+ 
+Reviews
+ 
+Laptops
+ 
+Deals
+ More 
+Pro
+Holiday Guide 2019
+TRENDING
+Black Friday
+ 
+Cyber Monday
+ 
+Buying Guides
+ 
+Disney+
+ 
+Best Laptops
+ 
+Best Phones
+ 
+PS5
+ 
+Best VPN
+TechRadar is supported by its audience. When you purchase through links on our site, we may earn an affiliate commission. Learn more
+Home News Consoles
+PS5 release date, specs, news, and rumors for Sony’s PlayStation 5
+By Vic Hood, Gerald Lynch, Henry St Leger, Emma Boyle 7 days ago Consoles  
+
+The PS5 is coming – but what do we know so far?
+
+ 
+ 
+ 
+PS5
+(Image credit: Sony)
+It's official! The next-generation PlayStation console is called the PS5 (PlayStation 5) and it's landing at the end of 2020.
+
+Earlier this year we heard from Mark Cerny, the chief architect on Sony's next console, that Sony is working on the successor to the PS4 Slim and PS4 Pro. While he didn't share the official name or release date, Cerny did shed some light on a few choice details about what we could expect from its hardware. 
+
+Cyber Monday deals: see all the best offers right now!
+We found out that the PS5 will still play discs, for one – but as to the exact hardware specifications, and how it will link up with Sony and Microsoft's plans for game streaming, we've remained largely in the dark.
+
+Although, in recent months, Sony has been drip-feeding us juicy titbits such as an official PS5 release window, name and a few details about features.
+
+In addition, we've had some surprising leaks, in the form of a Sony-registered patent that seems to show off the PS5's general shape, button inputs, and cooling vents – confirmed to be the PS5 dev kit in a leaked photo – though we expect the end product design will be different for the PlayStation 5's late 2020 launch.
+
+Sony PS5 controller: release date, news and confirmed features
+Sony made the tactical decision to skip out on E3 2019, with no big announcements at Gamescom 2019 later in the year either. Microsoft has been more keen to show off its Xbox Project Scarlett console – which we know is also landing at the end of 2020 – but it's still early days so we're not entirely sure how the inevitable PS5 vs Xbox Project Scarlett battle will play out.
+
+With 2020 creeping closer, Sony can only keep the finer details of the next-generation PlayStation a secret for a little longer. But between the rumored specs, likely next-gen titles, and official features we are aware of, there's plenty to keep us busy for now.
+
+Here's everything we know about the PS5 so far, and what we hope will be revealed the closer we get to launch.
+
+[UPDATE: Recent leaks have given us a better idea of what the PS5's price and release date will be, if they're to be believed of course. Read on to find out more.]
+
+PS5(Image credit: Kojima Productions)
+PS5 FAQ: quick questions answered
+What is it? The Sony PS5 will be the next-gen PlayStation console, replacing the PS4 Slim and PS4 Pro.
+When will it release? "Holiday 2020" so between October and December 2020. 
+What can I play on it? Nothing's confirmed yet, but expect all of Sony's big franchises – as well as in-development exclusives like Ghosts of Tsushima.
+Will PS5 have VR? Oh yes. The next-gen console will be compatible with current PSVR hardware and there are rumors of PSVR 2.
+What will the PS5 cost? The PS4 and PS4 Pro were both $399 / £349 at launch, but we expect the PS5 will cost somewhat more. Recent leaks have suggested around the $499 mark.
+PS5 confirmed specs: things we know for sure
+PS5Ghost of Tsushima (Image Credit: SuckerPunch)
+A bespoke 8-core AMD chipset based on third generation Ryzen architecture, with a GPU taking the best bits of the Radeon Navi GPU family; a built-for-purpose SSD storage system; 3D audio; backwards compatibility with PS4 games and PSVR hardware; 8K TV support. It's all been revealed by PlayStation top-dog Mark Cerny, the man behind the construction of the PS4, and now in charge of the next-gen console's development.
+
+While the look of the console remains a mystery, its internals are coming into focus, and they're very promising. That AMD one-two-punch of CPU and GPU unlocks the powers of ray tracing, an advanced lighting technique that can bring next-level immersion to gaming visuals. It's a Hollywood technique that's used in big-budget CGI spectacles, putting the level of visual fidelity you can expect into context.
+
+Ray tracing is done by GPU hardware rather than software level, Mark Cerny told Wired. “There is ray-tracing acceleration in the GPU hardware,” Cerny explained. “Which I believe is the statement that people were looking for.”
+
+With 8K TV support comes far more detailed textures, and much larger ones at that. The news of a bespoke SSD drive will be heartening then – just because the games will be becoming more complex, that doesn't mean they'll be slower to load too. It's estimated that the new SSD is 19 times faster than traditional SSD storage methods (but given the speed difference between the SSD and the optical drive, instalation of games will be mandatory) .
+
+Physical games for the PS5 will use 100GB optical disks, inserted into an optical drive that doubles as a 4K Blu-Ray player and the next-generation hardware will boast a completely revamped UI.
+
+Speaking about on new UI to Wired, Cerny said: "Even though it will be fairly fast to boot games, we don't want the player to have to boot the game, see what's up, boot the game, see what's up.
+
+"Multiplayer game servers will provide the console with the set of joinable activities in real time. Single-player games will provide information like what missions you could do and what rewards you might receive for completing them - and all of those choices will be visible in the UI. As a player you just jump right into whatever you like."
+
+Audio will reach a new "gold standard" on PS5 too, according to Cerny, thanks to a new audio engine that will deliver immersive sound – particularly if you're using headphones. While the details remain unclear, expect something resembling the experience seen with a Dolby Atmos set-up.
+
+PS5 games: all the games confirmed and expected 
+Sony's PS5 next-generation console will also offer improved cloud gaming performance and "dramatically improved graphics rendering" power.
+
+That's the word straight from the company itself, as it showed off a sneak peak during a corporate strategy presentation.
+
+In a statement sent out following the presentation, Sony said the "two keywords for the future direction of PlayStation are 'immersive' and 'seamless'", with the 'immersive' experience "created by dramatically increased graphics rendering speeds, achieved through the employment of further improved computational power and a customized ultra-fast, broadband SSD".
+
+The company also reinforced the importance of its cloud-gaming plans with Playstation Now, and somewhat surprisingly doubled down on its underused Remote Play feature, saying the "evolution" of this would in the future "provide a seamless game experience anytime, anywhere".
+
+
+Remote Play is already available as part of the PS4 package, enabling you to stream a game direct from the console to a computer, smartphone, tablet or PS Vita handheld console. But Sony says that going forward it will be "leveraging the latest computing, streaming, cloud, and 5G technologies" to allow it, and the performance of PlayStation Now, to improve.
+
+Sony also showed off a demo of the custom SSD storage system that will be employed in its next-gen machine, again hammering home how it expects super-fast load times to improve the player experience:
+
+
+Takashi Mochizuki
+✔
+@mochi_wsj
+Sony's official video comparing performance of PS4 Pro vs next-gen PlayStation
+
+Embedded video
+23.6K
+8:26 PM - May 20, 2019
+Twitter Ads info and privacy
+9,627 people are talking about this
+It appears to be the same demo that PlayStation hardware architect Mark Cerny revealed back in April, with Sony suggesting then that the SSD in use is 19 times faster than a standard issue one. In fact, a patent from Sony describes a type of loading software designed to essentially do away with loading screens altogether.
+
+The SSD marks a big step forward for the console and in a recent interview with OPM (via GamesRadar), developers of Control say the SSD "really stands out" as it will allow developers to create more detailed game worlds:
+
+“For something like Control, that could translate to an even deeper destruction system, richer, more detailed worlds, and simple quality-of-life improvements like instant reloading after dying.”
+
+Not only that, by harnessing the power of the SSD, developers could potentially reduce the install sizes of games as “there is no need to duplicate data to compensate for slow seek times that optical drives and HDDs have.” 
+
+Sony has also confirmed the PS5's 'incredibly powerful' backwards compatibility will let you play online with PS4 players.
+
+There have also been rumors that the PS5 could be backwards compatible with the PS4, PS3, PS2, and original PlayStation, meaning its games library could stretch right back to the glory days of the mid 90s. The PS4 element of that rumor is now confirmed, at the very least, as well as PSVR support. Sony has also confirmed that PS5 players will be able to play online with PS4 players thanks to this powerful backwards compatibility. 
+
+When it comes to the rest of Sony's vintage catalog? That remains to be seen.
+
+PS5 release date
+PS5Uncharted 4: A Thief's End (Image Credit: Naughty Dog)
+Sony has officially confirmed the PS5 will release "Holiday 2020", aka between October and December 2020. A recent leak has suggested that the release date will be November 20 2020 but that's yet to be confirmed. It's in the right window, though, and it does leave time before Christmas to get those orders in.
+
+This will put the PlayStation 5 in direct competition with Xbox Project Scarlett, which is releasing during the same period.
+
+PS5 controller
+The PS5 will come with its own controller, according to Sony. The PS5 controller (we don't know the official name yet) will include haptic feedback to replace the DualShock 4's rumble technology. This aims to improve the controller's feedback and therefore player's immersion. 
+
+The PS5 controller will also feature adaptive triggers which Sony says have "been incorporated into the trigger buttons (L2/R2)". These adaptive triggers will allow developers to program the resistance of the triggers to simulate actions more accurately.
+
+But what will it look like? According to a Sony patent for a new controller, published by the Japanese patent office (via VGC), the PS5 controller could look very similar to the DualShock 4 - with some key differences.
+
+(Image credit: Japanese Patent Office/Sony)
+For a start, the potential PS5 controller seems to have a slightly chunkier design, built-in microphone, larger triggers, no light bar and smaller sticks. It also seems the DualShock 4's micro USB port has been replaced by a smaller USB-C port, which is placed on the top rather than the bottom of the controller.
+
+The lack of light bar does make us question how the PS5 would track the controller via when it comes to PSVR and PS Camera games. Usually this is done via the PS Camera, so we're hoping the console will have a different means of tracking the controller otherwise compatibility will suffer. Unless, of course, Sony is gearing up to move solely onto PSVR 2. However, this doesn't seem likely as Sony has promised the PS5 will be backwards compatible with PSVR.
+
+It also looks like the stereo headset jack and extension port at the bottom of the headset has been replaced by two larger circular ports. We think these will still be for plugging in headsets, but the two jacks could be headphone and microphone slots respectively, to increase compatibility with headsets. There's also a rectangular design that seems to wrap around the headset, which is potentially for compatibility with a charging dock. Again, this is all speculation on our part. 
+
+PS5 Price: how much will it cost?
+Sony hasn't confirmed a price for the PS5 just yet so we can't say for sure what it'll be. There have, however, been rumors. A recent leak has suggested that the console will cost $499 in North America when it launches. Naturally, this should be taken with a pinch of salt but it would be welcome news if the console did launch at this price as it's only $100 more than the launch price of the PS4 and PS4 Pro. 
+
+We can expect that the console's price will be in line with the technology it uses but Sony will also have to be aware of its competition. It's unlikely that Microsoft will want to make the same mistake it made in the last generation with the prohibitively high price point of the Xbox so Sony will have to ensure it doesn't make a similar mistake in this generation by being undercut.
+
+PS5 competition
+PS5PS4 dashboard (Image credit: Sony)
+We have been hideously impatient for the PS5's release date, but we finally know the console will release at the end of 2020. We can't fault Sony for taking another few years to really milk the last of the PS4, given its huge and loyal player base. After all, the PS4 Pro is still relatively new to the market and its direct competitor, the Microsoft's Xbox One X, is an even more recent release. 
+
+It looks like Microsoft will release its next-generation console in the same release window as Sony, putting the two in direct competition.
+
+In addition to the next Xbox, the PS5 will also have to contend with the Google Stadia – a streaming-focused gaming service from the kings of the internet. With streaming undoubtedly set to be a key component of any console going forward (and Sony's cloud streaming patent already being leaked), Google's expertise in internet infrastructure could make them a dark horse entrant into the gaming race.
+
+But Sony and Microsoft may end up eating their own offerings if appetite for streaming renders powerful home consoles somewhat redundant.
+
+Xbox Two vs PS5: predicting the future
+PS5 news and rumors
+Solid news on the PlayStation 5 is starting to come into shape, but as always, we do have rumors about what could be coming down the line – and we've collected and assessed them right here.
+
+PS5(Image credit: Zone of Tech)
+External SSD?
+Sony has patented a new gaming cartridge that could be used in a new PlayStation handheld device. However, it's possible that this PlayStation cartridge may actually be an external SSD for the PlayStation 5.
+
+LetsGoDigital spotted the patent published by INPI (Instituto Nacional da Propriedade Industrial) in Brazil. Loosely translated, the patent is for 'configuration applied to / in data recording and storage device' and the artwork shows an old school-style gaming cartridge.
+
+While the cartridge, could be for a handheld device, there are suggestions it could actually be an external SSD for Sony's next-generation hardware.
+
+We already know the PlayStation 5 will have a built-in SSD. However, while it will certainly improve loading times for games, it's like the amount of storage will be limited - especially considering how large PS5 games are likely to be.
+
+Therefore, it's likely an external SSD will be needed to improve the amount of storage - especially as external SSDs are much more expensive than the external HDDs typically used with current consoles.
+
+So it would make sense for Sony to patent its own external SSD, even if it's in the form of a gaming cartridge, that could easily be slotted into the PS5 to increase it's storage capacity - which we expect it will need.
+
+LetsGoDigital has rendered a 3D image of what the external SSD could look like, check it out below:
+
+(Image credit: LetsGoDigital)
+While a Sony SSD could prevent players from buying any old SSD for the console, it may also bring down the overall market price of the PS5 - especially considering the high price of the PlayStation 3 resulted in lower sales than the company expected. We're already bracing ourselves for the PlayStation 5 price tag, so this could curb the financial impact.
+
+Again, this is just speculation and it's still possible the cartridge could be for a handheld device or for another piece of Sony hardware altogether.
+
+Easier transition
+In an interview with GamesIndustry.biz, SIE CEO Jim Ryan revealed that Sony wants to move its PS4 community over to PS5 as quickly as possible.
+
+"As we move towards the next-generation in 2020, one of our tasks - probably our main task - is to take that community and transition it from PlayStation 4 to PlayStation 5, and at a scale and pace that we've never delivered on before," Ryan explained.
+
+"One thing that makes me particularly optimistic that what we're hearing from developers and publishers, is the ease in which they are able to get code running on PlayStation 5 is way beyond any experience they've had on any other PlayStation platform."
+
+PS5 games will "make or break console"
+In the same interview with GamesIndustry.biz, Ryan stated that he's personally focused on PS5 games "that will make or break PlayStation 5, just as they do every platform".
+
+Development is on track
+During an earnings call, Sony's senior EVP and chief financial officer Hiroki Totoki stated that PS5 development is on track ahead of the console's release in late 2020 (via VGC).
+
+“Development of the PS5 is progressing according to plan and we believe development of game titles by our software development partners is progressing smoothly,” Totoki stated. “We anticipate providing the highly engaging gameplay experiences that both current users of the PS4 and potential new users have come to expect.”
+
+A real dev kit, in the wild
+After many months of leaks and rumors pointing towards a development kit with a v-shaped, heavily-ventilated cavity in its chassis, we finally got a spy-shot of the apparent PS5 machine. While it tells us little about the consumer console, it does add weight to what we'd already heard about the dev kits, and by extension the sort of experiences that the aforementioned dev kit could deliver.
+
+PS5 is the "world's fastest console", apparently
+A job listing on Sony Interactive Entertainment's website made the bold claim for the next-gen console, suggesting that the PS5 would be faster than even the Xbox Scarlett. Processing power will be a big part of why people upgrade their gaming machines, though we may only find out which console is faster when it gets to launch.
+
+New rendered images
+Based on leaks of the PS5's design, LetsGoDigital has created new 3D renders of what the PlayStation 5 could look like with updated colors.
+
+Check it out below:
+
+PS5(Image credit: LetsGoDigital)
+PS5 controller
+The PS5 will come with its own controller, according to Sony. The PS5 controller (we don't know the official name yet) will include haptic feedback to replace the DualShock 4's rumble technology. This aims to improve the controller's feedback and therefore player's immersion.
+
+The PS5 controller will also feature adaptive triggers which Sony says have "been incorporated into the trigger buttons (L2/R2)". These adaptive triggers will allow developers to program the resistance of the triggers to simulate actions more accurately.
+
+PS5God of War (Image credit: SIE Santa Monica Studio)
+Choose what to install
+The PS5 will boast more simplified game data due to its SSD, this will allow players to have more control over installing and removing games. "Rather than treating games like a big block of data," Cerny told Wired. "We're allowing finer-grained access to the data."
+
+This will allow players to install (or remove) only certain parts of a game. So instead of installing the full game, you could choose to just install the single-player mode and then do multiplayer later - or vice versa.
+
+Revamped UI
+The PlayStation 5 will have a brand new user interface. "Multiplayer game servers will provide the console with the set of joinable activities in real time," Cerny told Wired. "Single-player games will provide information like what missions you could do and what rewards you might receive for completing them—and all of those choices will be visible in the UI. As a player you just jump right into whatever you like."
+
+Physical discs
+Physical games for the PS5 will use 100GB optical disks, inserted into an optical drive that doubles as a 4K Blu-Ray player.
+
+Official release date and name
+The PS5 will release between October and December 2020, according to Sony - we also know the console is officially called the PlayStation 5.
+
+Leak reveals next-gen streaming, built-in camera and codename Prospero
+A hefty leak may have revealed some new details about the highly-anticipated console.
+
+The PS5 will be codenamed 'Prospero' and feature a built-in camera for focus on next-generation streaming, according to a new report by Gizmodo.
+
+This information comes via an anonymous tipster who claims to be working on a next-generation title for both the PS5 and Xbox Project Scarlett, according to the report. 
+
+The tipster claims that new models of the PS5 dev kit were sent to studios during the summer and that Sony is referring to the next-generation hardware as 'Prospero' - though it's official name is PlayStation 5.
+
+If that's not enough, the source also claims that both the PS5 and Xbox Project Scarlett will have a big focus on streaming - with both consoles boasting built-in cameras. However, Microsoft has since denied that Project Scarlett has a built-in camera.
+
+Could boast 3D holographic gaming screen – with no glasses needed
+Sony has filed a patent for a 3D holographic display screen that we may see implemented in the next-generation PS5.
+
+As reported by Dutch site LetsGoDigital, Sony Interactive Entertainment has developed and patented holographic display screen technology which will allow users to view 3D video (videogames and movies) without the need for 3D glasses. 
+
+The patent was initially applied for back in 2017, but was officially published by USPTO (United States Patent and Trademark Office) on September 3, 2019. 
+
+PS5(Image credit: USPTO/Sony)
+According to the patent, this technology will work by harnessing at least one display and plural pixel elements. At least one of these pixel elements will include a light emitter which will work with several movable micro mirrors to reflect light in various directions and create an image for the viewer. 
+
+To create a 3D image, eye-tracking is implemented by use of an external sensor, which sees this light modulated so that the left and right eyes each receive different images – meaning you don't need uncomfortable 3D glasses.
+
+Sony Alpha cameras are known for their eye-tracking technology, Eye AF, which the company has also used in its Sony smartphones – so it makes sense that Sony would seek to repeat the trick elsewhere.
+
+In addition facial recognition is discussed, which would allow the technology to decipher how many people are actually viewing the screen, along with the ability to recognise facial gestures such as blinking or head moving – adjusting the image as needed. If that's not enough, the technology should even be able to detect how far you're sitting from the screen.
+
+It's likely we could see this new technology brought to the PS5 (as it's compatible with Sony consoles), however it's possible we could see it on Xbox Project Scarlett and Nintendo Switch too.
+
+In the patent Sony clarifies that the holographic screen could work with Xbox and Nintendo consoles, as well as laptops, virtual reality, augmented reality, smart TVs and even mobile devices.  
+
+Most eco-friendly console to date
+In an effort to work towards sustainable gaming, Sony has revealed the PS5 will be much more energy efficient than its predecessor, the PS4.
+
+Jim Ryan, Sony president and CEO, announced in a post on the PlayStation Blog that the PS5 has a gameplay suspension feature that uses less energy than the PS4 - with Ryan estimating that the PS5's consumption can be achieved at 0.5 watts.
+
+"The next-generation PlayStation console will include the possibility to suspend gameplay with much lower power consumption than PS4," Ryan wrote in the blog. "If just one million users enable this feature, it would save equivalent to the average electricity use of 1,000 US homes."
+
+PS5(Image credit: Sony)
+PlayStation 5 Pro could launch alongside standard model
+A new rumor has cropped up suggesting that Sony will cut to the chase and launch the PlayStation 5 Pro at the same time as its base-model PS5.
+
+As spotted by Wccftech, noted Japanese games journalist Zenji Nishikawa made the claim in a new video on his YouTube channel, and while that kind of thing normally wouldn't be considered a rock-solid lead, Nishikawa has proven accurate in the past with his predictions of the PS4 Pro and Switch Lite.
+
+According to Nishikawa, the PS5 Pro will cost around $100-$150 more than the basic PS5 console. The report states that Sony is taking this approach because it has "acknowledged the interest in a high-end model and wants to give players what they want right from the beginning of the generation".
+
+PS5 patent leak – with a lot of cooling vents
+We got a surprise look at the PS5's possible shape and design (above), via this patent leak (from LetsGoDigital). Registered by Sony through the WIPO (World Intellectual Property Office), it could only really be the PS5, and shows off a substantial cooling system that would likely be needed for the console's substantial power output.
+
+The V-shaped design also makes sense as a reference to the Roman numeral 'V', meaning '5'. You can also see USB ports for DualShock controllers and a thin line seeming to designate a disc drive.
+
+This could be a placeholder image, or a design outline open to change over the coming months, but it's given us our first good idea of what the PS5 could actually look like.
+
+PS5(Image credit: LettsGoDigital)
+Leaked reveal date?
+According to a 'leaked internal email' from Sony (and posted to NeoGaf), the PS5 will be unveiled at a "PlayStation Meeting 2020" launch event on February 12, 2020. This meeting, according to the rumor, aims to showcase "the future of Sony PlayStation to the whole world".
+
+It's worth taking this rumor with a huge pinch of salt as it hasn't been verified that this is an official internal email.
+
+In response to a request for comment, a Sony spokesperson stated: "We don’t comment on rumour and speculation".
+
+Ghost of Tsushima PS5 launch exclusive?
+The same 'leaked internal email' claims that Ghost of Tsushima will be a PS5 exclusive.
+
+PS5 could mark the end of loading screens after Sony patent
+A patent from Sony describes a type of loading software designed to essentially put an end to loading screens.
+
+Sony's patent, 'System and method for dynamically loading game software for smooth game play' outlines a technology that tracks the player's movement through their environment, loading relevant assets as you move into certain areas. 
+
+The patent describes the process as follows: 
+
+“A system and method are disclosed for dynamically loading game software for smooth game play. A load boundary associated with a game environment is identified. A position of a character in the game environment is then monitored. Instructions corresponding to a next game environment are loaded into a memory when the character crosses the load boundary, such that game play is not interrupted."
+
+Technically this patent is a continuation of a previous patent filed in 2012, but with added functions for when a player / character passes the aforesaid "load boundary". Those might be additional events triggered when passing certain points, certain sections of game environments being visible despite not being adjacent areas, or previous areas being loaded again when back-tracking through the boundary.
+
+This seems like a version of the technology used in games like God of War, which famously achieved a continuous camera shot throughout the whole game, without loading screens. 
+
+Using dynamic ways to load or remove sections of levels, including the kinds of character, creature or enemy assets found there, is going to be increasingly crucial for ensuring an immersive experience that isn't regularly interrupted – ensuring that loading is something that happens dynamically in the background of your games rather than at set points that render the game unable to do anything else.
+
+PS5Marvel's Spider-Man (Image credit: Insomniac Games) (Image credit: Insomniac Games)
+PS5 will prioritize AAA games over indie games
+Indie games may take a bit of a backseat on the PlayStation 5 at launch as Sony has stated that the company will invest in marketing for bigger AAA games, new features like 8K and focus on ‘serious gamers’.
+
+The comments were reportedly made by Sony Chief Executive Officer Kenichiro Yoshida at a strategy meeting according to The Wall Street Journal. 
+
+According to Yoshida, instead of prioritizing indie developers, Sony will instead prioritize marketing for AAA content which will likely be key for the company to maintain its momentum after outselling Microsoft’s Xbox One two-to-one over the last five years.
+
+Sony's cloud streaming patent
+According to an accepted United States Patent and Trademark Office patent (spotted Digital Trends) filed by Sony back in 2014, the company is working on a "system for combining recorded application state with application streaming interactive video output". 
+
+In other words, a cloud gaming service which could rival the Google Stadia (or a cloud streaming new Xbox) and could potentially launch with the PS5.
+
+Players would be able to stream a game through a hosting server. So if you have a device that connects to the internet, be that a mobile device, console, or PC, you can connect to that server and the game you're wanting to play will be streamed to your monitor or screen, allowing can play using your preferred input device. Imagine Netflix for gaming. 
+
+Rather than downloading a game, it is instead streamed directly to your device and you would play real-time, cutting the need to delete games to make storage room on your device and reducing the hardware requirements - although you wouldn't technically own the title.
+
+PS5A diagram illustrating how the streaming service would work, included in Sony's patent (Image credit: Sony/ United States Patent and Trademark Office) 
+Sony also points out that this cloud gaming service would benefit game developers as the service would prevent piracy (as the games exist only on the server) and developers would be able to design games to specifically utilize the service's capabilities. 
+
+But how would player's pay for this service? Sony details two particular models in its patent. The first would see Sony itself collecting a subscription fee from users, then paying royalties to the developers. The second sees the developers themselves collecting a subscription fee from players, then paying Sony a fee for using the hosting service. However, neither model specified a price range. 
+
+We expect Sony would implement this cloud gaming service alongside the PlayStation 5, although the company hasn't specified if this is the case.
+
+The next Xbox will be more powerful than the PS5 – say industry insiders
+According to a tweet by reporter Ainsley Bowden (via T3),  "very reliable" sources for Xbox and Microsoft information have confirmed Microsoft's flagship next generation console will be more powerful than the PS5.
+
+From the specs we've seen so far for both consoles, this seems to be the case.
+
+PS5The Last of Us: Part 2 (Image credit: Naughty Dog)
+Patent suggests backwards compatibility – now confirmed
+According to an uncovered patent, the PlayStation 5 may be capable of emulating the PlayStation 4, PS3, PS2 and original PlayStation, as well as souped up next-gen titles. Mark Cerny's interview confirmed that, at the very least, PS4 and existing PSVR titles will work across generations and backwards compatibility will allow PS4 and PS5 players to play online together.
+
+John Kodera talks life cycles
+PlayStation's John Kodera discussed the future of the PS4 at a Sony Corporate Strategy Meeting and, by extension, inadvertently creating space for prospective PS5 release year rumors.
+
+During the meeting, Kodera made it clear that Sony is still very much behind the console but warned that sales are expected to slow, in line with expectations as market saturation approaches. As a console gets to this point in its life cycle, it's natural to start looking forward to the next iteration. 
+
+The PlayStation Plus news - now confirmed
+An announcement in relation to the PlayStation Plus service ignited some speculation. It was announced that from March 2019, PS Plus will no longer offer free PS3 or PS Vita games and will instead focus on PS4 titles. This led to some wondering over whether or not Sony is attempting to phase out these older generation titles in preparation for a new generation. Turns out it is.
+
+What the analyst says...
+PS5DualShock 4 controller (Image credit: Sony)
+We spoke to Matias Rodriguez, VP of technology for the Gaming Studio at Globant, about what it will take for Sony and Microsoft’s next-generation consoles to get the lead on the competition and, at this point, whether the next Xbox or PS5 looks to be more powerful.
+
+He told us: “While hardware advantages such as CPU and GPU are often criteria people look at when it comes to the business and sales performance of a console, more telling signs of the performance of a console include software SDKs, bindings to game engines (such as Unity and Unreal), and, most importantly, the toolchain that allows gaming studios and publishers to build content for the console’s platform.
+
+“Given this, and how statistically speaking, Xbox and PlayStation have taken turns being the reigning-supreme console, I predict Microsoft will take the lead this time.”
+
+But what are the key factors in the next-gen console war? Rodriguez gave us a rundown of the attributes he believes will sway players’ preferences when it comes to picking up one of the consoles.
+
+God of War (Image Credit: SIE)God of War (Image Credit: SIE)
+Exclusives
+“The first key evaluation criteria consumers consider when they are in the market for a new console is exclusives,” says Rodriguez. “Currently, Sony is the clear leader in this area with exclusives such as God of War and Uncharted. Microsoft fell short with Forza, Sea of Thieves and Halo Wars 2, but has acknowledged the shortcoming; and Phil Spencer, executive vice-president of gaming at Microsoft, went on a crusade to bring top first-party studios into the Xbox ecosystem. 
+
+“His crusade proved successful with the addition of Obsidian and Ninja Theory studio – preparing Microsoft for next-gen consoles. It was also revealed that Microsoft will be delivering the new Halo game, Halo Infinite, which is expected to outperform and replace the current Halo that is on the esports ecosystem.” 
+
+Currently Halo Infinite is one of the only first-party titles from Microsoft that we're expecting on the next Xbox (apart from perhaps Gears 5), and, while the series is definitely a huge draw to fans, it may not be enough to sway PlayStation players towards the next Xbox. 
+
+Meanwhile the PS5 is offering the possibility of The Last of Us: Part 2, Ghost of Tsushima and Death Stranding as exclusives on its next-generation console. When it comes to exclusives, Sony seems to have the edge.
+
+PS5Death Stranding (Image credit: Kojima Productions) (Image credit: Kojima Productions)
+Backwards compatibility
+“This is where Microsoft has the advantage over PlayStation in the current generation, due to its native support and not having streaming as a requirement,” says Rodriguez. “PlayStation acknowledged Microsoft’s advantage and Mark Cerny, lead architect at Sony, has already teased that the next-gen PlayStation will be able to support more than next-gen games, though specifics haven’t been disclosed. 
+
+“Microsoft already has the current functionality for back compatibility, and seems to be partnering with Nintendo to deliver Xbox content to the Switch platform, which is assumed to be streamed.”
+
+Microsoft definitely has the upper hand when it comes to backwards compatibility. As Rodriguez points out, Microsoft already has backwards compatibility integrated, allowing Xbox players to play select Xbox 360 titles, and will no doubt implement the same strategy in making the next Xbox compatible with Xbox One titles. 
+
+While Sony has said the PS5 will be backwards-compatible with the PS4, it still lacks the ability (as far as we know) to let us play PlayStation or PlayStation 2 titles – something which would go down a treat with players. Whether this is something Sony plans on allowing in the future is unclear, but it doesn’t seem likely right now.
+
+Cross-platform / progression
+“Microsoft has been more publicly open when it comes to allowing cross-platform and cross-progression on their titles between Xbox and PC,” Rodriguez explains. “Additionally, there have been announcements around streaming into the Nintendo Switch which could give Microsoft a leg up over PlayStation.”
+
+It’s no secret that Sony isn’t a fan of cross-platform – the only titles which actually allow for full cross-platform play between PlayStation and other consoles are Rocket League and Fortnite. Despite Sony claiming it’s “open for business”, some developers have accused Sony of “playing favorites” (via Kotaku). Whether or not Sony is going to ease up on its cross-play restrictions isn’t clear, but mounting pressure from fans and developers may sway the company in the right direction.
+
+Meanwhile, Microsoft is pretty open to cross-platform play, allowing play between Xbox One and PC, Switch and even mobile in some cases. For players who love playing online with friends (without the restrictions of which platform that friend may be playing on) then cross-platform could be an important factor in choosing a next-generation console. Get with the times, Sony.
+
+PS5Th evolution of Tomb Raider (Image credit: Sony)
+Cloud game streaming
+“Both Sony and Microsoft have platforms and services in place to support cloud game streaming, so the advantage will come in the form of exclusive content and accessibility,” Rodriguez tells us. “In regard to exclusives and in terms of delivery mechanisms, both Microsoft and Sony have solid distribution channels, but it seems that Microsoft may have an advantage over Sony by delivering to Nintendo Switch consumers – representing potential access to millions of players that most likely have a PC or Xbox at home.”
+
+While Microsoft does seem to be going digital with its disc-less Xbox One S All-Digital (and rumors of a disc-less next-gen console), Sony has just had a patent approved for a cloud gaming service that could rival both the Google Stadia and next Xbox. We don’t know much more about this streaming service from Sony (or whether it’ll launch alongside the PS5) but if it does then it will be a game-changer, and will potentially prevent the Stadia having the edge over its competition.
+
+Developer relationship / dev environment
+“This has been a key element for success for Microsoft as they work to make sure that Xbox development is aligned with game PC Development,” Rodriguex explains. “This area was a huge learning curve for Sony with its PS3, and as a result the PS4 has improved significantly in its dev environment. It’s expected that Sony, Microsoft and Nintendo will continue providing a solid development environment, as well as an indie-friendly publishing ecosystem.”
+
+Arguably, Microsoft is the most friendly of the gaming giants when it comes to indie titles. The ID@Xbox program allows indie developers to self-publish titles for Windows and the Xbox One, and it’s likely the program will continue into the next-generation (or some form of it at least). In addition, Microsoft titles tend to run across both PC and Xbox One, making life easier for devs. 
+
+If Sony can kick it up a notch and get the PS5 onto a PC level (which seems to be the case), then the platform may become more hospitable to devs and players alike.
+
+PS5: The VR effect
+Sony became the first console manufacturer to embrace virtual reality, thanks to the PlayStation VR, but if you examine PlayStation VR closely – and observe how it operates on the PS4 Pro – it invites speculation about how a PlayStation 5 console might take VR to a new level. Sony's Mark Cerny has confirmed that existing PSVR headsets will work with the next-generation PlayStation console, but wouldn't be drawn into confirming a PSVR 2 release just yet.
+
+Currently, PlayStation VR operates at lower resolution than the Oculus Rift and HTC Vive – but, as it stands, even its current incarnation almost pushes the base PlayStation 4 beyond its limits. Running a PlayStation VR on a PS4 Pro brings improved frame-rates, which are very handy indeed in terms of the overall VR experience, but even the PS4 Pro can’t overcome the resolution constraints set by the PlayStation VR headset.
+
+Sony will want to return to the market with a second, markedly higher-tech iteration of PlayStation VR
+
+So it’s a good bet that, seeing as PlayStation VR has proved incredibly successful, Sony will want to return to the market with a second, markedly higher-tech iteration: which would provide an obvious selling point for the PlayStation 5. 
+
+And if a PlayStation VR 2 headset could be sold without an external black box, it should be markedly cheaper, further accelerating VR’s march into the mainstream. A  report from SemiAcccurate, which claims that the PS5 will have virtual reality capabilities built-in at silicon level, suggests this will indeed be the case – a feature that was hinted at by Cerny, too.
+
+PS5PlayStation VR (Image credit: Sony)
+Today's best Sony PlayStation VR deals
+736 Amazon customer reviews
+☆☆☆☆☆
+REDUCED PRICE
+Techradar
+Techradar
+$349
+$249.99
+VIEW
+REDUCED PRICE
+Techradar
+Techradar
+$349.99
+$249.99
+VIEW
+Techradar
+Techradar
+$249.99
+VIEW
+Techradar
+Techradar
+$329.99
+VIEW
+SHOW MORE DEALS
+We check over 130 million products every day for the best prices
+Rebellion’s Kingsley makes another good point about second-generation VR. “Anything that reduces the leads has to be a good thing,” he says. 
+
+The umbilical cord which currently attaches VR headset-wearers to their consoles or PCs obviously goes against VR’s entire immersive nature, and we’re already beginning to see, for example, a third-party implementation for the HTC Vive that renders it wireless. Oculus is pushing the wire-free space forward to with its Oculus Go and Oculus Quest hardware. It’s a safe bet that the capacity for running a wireless PlayStation VR 2 will be built into the PS5. 
+
+But Kingsley’s PlayStation VR 2 wish-list goes further: “Wide vertical and horizontal field-of-view would be top of my list, and of course, that would require 4K resolution per eye, and high dynamic range would be great too.” 
+
+HDR and wider fields of view should be achievable but sadly, we don’t reckon full 4K VR is likely to be a possibility even for the PS5. As Kingsley points out, that would require 4K rendering per eye, which equates to 8K rendering overall, which we expect to be beyond the PS5’s capabilities. 
+
+That said, perhaps Sony will find some clever technological bodge to get around that before it releases its fifth PlayStation console. Foveated rendering techniques, using eye tracking to render only the items you're focusing on in high definition while other elements are reduced in quality, could be one potential technique used.
+
+In addition, according to published patent (spotted by Upload VR), Sony is working on "prescription glasses with eye gaze tracking and electro optical signaling to a HMD". 
+
+These Sony developed prescription glasses would be custom-designed for the wearer and gaze would be able to be detected by the VR headset via an encoded sensor. In other words, glasses-wearers could use VR much easier. We don't expect these glasses to come cheap, but the implementation of eye gaze software does mean we can probably expect it to arrive in the PSVR 2...
+
+PS5Gran Turismo Sport (Image credit: Polyphony Digital) (Image credit: Polyphony Digital)
+While most of what we 'know' about Sony's next-generation VR is speculation and rumor, we do know that one developer is already thinking about what it would do with the power of PS5 VR. 
+
+In a roundable interview with GT Planet, Gran Turismo series creator Kazunori Yamauchi revealed that, when it comes to harnessing the power of next-gen consoles, developer Polyphony Digital's focus is primarily on VR. 
+
+“The first thing that’s going to be affected by more power is VR,” Yamauchi told GT Planet. “I don’t think that there’s anything else that requires that much processing power. I really like VR; I’m one to believe in the possibilities of it, and it’s very suited for a driving game.”
+
+As Gran Turismo is a PlayStation exclusive series, it's likely that the future of the racing franchise will be fuelled by PlayStation VR and its likely successor: PlayStation VR 2. 
+
+While Sony hasn't officially confirmed that PSVR 2 is in development, Yamauchi's comments suggest that the company will be leaning into VR in a big way when it comes to the upcoming PS5.
+
+“VR is something that really depends on the evolution of GPU power, and the hardware for it, like display devices even," Yamauchi continued. "It’s something where you can never have enough computing power; there’s always going to be that hardware limit, and that limit is never going to be high enough for us! Obviously that’s going to gradually improve over time and we’ll make sure to follow that.”
+
+Ratchet and ClankRatchet and Clank (Image credit: Sony)
+What form will the PS5 take?
+It has been suggested that future consoles like the PlayStation 5 could take radically different forms to current ones, thanks to advances in cloud computing and game streaming, doing away with the components that make today's devices so bulky. However, we reckon it's unlikely that Sony will take a more Nintendo-like approach and put the PS5 in a tiny box.
+
+One reason for that is that with the PS4, Sony has only just committed to using what are basically the innards of a PC – the first three PlayStation variants used proprietary components (and which in the PS3 impacted sales). Developers, certainly, were massively relieved that the PS4 took the PC route. 
+
+"We always want fast CPUs and GPUs, but lots of fast RAM is also very important – it’s no use having fast processors if they are starved of data.”
+
+Chris Kingsley
+“Developers want the ability to make the best games using the minimum amount of effort. We want to focus on being creative and getting things to just work,” Kingsley says. “So the hardware should be based around current console hardware, which is in turn based on PC hardware. We always want fast CPUs and GPUs, but lots of fast RAM is also very important – it’s no use having fast processors if they are starved of data.” 
+
+All the above are achievable, but will the PS5 still have a hard disk? It certainly will – but not the sort that you know currently. Sony has confirmed it will be employing a bespoke solid state drive in each PS5, allowing it to decrease loading times by an estimated 19 times compared to existing SSD technology.
+
+PS5PlayStation Now (Image credit: Sony)
+PS5 and streaming games
+Of course, if games were just streamed to the PS5 that high-res texture storage problem would disappear entirely, and Sony already has a game-streaming service in the form of PlayStation Now. However, we do know that Sony has a patent for a "system for combining recorded application state with application streaming interactive video output" (aka a cloud gaming service).
+
+There would be nothing to stop Sony launching a small form-factor cloud-based version of the console for those with mega-fast broadband
+
+One of the biggest issues here remains around broadband speeds. Even 4K TV requires a minimum of 25Mbps broadband in order to provide satisfactory streaming, and it’s doubtful whether 4K game streaming – with extra information on top of the visual side – would even work reliably at such speeds. There would be nothing to stop Sony launching a small form-factor cloud-based version of the PS5 console for those with mega-fast broadband, perhaps with a mobile phone-style subscription model that has an upfront hardware costs (something Microsoft is thinking about). 
+
+But for the PS5 to sell anything like its predecessors, there would have to be a conventional version with similar innards to the PS4, which going from the Cerny interview appears to be the case.
+
+PS5Uncharted (Image credit: Naughty Dog)
+What games can we expect to see on PS5?
+The entire PS4 library, including PSVR games, will be supported by the PS5. That much is known. But there are now games being developed specifically for this new PlayStation 5 console generation and the extra power it's likely to offer.
+
+Already we've seen CD Projekt Red mention that it's developing for this generation as well as the next, and alongside the rumors that there are already developers kits out in the open, we think there's a good chance that Cyberpunk 2077 will be one of the early PS5 titles. Likewise, a knowing glance from Cerny during his Wired interview pointed towards Hideo Kojima's Death Stranding being a cross-generation title, too.
+
+At this point, any first-party PS4 game in the pipeline – from Ghost of Tsushima to The Last of Us 2, would be prime candidates for PS5 cross-gen upgrades. We've also heard enough chatter around a Horizon Zero Dawn sequel and new God of War game to assume we'll be seeing both land on the PS5 console.
+
+Sony has also confirmed the PS5 will prioritize AAA games over indie games in an effort to focus on "serious gamers".
+
+PS5 games: all the games confirmed and expected on the PlayStation 5
+Check out our PS4 vs PS4:PSVR compared and explained video below.
+
+Tired of future-gazing? Why not check out the best PS4 games right now.
+Already got a PSVR? Follow these steps to jump into virtual reality.
+SEE MORE CONSOLES NEWS
+MORE ABOUT...
+Latest PS5 dev kit leak shows two consoles with controllers
+When is The Mandalorian episode 5 released on Disney Plus?
+SEE MORE RELATED
+LATEST
+Amazon Cyber Monday deals 2019: our pick of today's sales
+SEE MORE LATEST
+Black Friday PS4 deals may not be great right now, but they will improve
+We may not be seeing much in the way of great Black Friday PS4 and PS4 Pro deals, but that'll change.
+TechRadar
+The Genius Trick Every Best Buy Shopper Should Know
+Wikibuy
+|
+Sponsored
+This Pocket-Sized Blood Sugar Meter is Now 59% Off
+DarioHealth
+|
+Sponsored
+The New Budget SmartWatch, Everyone In United States Is Talking About
+XWatch
+|
+Sponsored
+Affordable All-Inclusive Vacations That Are Simply Astonishing!
+All-Inclusive Vacations | Search Ads
+|
+Sponsored
+Shut the Front Door! These Luxury Vehicles Cost Under $50k!
+Auto Enthusiast | Search Ads
+|
+Sponsored
+The 21 Hottest Gifts Of 2019
+ZangDeal
+|
+Sponsored
+PS4 and PS4 Pro Black Friday deals 2019: the best prices rounded up
+TechRadar
+The Best TV 2019: 10 big-screen TVs worth buying this year
+TechRadar
+Anyone Considering Solar Should Read This
+Home Solar Programs
+|
+Sponsored
+Americans Swear By This Amazing Tear Stain Tip For Dogs
+Petlab Co.
+|
+Sponsored
+MOST POPULAR
+
+Best Cyber Monday TV deals of 2019: get a television this weekend for less
+By Olivia Tambini, Henry St LegerNovember 30, 2019
+
+READ MORE
+Walmart Cyber Monday 2019 deals: round two of the sales begins
+By Mackenzie FrazierNovember 30, 2019
+
+READ MORE
+Diablo 4 is official - everything you need to know
+By Gerald Lynch, Vic HoodNovember 30, 2019
+
+READ MORE
+The cheapest Nintendo Switch bundle deals and prices in the November sales 2019
+By Brendan GriffithsNovember 30, 2019
+
+READ MORE
+Apple AirPods Black Friday deals 2019: amazing price drops still live
+By Brendan GriffithsNovember 30, 2019
+
+READ MORE
+Red Dead Redemption 2 PC players get free stuff to make up for all the bugs
+By Darren AllanNovember 30, 2019
+
+READ MORE
+Nintendo Switch Cyber Monday deals 2019: the best bundles throughout the weekend
+By Brendan GriffithsNovember 30, 2019
+
+READ MORE
+Final Fantasy 7 Remake release date, trailers, news and features
+By Vic Hood, Gerald LynchNovember 30, 2019
+
+READ MORE
+Dragon Age 4 news, rumors and trailers
+By Vic Hood, Emma BoyleNovember 30, 2019
+
+READ MORE
+Best wireless earbuds: the best Bluetooth earbuds and earphones in 2019
+By Nick Pino, Henry St Leger, Olivia TambiniNovember 30, 2019
+
+READ MORE
+Amazon Lightning deals live updates - all the best offers as they appear
+By Brendan Griffiths, TechRadar StaffNovember 30, 2019
+
+READ MORE
+This 75-inch 4K TV is $1000 cheaper in outstanding Black Friday deal
+By Olivia TambiniNovember 30, 2019
+
+READ MORE
+The best cheap PlayStation VR bundles, prices and deals for Black Friday 2019
+By Brendan GriffithsNovember 29, 2019
+
+READ MORE
+Advertisement
+
+TECH DEALS, PRIZES AND LATEST NEWS
+Get the best tech deals, reviews, product advice, competitions, unmissable tech news and more!
+
+
+No spam, we promise. You can unsubscribe at any time and we'll never share your details without your permission.
+Advertisement
+
+MOST POPULAR
+MOST SHARED
+1
+How to watch the Marvel movies in order
+2
+How to watch the Star Wars movies in order
+3
+Nvidia takes a large bite out of AMD’s market share, as RTX graphics cards make a mountain of cash
+4
+The lowest-ever Apple Watch 3 price is back... but there's a catch
+5
+Cyber Monday deals 2019: when they begin, and what to expect
+Advertisement
+
+TechRadar is part of Future US Inc, an international media group and leading digital publisher. Visit our corporate site.
+
+About Us
+ 
+Terms and conditions
+ 
+Privacy policy
+ 
+Cookies policy
+ 
+Advertise with us
+ 
+Web notifications
+© Future US, Inc. 11 West 42nd Street, 15th Floor, New York, NY 10036.
+
+Powered by OptinMonster
+

@@ -1,0 +1,51 @@
+ Sign In / Register
+United States
+Symantec-Broadcom-Horizontal | United States
+PRODUCTS SERVICES SOLUTIONS SUPPORT CENTER SECURITY CENTER PARTNER
+Symantec-Broadcom-Horizontal/Security Response/ Attack Signatures/ Attack: Return Oriented Programming Changes Stack Pointer
+Attack: Return Oriented Programming Changes Stack Pointer
+Severity: High
+This attack could pose a serious security threat. You should take immediate action to stop any damage or prevent further damage from happening.
+Description
+Exploit protection detected an attempt to forcibly change the stack pointer.
+Additional Information
+Return oriented programming attacks that change the stack pointer compromise applications by taking control of the execution flow.
+Attackers may obtain have full control of the application if the flow is changed.
+Affected
+All applications.
+Response
+The compromised process was terminated in order to disrupt the attack and prevent infection; no further action is necessary for this incident.
+
+If further information is desired, or this event reoccurs, please submit the most recently visited URL or most recently opened document to Symantec for further analysis. Please visit http://www.symantec.com/docs/TECH102419 for more information.
+
+For Symantec enterprise products, additional details may be found at http://www.symantec.com/docs/HOWTO127057
+Symantec-Broadcom-Horizontal | United States
+INFORMATION FOR:
+Enterprise
+Small Business
+Consumer (Norton)
+Partners
+OUR OFFERINGS:
+Products
+Products A-Z
+Services
+Solutions
+CONNECT WITH US:
+Support
+Connect Communities
+Security Center
+Find a Partner
+Events
+Webcasts
+Contact Us
+ABOUT SYMANTEC
+CustomerOne
+Performance Center
+Newsroom
+Careers
+Investor Relations
+Corporate Responsibility
+Blue Coat Acquisition
+TwitterFacebookLinkedInGoogle+YouTubeNorton SECURED
+©1995 - 2017 Symantec Corporation
+About Symantec|Careers|Events|News|Site Map|Legal Repository|Privacy|Cookies|Contact

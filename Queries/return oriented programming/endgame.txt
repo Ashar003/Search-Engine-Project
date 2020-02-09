@@ -1,0 +1,133 @@
+Endgame is now part of Elastic LEARN MORE ELASTIC ENDPOINT EARLY ACCESS PROGRAM
+
+WHY ENDGAME
+PLATFORM
+COMPANY
+RESOURCES
+  SEARCH
+OUR BLOG
+ALL
+ 
+TECHNICAL BLOG
+ 
+EXECUTIVE BLOG
+ROP Is Dying And Your Exploit Mitigations Are On Life Support
+ Cody Pierce JULY 13, 2016
+
+Too often the defense community makes the mistake of focusing on the what, without truly understanding the why. This mindset often leads to the development of technologies that have limited effectiveness, and an even shorter shelf life. Time and again we’ve seen newly developed software protections bypassed shortly after their release.  This is especially true with exploit mitigations, and Return-Oriented Programming (ROP) in particular. In short, current defenses target obsolete offensive techniques.
+
+The offensive community has known something for a long time that I would like to share with you. ROP is dying and ROP exploit mitigations aren’t as effective as you might think.
+
+ 
+
+A Brief History of ROP
+First, let us take a step back and look at what ROP is, and why many third party security products have ROP defenses. Over a decade ago, processor manufacturers began to add hardware enforcement of page level permissions. This support enabled operating systems to restrict code from executing anywhere in memory, a common exploit technique. Microsoft implemented this restriction in Windows XP Service Pack 2, and named it Data Execution Prevention, or DEP.
+
+As Microsoft Windows and other operating systems introduced these countermeasures, researchers were quick to devise creative ways to bypass them. In his seminal paper, Sebastian Krahmer lays out what would eventually be named Return-Oriented Programming. Krahmer’s paper was published on September 28th 2005, shortly after DEP and similar mitigations went mainstream.
+
+Since its publication, dozens of research papers, conference presentations, and exploits have used some form of Krahmer’s idea of reusing legitimate code to circumvent DEP, and ROP became enemy number one.
+
+Techniques for building ROP “gadgets” have varied over the last ten years, but the core purpose remains. Build a stack of legitimate code locations ending in a return, that when executed gives the attacker the ability to execute their arbitrary payload.
+
+After a decade of study, defenders have come to understand key artifacts to detect and prevent these gadgets from changing permissions or executing code. This has led to add-on security solutions like Microsoft’s own “Enhanced Mitigation Experience Toolkit”, or EMET. But while security vendors were working on the ROP problem, attackers were overcoming a bigger issue, ASLR.
+
+Address Space Layout Randomization (ALSR) is a defensive method for randomly assigning virtual addresses to code and data in a running program. ASLR aims to prevent an attacker from using previous knowledge of the address space to gain an advantage and execute malicious code. This has proven extremely effective in “raising the bar” of exploitation and is one of the most significant research challenges when building weaponized exploits.
+
+Microsoft introduced ASLR in Windows Vista, but did not comprehensively implement it until sometime in 2011, when they recompiled all libraries to take advantage of it. While ASLR has proven to be effective, it must be fully enforced on every piece of data in a program. Because of this, the system falls apart if one piece of data is unprotected. Until fairly recently exploit writers have been abusing this loophole to bypass the mitigation.
+
+As ASLR has improved through “full” ASLR, attackers have needed to read memory in their exploit code to adequately determine what data to target for a successful exploit. This step in exploit development is one of the most time consuming, but also the most powerful, because in many cases not only can you craft an exploit to read the target address space and bypass ASLR, you can also write into the target address space.
+
+In short, the ability to read and write memory makes ROP unnecessary and is the reason Return-Oriented Programming is dying.
+
+ 
+
+ROP is Dying
+In 2014 Yang Yu presented “Write Once, Pwn Anywhere” at Blackhat USA. This presentation is a great demonstration of using a read and write “primitive” to make a small change that has a significant impact. In his presentation and proof-of-concept, Yu corrupts the Jscript.dll “safemode” flag stored in memory to enable the use of the WScript.Shell COM method. This method can be used to execute shell commands and is normally protected in Internet Explorer for obvious reasons. However, by changing the “safemode” value in memory, an attacker can bypass this restriction and execute arbitrary commands, without needing Return-Oriented Programming techniques.
+
+Shortly after the presentation, researchers used Yu’s idea to exploit a VBScript vulnerability (CVE-2014-6332). Again, the exploit writer overcame the difficult problem of getting arbitrary memory read and write access, then used that to gain full-system access without tripping any software mitigations such as EMET.
+
+Earlier this year, a component of the Angler exploit kit targeted a vulnerability in Silverlight (CVE-2016-0034) using a similar approach. First, trigger a vulnerability that gives programmatic read and write of virtual memory, and then overwrite critical data to gain code execution. In this exploit the writers were very clever. Instead of flipping a bit, like the previous examples, they created legitimate code in executable memory using Silverlight’s JIT engine. To gain code execution without ROP they overwrote their legitimate code page with their payload, absolving themselves of DEP restrictions, and EMET was none the wiser.
+
+Finally, let’s look at a trend in several popular exploit kits that demonstrate the increased usage of “ROP-less” techniques, like previous examples, to exploit software. My colleague Matt Spisak astutely linked the change after CVE-2015-5119 to a technique originally developed by researcher Vitaly Toropov. Toropov’s technique, like the Silverlight one before, uses a clever method to bypass DEP without needing ROP. As the technique became public through the HackingTeam leak, the exploit kit authors quickly updated their exploits, and have completely bypassed EMET ever since.
+
+These examples demonstrate some of the ways new exploit techniques are less reliant on Return-Oriented Programming. Many more techniques exist publicly, and as the HackingTeam leak proved, private and therefore unknown techniques exist, too. If you enjoy the art of exploitation, I strongly recommend the previous articles that dive into each technique in great detail. 
+
+Exploit Kit
+
+The exploit kit graph above illustrates really well the declining utility of ROP. It also perfectly demonstrates the difficulty in ROP-based exploit mitigations. A single change in exploit technique trends can have a dramatic and long lasting effect.
+
+ 
+
+Towards Earlier Detection
+As attackers have moved away from ROP and towards a more advanced, and frankly harder to detect, technique for executing payloads, what can we do?
+
+Recently, vendors such as Microsoft have recognized that ROP defenses are not enough. In Visual Studio 2015 Microsoft introduced Control Flow Guard (CFG). This new compiler based mitigation attempts to eliminate the ability to exploit certain classes of vulnerabilities. Unfortunately, to utilize CFG, code must be recompiled with the latest compiler and options. Alternatively, we have introduced a similar approach in the latest version of our product that works on any software without needing to be recompiled. So why have Microsoft and Endgame invested in locking down control-flow?
+
+Over the years the industry has come to the conclusion that it is impossible to eliminate vulnerabilities. We also know that exploit authors are incredibly creative. The biggest impact we can have on the success of exploits is to limit the opportunity for creative bypasses. To oversimplify, exploits have to trigger a vulnerability, and then “do something”. Anti-exploit solutions need to disrupt this “something” early in the stages of exploitation to maintain an advantage.
+
+To demonstrate, consider the following graphic that illustrates the high-level stages of an exploit.
+
+Exploitation Process
+
+This progression highlights that real defense must fight in the “Exploitation” stage of the attack. At this point, defenders still have the advantage of preventing successful exploitation. Unfortunately, most exploit prevention products continue to focus on the “Post-Exploitation” stage. By that time, the attacker will almost always win. In Post-Exploitation an attacker typically has the ability to execute some code on the target system, or gain adequate control over the program. This is the case with Return Oriented Programming techniques. By this stage defense has lost. Instead, real defense must focus on fighting in the “Exploitation” stage of the attack. At this point, defenders still have the advantage of preventing successful exploitation and can stop attackers from achieving their objectives.
+
+Endgame’s solution to the problem takes a different approach than most vendors. Like Microsoft, we believe guarding control flow is the first step in building better prevention. However, we want customers to take advantage of the technology without having to recompile their code.
+
+To achieve this we have developed a new concept we’re calling Hardware Assisted Control Flow Integrity, or HA-CFI. This technology utilizes hardware features available in Intel processors to monitor and prevent exploitation in real-time, with manageable overhead. By leveraging hardware features we can detect exploits before they reach the “Post-Exploitation” stage, and provide stronger protections, while defense still has the upper hand.
+
+ 
+
+Conclusion
+For the time being, ROP defenses are still providing some protection, especially in commodity and less advanced exploits, or when reading and writing memory may be impossible. However, its death is imminent and something the security community must acknowledge. The community must not be lured into a false sense of security while a large number of successful attacks go unnoticed.
+
+Next generation exploit defense must move to detecting and preventing exploitation patterns in earlier stages of the process to maintain the defensive advantage needed to limit exploit authors’ creativity and effectively block them. At Endgame, we understand the fragility of “Post-Exploitation” preventions. Good exploit mitigations greatly reduce the attackers’ opportunity. If you’d like to hear more, come and see the latest research we are presenting this summer at Blackhat USA titled “Capturing 0day Exploits with PERFectly Placed Hardware Traps”. If you can’t make it to Vegas, I’ll also host a webinar covering this topic on August 17.
+
+This is an exciting time for exploit mitigations as software vendors continue to make important changes that reduce the impact of vulnerabilities and security vendors such as Endgame push the state-of-the-art in third party detection and prevention. While ROP, and defenses against it, may be showing their age, there is still a lot of opportunity for new and effective solutions to the exploit problem.
+
+Twitter LinkedIn
+RELATED POSTS
+mitre attack att&ck matrix framework
+DECEMBER 06, 2018
+Here's why we can't have nice things
+
+SEPTEMBER 19, 2018
+Kernel Mode Threats & Practical Defenses: Part 1
+
+JULY 29, 2019
+EQL’s Highway to Shell
+
+JUNE 10, 2019
+Getting Things Done with Endgame 3.10
+ 
+EXPLORE
+
+Why Endgame
+Platform
+Company
+Resources
+News
+ 
+CYBER SECURITY DICTIONARY
+
+Prevention
+Detection & Response
+Threat Hunting
+MITRE ATT&CK
+Phishing
+Intelligent Automation
+Ransomware
+Machine Learning
+Replace Your Antivirus
+Endgame News
+ 
+CONNECT
+
+3101 Wilson Blvd
+Suite 500
+Arlington, VA 22201
+703-650-1250
+Privacy
+Elastic Early Access Program
+© Endgame 2019
+ 
+

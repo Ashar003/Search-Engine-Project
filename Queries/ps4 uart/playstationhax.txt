@@ -1,0 +1,121 @@
+(SAC-001) PS4 UART For Dummies
+By LightningMods_, January 22, 2018 in PS4 Tutorials
+
+dummies
+ 
+ps4
+ 
+uart
+    
+LightningMods_
+Member
+LightningMods_
+Developer
+
+Scene Contributor
+ 13
+242 posts
+Posted January 22, 2018 (edited)
+Let me start by saying im writing this because alot of people dont know how to setup UART for their PS4 This TUT is only for those who have SAC-001 Motherboard
+
+Tools you would need
+
+A set of screw Drivers to open up the PS4
+Soldering station $30-$150 (depends what you get)
+Solder 0.7mm - $7
+Flux - $5 - $15
+Kynair Wire- $7
+Wire cutters - $12
+(Optional) Hot Glue and Glue gun - $15
+Tip cleaner - $10
+ANY Cheap  FTDI USB to TTL Serial Adapter
+Micro-USB Cable
+etc
+
+First
+
+After you have your tools buy any cheap FTDI USB to TTL Serial Adapter
+i bought this one: https://www.ebay.com/itm/FT232RL-FTDI-USB-3-3V-5-5V-to-TTL-Serial-Adapter-Module-for-Arduino-Mini-Ports/232428575643?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2060353.m2749.l2649
+
+unknown.png
+
+Step 2
+
+Open up your PS4 
+
+Video: https://www.youtube.com/watch?v=wHVqDrXLXzY
+
+
+unknown.png
+
+Step 3
+
+Got some wire and strip some of both ends 
+
+Then solder 1 end to these points
+
+ps-watson-ps4-uart-output-viewer-and-ps4-4-05-uart-demo-video-2-jpg.3516
+
+Step 4
+
+MAKE SURE THE WIRES ARE STICKING OUT of the console
+
+(Optional) Hot glue the wires to the motherboard so they dont come un-done when you put the PS4 back togather
+
+Step 5
+
+Put the console back together WITH THE WIRES HANGING OUT
+
+Step 6
+
+Solder the ground wire to Ground on the device and the TX Wire from the PS4 to the RX Pad on the FTDI Device (Pic of the one i bought0
+
+FaOZyL20TuKAiezT_dcRGA.png
+
+Step 7
+
+Hook it up to your PC with the micro-USB Cabele
+
+20180122_145906.jpg
+
+Step 8
+
+Download: https://www.arduino.cc/download_handler.php?f=/arduino-1.8.5-windows.exe
+
+INSTALL IT DONT USE PS WATSON.. PS WATSON DIDNT WORK FOR ME
+
+Step 10
+
+MAKE SURE ITS YOU COM PORT
+
+ 
+
+OJFiWAf3Rsyd_qXqQ5KkGQ.png
+
+
+5o3IellAQxeiQ1u62fk6NQ.png
+
+LAST STEP
+
+ZI4tYogKRoaO3_V9hTrQDQ.png
+
+k8QsShmeR82mvtPCFvK3RQ.png
+
+
+
+NOW YOUR DONE!!
+
+ 
+
+Edited January 23, 2018 by LightningMods_
+Create an account or sign in to comment
+You need to be a member in order to leave a comment
+
+Create an account
+Sign up for a new account in our community. It's easy!
+
+Sign in
+Already have an account? Sign in here.
+
+GO TO TOPIC LISTING
+    

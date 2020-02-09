@@ -1,0 +1,620 @@
+The Library of Economics and Liberty
+
+Articles
+EconLog
+EconTalk
+Encyclopedia
+Videos
+Books
+Guides
+FEATURED BOOK
+
+ADAM SMITH
+SEARCH BOOKS
+BOOKS BY DATE
+BOOKS BY AUTHOR
+AUTHOR BIOGRAPHIES
+An Inquiry into the Nature and Causes of the Wealth of Nations
+By Adam Smith
+Adam Smith’s
+An Inquiry into the Nature and Causes of the Wealth of Nations was first published in 1776. This edition of Smith’s work is based on Edwin Cannan’s careful 1904 compilation (Methuen and Co., Ltd) of Smith’s fifth edition of the book (1789), the final edition in Smith’s lifetime. Cannan’s preface and introductory remarks are presented below. His extensive footnotes, detailing the changes undergone by the book over its five editions during Smith’s lifetime, as well as annotated references to the book, are also included here. Only Cannan’s marginal notes, indexes, and contents are not presented here, because the wonders of electronic searches and the speed of the net replace most of the intended function of those features. Internal references by page numbers have been replaced by linked paragraph reference numbers appropriate for this online edition. Paragraph references typically have three parts: the book, chapter, and paragraph. E.g.,
+IV.7.111 refers to Book IV, Chapter VII, paragraph 111. Like Cannan, we have chosen to preserve the occasional erratic spelling in Smith’s fifth edition, which reflects changes in the language going on at the time Smith was writing. Editor,
+
+Library of Economics and Liberty
+
+2000
+
+
+
+Book Cover
+Table of Contents
+1
+38
+
+Preface
+by Edwin Cannan
+
+ 
+
+The text of the present edition is copied from that of the fifth, the last published before Adam Smith’s death. The fifth edition has been carefully collated with the first, and wherever the two were found to disagree the history of the alteration has been traced through the intermediate editions. With some half-dozen utterly insignificant exceptions such as a change of ‘these’ to ‘those,’ ‘towards’ to ‘toward,’ and several haphazard substitutions of ‘conveniences’ for ‘conveniencies,’ the results of this collation are all recorded in the footnotes, unless the difference between the editions is quite obviously and undoubtedly the consequence of mere misprints, such as ‘is’ for ‘it,’ ‘that’ for ‘than,’ ‘becase’ for ‘because’. Even undoubted misprints are recorded if, as often happens, they make a plausible misreading which has been copied in modern texts, or if they present any other feature of interest.
+
+ 
+
+As it does not seem desirable to dress up an eighteenth century classic entirely in twentieth century costume, I have retained the spelling of the fifth edition and steadily refused to attempt to make it consistent with itself. The danger which would be incurred by doing so may be shown by the example of ‘Cromwel’. Few modern readers would hesitate to condemn this as a misprint, but it is, as a matter of fact, the spelling affected by Hume in his
+History, and was doubtless adopted from him by Adam Smith, though in the second of the two places where the name is mentioned inadvertence or the obstinacy of the printers allowed the usual ‘Cromwell’ to appear till the fourth edition was reached. I have been equally rigid in following the original in the matter of the use of capitals and italics, except that in deference to modern fashion I have allowed the initial words of paragraphs to appear in small letters instead of capitals, the chapter headings to be printed in a large size of upper and lower case roman instead of small italics, and the abbreviation ‘Chap.’ to be replaced by ‘Chapter’ in full. I have also allowed each chapter to begin on a fresh page, as the old practice of beginning a new chapter below the end of the preceding one is inconvenient to a student who desires to use the book for reference. The useless headline, ‘The Nature and Causes of the Wealth of Nations,’ which appears at the top of every pair of pages in the original has been replaced by a headline which changes with every chapter and, where possible, with every formal subdivision of a chapter, so that the reader who opens the book in the middle of a long chapter with several subdivisions may discover where he is immediately. The composition of these headlines has not always been an easy matter, and I hope that critics who are inclined to condemn any of them will take into account the smallness of the space available.
+
+ 
+
+The numbers of the Book and Chapter given in the margin of the original are relegated, with the very necessary addition of the number of the Part of the chapter (if it is divided into numbered parts), to the top of the page in order to make room for a marginal summary of the text. In writing this summary I have felt like an architect commissioned to place a new building alongside some ancient masterpiece: I have endeavoured to avoid on the one hand an impertinent adoption of Smith’s words and style, and on the other an obtrusively modern phraseology which might contrast unpleasantly with the text.
+
+ 
+
+The original index, with some slight unavoidable changes of typography, is reprinted as it appeared in the third, fourth and fifth editions, but I have added to it, in square brackets, a large number of new articles and references. I have endeavoured by these additions to make it absolutely complete in regard to names of places and persons, except that it seemed useless to include the names of kings and others when used merely to indicate dates, and altogether vain to hope to deal comprehensively with ‘Asia,’ ‘England,’ ‘Great Britain’ and ‘Europe’. I have inserted a few catchwords which may aid in the recovery of particularly striking passages, such as ‘Invisible hand,’ ‘Pots and pans,’ ‘Retaliation,’ ‘Shopkeepers, nation of’. I have not thought it desirable to add to the more general of the headings in the original index, such as ‘Commerce’ and ‘Labour,’ since these might easily be enlarged till they included nearly everything in the book. Authorities expressly referred to either in the text or the Author’s notes are included, but as it would have been inconvenient and confusing to add references to the Editor’s notes, I have appended a second index in which all the authorities referred to in the text, in the Author’s notes, and in the Editor’s notes are collected together. This will, I hope, be found useful by students of the history of economics.
+
+ 
+
+The Author’s references to his footnotes are placed exactly where he placed them, though their situation is often somewhat curiously selected, and the footnotes themselves are printed exactly as in the fifth edition. The Editor’s notes and additions to Smith’s notes are in square brackets.
+** Critics will probably complain of the trivial character of many of the notes which record the result of the collation of the editions, but I would point out that if I had not recorded all the differences, readers would have had to rely entirely on my expression of opinion that the unrecorded differences were of no interest. The evidence having been once collected at the expense of very considerable labour, it was surely better to put it on record, especially as these trivial notes, though numerous, if collected together would not occupy more than three or four pages of the present work. Moreover, as is shown in the Editor’s Introduction, the most trivial of the differences often throw interesting light upon Smith’s way of regarding and treating his work.
+
+ 
+
+The other notes consist chiefly of references to sources of Adam Smith’s information. Where he quotes his authority by name, no difficulty ordinarily arises. Elsewhere there is often little doubt about the matter. The search for authorities has been greatly facilitated by the publication of Dr. Bonar’s
+Catalogue of the Library of Adam Smith in 1894, and of Adam Smith’s
+Lectures in 1896. The
+Catalogue tells us what books Smith had in his possession at his death, fourteen years after the
+Wealth of Nations was published, while the
+Lectures often enable us to say that a particular piece of information must have been taken from a book published before 1763. As it is known that Smith used the Advocates’ Library, the Catalogue of that library, of which Part II was printed in 1776, has also been of some use. Of course a careful comparison of words and phrases often makes it certain that a particular statement must have come from a particular source. Nevertheless many of the references given must be regarded as indicating merely a possible source of information or inspiration. I have refrained from quoting or referring to parallel passages in other authors when it is impossible or improbable that Smith ever saw them. That many more references might be given by an editor gifted with omniscience I know better than any one. To discover a reference has often taken hours of labour: to fail to discover one has often taken days.
+
+ 
+
+When Adam Smith misquotes or clearly misinterprets his authority, I note the fact, but I do not ordinarily profess to decide whether his authority is right or wrong. It is neither possible nor desirable to rewrite the history of nearly all economic institutions and a great many other institutions in the form of footnotes to the
+Wealth of Nations.
+
+ 
+
+Nor have I thought well to criticise Adam Smith’s theories in the light of modern discussions. I would beseech any one who thinks that this ought to have been done to consider seriously what it would mean. Let him review the numerous portly volumes which modern inquiry has produced upon every one of the immense number of subjects treated by Adam Smith, and ask himself whether he really thinks the order of subjects in the
+Wealth of Nations a convenient one to adopt in an economic encyclopædia. The book is surely a classic of great historical interest which should not be overlaid by the opinions and criticisms of any subsequent moment—still less of any particular editor.
+
+ 
+
+Much of the heavier work involved in preparing the present edition, especially the collation of the original editions, has been done by my friend Mrs. Norman Moor, without whose untiring assistance the book could not have been produced.
+
+ 
+
+Numerous friends have given me the benefit of their knowledge of particular points, and my hearty thanks are due to them.
+
+E. C.
+LONDON SCHOOL OF ECONOMICS, 1904
+
+ 
+
+Notes
+to the Electronic Edition:
+
+* The Library of Economics and Liberty electronic edition is taken from Edwin Cannan’s 1904 edition of Smith’s
+Wealth of Nations, based on the 5th and last edition published in Smith’s lifetime. The text and footnotes are presented here in full.
+
+** Each footnote is marked in the text by a colored-coded superscript and in this footnote file according to its authorship as follows:
+
+The author’s original notes, color-coded blue in the text, are unbracketed and unlabeled below.
+The editor’s (Cannan’s) notes, color-coded gold in the text, are bracketed below.
+The website (Library of Economics and Liberty) Editor’s notes, color-coded red in the text, are unbracketed and indicated by asterisks rather than numbers.
+Editor’s Introduction
+
+ 
+
+1.
+[John Rae,
+Life of Adam Smith, 1895, p. 284.]
+ 
+
+2.
+[
+Ibid., p. 285.]
+ 
+
+3.
+[
+Ibid., p. 324.]
+ 
+
+4.
+[Below, vol. i.,
+IV.3.46; vol. ii.,
+V.3.76-77.]
+ 
+
+5.
+[See vol. ii.,
+IV.7.52, as well as the passages referred to in the previous note.]
+ 
+
+6.
+[Vol. ii.,
+IV.7.42, 73, 150.]
+ 
+
+7.
+[Rae,
+Life of Adam Smith, p. 362.]
+ 
+
+8.
+[
+Ibid., p. 323.]
+ 
+
+9.
+[Rae, p. 362.]
+ 
+
+10.
+[Edition 4 alters ‘this’ to ‘the’.]
+ 
+
+11.
+[Edition 4 omits ‘present’.]
+ 
+
+12.
+[They are frequently found at the end of existing bound copies of the second edition. The statement in Rae,
+Life of Adam Smith, p. 362, that they were published in 1783 is a mistake; cp. the ‘Advertisement to the Third Edition’ above.]
+ 
+
+13.
+[Rae,
+Life of Adam Smith, p. 362.]
+ 
+
+14.
+[Corrected to ‘Hope’ in edition 5. The celebrated firm of Hope, merchant-bankers in Amsterdam, was founded by a Scotchman in the seventeenth century (see Sir Thomas Hope in the
+Dictionary of National Biography). Henry Hope was born in Boston, Mass., in 1736, and passed six years in a banking house to England before he joined his relatives in Amsterdam. He became a partner with them, and on the death of Adrian Hope the conduct of the whole of the business of the firm devolved upon him. When the French invaded Holland in 1794 he retired to England. He died on 25th February, 1811, leaving £1,160,000
+(Gentleman’s Magazine, March, 1811).]
+ 
+
+15.
+[Most modern editions are copied from the fourth edition. Thorold Rogers’ edition, however, though said in the preface to be copied from the fourth, as a matter of fact follows the third. In one instance, indeed, the omission of ‘so’ before ‘as long as’ at vol. i.
+I.5.29 (in the present edition), Rogers’ text agreed with that of the fourth edition rather than the third, but this is an accidental coincidence in error; the error is a particularly easy one to make and it is actually corrected in the errata to the fourth edition, so that it is not really the reading of that edition. The fifth edition must not be confused with a spurious’ fifth edition with additions’ in 2 vols., 8vo, published in Dublin in 1793 with the ‘Advertisement’ to the third edition deliberately falsified by the substitution of ‘fifth’ for ‘third’ in the sentence ‘To this third edition however I have made several additions’. It is perhaps the existence of this spurious ‘fifth edition’ which has led several writers
+(e.g., Rae,
+Life of Adam Smith, p. 293) to ignore the genuine fifth edition. The sixth edition is dated 1791.]
+ 
+
+16.
+[Steuart’s
+Principles was ‘printed for A. Millar, and T. Cadell, in the Strand’: and the
+Wealth of Nations ‘for W. Strahan; and T. Cadell, in the Strand’.]
+ 
+
+17.
+[
+Lectures on Justice, Police, Revenue and Arms, delivered in the University of Glasgow by Adam Smith. Reported by a student in 1763, and edited with an Introduction and Notes by Edwin Cannan, 1896, pp. 1, 3.]
+ 
+
+18.
+[
+Lectures, pp. 3, 4.]
+ 
+
+19.
+[
+Ibid., p. 154.]
+ 
+
+20.
+[See James Bonar,
+Catalogue of the Library of Adam Smith, 1894.]
+ 
+
+21.
+[
+Lectures, p. 157.]
+ 
+
+22.
+[
+Ibid., p. 154.]
+ 
+
+23.
+[
+Ibid., p. 156.]
+ 
+
+24.
+[
+Lectures, p. 157.]
+ 
+
+25.
+[
+Ibid., p. 163.]
+ 
+
+26.
+[
+Ibid., pp. 172-3.]
+ 
+
+27.
+[
+Ibid., p. 178.]
+ 
+
+28.
+[
+Ibid., p. 182.]
+ 
+
+29.
+[
+Lectures, p. 192.]
+ 
+
+30.
+[
+Ibid., p. 195.]
+ 
+
+31.
+[
+Ibid., p. 195.]
+ 
+
+32.
+[
+Ibid., p. 196.]
+ 
+
+33.
+[
+Ibid., p. 197.]
+ 
+
+34.
+[
+Ibid., p. 199.]
+ 
+
+35.
+[
+Ibid., p. 200.]
+ 
+
+36.
+[
+Ibid., p. 204.]
+ 
+
+37.
+[
+Ibid., p. 204.]
+ 
+
+38.
+[
+Lectures, p. 206.]
+ 
+
+39.
+[
+Ibid., p. 207.]
+ 
+
+40.
+[
+Ibid., p. 209.]
+ 
+
+41.
+[
+Ibid., pp. 211-19.]
+ 
+
+42.
+[
+Ibid., pp. 219-22.]
+ 
+
+43.
+[
+Ibid., p. 222.]
+ 
+
+44.
+[
+Ibid., pp. 222-3.]
+ 
+
+45.
+[
+Lectures, pp. 223-36.]
+ 
+
+46.
+[
+Ibid., p. 253.]
+ 
+
+47.
+[
+Ibid., p. 254.]
+ 
+
+48.
+[
+Ibid., p. 255.]
+ 
+
+49.
+[
+Ibid., p. 256.]
+ 
+
+50.
+[
+Ibid., pp. 256, 257.]
+ 
+
+51.
+[
+Ibid., p. 258.]
+ 
+
+52.
+[
+Lectures, p. 236.]
+ 
+
+53.
+[
+Ibid., p. 239.]
+ 
+
+54.
+[
+Ibid., pp. 241, 242.]
+ 
+
+55.
+[
+Ibid., pp. 242, 243.]
+ 
+
+56.
+[
+Ibid., p. 243.]
+ 
+
+57.
+[
+Ibid., p. 245.]
+ 
+
+58.
+[
+Ibid., pp. 246, 247.]
+ 
+
+59.
+[
+Lectures, pp. 247-52.]
+ 
+
+60.
+[
+Ibid., p. 261.]
+ 
+
+61.
+[
+Ibid., p. 263.]
+ 
+
+62.
+[There is a reminiscence of them in the chapter on Rent, vol. i.,
+I.11.56-60.]
+ 
+
+63.
+[See above,
+I.10-12.]
+ 
+
+64.
+[See below,
+I.73-80, for a conjecture on this subject.]
+ 
+
+65.
+[Below, vol. ii.,
+IV.9.38, note 2.]
+ 
+
+66.
+[Dugald Stewart, in his ‘Account of the Life and Writings of Adam Smith,’ read to the Royal Society of Edinburgh in 1793 and published in Adam Smith’s posthumous
+Essays on Philosophical Subjects, 1795, p. xviii. See Rae,
+Life of Adam Smith, pp. 53-5.]
+ 
+
+67.
+[Rae,
+Life of Adam Smith, pp. 42-5.]
+ 
+
+68.
+[Stewart, in Smith’s Essays, pp. lxxx, lxxxi.]
+ 
+
+69.
+[Rae,
+Life of Adam Smith, pp. 43-4.]
+ 
+
+70.
+[W. R. Scott,
+Francis Hutcheson, 1900, pp. 210, 231. In the
+Introduction to Moral Philosophy, 1747, Civil Polity is replaced by ‘Œconomicks and Politicks,’ but ‘Œconomicks’ only means domestic law,
+i.e., the rights of husbands and wives, parents and children, masters and servants.]
+ 
+
+71.
+[
+System of Moral Philosophy, vol. i., pp. 288, 289.]
+ 
+
+72.
+[
+Ibid., vol. i., pp. 319-21.]
+ 
+
+73.
+[
+System of Moral Philosophy, vol. ii., p. 58.]
+ 
+
+74.
+[
+Ibid., vol. ii., pp. 62, 63.]
+ 
+
+75.
+[
+System of Moral Philosophy, vol. ii., pp. 71-2.]
+ 
+
+76.
+[
+Ibid., vol. ii., p. 73.]
+ 
+
+77.
+[
+System of Moral Philosophy, vol. ii., pp. 318-21.]
+ 
+
+78.
+[
+Ibid., vol. i., pp. 323-5.]
+ 
+
+79.
+[
+Ibid., vol. ii., pp. 340-1.]
+ 
+
+80.
+[
+Ibid., vol. i., pp. 341-2.]
+ 
+
+81.
+[
+Francis Hutcheson, pp. 232-5.]
+ 
+
+82.
+[In the preface to Hutcheson’s
+System of Moral Philosophy, pp. xxxv, xxxvi.]
+ 
+
+83.
+[Rae,
+Life of Adam Smith, p. 411.]
+ 
+
+84.
+[
+Moral Sentiments, 1759, pp. 464-6.]
+ 
+
+85.
+[Below, vol. i.,
+I.2.2.]
+ 
+
+86.
+[
+Moral Sentiments, 1759, p. 474.]
+ 
+
+87.
+[
+Ibid., p. 483.]
+ 
+
+88.
+[
+Ibid., p. 485.]
+ 
+
+89.
+[
+Moral Sentiments, p. 487.]
+ 
+
+90.
+[
+Fable of the Bees, 1714, preface.]
+ 
+
+91.
+[Pp. II-I3 in the ed. of 1705.]
+ 
+
+92.
+[Pp. 427-8 in 2nd ed., 1723.]
+ 
+
+93.
+[P. 465 in ed. of 1724.]
+ 
+
+94.
+[Below, vol. ii.,
+IV.5.80-82.]
+ 
+
+95.
+[
+Lectures, p. 197.]
+ 
+
+96.
+[Above,
+I.10-12, I.17-19. Moreover, before bringing out the second edition of his
+Discourses, Hume wrote to Adam Smith asking for suggestions. That Smith made no remark on the protectionist passage in the discourse on the Balance of Trade seems to be indicated by the fact that it remained unaltered (see Hume’s Essays, ed. Green & Grose, vol. i., pp. 59, 343 and 344.]Book I, Introduction and Plan of the Work
+ 
+
+1
+38
+Categories: Adam Smith
+SHARE
+POST:
+Enter your email address to subscribe to our monthly newsletter:
+Email address
+RELATED CONTENT By Sam Fleischacker
+Economics and the Ordinary Person: Re-reading Adam Smith
+"Far more important to Smith's work is the belief that ordinary people normally understand their own interests without help from politicians or professional philosophers." "The Wealth of Nations is a stupendous palace erected upon the granite of self-interest."1 So wrote George Stigler, and he represents the majority view over the last two centuries. But the majority view is wrong. To claim that Smith's Wealth of Nations (WN) is grounded on the assumption that people inevitably act out of sel...
+COLLECTION: ADAM SMITH
+
+The article you’re reading is part of Econlib’s Adam Smith collection. Explore other Adam Smith articles:
+Life of Adam Smith
+John Rae
+The Theory of Moral Sentiments
+Adam Smith
+Search Econlib
+Enter at least 3 characters
+MORE OPTIONS
+The Library of Economics and Liberty
+Econlib
+
+HOME PAGE ARTICLES ECONLOG ECONTALK CEE BOOKS
+VIDEOS GUIDES SEARCH ABOUT ECONLIB CONTACT US
+  
+Enter your email address to subscribe to our monthly newsletter:
+
+Email address
+Contact Us Privacy Policy
+Copyright @ 1999-2019 Liberty Fund, Inc.
+All Rights Reserved
+ADAMSMITHWORKS LIBERTY FUND, INC. ONLINE LIBRARY OF LIBERTY LAW AND LIBERTY

@@ -1,0 +1,169 @@
+Log in or Sign up
+
+ 
+
+Home
+Forums
+Platforms
+Sony
+PlayStation 4
+Tutorials
+Tutorial (SAC-001) PS4 UART For Dummies Tutorial
+Discussion in 'Tutorials' started by EG6, Jan 28, 2018.
+
+
+ 
+EG6
+EG6
+Administrator
+Staff Member
+Administrator
+News Reporter
+Distinguished
+Contributor
+Active Member
+Registered
+     
+Let me start by saying im writing this because a lot of people dont know how to setup UART for their PS4 this TUT is only for those who have a SAC-001 Motherboard.​
+​
+Tools you would need:​
+
+A set of screw Drivers to open up the PS4​
+Soldering station $30-$150 (depends what you get)​
+Solder 0.7mm - $7​
+Flux - $5 - $15​
+Kynair Wire- $7​
+Wire cutters - $12​
+(Optional) Hot Glue and Glue gun - $15​
+Tip cleaner - $10​
+ANY Cheap FTDI USB to TTL Serial Adapter​
+Micro-USB Cable​
+etc​
+
+
+Step 1:​
+
+After you have your tools buy any cheap FTDI USB to TTL Serial Adapter, Lightning recommends this one.
+​
+
+[​IMG] ​
+​
+
+Step 2:
+
+Open up your PS4
+
+Video: 
+
+
+Step 3:
+
+Got some wire and strip a length from both ends
+
+Then solder 1 end to these points
+
+[​IMG]
+
+
+Step 4:
+
+MAKE SURE THE WIRES ARE STICKING OUT of the console
+
+(Optional) Hot glue the wires to the motherboard so they don't come un-done when you put the PS4 back together
+
+Step 5:
+
+Put the console back together WITH THE WIRES HANGING OUT
+
+Step 6:
+
+Solder the ground wire to Ground on the device and the TX Wire from the PS4 to the RX Pad on the FTDI Device (Pic of the one Lightning recommends)
+
+[​IMG]
+​
+
+
+Step 7:
+
+​
+Hook it up to your PC with the micro-USB Cable
+
+Step 8:
+
+Download:
+Hello guest, Please Register or login to view links or Console ID's
+
+
+
+INSTALL IT DONT USE PS WATSON.. PS WATSON DOESNT WORK!!
+
+Step 9:
+
+Make sure it's your COM port.
+
+[​IMG]
+
+[​IMG] ​
+
+​
+
+Final Step
+​
+
+[​IMG] ​
+​
+[​IMG]
+
+Full credit goes to LightningMods.
+Use this tutorial at your own risk. No responsibility will be taken for any errors following this process.​
+
+​
+EG6, Jan 28, 2018#1
+(You must log in or sign up to reply here.)
+Share This Page
+
+
+Sign up now!
+LIKE US ON FACEBOOK
+
+
+ 
+MOST VIEWED CRUNCHER PROFILES
+Disaster19892,098
+Praqq749
+Pretecons711
+LOST™582
+Pharoh301
+MRUK293
+Ancient285
+๖ۣۜKᴀʀɪsᴍᴀ | Cᴏʟᴇ282
+SakuraSakura249
+JASON83HD224
+
+Home
+Forums
+Platforms
+Sony
+PlayStation 4
+Tutorials
+ 
+ 
+ConsoleCrunch
+HOME
+FORUMS
+SEARCH FORUMS
+RECENT POSTS
+SHOUTBOX1
+MEMBERS
+PRIVATE ID'SCONSOLE ID'SCONTACT US
+
+Search...
+Frag Zone
+English (US)
+Contact Us
+Help
+Home
+Top
+Terms and RulesForum software by XenForo™ ©2010-2017 XenForo Ltd.
+
+Click this image to show the full-size version.

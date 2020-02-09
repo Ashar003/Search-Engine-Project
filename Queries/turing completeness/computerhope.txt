@@ -1,0 +1,61 @@
+Skip to Main Content
+Computer Hope
+ SearchHelpTipsDictionaryHistoryForumsContact
+
+ 
+Home Dictionary T - Definitions
+Turing completeness
+Updated: 10/17/2017 by Computer Hope
+Turing completeness
+In computer science, Turing completeness is a classification for a system of rules that manipulate data. It is named after computer scientist Alan Turing, inventor of the Turing machine.
+
+For instance, programming languages and CPU instruction sets are examples of formal rule systems that access and modify data. If the rules can be used to simulate Turing's hypothetical computing machine, the rules are said to be "Turing complete." A Turing-complete system can be proven mathematically to be capable of performing any possible calculation or computer program.
+
+An example of a Turing complete system is lambda calculus that was developed by Alonzo Church, Alan Turing's professor.
+
+Examples of Turing complete systems
+Many procedural programming languages, including C and Pascal.
+Most object-oriented programming languages, such as Java and C++.
+Logic programming languages, such as Prolog.
+Many finite automata systems, such as Conway's Game of Life.
+Computer Science, Lambda calculus, Programming terms
+
+
+ 
+
+ 
+Was this page useful?YesNo
+FeedbackE-mailSharePrint
+Ask another computer question
+ Search
+Recently added pages
+How to Launch a Browser in Private or Incognito Mode by Default
+How to Change the Language Settings in Gmail
+How to create a Microsoft Edge desktop shortcut
+How to create or delete a folder in Microsoft Outlook
+How to Delete a Windows restore point
+View all recent updates
+Useful links
+About Computer Hope
+Site Map
+Forum
+Contact Us
+How to Help
+Top 10 pages
+Follow us
+Facebook
+Twitter
+Pinterest
+YouTube
+RSS
+© 2019 Computer Hope
+Legal Disclaimer - Privacy Statement
+Share
+Share to Facebook
+Share to Twitter
+Share to Email
+Share to Print
+More AddThis Share options
+1
+SHARES
+Show

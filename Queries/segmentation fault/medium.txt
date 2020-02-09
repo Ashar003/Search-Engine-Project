@@ -1,0 +1,73 @@
+Become a member
+Sign in
+Get started
+What to do with a Segmentation Fault 11
+Ryan Deschamps
+Ryan Deschamps
+Follow
+Mar 20, 2018 · 4 min read
+For some reason, I decided to build a product using plain C. If the goal was code efficiency, it was a disaster. But as a tool for personal growth, I think I learned a great deal more about programming in the process.
+For example, I now know more precisely why a python dictionary and a list behave differently, and what it really means to “pass by reference.”
+However, if there was one barrier that would make me never want to go back to C, it would be the dreaded “Segmentation Fault 11,” followed closely by “Abort Trap 6.”
+These two errors occur during run time, making them difficult to debug. XCode, Eclipse or other debugging tools are really helpful, but I’ve learned that it’s much more important to learn what these things are and come up with procedures to tackle the debugging process. This is just my notes on my own common mistakes. I hope to make this a troubleshooting list for anyone who has their own problems. I want to at least cover my stupid problems, so you can focus on real coding problems.
+What is a Seg Fault?
+A segmentation fault means your program tried to access something it was not supposed to. That’s part of the problem. There are many reasons why a program can access things its not supposed to, but compiled code pretty much just says “#$#@^*&!” instead. If you think about it, you would not want to have to explain to someone why them poking you in a sensitive spot makes you mad. You just want them to stop doing it. Fortunately, computers are both dumb and surprisingly patient after about 75 years of engineering. They’ll keep sending Seg Faults, but (usually) won’t stop being friends after it happens the 1000th time.
+What is Abort Trap?
+It’s not that much different. Somewhere, your computer told itself to abort the program. Again, not very helpful. However, it usually occurs when you try to do something like access string[4] of a two-char string "nw" or fail to allocate enough memory char string[2] for a string or array like "way".
+What Should You Do with a Seg Fault?
+The tutorials I read tend to focus on using debugging tools like lldb, gdb and so on. That’s all fine and dandy. Yes, you should run gcc -g first and then lldb executable_name and then run -flag1 -flag2 to see if that helps you figure it out. But sometimes there is no help whatsoever. I have a list of things to check for though.
+Check that your necessary program global variables have values. This mostly happened because I had created flags that filled in a bunch of values that needed to be set before running. However, what if they do not put anything in? Seg Fault 11! There were a number of times I *thought* vars were set when they were not and that made for challenging bugs. Better yet, try to keep globals to a limit so they are easier to track.
+malloc is both your friend and your enemy. Especially with user entries, it can be very challenging to allocate memory and then copy, concatenate and do whatever else down the road. Know this command well and how it works. And don’t forget to free() the memory when you are done!
+use char var[strlen(x)+1] to determine the size of a char* for memory allocation. Most of the problem I had involved assigning variables to eventually accept a string. I have seen other advice, but if its a string you are working with, I think was strlen() worked the most consistently. You need the +1 for the \0 (null) to terminate the string at the end.
+use int arr[(sizeof(x)/sizeof(x[0]) +1)] for arrays of other types. It’s a weird way to do things, but that’s what you get with a low-level language.
+\0 represents null and will terminate an array. It can be helpful when you are trying to prevent buffer overflow problems.
+Try to use defined constants as much as possible. Whenever you are able to define things at precompile, it will save you debugging time later on.
+Understand what header files are for. Many of the tutorials will tell you what a header file contains, but it’s not always clear what they are for. Header files are captured at pre-compile time and provide a summary of variables and functions available to the program *before it compiles*. This means that the .c files included in the program will be able to access these functions, provided that #include <headerfile.h> is added to the file. A good convention is to create a .h file whenever you create a .c file, and include it in the c.
+Most for loops go like this: for (int i=0; i < stop; i++) An easy way to have a abort trap is to put a ≤ in front of stop.
+Keep your problems contained. Try to make it so that each file does a few discrete things and nothing else. If you have to hunt through different files over and about, it can make finding your seg fault problems really difficult.
+Computer Math is hard. It’s not really, but little things cause big problems. char variable[2] for example means an array containing two items, but because indexes start at 0, that means you can only go up to number 1.
+Print format strings as the right type. Fortunately, this usually gets caught at compile time, but it can still cause problems. Make sure your format character %{whatever} suits whatever variable you want to put into it.
+That’s all I have for now. I hope my miseries have saved you some headaches down the road! If all else fails, I now have a list of things to check before I pull my hair out!
+38
+Programming
+C Programming
+Debugging
+Abort Trap
+Seg Fault
+38 claps
+
+Ryan Deschamps
+WRITTEN BY
+
+Ryan Deschamps
+Follow
+Postdoctoral fellow studying web archives and the digital history of Canada. Also interested in public policy agenda setting.
+Write the first response
+More From Medium
+Related reads
+Algorithms in C++
+Vadim Smolyakov
+Vadim Smolyakov in Towards Data Science
+Jun 10, 2018 · 9 min read
+1.96K
+Related reads
+Understanding Compilers — For Humans
+Luke I. Wilson
+Luke I. Wilson
+Jun 10, 2018 · 8 min read
+3.8K
+Related reads
+6 Steps to Understanding a Heap with Python
+Yasufumi TANIGUCHI
+Yasufumi TANIGUCHI in Towards Data Science
+Feb 11 · 9 min read
+563
+Discover Medium
+Welcome to a place where words matter. On Medium, smart voices and original ideas take center stage - with no ads in sight. Watch
+Make Medium yours
+Follow all the topics you care about, and we’ll deliver the best stories for you to your homepage and inbox. Explore
+Become a member
+Get unlimited access to the best stories on Medium — and support writers while you’re at it. Just $5/month. Upgrade
+About
+Help
+Legal

@@ -1,0 +1,134 @@
+
+Subscribe
+AI
+Crypto
+Coding
+Future
+Startups
+About
+Community
+Sponsor
+Recommends
+HN Shirt
+Kyle Wang
+@kyletwang
+
+Ethereum: Turing-Completeness and Rich Statefulness Explained
+July 6th 2017
+ TWEET THIS
+
+If you are a follower of the recent explosion of interest in blockchain and cryptocurrencies, you have no doubt heard of Vitalik Buterin, the inventor and prophet of the ethereum platform. For those of you new to the topic, here is a beginner’s guide to ethereum by Linda Xie and a great article on the crypto market and blockchain by Preethi Kasireddy. I would recommend at least a baseline understanding of ethereum and the idea of blockchain before reading this article.
+
+While the price of ethereum has soared around 5000% since the start of this year, the platform and its traded currency, ether, have definitely attracted its fair share of critics. Recently, I noticed a very interesting write-up by Buterin addressing many of the common concerns brought up by investors and crypto-enthusiasts in the r/BTC subreddit. Many pro-Ethereum subreddits have reposted his response, but it was comments like these that I related to the most:
+
+
+To help inform the ethereum investment and trading community, I wanted to take a stab at decomposing Buterin’s statement so that it would be intelligible to us mere mortals without significant CompSci or development experience. In this article, I wanted to discuss the first few objections related to the Turing completeness property of the ethereum platform. For those unaware, the platform was originally heavily marketed based on Turing-completeness, which sparked a massive debate. The main takeaways from the discussion are the following:
+
+The ethereum platform is built with a Turing-complete language that is functionally different from Bitcoin. There is a debate regarding whether such a language is necessary as it has the potential to make the system unsafe and unpredictable. Buterin disputes this assessment and notes that a decidable language is also available on the platform for additional security needs.
+Post’s theorem is cited in support of this objection. Buterin argues that the debate on Turing-completeness misses the point and concedes that the ethereum platform should not have been initially marketed in this way. The true value proposition of ethereum is “rich statefulness”, or transparency at the blockchain level. However, he states that it is still important to have the functionality afforded by Turing completeness to implement more complex and sophisticated logic in smart contracts.
+Confused? Let’s try to break down the objections around Turing-completeness along with Buterin’s responses from the Reddit thread above.
+
+Turing-Completeness & Decidability
+Turing-completeness is bad and you need decidability for safety!
+A common criticism of the ethereum platform is that it is potentially unsafe or unpredictable because of its flexibility as a “Turing-complete” system.
+
+Any system or programming language able to compute anything computable given enough resources is said to be Turing-complete. In simpler terms, it can simulate a computer and is said to be the most expressive. Bitcoin, for instance, is not Turing complete as it only provides a very simple mechanism to distribute money. Ethereum, the so-called “World Computer”, allows rules to be written in any way that can be expressed by code and enables smart contracts (e.g. your alcoholic mother-in-law downs a fifth of vodka and is detected by the breathalyzer in her car, so her key stops working as soon as the car is parked and her car insurance costs rise concurrently).
+
+Below is an xkcd comic that is often cited to illustrate this idea. Given enough memory and time, a Turing-complete system should be able run any conceivable algorithm (also known as capable of universal computation). In this comic, the character uses rocks as analogs for bit strings to, with infinite time and space, model the universe.
+
+xkcd: A Bunch of Rocks
+xkcd.com is best viewed with Netscape Navigator 4.0 or below on a Pentium 3±1 emulated in Javascript on an Apple IIGS…
+xkcd.com
+Now that we roughly grasp the idea of Turing-completeness, we can begin to understand that the price of such freedom is the abandonment of “decidability”. We can think of decidability in terms of whether a problem can be solved or computed by an algorithm. An addition problem is seen to be decidable as a series of steps (add the ones, carry the ten, repeat) with nonchanging conditions brings us to a meaningful, safe result: 45 + 375 = 420.
+
+Meanwhile, it is impossible to construct an algorithm to answer an undecidable problem. A classic example is the halting problem — can you tell me, with certainty, whether a computer program I am running will go on infinitely or one day stop? There is a lot of literature on this subject as well as philosophical implications (the limits of a program’s ability to analyze itself vs. the parallels with our own human minds), but in short without the restrictions of decidable languages what a program might do in the future can be unpredictable. In the context of ethereum, this means that it is fundamentally impossible to for us to know what a smart contract will do before you run it. The greater the complexity, the greater the possibility that something could go drastically wrong. Furthermore, the expressiveness granted by a Turing complete language can enable the schemes of malicious actors (e.g. attackers could write a contract that would shut other miners or nodes out by forcing them into an infinite loop).
+
+We don’t agree, but if you want decidability here’s a decidable HLL on top of ethereum that gives you that: http://github.com/ethereum/viper
+Vitalik’s response above simply indicates that he is a sure proponent of the flexibility granted by the ethereum platform and points the audience to Viper, a high level programming language (HLL) on the platform that is decidable (includes restrictions such as 128 bit integers and fixed point decimal values). From the ethereum wiki, the development team writes that “our solution [to stop infinite loop attacks] works by requiring a transaction to set a maximum number of computational steps that it is allowed to take, and if execution takes longer computation is reverted but fees are still paid.”
+
+Post’s Theorem & Rich Statefulness
+But we don’t need Turing completeness because Post’s theorem!
+First, let’s talk about Post’s theorem. In general, the argument is that Turing-complete languages are unnecessary and even overkill when it comes to the functionality of smart contracts. Instead of utilizing every single node to assess and verify your smart contract transaction, Post’s theorem asserts that it is far more efficient to provide information and expected outcomes to the nodes ahead of time.
+
+A crude example might be a trip to a fast food restaurant with your suspicious family. Instead of each family member following every employee to make sure they are preparing each person’s order correctly, they can simply compare how the orders match up with their receipts. In other words, the nodes need only observe that the state transformation matches the expected intermediate and final states.
+
+Sure, but it’s not about turing completeness, you’re missing the whole point of why a richly stateful model like ethereum can do things that a UTXO model can’t. Moeser-Eyal-Sirer wallets to start off. Then we can talk about advanced state channel constructions like this, ENS auctions, and so on and so forth.
+To provide additional context to Buterin’s comment, I also wanted to include a recent tweet:
+
+
+Rich Statefulness”? ¯\_(ツ)_/¯
+Here, Buterin quite sadly walks back the importance of almost everything you’ve read so far in this article. In a separate Reddit comment, Buterin writes that “Turing-complete was the wrong thing to emphasize when describing it [the ethereum platform], but the fact that ethereum remains fundamentally capable of doing much more still remains”. Instead, he focuses on a notion that he has apparently coined “rich statefulness”. The term simply refers to the ability of a system to remember things at a blockchain level. For instance, if you contribute money to a “trustless insurance” contract, your contributions, tickets, and claims, current and previous, will be automatically updated and remembered on the blockchain along with thousands of others.
+
+This is not possible with Bitcoin, which is considered stateless as it is built on something called the UTXO (Unspent Transaction Outputs) model. In the interest of not slaughtering more precious minutes of your lives, I’ll summarize it quickly: each Bitcoin transaction consumes and creates one or more of these UTXO badboys, complicating transactions with multiple steps. To illustrate a typical, simple transaction under this model, we will need to visit a world where Kit-Kat bars reign supreme. Let’s say I am paying my overweight friend nine and a half (9.5) Kit-Kat bars for fabulous fashion advice. Under the UTXO model, I can’t just give myself a break and hand over half a bar. Instead, I have to head to the chocolate factory where a chocolatier will take one of my bars, melt it down, and generate a new half bar (UTXO) for me to keep and deliver the other half (UTXO) to my rotund friend. Unfortunately, this process has to happen every single time Kit-Kats change hands, so this means I will never be able to efficiently pay my friend for very complex tasks, like multiple-stage, conditional payments for building different gingerbread houses throughout the year under the full moon depending on the whims of my ouija board while cutting my grass on prime-numbered days. This is further complicated by the fact that all of us have early-onset Alzheimer's and find it very difficult to remember our previous transactions. If UTXOs really tickle your fancy, you can read more about them here.
+
+Without getting too lost in the weeds on the ethereum-enabled possibilites that he lists (ENS auctions, Moeser-Eyal-Sirer wallets, etc.), Buterin explains that he has always intended ethereum’s Turing-complete language as a foundation layer to provide flexibility to the platform while the true value proposition lies in the model’s rich statefulness. Altogether this enables the implementation of complex contracts that are simply not possible or too onerous with the Bitcoin model.
+
+Ultimately, these discussions continue to reflect the exciting and evolving era of blockchain we live in. As new corporate behemoths sign up for the hype and an ever increasing number of ICOs hit the shelves, I firmly believe it is worth it for both investor and obsessor to begin drilling a bit deeper under the surface of the iceberg to get a sense of the fierce debates that will drive our decentralized future. Thanks for reading, and I hope you have a better understanding of some of the key criticisms and rebuttals to many of the cutting edge ideas in ethereum and blockchain as a whole.
+
+Blockchain
+Ethereum
+Cryptocurrency
+Bitcoin
+Computer Science
+Continue the discussion 
+More by Kyle Wang
+Blockchain and the Journey Toward a New Internet Architecture
+Kyle Wang
+Blockchain
+Cryptoeconomics: Paving the Future of Blockchain Technology
+Kyle Wang
+Jul 21
+Blockchain
+How to Invest in Cryptocurrency
+Kyle Wang
+Jul 12
+Bitcoin
+ICO Mania: One Small Step for Man, One Giant Leap Backward for Mankind
+Kyle Wang
+Blockchain
+Understanding Bitcoin Transaction Verification: A Children’s Story
+Kyle Wang
+Jul 17
+Bitcoin
+
+Hackernoon Newsletter curates great stories by real tech professionals
+Get solid gold sent to your inbox. Every week!
+
+Email Address *
+First Name
+Last Name
+TOPICS OF INTEREST
+Software Development
+Blockchain Crypto
+General Tech
+Best of Hacker Noon
+More Related Stories
+µRaiden: Micropayments for Ethereum
+Raiden Network
+Sep 19
+Ethereum
+05/03/2018: Biggest Stories in the Cryptosphere
+BlockEx
+Ripple
+0 to $1 Million in 5 Months for Our Cryptocurrency Startup
+Alex Wang
+Mar 28
+Cryptocurrency
+0 to Pro Crypto Trader: Your Ultimate Guide to Bitcoin and Altcoin Investing
+Kenny Li
+Bitcoin
+10 Data Structure & Algorithms Books Every Programmer Should Read
+javinpaul
+Jun 20
+Programming
+
+Help
+About
+Start Writing
+Sponsor:
+Brand-as-Author
+Sitewide Billboard
+Contact Us
+Privacy
+Terms
+   

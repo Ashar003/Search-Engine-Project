@@ -1,0 +1,173 @@
+Skip to main content
+TECH JOBS
+TECH TOPICS
+TECH HUBS
+FOR EMPLOYERS
+SIGN UP
+LOG IN
+WHAT IS SIMULATION THEORY AND WHY DOES IT MATTER?
+Are we living in a computer simulation? What is reality? Simulation theory tackles some heavy questions.
+November 14, 2019
+Updated: November 15, 2019
+Written by Mike Thomas
+LinkedInFacebookTwitterlinkEmail
+“It is possible that I am dreaming right now and that all of my perceptions are false.” — René Descartes
+
+“If we are living in a simulation, then the cosmos that we are observing is just a tiny piece of the totality of physical existence… While the world we see is in some sense ‘real,’ it is not located at the fundamental level of reality.” — Nick Bostrom
+
+What is reality? 
+
+Countless brainiacs and psychedelia enthusiasts have pondered that question for centuries, formulating theories that run the gamut from scientific to mystical. 
+
+From a purely empirical standpoint, the answer seems obvious: reality is anything we can perceive using one or more of the five senses: taste, smell, touch, hearing and sight. But some outside-the-box thinkers, including philosophers and physicists, contend that’s not necessarily the case. It is possible, they theorize, that reality is merely an ultra-high-tech computer simulation in which we sim-live, sim-work, sim-laugh and sim-love. 
+
+From the time it entered popular consciousness, many have noted that simulation theory is essentially a modern offshoot of Plato's “Allegory of the Cave” story from the Ancient Greek philosopher’s book “The Republic,” and René Descartes’s evil demon hypothesis from the French philosopher and scientist’s “First Meditation.” Both contain ruminations on perception and the nature of being — subjects that continue to puzzle and provoke. 
+
+WHAT IS SIMULATION THEORY?
+Simulation theory, a modern hypothesis with ancient roots, posits that we're actually living in an advanced digital construct, such as a computer simulation, that's overseen by some higher form of intelligence.
+“Simply because we perceive the world as ‘real’ and ‘material’ doesn’t mean that it is so,” said Rizwan Virk, a tech entrepreneur and author of The Simulation Hypothesis. “In fact, the findings of quantum physics may shed some doubt on the fact that the material universe is real. The more that scientists look for the “material” in the material world, the more they find that it doesn’t exist.”
+
+ 
+
+What Is Simulation Theory?
+Rizwan Virk
+ 
+
+“The findings of quantum physics may shed some doubt on the fact that the material universe is real." 
+
+Virk mentioned the renowned physicist John Wheeler, who worked with Albert Einstein decades ago. In his lifetime, Wheeler said, physics had evolved from the premise that “everything is a particle” to “everything is information.” He also coined a phrase that’s well-known in scientific circles: “It from bit” — meaning everything is based on information. Even the definition of a particle in physics is “kind of fuzzy,” Virk added, “and may be in fact just be a qubit — a quantum computing bit.”
+
+New York University philosophy professor David Chalmers has described the being responsible for this hyper-realistic simulation we may or may not be in as a “programmer in the next universe up,” perhaps one we mortals might consider a god of some sort — though not necessarily in the traditional sense. “[H]e or she may just be a teenager,” Chalmers said, “hacking on a computer and running five universes in the background… But it might be someone who is nonetheless omniscient, all-knowing and all-powerful about our world.”
+
+Brain spinning yet? Get used to it.
+
+Even more mind-meltingly, theoretical physicist David Bohm once posed this tortuous notion: “Reality is what we take to be true. What we take to be true is what we believe. What we believe is based upon our perceptions. What we perceive depends on what we look for. What we look for depends on what we think. What we think depends on what we perceive. What we perceive determines what we believe. What we believe determines what we take to be true. What we take to be true is our reality.”
+
+(Deep breath).
+
+And what we take to be true, more than a few folks believe — among them tech entrepreneur Elon Musk, who famously said the odds that we’re not simulated are “one in billions” — might now or at least someday be merely the effect of simulated brains and nervous systems processing a simulated world. To Musk’s unique way of thinking, the strongest argument for our probably being in a simulation is that, as he put it in 2016,  “Forty years ago, we had Pong, two rectangles and a dot…That is what games were. Now, 40 years later, we have photorealistic 3D simulations with millions of people playing simultaneously, and it’s getting better every year. And soon we’ll have virtual reality, augmented reality. If you assume any rate of improvement at all, the games will become indistinguishable from reality.”
+
+ 
+
+
+ 
+
+HOW, EXACTLY, WOULD THIS WORK?
+In a seminal 2003 paper titled “Are You Living in a Computer Simulation?”, Swedish philosopher Nick Bostrom explained that future generations might have mega-computers that can run numerous and detailed simulations of their forebears, a.k.a. “ancestor simulations,” in which the simulated beings are imbued with a sort of artificial consciousness. 
+
+“Then it could be the case,” he explained, “that the vast majority of minds like ours do not belong to the original race but rather to people simulated by the advanced descendants of an original race. It is then possible to argue that, if this were the case, we would be rational to think that we are likely among the simulated minds rather than among the original biological ones.”
+
+That type of “posthuman simulator,” Bostrom also wrote, would need sufficient computing power to keep track of “the detailed believe-states in all human brains at all times.” Why? Because it would essentially need to sense observations (of birds, cars, etc) before they happened and provide simulated detail of whatever was about to be observed. In the event of a simulation breakdown, the director — whether teenager or giant-headed alien — could simply “edit the states of any brains that have become aware of an anomaly before it spoils the simulation. Alternatively, the director could skip back a few seconds and rerun the simulation in a way that avoids the problem.”
+
+ 
+
+
+Nick Bostrom on The Joe Rogan Experience podcast
+We’re (likely) not there yet, but Virk thinks we will be at some point. There are ten checkpoints on the road to full-blown simulation, he told Built In, and we’re nearly halfway to our destination. But there are also major barriers ahead, he said, namely what are called brain computer interfaces. However, those don’t yet exist. Think “The Matrix.” 
+
+What artificial intelligence is to the dystopian blockbuster “The Terminator,” simulation theory is to the Wachowski siblings’ sci-fi thriller, which depicts a post-apocalyptic world in which “most of humanity have been captured by a race of machines that live off of the humans’ body heat and electrochemical energy and who imprison their minds within an artificial reality known as the Matrix.” (Thanks, IMDB.) In the film, humans going about their everyday lives didn’t realize they were actually living in a simulation because a cable plugged into their neocortices (where stuff like spatial reasoning and sensory perception occur) beamed signals into their brains and read their reactions.
+
+There are ten checkpoints on the road to full-blown simulation and we’re nearly halfway to our destination.
+
+One way to achieve that (or something like it) in the real-world, Virk went on, would be to gain a greater understanding of human consciousness and how it works so we can produce “conscious AI.” The far less technical alternative, he said, is “tricking our consciousness into thinking that we are in reality when we are in a video game” in which non-player characters exhibit intelligent human-like behavior that passes the Turing Test. 
+
+“This,” he concluded somewhat ominously, “is coming.” 
+
+Preston Greene, a philosophy professor at Nanyang Technological University in Singapore, told Built In he thinks we could be living in a simulation right now. But proving as much, he has warned and some have attempted, would be catastrophic. 
+
+Just as present-day researchers use simulations to digitally create scenarios to aid scientific study (eg., What would happen if we eliminate mosquitoes?), our world and every moment of our past existence might be the simulated experiment of future humans. And just as scientists can terminate simulations (of earthquakes, weather, etc.) when they no longer provide useful data, so too can our hypothetical overlords pull the plug at any time, without warning. 
+
+But rest assured, Greene said, “It would be a quick and painless death.”
+
+“If our physicists use experiments to prove we live in a simulation, and they tell everyone about this and that has a large effect on how our civilization behaves,” he explained, “then our simulation would no longer be useful for answering questions about the basement [foundational] level of reality, which contains the computers doing the simulations. This is because such experimental proofs could never happen on the basement level. So even though there are many possibilities for how our simulators would react to our using experiments to prove we live in a simulation, simulation shutdown is worth taking at least as seriously as anything else, since it is supported by observed trends in simulation science.” 
+
+ 
+
+
+SKEPTICISM ABOUNDS 
+Not surprisingly, the simulation hypothesis has plenty of skeptics. In 2016, during the 17th annual Isaac Asimov Panel Debate at New York’s American Museum of Natural History, the topic was discussed by a panel of august experts that included Chalmers, astronomer Neil deGrasse Tyson, University of Maryland physics professor Zohreh Davoudi and Harvard University physicist Lisa Randall.
+
+“The argument says you’d have lots of things that want to simulate us. I actually have a problem with that."
+
+Randall, it quickly became apparent, was the group’s most definitive doubter. Although she allowed for the possibility that nothing is what it seems, including the cognitive process of observation, she also wondered about the judgement of our supposed simulators in choosing humankind for their grand experiment.
+
+“It’s just not based on well-defined probabilities,” she said. “The argument says you’d have lots of things that want to simulate us. I actually have a problem with that. We mostly are interested in ourselves. Why simulate us? I mean, there’s so many things to be simulating….I don’t know why this higher species would want to bother with us.”
+
+She has a point. See: expansive and ever-growing evidence that human development is destroying the natural world. 
+
+It was widely thought the simulation hypothesis had been disproven once and for all when, in 2017, physicists Zohar Ringel and Dmitry Kovrizhi published an article in the journal Science Advances titled “Quantized gravitational responses, the sign problem, and quantum complexity.” Here’s the catch: their work was at most indirectly relevant to simulation, which Zohar later dismissed as “not even a scientific question.” 
+
+Specifically, they proved that a classical computing technique called “quantum Monte Carlo,” which is used to simulate quantum particles (photons, electrons and other types of particles that comprise the universe), was insufficient to simulate a quantum computer itself — a breakthrough that would negate the need to physically build these next-level machines, which is no easy task. And if it’s impossible to simulate a quantum computer, forget about simulating the universe.
+
+Per Cosmos.com, “The researchers calculated that just storing information about a couple of hundred electrons would require a computer memory that would physically require more atoms than exist in the universe.”
+
+ 
+
+
+ 
+SO YOU’RE SAYING THERE’S A CHANCE...
+Nonetheless, Ringel, the paper’s lead author, appeared to leave the door ever so slightly cracked when he told Popular Mechanics, “Who knows what are the computing capabilities of whatever simulates us.”
+
+“The real question is what are the limits of computing powers.”
+
+In other words, echoing Bostrum and Greene, some advanced species could possess a system that makes even the world’s fastest supercomputers seem like Commodore 64s. Maybe they’ve perfected quantum computing. Or maybe it’s something else entirely — something of which our limited minds can’t even conceive.
+
+Calling simulation theory “a bit flaky, but a fascinating idea,” U.K. astronomer Martin Rees nonetheless remained curious about the idea in an interview with Space.com. “The real question,” he said, “is what are the limits of computing powers.” Or are there limits? Judging by the types of real-world simulations scientists can now run on supercomputers, what might they be able to run in the coming decades or centuries as processing power achieves levels we currently can’t fathom?
+
+Cosmologist Paul Davies has over the years shared many deep thoughts on this monumentally complex topic — and apparently is still being asked to impart them. “I have suddenly been deluged with media queries about the simulation argument,” he told Built In via email. “Don’t know why.” 
+
+Davies has spoken so much on the subject that he preferred to let his past ruminations — including this recent one — do the talking. Even as far back as 2003, in a story for The Guardian, Davies was posing brain boggling simulation scenarios. Here’s part of what he wrote:
+
+Mathematicians have proved that a universal computing machine can create an artificial world that is itself capable of simulating its own world, and so on ad infinitum. In other words, simulations nest inside simulations inside simulations ... Because fake worlds can outnumber real ones without restriction, the “real” multiverse would inevitably spawn a vastly greater number of virtual multiverses. Indeed, there would be a limitless tower of virtual multiverses, leaving the “real” one swamped in a sea of fakes.
+
+So the bottom line is this: Once we go far enough down the multiverse route, all bets are off. Reality goes into the melting pot, and there is no reason to believe we are living in anything but a Matrix-style simulation. Science is then reduced to a charade, because the simulators of our world — whoever or whatever they are — can create any pseudo-laws they please, and keep changing them. 
+
+As Neo might put it, “Whoa.”
+
+ 
+
+SIM OR NO SIM: WHO CARES?
+Then again, you might be wondering, why does any of this matter? What is the purpose of proving or disproving that life as we know it is merely a digital construct and existence simply an immensely complex experiment in someone’s virtual terrarium? 
+
+The broad answer, Virk said, is that which all good science pursues: truth. More specifically, our truth. 
+
+If we do in fact exist inside a video game that requires our characters (i.e. us) to perform certain quests and achievements in order to progress (“level up”), Virk posited, wouldn’t it be useful to know what kind of game we’re in so as to increase our chances of surviving and thriving? 
+
+His answer, not surprisingly, is an unqualified yes.
+
+“I think it would make all the difference in the world.”
+
+Whatever type of world it is.
+
+LinkedInFacebookTwitterlinkEmail
+Great Companies Need Great People. That's Where We Come In.
+RECRUIT WITH US
+
+
+© Built In 2019
+
+GET INVOLVED
+Recruit With Built In
+Contact Us
+Careers
+STAY CONNECTED
+Facebook
+Twitter
+LinkedIn
+OUR COMMUNITIES
+Built in Austin
+Built in Boston
+Built in Chicago
+Built in Colorado
+Built in LA
+Built in NYC
+Built in Seattle
+Built In San Francisco
+ABOUT
+Our Story
+Our Staff Writers
+Privacy Policy
+Terms of Use
+Copyright Policy
+Live your purpose.
+Work your passion.

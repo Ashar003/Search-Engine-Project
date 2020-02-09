@@ -1,0 +1,155 @@
+
+Good Enough Security
+Product Security Engineering in the Real World and Why Security Systems Fail
+
+Sunday, November 25, 2012
+How the PS3 LV0 key was (probably) hacked
+If you follow Schneier you may have followed his link to a Hexus.net article entitled "Sony lets slip its PlayStation 3 Master Key", which tells us:
+This wouldn't be the first time Sony has leaked important security keys, common to every PlayStation 3 console, however, this is the first time the console's LV0 decryption keys have been let loose in the wild.
+So what makes the LV0 keys so special? These are the core security keys of the console, used to decrypt new firmware updates. With these keys in-hand, makers of custom firmwares (CFW) can easily decrypt any future firmware updates released by Sony, remaining a step ahead of the update game; likewise, modifying firmwares and preventing them from talking back to Sony HQ also becomes a much easier task.
+Some background. PS3 utilizes a "chain of trust" to ensure that only trusted code runs on the PS3. The chain of trust starts from ROM code which is immutable. This ROM code validates the authenticity of a bootloader which in turn validates the authenticity of the LV0 code which in turn validates the next link in the chain.
+
+A couple of years ago, due to an epic fail by Sony, hackers figured out the root secret key used by Sony to sign code and thus completely shattered the chain of trust.
+
+But Sony still had a trick up their sleeves. The LV0 code isn't only signed - it's also encrypted with an on-chip key "the LV0 decryption key". This allows Sony to constantly download new software to devices which the attackers would need to break without being able to read the software (since it's encrypted). Now a group of hackers have published these LV0 decryption keys.
+
+So how did the hackers get their hands on the LV0 decryption keys? According to the Hexus.net article:
+So where has Sony gone wrong and what can the firm do to resolve the issue? Perhaps the most obvious mistake was to allow keys to leak in the first place, which were extracted through a flaw in the console's hypervisor.
+"A flaw in the console's hypervisor"? What flaw? And how can such a flaw leak the LV0 keys when they should be long gone by the time the attackers can load their own code?
+
+I suspect that the Hexus.net article is confusing the new LV0 key hack with the original GeoHot attack which indeed circumvented the PS3 hypervisor to gain access to LV0 and LV1 (not the LV0 decryption keys - the decrypted LV0 code itself). This is described in more detail here.
+
+So how did the hackers obtain the LV0 decryption key? Ace hacker Wololo described a possible method on his blog:
+For the exploit that we knew about, it would’ve required hardware assistance to repeatedly reboot the PS3 and some kind of flash emulator to set up the exploit with varying parameters each boot, and it probably would’ve taken several hours or days of automated attempts to hit the right combination (basically the exploit would work by executing random garbage as code, and hoping that it jumps to somewhere within a segment that we control – the probabilities are high enough that it would work out within a reasonable timeframe).
+This makes a lot of sense. Since the LV0 signing keys were hacked long ago hackers can sign any file as the LV0 code and it will be run by the device. But since they didn't know what the LV0 decryption key is, this file will be decrypted with the LV0 key, becoming a random blob of commands, before being run by the device. Effectively this causes random code to be run on the device.
+
+If you try enough random blobs sooner or later you're going to have one in which the code does something which is good for you as an attacker. In this case, you're going to get to a version of random code in which the code jumps to not encrypted code from some other place in memory with full access to the device memory - including to the LV0 decryption keys themselves.
+
+This is exactly why it isn't enough to encrypt a file - you also need to sign it. Otherwise attackers can feed you random garbage that they can't control - but may be advantageous for their needs.
+
+This is just another example to the old rule: When you have to sign - sign. Don't encrypt.
+
+
+
+Of course in this case Sony did sign - they just signed badly and thus lost the signing keys.
+Posted by David Wachtfogel at 6:00 AM  
+Email This
+BlogThis!
+Share to Twitter
+Share to Facebook
+Share to Pinterest
+Labels: Chain of Trust, Fails, PlayStation, PS3, Sony
+1 comment:
+
+kenzie jonesOctober 12, 2014 at 10:40 PM
+I don't have any information regarding this. But by reading your blog I got the information which is very necessary. Thanks for sharing this type of information. It helps me a lot.
+electronic signatures
+
+Reply
+
+Links to this post
+Create a Link
+
+Newer PostOlder PostHome
+Subscribe to: Post Comments (Atom)
+______________________
+This blog is about epic security system fails and why they occur. The seven laws of security engineering are here.
+About Me
+My photo
+David Wachtfogel
+Hardware product security expert at AWS.
+View my complete profile
+Subscribe To
+ Posts
+ Comments
+Greatest hits
+Protecting the weak (passwords)
+
+How the PS3 LV0 key was (probably) hacked
+
+HDCP: Cool New Hack
+Moved to Twitter and Pulse
+Security Testing: Why it’s important things don’t work when they shouldn’t
+History of Security Failures 101: Crypto Flaws
+Security RSS/Blog Roll
+
+Slashdot: Security
+Can AI Predict the Stock Market? No, But the Attempt Was Interesting
+27 minutes ago
+Hack in the Box
+Planned .Org Registry Sale Puts The Pirate Bay at Risk
+13 hours ago
+
+Schneier on Security
+Friday Squid Blogging: Squid-Like Underwater Drone
+23 hours ago
+
+The Register: Security
+After four years, Rust-based Redox OS is nearly self-hosting
+1 day ago
+CSOONLINE.com - News
+What it takes to be an interim CISO
+1 day ago
+
+Light Blue Touchpaper
+Rental scams
+2 days ago
+
+Ars Technica: Security
+What the newly released Checkra1n jailbreak means for iDevice security
+2 weeks ago
+
+bunnie's blog
+Name that Ware, October 2019
+4 weeks ago
+
+Mocana DeviceLine Blog
+Why Cybersecurity Matters When Targeting a New Market
+6 months ago
+
+root labs rdist
+In Which You Get a Chance to Save Democracy
+1 year ago
+
+Bristol Cryptography Blog
+CHES 2017 Taipei, Taiwan
+2 years ago
+Freedom to Tinker
+Routing Detours: Can We Avoid Nation-State Surveillance?
+3 years ago
+
+A Few Thoughts on Cryptographic Engineering
+Attack of the week: 64-bit ciphers in TLS
+3 years ago
+
+Cryptanalysis
+Bypassing certificate checks in OpenSSL 1.0.2c (CVE-2015-1793)
+4 years ago
+
+Good Enough Security
+Moved to Twitter and Pulse
+6 years ago
+
+Travis Goodspeed's Blog
+Hillbilly Tracking of Low Earth Orbit Satellites
+6 years ago
+Flylogic's Analytical Blog
+Blog Archive
+►  2013 (1)
+▼  2012 (14)
+►  December (1)
+▼  November (4)
+Security Testing: Why it’s important things don’t ...
+How the PS3 LV0 key was (probably) hacked
+Stack Exchange posts pt. 2
+Some thoughts on two-factor authentication
+►  October (1)
+►  August (2)
+►  July (2)
+►  June (2)
+►  February (1)
+►  January (1)
+►  2011 (25)
+Follow by Email
+Email address...
+Simple theme. Powered by Blogger.

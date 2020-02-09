@@ -1,0 +1,257 @@
+Skip to main content
+SearchRSS
+ 
+Black Friday
+ 
+Best Picks
+ 
+News
+ 
+Phones
+ 
+TVs
+ 
+Security
+ 
+Reviews
+ More 
+Forums
+Holiday Guide 2019
+TRENDING
+Black Friday Deals
+ 
+Amazon
+ 
+Walmart
+ 
+Best Buy
+ 
+AirPods Deals
+ 
+iPhone 11 Pro Max
+ 
+VPN
+Tom's Guide is supported by its audience. When you purchase through links on our site, we may earn an affiliate commission. Learn more
+Home News
+PS5: Release date, price, specs, games and more
+By Michael Andronico 3 days ago Consoles 
+
+Everything we know about the PS5
+
+ 
+ 
+ 
+ 
+
+The PS5's launch is creeping ever closer, and the news and rumors just keep flying. We already have some official info on the PlayStation 5, including its release date and next-gen specs. But there's still plenty we don't know about Sony's upcoming console, which is why we're compiling all of the PS5 rumors we're hearing right here.
+
+PS5 cheat sheet: what you need to know
+Release date: Holiday 2020
+Price: TBD
+Key Games: Watch Dogs: Legion, Rainbow Six Quarantine, The Elder Scrolls VI; full PS4 backwards compatibility
+Specs: 8-core AMD Zen CPU, AMD Navi GPU, custom SSD, 4K Blu-ray player
+Key Features: Ultra-fast loading times, ray tracing, 4K visuals at 120Hz, haptic controller
+Latest PS5 News and Rumors (November 2019)
+The PS5 could support Nvidia G-Sync, thanks to Nvidia opening up its adaptive sync technology to AMD graphics cards. That should mean even smoother performance on G-Sync displays.
+A Sony patent discovered by RespawnFirst reveals how the PS5 could allow for a much deeper way for players to share user-generated content.
+PS5 release date
+Sony Interactive Entertainment CEO Jim Ryan confirmed to Wired that the PlayStation 5 will launch in Holiday 2020. That will put it right up against Xbox's Project Scarlett.
+
+Black Friday deals: see all the best offers right now!
+Interestingly, the PS5 may launch alongside a PS5 Pro model late next year. As spotted by Wccftech, Japanese journalist Zenji Nishikawa noted on a live stream that Sony's console will release in both a base and "Pro" variation in Holiday 2020. This seems strange given that the core PS5 already seems to be targeting high-end performance, but for what its worth, Nishikawa has previously made correct predictions around the Nintendo Switch Lite and PS4 Pro.
+
+PS5 price
+The PS4 found big success by undercutting the Xbox One at launch with its $399 price tag, but the PS5 might not be quite as affordable. In his quarterly forecast (as reported by Twinfinite), Ace Research Institute analyst Hideki Yasuda predicts that the system will launch for $499, which is $100 more than what the PS4 and PS4 Pro sold for at launch.
+
+PS5 specs
+(Image credit: Future)
+In an interview with Wired, Sony's Mark Cerny revealed several key specs for Sony's next-generation console, which has yet to receive an official name.
+
+The console will be powered by a CPU based on AMD's third-generation, eight-core Ryzen processor, as well as a custom GPU based on the AMD Radeon Navi line. That graphics card will allow the PS5 to deliver ray tracing, which is an ultra-realistic lighting technology that was first made popular by Nvidia's RTX cards. As noted by TFT Central, the PS5 could even support Nvidia G-Sync, thanks to Nvidia opening up the technology to AMD GPUs.
+
+According to a translated tweet from known hardware leaker Komachi Ensaka, the PS5's fast 2-GHz GPU could double the power of the Xbox One X, and deliver comparable performance to Nvidia's RTX 2080.
+
+BREAKING: THIS IS PS5. According to this leak- the GPU will be clocked at an insane 2ghz.This equates to 9.2 TF on the RDNA architecture. Or roughly 14 TF on the GCN Architecture aka over double the power of the X1X. Almost RTX2080 power.In English: it's very powerful https://t.co/09rB49ugBTAugust 13, 2019
+
+The system's CPU will allow for 3D audio, which promises to be more immersive than that of the PS4 whether you're playing with headphones or through your TV speakers. The PS5's massive power will also allow for resolutions of up to 8K (for reference, the PS4 Pro maxes out at 4K.) The PlayStation 5 will also feature a 4K Blu-ray player for physical discs.
+
+Cerny noted that the system will feature a speedy SSD (solid state drive) for loading games faster. In a demonstration, Cerny showed off that the system's new SSD, a segment of Marvel's Spider-Man that normally took 15 seconds to load took under a second. Additionally, Sony confirmed that the PS5 will support physical discs. In a follow-up with Wired in October, Cerny also noted that the SSD may allow players to download specific portions of games, such as the story campaign or multiplayer suite.
+
+Sony demonstrated even further just how powerful the system's new SSD will be at a corporate strategy meeting in May. In a statement sent out after the meeting, Sony noted that the next-gen PlayStation will deliver more immersive experiences via "dramatically increased graphics rendering speeds, achieved through the employment of further improved computational power and a customized ultra-fast, broadband SSD."
+
+
+A video from the meeting posted by The Wall Street Journal's Takashi Mochizuki shows the same Spider-Man load test that Cerny gave to Wired. In it, a new area can be shown loading in less than a second on the next-gen PlayStation, compared to 8 seconds on a PS4 Pro.
+
+In an interview with Cnet in June 2019, PlayStation CEO Jim Ryan revealed that the PS5 will support 4K visuals at a refresh rate of 120Hz, which could lead to extra-smooth graphics for folks with high-refresh-rate displays. In September 2019, Ryan noted on the PlayStation blog that the PS5 will have the ability to "suspend gameplay with much lower power consumption than PS4," which he says would save close to the average electricity use of 1,000 US homes if one million users were to enable the feature.
+
+A Sony patent discovered by gaming analyst Daniel Ahmad suggests that Sony is working on an AI voice assistant dubbed PlayStation Assist, which would allow you to get in-game help in real time by simply asking questions with your voice. This sounds like an expanded version of what Xbox offers with Alexa and Google Assistant, with Microsoft's console already allowing you to open apps and games via voice controls.
+
+
+PS5 controller
+In October 2019, Sony provided Wired with an exclusive look at the next DualShock, which is reportedly very similar in design to the DualShock 4. The new controller appears to have some sort of microphone (perhaps for the system's rumored voice assistant) and will sport haptic feedback for more immersive rumble.
+
+In demonstrations for Wired, Sony showed off how the controller could make you feel the difference between track and dirt in a racing game, or the difference between trudging through sand and gliding on ice in a platformer. The new DualShock will also have adaptive triggers, which will allow you to better feel the tactile sensation of things such as firing a bow and arrow or driving off-road. 
+
+PS5 design
+(Image credit: LetsGoDigital)
+A Sony patent discovered in August 2019 could give us a clue about the PS5's potential design. The patent images show what looks like a chunky game console, complete with a slew of USB ports, a disc drive, and a unique V-shaped chassis that could help keep the system cool. 
+
+The folks at LetsGoDigital mocked up their own PS5 render based on the patent images, proving how the odd shape could actually turn out to be an attractive game console.
+
+The folks at Gizmodo were sent images of the alleged PS5 dev kit, which are reportedly identical to the patent images that have been circulating for months. What's more, the report claims that both the PS5 and Xbox Scarlett will pack integrated cameras for hassle-free livestreaming. 
+
+
+In October 2019, images of the alleged dev kit leaked via Zone of Tech. In them, we can see the same bulky design, complete with multiple USB ports, a Blu-ray drive and power, reset and eject buttons.
+
+PS5 features: VR, cloud gaming and more
+We already know that the PS5 will support the PlayStation VR headset, and could usher in a new version of the popular virtual reality accessory, possibly labeled PSVR 2. A new patent seems to indicate that the cameras on the PSVR 2 are going to replace the PlayStation Camera that came with the original PSVR. In theory, it should make your movements more accurate. On top of that, the cameras in the front of the headset will allow you to see what’s going on around you, so everything will seem transparent. The patent also indicates that the PSVR 2 might even be wireless as well.
+
+But here's where things really get interesting: in May 2019, Sony and Microsoft announced a surprise partnership in which the two companies will share resources to further their own cloud gaming, AI and enterprise products. Does this mean the PS5 will have an improved version of PlayStation Now, or an entirely new cloud platform to compete with Google Stadia? We'll have to wait and see.
+
+PS5 backwards compatibility
+Yep! In the Wired interview, Sony confirmed that the PS5 will play PS4 games as well as support the current PlayStation VR headset.
+
+However, the jury's still out on whether the PS5 will play games from older PlayStation generations, as was rumored several months ago.
+
+PS5 games: The titles to expect
+While the PS5 has yet to be confirmed, it's never to early to speculate which titles may land on Sony's next gen system. First-party title Ghosts of Tsushima has yet to get a release date, meaning we could see it hit PS4 and PS5 at once. And while we're speculating, don't be shocked to see sequels to PS4 megahits God of War, Horizon: Zero Dawn and Spider-Man on the PS5.
+
+(Image credit: Sony)
+We now know that the long awaited The Last of Us: Part II is coming to PS4 on May 29, 2020. And while PS4 games will work on PS5, we wouldn't be surprised to see some sort of enhanced edition for the new console, much like Sony delivered with The Last of Us: Remastered on PS4. 
+
+As far as third-party games, Bethesda already confirmed that its upcoming Starfield game is a "next-generation" experience. We also wouldn't be shocked to see The Elder Scrolls VI and Cyberpunk 2077 land on Sony's next-generation hardware. And since they release like clockwork, expect new Madden, NBA 2K and FIFA titles around the PS5's launch window.
+
+According to our friends at GamesRadar, Ubisoft confirmed in a conference call that upcoming titles such as Watch Dogs Legion, Gods and Monsters and Rainbow Six Quarantine will be optimized for PS5 and Xbox Scarlett.
+
+Wondering what's next for Xbox? Be sure to also check our roundup of the latest Xbox Scarlett rumors.
+
+MORE ABOUT...
+Don't wait for Cyber Monday: Nest Thermostat just hit lowest price ever
+Killer Ring deal: $100 off Ring Floodlight Camera and Echo Dot bundle
+SEE MORE RELATED
+LATEST
+Sony's 55-inch 4K TV is gorgeous and now it's $300 off in this Cyber Monday deal 
+SEE MORE LATEST
+Sony PS5 release date and price just leaked
+A leak on Twitter says that the PS5 will launch November 20 at a price of $499. But that's not all.
+Tom's Guide
+The 21 Hottest Gifts Of 2019
+ZangDeal
+|
+Sponsored
+The Genius Trick Every Best Buy Shopper Should Know
+Wikibuy
+|
+Sponsored
+9 Reasons This Electric Toothbrush is Worth All The Hype
+quip
+|
+Sponsored
+Is this the most addictive World War 3 strategy game? Register and play Conflict of Nations now for free!
+Conflict Of Nations : World War 3
+|
+Sponsored
+PS5 controller teased by Sony patent
+Tom's Guide
+This amazing iPhone 11 Pro deal is 50% off at Best Buy now
+Tom's Guide
+Shut the Front Door! These Luxury Vehicles Cost Under $50k!
+Auto Enthusiast | Search Ads
+|
+Sponsored
+MOST POPULAR
+
+The best Cyber Monday deals 2019
+By Louis RamirezNovember 30, 2019
+
+READ MORE
+Garmin Vivoactive 3 crashes to $129 in early Cyber Monday deal
+By Hilda ScottNovember 30, 2019
+
+READ MORE
+Holy cow! The iPad is at lowest price ever on Target right now
+By Mark SpoonauerNovember 30, 2019
+
+READ MORE
+Noise-cancelling for $80?! This Sennheiser headphones deal is epic
+By Alex BracettiNovember 30, 2019
+
+READ MORE
+Hurry! iPad hits lowest price ever at $229 on Amazon
+By Mark SpoonauerNovember 30, 2019
+
+READ MORE
+How to Watch Alabama vs. Auburn: Live Stream the Crimson Tide vs. Tigers Iron Bowl
+By Philip MichaelsNovember 30, 2019
+
+READ MORE
+The best smart lock deal of Cyber Monday is already here
+By Henry T. CaseyNovember 30, 2019
+
+READ MORE
+Best iPad Cyber Monday deals in 2019
+By Henry T. CaseyNovember 30, 2019
+
+READ MORE
+Black Friday Apple Watch deals at Best Buy, Walmart and Amazon
+By Caitlin McGarryNovember 30, 2019
+
+READ MORE
+The best laptop deals for Black Friday weekend 2019
+By Louis RamirezNovember 30, 2019
+
+READ MORE
+This $69 Blue Yeti Nano microphone is the best Cyber Monday deal for streamers and podcasters
+By Michael AndronicoNovember 30, 2019
+
+READ MORE
+Best Amazon Cyber Monday deals of 2019
+By Louis RamirezNovember 30, 2019
+
+READ MORE
+Get the Amazon Echo Show for lowest price ever before Cyber Monday
+By Hilda ScottNovember 30, 2019
+
+READ MORE
+Advertisement
+
+BE IN THE KNOW
+Get instant access to breaking news, the hottest reviews, great deals and helpful tips.
+
+
+No spam, we promise. You can unsubscribe at any time and we'll never share your details without your permission.
+Advertisement
+
+MOST READ
+MOST SHARED
+1
+This $1,349 laptop is a stunningly cheap $499 deal for Black Friday
+2
+Apple may have found AR glasses’ killer app
+3
+The best Black Friday iPhone deals right now
+4
+Ring Fit Adventure review: A bizarre and fun way to sweat with your Switch
+5
+Best Buy Black Friday 2019: The deals worth your time (and money)
+Advertisement
+
+Tom's Guide is part of Future US Inc, an international media group and leading digital publisher. Visit our corporate site.
+
+Terms and conditions
+ 
+Privacy policy
+ 
+Cookies policy
+ 
+Accessibility Statement
+ 
+Advertise
+ 
+About us
+ 
+Contact us
+ 
+Archives
+© Future US, Inc. 11 West 42nd Street, 15th Floor, New York, NY 10036.
+

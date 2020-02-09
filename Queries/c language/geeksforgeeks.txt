@@ -1,0 +1,244 @@
+We use cookies to ensure you have the best browsing experience on our website. By using our site, you acknowledge that you have read and understood our Cookie Policy & Privacy Policy
+Got it!
+GeeksforGeeks
+Skip to content
+Tutorialskeyboard_arrow_down Studentskeyboard_arrow_down Courses
+Custom Search
+
+Login
+Hire with us!
+C Language Introduction
+C Language Introduction
+Difference between pointer to an array and array of pointers
+Count substrings that contain all vowels | SET 2
+Basic Code Optimizations in C
+dot (.) operator in C/C++
+Features and Use of Pointers in C/C++
+How can we use Comma operator in place of curly braces?
+Sum of an array using MPI
+__builtin_inf() functions of GCC compiler
+time.h header file in C with Examples
+scanf("%[^\n]s", str) Vs gets(str) in C with Examples
+Constants vs Variables in C language
+C program to Insert an element in an Array
+Types of Literals in C/C++ with Examples
+Conditional or Ternary Operator (?:) in C/C++
+Difference between C and C#
+time.h localtime() function in C with Examples
+asctime() and asctime_s() functions in C with Examples
+return statement in C/C++ with Examples
+size of char datatype and char array in C
+Arrow operator -> in C/C++ with Examples
+Logical Not ! operator in C with Examples
+
+ 
+
+perm_identity
+C Language Introduction
+C is a procedural programming language. It was initially developed by Dennis Ritchie in the year 1972. It was mainly developed as a system programming language to write an operating system. The main features of C language include low-level access to memory, a simple set of keywords, and clean style, these features make C language suitable for system programmings like an operating system or compiler development.
+Many later languages have borrowed syntax/features directly or indirectly from C language. Like syntax of Java, PHP, JavaScript, and many other languages are mainly based on C language. C++ is nearly a superset of C language (There are few programs that may compile in C, but not in C++).
+
+Beginning with C programming:
+
+Structure of a C program
+After the above discussion, we can formally assess the structure of a C program. By structure, it is meant that any program can be written in this structure only. Writing a C program in any other structure will hence lead to a Compilation Error.
+
+ 
+
+The structure of a C program is as follows:
+
+
+
+The components of the above structure are:
+
+Header Files Inclusion: The first and foremost component is the inclusion of the Header files in a C program.
+A header file is a file with extension .h which contains C function declarations and macro definitions to be shared between several source files.
+Some of C Header files:
+
+stddef.h – Defines several useful types and macros.
+stdint.h – Defines exact width integer types.
+stdio.h – Defines core input and output functions
+stdlib.h – Defines numeric conversion functions, pseudo-random network generator, memory allocation
+string.h – Defines string handling functions
+math.h – Defines common mathematical functions
+Syntax to include a header file in C:
+
+#include 
+Main Method Declaration: The next part of a C program is to declare the main() function. The syntax to declare the main function is:
+Syntax to Declare main method:
+
+int main()
+{}
+Variable Declaration: The next part of any C program is the variable declaration. It refers to the variables that are to be used in the function. Please note that in the C program, no variable can be used without being declared. Also in a C program, the variables are to be declared before any operation in the function.
+Example:
+
+int main()
+{
+    int a;
+.
+.
+Body: Body of a function in C program, refers to the operations that are performed in the functions. It can be anything like manipulations, searching, sorting, printing, etc.
+Example:
+
+int main()
+{
+    int a;
+
+    printf("%d", a);
+.
+.
+Return Statement: The last part in any C program is the return statement. The return statement refers to the returning of the values from a function. This return statement and return value depend upon the return type of the function. For example, if the return type is void, then there will be no return statement. In any other case, there will be a return statement and the return value will be of the type of the specified return type.
+Example:
+
+
+ 
+
+int main()
+{
+    int a;
+
+    printf("%d", a);
+
+    return 0;
+}
+Writing first program:
+Following is first program in C
+filter_none
+edit
+play_arrow
+
+brightness_4
+#include <stdio.h> 
+int main(void) 
+{ 
+    printf("GeeksQuiz"); 
+    return 0; 
+} 
+Let us analyze the program line by line.
+Line 1: [ #include <stdio.h> ] In a C program, all lines that start with # are processed by preprocessor which is a program invoked by the compiler. In a very basic term, preprocessor takes a C program and produces another C program. The produced program has no lines starting with #, all such lines are processed by the preprocessor. In the above example, preprocessor copies the preprocessed code of stdio.h to our file. The .h files are called header files in C. These header files generally contain declaration of functions. We need stdio.h for the function printf() used in the program.
+
+Line 2 [ int main(void) ] There must to be starting point from where execution of compiled C program begins. In C, the execution typically begins with first line of main(). The void written in brackets indicates that the main doesn’t take any parameter (See this for more details). main() can be written to take parameters also. We will be covering that in future posts.
+The int written before main indicates return type of main(). The value returned by main indicates status of program termination. See this post for more details on return type.
+
+Line 3 and 6: [ { and } ] In C language, a pair of curly brackets define a scope and mainly used in functions and control statements like if, else, loops. All functions must start and end with curly brackets.
+
+Line 4 [ printf(“GeeksQuiz”); ] printf() is a standard library function to print something on standard output. The semicolon at the end of printf indicates line termination. In C, semicolon is always used to indicate end of statement.
+
+Line 5 [ return 0; ] The return statement returns the value from main(). The returned value may be used by operating system to know termination status of your program. The value 0 typically means successful termination.
+
+How to excecute the above program:
+Inorder to execute the above program, we need to have a compiler to compile and run our programs. There are certain online compilers like https://ide.geeksforgeeks.org/, http://ideone.com/ or http://codepad.org/ that can be used to start C without installing a compiler.
+Windows: There are many compilers available freely for compilation of C programs like Code Blocks  and Dev-CPP.   We strongly recommend Code Blocks.
+
+Linux: For Linux, gcc comes bundled with the linux,  Code Blocks can also be used with Linux.
+
+Please write comments if you find anything incorrect, or you want to share more information about the topic discussed above
+
+
+
+ 
+
+Recommended Posts:
+Stopwatch using C language
+Signals in C language
+fgets() and gets() in C language
+kbhit in C language
+Difference between while(1) and while(0) in C language
+isxdigit() function in C Language
+isupper() function in C Language
+How to use POSIX semaphores in C language
+isalnum() function in C Language
+lvalue and rvalue in C language
+Arrays in C Language | Set 2 (Properties)
+C Programming Language Standard
+A C Programming Language Puzzle
+Difference between Java and C language
+chdir() in C language with Examples
+
+Improved By : RishabhPrabhu, anshu8tu
+
+
+ 
+
+
+Article Tags : 
+C
+C Basics
+Practice Tags : 
+C
+
+thumb_up
+302
+
+
+ 
+1.4
+
+Based on 420 vote(s)
+Feedback/ Suggest ImprovementAdd NotesImprove Article  
+Please write to us at contribute@geeksforgeeks.org to report any issue with the above content.
+Post navigation
+Previous
+first_page Difference between pointer and array in C?
+Next
+last_pageInteresting Facts about Macros and Preprocessors in C
+
+
+
+
+Writing code in comment? Please use ide.geeksforgeeks.org, generate link and share the link here.
+
+
+Load Comments
+
+ 
+auto
+
+ 
+Most popular articles
+Must Do Coding Questions for Companies like Amazon, Microsoft, Adobe, ...
+Find if it is possible to make a binary string which contanins given number of "0", "1" , "01" and "10" as sub sequences
+D3.js | d3.entries() Function
+Find the winner of the Game to Win by erasing any two consecutive similar alphabets
+JavaScript | Object Constructors
+
+
+ 
+Most Visited Articles
+Find the integers that doesnot ends with T1 or T2 when squared and added X
+Average
+Perl | Reading a CSV File
+Program to Encrypt a String using ! and @
+Compare two strings considering only alphanumeric characters
+
+
+✍
+Write a Testimonial
+⇣
+GeeksforGeeks
+5th Floor, A-118,
+Sector-136, Noida, Uttar Pradesh - 201305
+feedback@geeksforgeeks.org
+COMPANY
+About Us
+Careers
+Privacy Policy
+Contact Us
+LEARN
+Algorithms
+Data Structures
+Languages
+CS Subjects
+Video Tutorials
+PRACTICE
+Courses
+Company-wise
+Topic-wise
+How to begin?
+CONTRIBUTE
+Write an Article
+Write Interview Experience
+Internships
+Videos
+    
+@geeksforgeeks, Some rights reserved

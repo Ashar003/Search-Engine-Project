@@ -1,0 +1,573 @@
+Javatpoint Logo
+Custom Search
+
+Home
+C
+C++
+C#
+Java
+SQL
+HTML
+CSS
+JavaScript
+XML
+Ajax
+Android
+Cloud
+Design Pattern
+Quiz
+Projects
+Interview Q
+Comment
+Forum
+
+C/C++ Training
+C Tutorial
+What is C Language open linkHistory of CFeatures of CHow to install CFirst C ProgramFlow of C Programprintf scanfVariables in CData Types in cKeywords in cC OperatorsC CommentsC Escape SequenceConstants in CC Fundamental Test
+C Control Statements
+C if-elseC switchC LoopsC do-while loopC while loopC for loopC breakC continueC gotoType CastingC Control Statement Test
+C Functions
+What is functionCall: Value & ReferenceRecursion in cStorage ClassesC Functions Test
+C Array
+1-D Array2-D ArrayArray to FunctionC Array Test
+C Pointers
+C PointersC Pointer to PointerC Pointer ArithmeticC Pointers Test
+C Dynamic Memory
+Dynamic memory
+C Strings
+String in CC gets() & puts()C String FunctionsC strlen()C strcpy()C strcat()C strcmp()C strrev()C strlwr()C strupr()C strstr()C String Test
+C Math
+C Math Functions
+C Structure Union
+C StructureC Array of StructuresC Nested StructureC UnionC Structure Test
+C File Handling
+C File HandlingC fprintf() fscanf()C fputc() fgetc()C fputs() fgets()C fseek()C rewind()C ftell()
+C Preprocessor
+C PreprocessorC MacrosC #includeC #defineC #undefC #ifdefC #ifndefC #ifC #elseC #errorC #pragmaC Preprocessor Test
+C Command Line
+Command Line Arguments
+C Misc
+C ExpressionsData Segments
+C Programming Test
+C Programming Test
+C Programs
+Top 10+ C ProgramsFibonacci SeriesPrime NumberPalindrome NumberFactorialArmstrong NumberSum of digitsReverse NumberSwap NumberPrint "Hello" without ;Assembly code in CC program without mainMatrix MultiplicationDecimal to BinaryNumber in CharactersAlphabet TriangleNumber TriangleFibonacci Triangle
+C Interview
+C Interview QuestionsJavaTpoint
+
+
+next →
+C Programming Language Tutorial
+C Programming
+C language Tutorial with programming approach for beginners and professionals, helps you to understand the C language tutorial easily. Our C tutorial explains each topic with programs.
+
+The C Language is developed for creating system applications that directly interact with the hardware devices such as drivers, kernels, etc.
+
+C programming is considered as the base for other programming languages, that is why it is known as mother language.
+
+
+It can be defined by the following ways:
+
+Mother language
+System programming language
+Procedure-oriented programming language
+Structured programming language
+Mid-level programming language
+
+ 
+1) C as a mother language
+C language is considered as the mother language of all the modern programming languages because most of the compilers, JVMs, Kernels, etc. are written in C language, and most of the programming languages follow C syntax, for example, C++, Java, C#, etc.
+
+It provides the core concepts like the array, strings, functions, file handling, etc. that are being used in many languages like C++, Java, C#, etc.
+
+2) C as a system programming language
+A system programming language is used to create system software. C language is a system programming language because it can be used to do low-level programming (for example driver and kernel). It is generally used to create hardware devices, OS, drivers, kernels, etc. For example, Linux kernel is written in C.
+
+It can't be used for internet programming like Java, .Net, PHP, etc.
+
+3) C as a procedural language
+A procedure is known as a function, method, routine, subroutine, etc. A procedural language specifies a series of steps for the program to solve the problem.
+
+A procedural language breaks the program into functions, data structures, etc.
+
+C is a procedural language. In C, variables and function prototypes must be declared before being used.
+
+4) C as a structured programming language
+A structured programming language is a subset of the procedural language. Structure means to break a program into parts or blocks so that it may be easy to understand.
+
+In the C language, we break the program into parts using functions. It makes the program easier to understand and modify.
+
+5) C as a mid-level programming language
+C is considered as a middle-level language because it supports the feature of both low-level and high-level languages. C language program is converted into assembly code, it supports pointer arithmetic (low-level), but it is machine independent (a feature of high-level).
+
+A Low-level language is specific to one machine, i.e., machine dependent. It is machine dependent, fast to run. But it is not easy to understand.
+
+A High-Level language is not specific to one machine, i.e., machine independent. It is easy to understand.
+
+C Program
+In this tutorial, all C programs are given with C compiler so that you can quickly change the C program code.
+
+File: main.c
+
+#include <stdio.h>  
+int main() {  
+printf("Hello C Programming\n");  
+return 0;  
+}  
+A detailed description of above program is given in next chapters.
+
+C Programming Index
+C Tutorial
+
+What is C Language
+History of C
+Features of C
+How to install C
+First C Program
+Flow of C Program
+printf scanf
+Variables in C
+Data Types in c
+Keywords in c
+C Operators
+C Comments
+C Escape Sequence
+Constants in C
+C Fundamental Test
+C Control Statements
+
+C if-else
+C switch
+C Loops
+C do-while loop
+C while loop
+C for loop
+C break
+C continue
+C goto
+Type Casting
+C Control Statement Test
+C Functions
+
+What is function
+Call: Value & Reference
+Recursion in c
+Storage Classes
+C Functions Test
+C Array
+
+1-D Array
+2-D Array
+Array to Function
+C Array Test
+C Pointers
+
+C Pointers
+C Pointer to Pointer
+C Pointer Arithmetic
+C Pointers Test
+C Dynamic Memory
+
+Dynamic memory
+C Strings
+
+String in C
+C gets() & puts()
+C String Functions
+C strlen()
+C strcpy()
+C strcat()
+C strcmp()
+C strrev()
+C strlwr()
+C strupr()
+C strstr()
+C String Test
+C Math
+
+C Math Functions
+C Structure Union
+
+C Structure
+C Array of Structures
+C Nested Structure
+C Union
+C Structure Test
+C File Handling
+
+C File Handling
+C fprintf() fscanf()
+C fputc() fgetc()
+C fputs() fgets()
+C fseek()
+C rewind()
+C ftell()
+C Preprocessor
+
+C Preprocessor
+C Macros
+C #include
+C #define
+C #undef
+C #ifdef
+C #ifndef
+C #if
+C #else
+C #error
+C #pragma
+C Preprocessor Test
+C Command Line
+
+Command Line Arguments
+C Programming Test
+
+C Programming Test
+C Programs
+
+Top 10+ C Programs
+Fibonacci Series
+Prime Number
+Palindrome Number
+Factorial
+Armstrong Number
+Sum of digits
+Reverse Number
+Swap Number
+Print "Hello" without ;
+Assembly code in C
+C program without main
+Matrix Multiplication
+Decimal to Binary
+Number in Characters
+Alphabet Triangle
+Number Triangle
+Fibonacci Triangle
+C Programming Test
+
+C Programming Test
+C Fundamental Test
+
+C Fundamental 1
+C Fundamental 2
+C Fundamental 3
+C Fundamental 4
+C Control Test
+
+C Control Statement 1
+C Control Statement 2
+C Control Statement 3
+C Control Statement 4
+C Function Test
+
+C Functions 1
+C Functions 2
+C Functions 3
+C Functions 4
+C Array Test
+
+C Array 1
+C Array 2
+C Array 3
+C Array 4
+C Pointers Test
+
+C Pointers 1
+C Pointers 2
+C Pointers 3
+C Pointers 4
+C String Test
+
+C String 1
+C String 2
+C String 3
+C String 4
+C Structure Test
+
+C Structure 1
+C Structure 2
+C Structure 3
+C Structure 4
+C Preprocessor Test
+
+C Preprocessor 1
+C Preprocessor 2
+C Preprocessor 3
+C Preprocessor 4
+C Interview
+
+C Interview Questions
+Prerequisite
+Before learning C Programming, you must have the basic knowledge of Computer Fundamental.
+
+Audience
+Our C Programming tutorial is designed to help beginners and professionals.
+
+Problem
+We assure that you will not find any mistake in this C Language Tutorial. But if there is any mistake, please post the problem in the contact form.
+
+Next TopicHistory of C
+
+
+next →
+
+Help Others, Please Share
+facebook twitter google plus pinterest
+
+ 
+Join Javatpoint Test Series
+Placement Papers
+TCS
+HCL
+Infosys
+IBM
+Accenture
+AMCAT
+eLitmas
+Java
+Python
+C Programming
+Networking
+Bank PO/Clerk
+UPSSSC
+Government Exams
+SSC
+Civil Services
+SBI
+GATE
+NEET
+CAT
+Railway
+CTET
+IIT JEE
+Learn Latest Tutorials
+Restful Web Services Tutorial
+RESTful
+
+DevOps Tutorial
+DevOps
+
+Linq Tutorial
+LINQ
+
+Laravel Tutorial
+Laravel
+
+OpenCV Tutorial
+OpenCV
+
+Machine Learning Tutorial
+ML
+
+NLP Tutorial
+NLP
+
+Ionic Tutorial
+Ionic
+
+VHDL Tutorial
+VHDL
+
+Tensorflow Tutorial
+Tensorflow
+
+Data Mining Tutorial
+Data Mining
+
+Xamarin Tutorial
+Xamarin
+
+Preparation
+Aptitude
+Aptitude
+
+Logical Reasoning
+Reasoning
+
+Verbal Ability
+Verbal A.
+
+Interview Questions
+Interview
+
+Company Interview Questions
+Company
+
+Trending Technologies
+Artificial Intelligence Tutorial
+AI
+
+AWS Tutorial
+AWS
+
+Selenium tutorial
+Selenium
+
+Cloud tutorial
+Cloud
+
+Hadoop tutorial
+Hadoop
+
+ReactJS Tutorial
+ReactJS
+
+React Native Tutorial
+React Native
+
+Node.js tutorial
+Node.js
+
+Data Science Tutorial
+D. Science
+
+Angular 7 Tutorial
+Angular 7
+
+Blockchain Tutorial
+Blockchain
+
+Git Tutorial
+Git
+
+B.Tech / MCA
+DBMS tutorial
+DBMS
+
+Data Structures tutorial
+DS
+
+DAA tutorial
+DAA
+
+Operating System tutorial
+OS
+
+Computer Network tutorial
+C. Network
+
+Compiler Design tutorial
+Compiler D.
+
+Computer Organization and Architecture
+COA
+
+Discrete Mathematics Tutorial
+D. Math.
+
+Ethical Hacking Tutorial
+E. Hacking
+
+Computer Graphics Tutorial
+C. Graphics
+
+Software Engineering Tutorial
+Software E.
+
+html tutorial
+Web Tech.
+
+Cyber Security tutorial
+Cyber Sec.
+
+Automata Tutorial
+Automata
+
+C Language tutorial
+C
+
+C++ tutorial
+C++
+
+Java tutorial
+Java
+
+.Net Framework tutorial
+.Net
+
+Python tutorial
+Python
+
+List of Programs
+Programs
+
+Control Systems tutorial
+Control S.
+
+
+
+
+
+
+
+
+
+
+
+Javatpoint Services
+JavaTpoint offers too many high quality services. Mail us on hr@javatpoint.com, to get more information about given services.
+
+Website Designing
+Website Development
+Java Development
+PHP Development
+WordPress
+Graphic Designing
+Logo
+Digital Marketing
+On Page and Off Page SEO
+PPC
+Content Development
+Corporate Training
+Classroom and Online Training
+Data Entry
+Training For College Campus
+JavaTpoint offers college campus training on Core Java, Advance Java, .Net, Android, Hadoop, PHP, Web Technology and Python. Please mail your requirement at hr@javatpoint.com.
+Duration: 1 week to 2 week
+
+Like/Subscribe us for latest updates or newsletter RSS Feed Subscribe to Get Email Alerts Facebook Page Google Page Twitter Page YouTube Blog Page
+LEARN TUTORIALS
+Learn Java
+Learn Data Structures
+Learn C Programming
+Learn C++ Tutorial
+Learn C# Tutorial
+Learn PHP Tutorial
+Learn HTML Tutorial
+Learn JavaScript Tutorial
+Learn jQuery Tutorial
+Learn Spring Tutorial
+OUR WEBSITES
+Javatpoint.com
+Hindi100.com
+Lyricsia.com
+Quoteperson.com
+Hindi-typing.com
+Shayaree.com
+Jobandplacement.com
+OUR SERVICES
+Website Development
+
+Android Development
+
+Website Designing
+
+Digital Marketing
+
+Summer Training
+
+Industrial Training
+
+College Campus Training
+
+CONTACT
+Address: G-13, 2nd Floor, Sec-3
+
+Noida, UP, 201301, India
+
+Contact No: 0120-4256464, 9990449935
+
+Contact Us
+Subscribe Us
+Privacy Policy
+Sitemap
+© Copyright 2011-2018 www.javatpoint.com. All rights reserved. Developed by JavaTpoint.

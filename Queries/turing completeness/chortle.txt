@@ -1,0 +1,18 @@
+go to previous page   go to home page   go to next page
+Answer:
+No.
+
+
+Turing Complete
+Supercomputers consist of many very fast processor chips and massive amounts of memory. Each chip has full algorithmic computing power. A supercomputer that harnesses the power of thousands of chips is very useful and can compute very quickly, but fundamentally cannot compute anything that just one chip could not compute (given enough time and enough memory.)
+
+This upper limit to algorithmic computing power that all processors have is called Turing complete.
+
+Turing Complete: A computer or a programming language is said to be Turing complete if it can implement a Turing machine. A Turing machine is a mathematical model of computation that can, in principle, perform any calculation that any other programmable computer can.
+The mathematical model for a Turing machine includes an unlimited amount of memory and no limit on how long a computation can take (as long as it finishes in a finite amount of time.) Of course, real-world machines and programming languages do not have access to an infinite amount of memory, and practical programs must finish their work in a reasonable amount of time. Nevertheless, processors and programming languages are often called Turning complete if they have the maximum algorithmic computing power that the minimum set of operations gives.
+
+
+QUESTION 5:
+(Thought question:) Why do most processors have many more instructions than the minimum set needed for full algorithmic computing power?
+
+go to previous page   go to home page   go to next page

@@ -1,0 +1,268 @@
+We use cookies to ensure you have the best browsing experience on our website. By using our site, you acknowledge that you have read and understood our Cookie Policy & Privacy Policy
+Got it!
+GeeksforGeeks
+Skip to content
+Tutorialskeyboard_arrow_down Studentskeyboard_arrow_down Courses
+Custom Search
+
+Login
+Hire with us!
+Core Dump (Segmentation fault) in C/C++
+Core Dump (Segmentation fault) in C/C++
+Difference between pointer to an array and array of pointers
+Count substrings that contain all vowels | SET 2
+Basic Code Optimizations in C
+dot (.) operator in C/C++
+Features and Use of Pointers in C/C++
+How can we use Comma operator in place of curly braces?
+Sum of an array using MPI
+__builtin_inf() functions of GCC compiler
+time.h header file in C with Examples
+scanf("%[^\n]s", str) Vs gets(str) in C with Examples
+Constants vs Variables in C language
+C program to Insert an element in an Array
+Types of Literals in C/C++ with Examples
+Conditional or Ternary Operator (?:) in C/C++
+Difference between C and C#
+time.h localtime() function in C with Examples
+asctime() and asctime_s() functions in C with Examples
+return statement in C/C++ with Examples
+size of char datatype and char array in C
+Arrow operator -> in C/C++ with Examples
+Logical Not ! operator in C with Examples
+
+ 
+
+perm_identity
+Core Dump (Segmentation fault) in C/C++
+Core Dump/Segmentation fault is a specific kind of error caused by accessing memory that “does not belong to you.”
+
+When a piece of code tries to do read and write operation in a read only location in memory or freed block of memory, it is known as core dump.
+It is an error indicating memory corruption.
+Common segmentation fault scenarios:
+
+Modifying a string literal :
+The below program may crash (gives segmentation fault error) because the line *(str+1) = ‘n’ tries to write a read only memory.
+
+ 
+
+filter_none
+edit
+play_arrow
+
+brightness_4
+int main() 
+{ 
+   char *str;  
+  
+   /* Stored in read only part of data segment */
+   str = "GfG";      
+  
+   /* Problem:  trying to modify read only memory */
+   *(str+1) = 'n';  
+   return 0; 
+} 
+Abnormal termination of program.
+Refer Storage for Strings in C for details
+
+Accessing an address that is freed :
+Here in the below code, the pointer p is dereferenced after freeing the memory block, which is not allowed by the compiler. So it produces the error segment fault or abnormal program termination at runtime.
+Example:
+filter_none
+edit
+play_arrow
+
+brightness_4
+// C program to illustrate 
+// Core Dump/Segmentation fault 
+#include <stdio.h> 
+#include<alloc.h> 
+int main(void) 
+{ 
+    // allocating memory to p 
+    int* p = malloc(8); 
+    *p = 100; 
+      
+    // deallocated the space allocated to p 
+    free(p); 
+      
+    // core dump/segmentation fault 
+    //  as now this statement is illegal 
+    *p = 110; 
+      
+    return 0; 
+} 
+Output:
+
+Abnormal termination of program.
+Accessing out of array index bounds :
+filter_none
+edit
+play_arrow
+
+brightness_4
+// C++ program to demonstrate segmentation 
+// fault when array out of bound is accessed. 
+#include <iostream> 
+using namespace std; 
+  
+int main()  
+{ 
+   int arr[2]; 
+   arr[3] = 10;  // Accessing out of bound 
+   return 0; 
+} 
+Output:
+
+Abnormal termination of program.
+Improper use of scanf() :
+scanf() function expects address of a variable as an input.Here in this program n takes
+value of 2 and assume it’s address as 1000. If we pass n to scanf(), input fetched from STDIN is placed in invalid memory 2 which should be 1000 instead.It’s a memory corruption leading to Seg fault.
+filter_none
+edit
+play_arrow
+
+brightness_4
+// C program to demonstrate segmentation 
+// fault when value is passed to scanf 
+#include <stdio.h> 
+  
+int main()  
+{ 
+   int n = 2; 
+   scanf("%d",n); 
+   return 0; 
+} 
+Output:
+
+Abnormal termination of program.
+Stack Overflow
+It’s not a pointer related problem even code may not have single pointer. It’s because of recursive function gets called repeatedly which eats up all the stack memory resulting in stack overflow. Running out of memory on the stack is also a type of memory corruption. It can be resolved by having a base condition to return from the recursive function.
+Dereferencing uninitialized pointer
+A pointer must point to valid memory before accessing it.
+filter_none
+edit
+play_arrow
+
+brightness_4
+// C program to demonstrate segmentation 
+// fault when uninitialized pointer is accessed. 
+#include <stdio.h> 
+  
+int main()  
+{ 
+   int *p; 
+   printf("%d",*p); 
+   return 0; 
+} 
+This article is contributed by Bishal Kumar Dubey. If you like GeeksforGeeks and would like to contribute, you can also write an article using contribute.geeksforgeeks.org or mail your article to contribute@geeksforgeeks.org. See your article appearing on the GeeksforGeeks main page and help other Geeks.
+
+Please write comments if you find anything incorrect, or you want to share more information about the topic discussed above.
+
+
+
+ 
+
+Recommended Posts:
+Segmentation Fault (SIGSEGV) vs Bus Error (SIGBUS)
+How to find Segmentation Error in C & C++ ? (Using GDB)
+Difference between Iterators and Pointers in C/C++ with Examples
+C program to count number of vowels and consonants in a String
+Nested Loops in C with Examples
+Hello World Program : First program while learning Programming
+Difference between Argument and Parameter in C/C++ with Examples
+Implicit Type Conversion in C with Examples
+<cfloat> float.h in C/C++ with Examples
+C/C++ #include directive with Examples
+C/C++ if else statement with Examples
+Internal static variable vs. External static variable with Examples in C
+C/C++ if statement with Examples
+C/C++ do while loop with Examples
+
+Improved By : kani_26
+
+
+ 
+
+
+Article Tags : 
+C
+C-Dynamic Memory Allocation
+Practice Tags : 
+C
+
+thumb_up
+26
+
+
+ 
+1.8
+
+Based on 51 vote(s)
+Feedback/ Suggest ImprovementAdd NotesImprove Article  
+Please write to us at contribute@geeksforgeeks.org to report any issue with the above content.
+Post navigation
+Previous
+first_page Line Splicing in C/C++
+Next
+last_pageMaking your own Linux Shell in C
+
+
+
+
+Writing code in comment? Please use ide.geeksforgeeks.org, generate link and share the link here.
+
+
+Load Comments
+
+ 
+auto
+
+ 
+Most popular articles
+Must Do Coding Questions for Companies like Amazon, Microsoft, Adobe, ...
+Find if it is possible to make a binary string which contanins given number of "0", "1" , "01" and "10" as sub sequences
+D3.js | d3.entries() Function
+Find the winner of the Game to Win by erasing any two consecutive similar alphabets
+JavaScript | Object Constructors
+
+
+ 
+Most Visited Articles
+Find the integers that doesnot ends with T1 or T2 when squared and added X
+Average
+Perl | Reading a CSV File
+Program to Encrypt a String using ! and @
+Compare two strings considering only alphanumeric characters
+
+
+✍
+Write a Testimonial
+⇣
+GeeksforGeeks
+5th Floor, A-118,
+Sector-136, Noida, Uttar Pradesh - 201305
+feedback@geeksforgeeks.org
+COMPANY
+About Us
+Careers
+Privacy Policy
+Contact Us
+LEARN
+Algorithms
+Data Structures
+Languages
+CS Subjects
+Video Tutorials
+PRACTICE
+Courses
+Company-wise
+Topic-wise
+How to begin?
+CONTRIBUTE
+Write an Article
+Write Interview Experience
+Internships
+Videos
+    
+@geeksforgeeks, Some rights reserved

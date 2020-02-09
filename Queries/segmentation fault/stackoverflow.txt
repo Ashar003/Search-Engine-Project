@@ -1,0 +1,477 @@
+Stack Overflow
+Products
+Customers
+Use cases
+Search…
+Log in Sign up
+By using our site, you acknowledge that you have read and understand our Cookie Policy, Privacy Policy, and our Terms of Service.
+
+Home
+PUBLIC
+Stack Overflow
+Tags
+Users
+Jobs
+TEAMS
+What’s this?
+First 25 Users Free
+What is a segmentation fault?
+Ask Question
+Asked 9 years, 9 months ago
+Active 20 days ago
+Viewed 549k times
+
+
+530
+
+
+258
+What is a segmentation fault? Is it different in C and C++? How are segmentation faults and dangling pointers related?
+
+c++ c segmentation-fault
+shareimprove this question
+edited Jun 1 '16 at 2:40
+
+Jonathan Leffler
+606k101101 gold badges727727 silver badges10951095 bronze badges
+asked Feb 27 '10 at 9:23
+
+Rajendra Uppal
+13.9k1111 gold badges5151 silver badges5656 bronze badges
+82
+segmentation fault makes the compiler feel bad. – Benjamin Crouzier Sep 12 '11 at 14:32 
+21
+If that's the case, why in my case the compiler complained nothing, it all went smooth, but at run time the system throws a segmentation fault (core dump)? T_T – Jim Raynor Jan 5 '15 at 19:46
+3
+Just a memory dump when something goes wrong! – resultsway Apr 25 '15 at 1:18 
+6
+@pinouchon: Funny, but when does a compiler have a thing to do with seg faults? Isn't it more the run time enviroment? – dhein Jul 30 '15 at 13:23
+1
+Typically called by attempting to dereference a null pointer, so a segmentation fault is often analogous to a Java NullPointerException. – Raedwald Dec 18 '17 at 9:08 
+add a comment
+13 Answers
+activeoldestvotes
+
+621
+
+Segmentation fault is a specific kind of error caused by accessing memory that “does not belong to you.” It’s a helper mechanism that keeps you from corrupting the memory and introducing hard-to-debug memory bugs. Whenever you get a segfault you know you are doing something wrong with memory – accessing variable that has already been freed, writing to a read-only portion of the memory, etc. Segmentation fault is essentially the same in most languages that let you mess with the memory management, there is no principial difference between segfaults in C and C++.
+
+There are many ways to get a segfault, at least in the lower-level languages such as C(++). A common way to get a segfault is to dereference a null pointer:
+
+int *p = NULL;
+*p = 1;
+Another segfault happens when you try to write to a portion of memory that was marked as read-only:
+
+char *str = "Foo"; // Compiler marks the constant string as read-only
+*str = 'b'; // Which means this is illegal and results in a segfault
+Dangling pointer points to a thing that does not exist any more, like here:
+
+char *p = NULL;
+{
+    char c;
+    p = &c;
+}
+// Now p is dangling
+The pointer p dangles because it points to character variable c that ceased to exist after the block ended. And when you try to dereference dangling pointer (like *p='A'), you would probably get a segfault.
+
+shareimprove this answer
+edited Feb 27 '10 at 10:23
+
+aib
+37.5k1010 gold badges6565 silver badges7474 bronze badges
+answered Feb 27 '10 at 9:36
+
+zoul
+90.6k3838 gold badges228228 silver badges330330 bronze badges
+144
+The last example is particularly nasty, when I build: int main() { char *p = 0; { char c = 'x'; p = &c; } printf( "%c\n",*p); return 0; } With either gcc or several other compilers, it 'appears' to work. No warnings on compile. No segfault. This is because the '}' out of scope, doesn't actually delete the data, just marks it as free to be used again. The code can run fine on a production system for years, you alter another part of the code, change compiler or something else and BOOOOOM! – Chris Huang-Leaver Apr 13 '10 at 9:06 
+31
+Sorry for the bump but just a side note... none of your examples necessarily cause a segfault, in fact it's just undefined behavior ;-) – oldrinb Sep 15 '12 at 3:01
+17
+@oldrinb: It is impossible to write code that necessarily causes a segfault. Not least because there are systems out there that operate without memory protection, thus cannot tell whether a piece of memory actually "belongs to you", and thus don't know segfaults, only undefined behaviour... (classic AmigaOS, for example) – DevSolar May 29 '14 at 18:03 
+6
+@ChrisHuang-Leaver, you need to understand that c is local, it means that it have been pushed on the stack after { and pop-ed out of it after }. the dangling pointer is just a reference to an offset which is now out of the stack. that's why modifying it in a simple program will never trigger any segfault. on the other hand it may lead to segfault in a more complex use case, where other function calls might lead the stack to grow and contain the data pointed to by the dangling pointer. writing to that data (local vars) would lead to undefined behavior (segfault &Co) – Ayman Khamouma Jan 19 '16 at 21:23 
+3
+@ChrisHuang-Leaver, normally when you get out of scope, the compiler has to recover some stack space to free the unused stack space, but this doesn't happen always (with gcc being one of this compilers). Also, the allocated stack space is normally reused again, so I have heard of no operating systems that return unused stack pages to the system, making that space subject for a SIGSEGV, so I won't expect such a signal from mangling with the stack. – Luis Colorado Jul 22 '16 at 11:59
+show 3 more comments
+
+
+108
+
+It would be worth noting that segmentation fault isn't caused by directly accessing another process memory (this is what I'm hearing sometimes), as it is simply not possible. With virtual memory every process has its own virtual address space and there is no way to access another one using any value of pointer. Exception to this can be shared libraries which are same physical address space mapped to (possibly) different virtual addresses and kernel memory which is even mapped in the same way in every process (to avoid TLB flushing on syscall, I think). And things like shmat ;) - these are what I count as 'indirect' access. One can, however, check that they are usually located long way from process code and we are usually able to access them (this is why they are there, nevertheless accessing them in a improper way will produce segmentation fault).
+
+Still, segmentation fault can occur in case of accessing our own (process) memory in improper way (for instance trying to write to non-writable space). But the most common reason for it is the access to the part of the virtual address space that is not mapped to physical one at all.
+
+And all of this with respect to virtual memory systems.
+
+shareimprove this answer
+edited Mar 10 '12 at 21:58
+answered Jul 3 '11 at 23:22
+
+konrad.kruczynski
+39.5k66 gold badges3131 silver badges4444 bronze badges
+With shared memory/memory mapped files it is possible for someone else to mess with your memory. In WIN32 there are nasty API's like 'WriteProcessMemory' too! – paulm Feb 17 '14 at 23:46
+1
+@paulm: Yes, I know. This is what I had on mind in "And things like shmat ;) - these are what I count as 'indirect' access." – konrad.kruczynski Feb 18 '14 at 10:08
+In a virtual memory operating system there's no way (normally, so please, operating system implementors, don't flame me for this) for a process to access another process virtual memory, not being some kind of memory attach system call that allows you to access. Virtual memory addresses normally mean different things depending on the process being considered. – Luis Colorado Jul 22 '16 at 12:02
+add a comment
+
+34
+
+A segmentation fault is caused by a request for a page that the process does not have listed in its descriptor table, or an invalid request for a page that it does have listed (e.g. a write request on a read-only page).
+
+A dangling pointer is a pointer that may or may not point to a valid page, but does point to an "unexpected" segment of memory.
+
+shareimprove this answer
+answered Feb 27 '10 at 9:27
+
+Ignacio Vazquez-Abrams
+625k113113 gold badges11221122 silver badges12091209 bronze badges
+9
+This is true, but would it really help you if you already didn’t know what a segmentation fault is? – zoul Feb 27 '10 at 9:37
+add a comment
+
+28
+
+To be honest, as other posters have mentioned, Wikipedia has a very good article on this so have a look there. This type of error is very common and often called other things such as Access Violation or General Protection Fault.
+
+They are no different in C, C++ or any other language that allows pointers. These kinds of errors are usually caused by pointers that are
+
+Used before being properly initialised
+Used after the memory they point to has been realloced or deleted.
+Used in an indexed array where the index is outside of the array bounds. This is generally only when you're doing pointer math on traditional arrays or c-strings, not STL / Boost based collections (in C++.)
+shareimprove this answer
+answered Feb 27 '10 at 20:35
+
+Component 10
+8,87844 gold badges3535 silver badges5454 bronze badges
+add a comment
+
+15
+
+According to wikipedia:
+
+A segmentation fault occurs when a program attempts to access a memory location that it is not allowed to access, or attempts to access a memory location in a way that is not allowed (for example, attempting to write to a read-only location, or to overwrite part of the operating system).
+
+shareimprove this answer
+answered Feb 27 '10 at 9:30
+
+Orhan Cinar
+7,78522 gold badges3030 silver badges4646 bronze badges
+add a comment
+
+12
+
+Segmentation fault is also caused by hardware failures, in this case the RAM memories. This is the less common cause, but if you don't find an error in your code, maybe a memtest could help you.
+
+The solution in this case, change the RAM.
+
+edit:
+
+Here there is a reference: Segmentation fault by hardware
+
+shareimprove this answer
+edited Aug 27 '15 at 19:37
+answered Jun 24 '14 at 16:59
+
+Alejo Bernardin
+38555 silver badges1414 bronze badges
+3
+A quick-and-dirty test for faulty RAM is to run your crashing program over and over again in a loop. If the program has no internal nondeterminism—that is, it always produces the same output for the same input, or at least it's supposed to—but, for some particular input, it crashes sometimes, not always but not never either: then you should start worrying about bad RAM. – zwol Oct 26 '17 at 21:39 
+add a comment
+
+7
+
+Segmentation fault occurs when a process (running instance of a program) is trying to access read-only memory address or memory range which is being used by other process or access the non-existent (invalid) memory address. Dangling Reference (pointer) problem means that trying to access an object or variable whose contents have already been deleted from memory, e.g:
+
+int *arr = new int[20];
+delete arr;
+cout<<arr[1];  //dangling problem occurs here
+shareimprove this answer
+answered Dec 10 '13 at 22:34
+
+Sohail xIN3N
+2,42511 gold badge2424 silver badges2929 bronze badges
+4
+The correct way to delete an array is delete [] arr; – Damian Mar 28 '16 at 15:48
+add a comment
+
+5
+
+Wikipedia's Segmentation_fault page has a very nice description about it, just pointing out the causes and reasons. Have a look into the wiki for a detailed description.
+
+In computing, a segmentation fault (often shortened to segfault) or access violation is a fault raised by hardware with memory protection, notifying an operating system (OS) about a memory access violation.
+
+The following are some typical causes of a segmentation fault:
+
+Dereferencing NULL pointers – this is special-cased by memory management hardware
+Attempting to access a nonexistent memory address (outside process's address space)
+Attempting to access memory the program does not have rights to (such as kernel structures in process context)
+Attempting to write read-only memory (such as code segment)
+These in turn are often caused by programming errors that result in invalid memory access:
+
+Dereferencing or assigning to an uninitialized pointer (wild pointer, which points to a random memory address)
+
+Dereferencing or assigning to a freed pointer (dangling pointer, which points to memory that has been freed/deallocated/deleted)
+
+A buffer overflow.
+
+A stack overflow.
+
+Attempting to execute a program that does not compile correctly. (Some compilers will output an executable file despite the presence of compile-time errors.)
+
+shareimprove this answer
+edited Apr 9 '15 at 15:36
+
+Jamal
+71666 gold badges2222 silver badges2929 bronze badges
+answered Oct 14 '14 at 10:05
+
+Roy
+1,07611 gold badge1111 silver badges1111 bronze badges
+add a comment
+
+4
+
+In simple words: segmentation fault is the operating system sending a signal to the program saying that it has detected an illegal memory access and is prematurely terminating the program to prevent memory from being corrupted.
+
+shareimprove this answer
+answered Jul 19 '17 at 13:43
+
+FilipeCanatto
+25122 silver badges77 bronze badges
+add a comment
+
+1
+
+A segmentation fault or access violation occurs when a program attempts to access a memory location that is not exist, or attempts to access a memory location in a way that is not allowed.
+
+ /* "Array out of bounds" error 
+   valid indices for array foo
+   are 0, 1, ... 999 */
+   int foo[1000];
+   for (int i = 0; i <= 1000 ; i++) 
+   foo[i] = i;
+Here i[1000] not exist, so segfault occurs.
+
+Causes of segmentation fault:
+
+it arise primarily due to errors in use of pointers for virtual memory addressing, particularly illegal access.
+
+De-referencing NULL pointers – this is special-cased by memory management hardware.
+
+Attempting to access a nonexistent memory address (outside process’s address space).
+
+Attempting to access memory the program does not have rights to (such as kernel structures in process context).
+
+Attempting to write read-only memory (such as code segment).
+shareimprove this answer
+answered Dec 8 '15 at 16:14
+
+Mohit Rohilla
+5933 bronze badges
+2
+First of all, seg fault has nothing to do with the address does or doesn't exist. It is about you are accessing it where you are not allowed to do so. And in your special example it is even guranteed by standard that that location exists. since the standard says in array case it must be given that there is a valid address for an pointer pointg on an well aligned array within its bounds AND 1 behind. – dhein Dec 8 '15 at 16:25
+it is also releated with address, if you don't have the address and if u try to access this address, also there is seg. fault. And in my example, it is only for understand point of view. – Mohit Rohilla Dec 12 '15 at 3:11
+add a comment
+
+1
+
+There are several good explanations of "Segmentation fault" in the answers, but since with segmentation fault often there's a dump of the memory content, I wanted to share where the relationship between the "core dumped" part in Segmentation fault (core dumped) and memory comes from:
+
+From about 1955 to 1975 - before semiconductor memory - the dominant technology in computer memory used tiny magnetic doughnuts strung on copper wires. The doughnuts were known as "ferrite cores" and main memory thus known as "core memory" or "core".
+
+Taken from here.
+
+shareimprove this answer
+answered Oct 13 '18 at 18:39
+
+Viktor Nonov
+98511 gold badge77 silver badges2323 bronze badges
+add a comment
+
+1
+
+"Segmentation fault" means that you tried to access memory that you do not have access to.
+
+The first problem is with your arguments of main. The main function should be int main(int argc, char *argv[]), and you should check that argc is at least 2 before accessing argv[1].
+
+Also, since you're passing in a float to printf (which, by the way, gets converted to a double when passing to printf), you should use the %f format specifier. The %s format specifier is for strings ('\0'-terminated character arrays).
+
+shareimprove this answer
+answered Mar 1 at 11:44
+
+PHP Worm...
+3,81311 gold badge1616 silver badges4242 bronze badges
+add a comment
+
+1
+
+There are enough definitions of segmentation fault, i would like to quote few examples which i came across while programming, which might seem silly mistakes, but will waste a lot of time.
+
+you can get segmentation fault in below case while argumet type mismatch in printf
+
+#include<stdio.h>
+int main(){
+
+  int a = 5;
+  printf("%s",a);
+  return 0;
+}
+
+output : Segmentation Fault (SIGSEGV)
+
+when you forgot to allocate memory to a pointer, but trying to use it.
+
+ #include<stdio.h> 
+ typedef struct{
+   int a;
+ }myStruct;   
+int main(){
+  myStruct *s;
+  /* few lines of code */
+  s->a = 5;
+  return 0;
+}
+output : Segmentation Fault (SIGSEGV)
+
+shareimprove this answer
+answered Nov 10 at 15:44
+
+NPE
+9188 bronze badges
+add a comment
+Highly active question. Earn 10 reputation in order to answer this question. The reputation requirement helps protect this question from spam and non-answer activity.
+Not the answer you're looking for? Browse other questions tagged c++ c segmentation-fault or ask your own question.
+Blog
+Copying code from Stack Overflow? You might paste security vulnerabilities, too
+Featured on Meta
+Feedback post: Moderator review and reinstatement processes
+Upvotes on questions will now be worth the same as upvotes on answers
+
+Looking for a job?
+Experienced Backend Engineer - Go
+TheoremNo office location
+REMOTE
+goreactjs
+C++ Software Developer (Junior - Mid)
+Edge360No office location
+REMOTE
+c++ffmpeg
+Senior DevOps Engineer
+AetionNew York, NY
+$140K - $180KRELOCATION
+amazon-web-servicesdevops
+Senior Software Engineer: Help solve the housing crisis
+Common Living Inc.New York, NY
+$130K - $180KRELOCATION
+rubyruby-on-rails
+Senior Full-Stack Engineer
+605New York, NY
+$130 - $160RELOCATION
+scalajavascript
+View more jobs on Stack Overflow
+Linked
+88
+what is Segmentation fault (core dumped)?
+0
+Cstring in C++ - using standard C functions leading to a segmentation fault
+-1
+Segmentation fault when trying to read file (C)
+2
+C++ cin segmentation fault 11
+0
+What is the best way to tokenize a string in C++?
+-6
+Passing vector by reference: Segmentation fault
+-2
+Segmentation fault (core dumped) ? what is it and why is caused ??? ( doubly circular linked list program in c++)
+0
+Practical segmentation core dumping
+-3
+C-Segmentation Fault error
+-1
+use a pointer to access an address specified numerically
+see more linked questions…
+Related
+2204
+What is the difference between #include <filename> and #include “filename”?
+3115
+What are the differences between a pointer variable and a reference variable in C++?
+1730
+What is a smart pointer and when should I use one?
+2753
+What does the explicit keyword mean?
+1511
+What is the effect of extern “C” in C++?
+8588
+What is the “-->” operator in C++?
+1907
+What is the copy-and-swap idiom?
+2074
+What are the basic rules and idioms for operator overloading?
+1810
+C++11 introduced a standardized memory model. What does it mean? And how is it going to affect C++ programming?
+23664
+Why is processing a sorted array faster than processing an unsorted array?
+Hot Network Questions
+Finding how much time it takes for a complete Earth revolution around the Sun
+What difference does horsepower make? If the engine can spin the propeller fast enough, why does it need power behind it?
+What's the girl's name?
+How do you say "to play Devil's advocate" in German?
+how to get a list of folders and number files in each folder side by side, in the current directory?
+My time machine can go back farther than yours -- why?
+Decode the Dreaded Alphabet Cypher™️
+Is it acceptable to say that a divergent series that tends to infinity is 'equal to' infinity?
+How does a Mandalorian eat food if he never takes his helmet off?
+Star developer didn’t get a promotion because he isn’t a people person, so he has scaled back his contributions. How can I motivate him?
+Can Alice win the game?
+Could a chess engine do retro analysis?
+Why must a CNN have fixed input size?
+How to compute curve integrate
+What are the advantages of taking "Sculptor of Flesh" eldritch invocation over taking Polymorph as a spell?
+Do the holes in Jacquard loom punched cards represent input data or program code?
+Why LAE font encoding isn't needed to write arabic with babel (pdflatex)
+Am I being used by my supervisor?
+How to avoid getting angry during job interviews?
+Character Development - Robert Baratheon
+Give a grammar for a language on Σ={a,b,c} that accepts all strings containing exactly one a
+Sending non-work emails to colleagues. Is it rude?
+Does driving a speaker with a DC offset AC signal matter?
+Aliens kill as an art form, surprised that humans don't appreciate
+ Question feed
+
+STACK OVERFLOW
+Questions
+Jobs
+Developer Jobs Directory
+Salary Calculator
+Help
+Mobile
+Disable Responsiveness
+PRODUCTS
+Teams
+Talent
+Advertising
+Enterprise
+COMPANY
+About
+Press
+Work Here
+Legal
+Privacy Policy
+Contact Us
+STACK EXCHANGE
+NETWORK
+Technology
+Life / Arts
+Culture / Recreation
+Science
+Other
+Blog
+Facebook
+Twitter
+LinkedIn
+site design / logo © 2019 Stack Exchange Inc; user contributions licensed under cc by-sa 4.0 with attribution required. rev 2019.11.29.35523
+
+ 

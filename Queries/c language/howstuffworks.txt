@@ -1,0 +1,134 @@
+    
+Search
+Tech
+Computer Hardware
+Internet
+Computer Software
+Computer Security
+Computer Peripherals
+Advertisement
+
+
+ HowStuffWorks  Tech  Computer  Computer Software  Programming
+The Basics of C Programming
+   
+BY MARSHALL BRAIN & CHRIS POLLETTE
+What is C?
+ 
+
+C is a computer programming language. That means that you can use C to create lists of instructions for a computer to follow. C is one of thousands of programming languages currently in use. C has been around for several decades and has won widespread acceptance because it gives programmers maximum control and efficiency. C is an easy language to learn. It is a bit more cryptic in its style than some other languages, but you get beyond that fairly quickly.
+
+C is what is called a compiled language. This means that once you write your C program, you must run it through a C compiler to turn your program into an executable that the computer can run (execute). The C program is the human-readable form, while the executable that comes out of the compiler is the machine-readable and executable form. What this means is that to write and run a C program, you must have access to a C compiler. If you are using a UNIX machine (for example, if you are writing CGI scripts in C on your host's UNIX computer, or if you are a student working on a lab's UNIX machine), the C compiler is available for free. It is called either "cc" or "gcc" and is available on the command line. If you are a student, then the school will likely provide you with a compiler -- find out what the school is using and learn about it. If you are working at home on a Windows machine, you are going to need to download a free C compiler or purchase a commercial compiler. A widely used commercial compiler is Microsoft's Visual C++ environment (it compiles both C and C++ programs). Unfortunately, this program costs several hundred dollars. If you do not have hundreds of dollars to spend on a commercial compiler, then you can use one of the free compilers available on the Web. See http://delorie.com/djgpp/ as a starting point in your search.
+
+
+ 
+We will start at the beginning with an extremely simple C program and build up from there. I will assume that you are using the UNIX command line and gcc as your environment for these examples; if you are not, all of the code will still work fine -- you will simply need to understand and use whatever compiler you have available.
+
+Let's get started!
+
+1
+2
+(current)
+3
+...
+40
+NEXT PAGE 
+Print | Citation & Date | Reprint
+
+   
+What's the Difference Between Whiskey and Bourbon?
+1ST
+The Battle of the Big Cats: Maine Coon vs. Norwegian Forest
+2ND
+What’s the Difference Between a College and a University?
+3RD
+What's the Difference Between a Pressure Cooker and an Instant Pot?
+4TH
+57 Vintage Photos That Took It Way Too Far
+WorldHistoryMag.com | Sponsored
+These Twins Were Named "Most Beautiful In The World," Wait Till You See Them Today
+LuxuryLevels.com | Sponsored
+Michael Oher Opens Up About 'The Blind Side' And Claims It's Misleading
+90MIN | Sponsored
+Glen Oaks Help Wanted! Up to $17-36+/Hr. Part/Full-Time Positions. Some Employers Will Train.
+Jobs | Search Ads | Sponsored
+Advertisement
+
+Culture - History
+The Ghost of Wild West Gunslinger Tom Horn Still Haunts Wyoming
+BY NATHAN CHANDLER
+Animals - Wild Animals
+Pangolins: The Gentle, Ant-eating Oddballs of Africa and Asia
+BY JESSLYN SHIELDS
+Lifestyle - Food
+Truffles: The Rarest and Most Expensive Fungi in the World
+BY MICHELLE KONSTANTINOVSKY
+Request Your 2020 Angelical Reading
+Padre | Sponsored
+The Most Terrifying Bridges in the World
+Gladhealthy | Sponsored
+Advertisement
+
+Advertisement
+
+SPONSORED
+
+EmblemHealth Medicare - 6 days Left To Enroll
+BY EMBLEMHEALTH.AFFORDABLECAREADVISOR.COM/MEDICARE/INSURANCE
+RELATED
+
+How to Uninstall Programs in Windows
+
+
+How does JavaScript work and how can I build simple calculators with it?
+
+
+How C Programming Works
+
+Advertisement
+
+SPONSORED
+
+Find Dental Coverage Plans - Immediate Search Results
+BY WWW.SMARTER.COM/HEALTH
+RECOMMENDED
+HowStuffWorks
+What's the Difference Between Whiskey and Bourbon?
+The Battle of the Big Cats: Maine Coon vs. Norwegian Forest
+What’s the Difference Between a College and a University?
+What's the Difference Between a Pressure Cooker and an Instant Pot?
+by Taboola
+Advertisement
+
+
+Advertisement
+
+HowStuffWorks
+About
+Podcasts
+Privacy Policy
+Ad Choices
+Terms
+Careers
+Contact Us
+Help
+Reprints
+Newsletter
+Get the best of HowStuffWorks by email!
+
+Keep up to date on: Latest Buzz · Stuff Shows & Podcasts · Tours · Weird & Wacky
+
+Copyright © 2019 HowStuffWorks, a division of InfoSpace Holdings, LLC, a System1 Company
+
+What's the Difference Between Whiskey and Bourbon?
+Read Next Story
+57 Vintage Photos That Took It Way Too Far
+WorldHistoryMag.com
+|
+Sponsored
+Read Next Story
+These Twins Were Named "Most Beautiful In The World," Wait Till You See Them Today
+LuxuryLevels.com
+|
+Sponsored
+Read Next Story

@@ -1,0 +1,384 @@
+
+Search on Philosophy…
+Log in Sign up
+By using our site, you acknowledge that you have read and understand our Cookie Policy, Privacy Policy, and our Terms of Service.
+
+Philosophy
+Home
+Questions
+Tags
+Users
+Unanswered
+Do numbers exist independently from observers?
+Ask Question
+Asked 8 years, 5 months ago
+Active 4 years, 4 months ago
+Viewed 13k times
+
+44
+
+
+22
+Do numbers have an objective existence? If life had not evolved on planet earth would there be numbers or are numbers an invention of human minds?
+
+Are there any relevant works that discuss this? (I know of Husserl's Über der Begriff der Zahl and Frege's Grundlagen der Arithmetik already; are there any other notable discussions of this theme?)
+
+philosophy-of-mathematics ontology
+shareimprove this question
+edited Jul 13 '15 at 3:05
+
+Alexander S King
+24.5k44 gold badges4141 silver badges156156 bronze badges
+asked Jun 17 '11 at 9:33
+
+leancz
+76111 gold badge88 silver badges1818 bronze badges
+1
+Here is a discussion between Tagore and Einstein on the nature of reality. Might give some insights . – AIB Jun 17 '11 at 9:56 
+5
+In numberland they have the same question, would humans exist independent of numbers? but they can not remove themselved from the universe and also observe the result. – Arjang Jun 17 '11 at 10:09 
+2
+possible duplicate of Was mathematics invented or discovered? – Joseph Weissman♦ Jun 17 '11 at 12:26
+1
+Abstract geometry is detached from the human experience, and the integers are just the final object in the category of schemes. This is pretty natural, and has nothing to do with human inventions. – Rom Jun 27 '11 at 21:18 
+The Pythagorean or Platonic reality of numbers has a long history in philosophy and mathematics. Physicists Max Tegmark and Roger Penrose, for example, argue for number as a fundamental substance, so you might try their books as well. In post-Kantian philosophy one might ask, can we validate the existence of anything "independent of mind." – Nelson Alexander Sep 15 '15 at 18:18 
+add a comment
+13 Answers
+activeoldestvotes
+
+39
+
+The literature on these questions is immense, starting from Plato all the way to the modern mathematical logicians. Since your question is about the existence of numbers, you are concerned with the ontological status of numbers. So, with ontology in mind, you can distinguish the following schools of thought, according to the answer they give to your question.
+
+YES: Mathematical Platonism. This school contends that mathematical objects exist independently of our being able to conceptualize them. Although few philosophers are willing to espouse this view anymore, it has had many notable proponents, even amongst logicians. Kurt Godel is perhaps the most famous example.
+NO: Intuitionism. Very roughly, intuitionism argues that mathematical objects are mental constructions communicable by convention. So the practice of mathematics and mathematical comprehension is a uniquely human event that ceases to exist when human minds disappear.
+AMBIGUOUS: Nominalism, Formalism and Logicism. There are several variations, reconstructions and weakenings of these positions that can be taken to occupy either side of the debate.
+
+In the case of logicism, the answer depends on how you regard the ontological status of logic. Fregean and Russellian logicism as well as the early Wittgenstein undoubtedly thought that logic is in some sense what is given to us by the world and that, therefore, numbers do have some objective existence.
+
+Formalism is ambiguous in the sense that although it is prima facie anti-realist because the naive formalist is taken to hold that mathematics is nothing other than systematic manipulation of symbols (which of course can only exist if human do) Hilbert himself (the originator of the position) held no such naive view. For Hilbert, there was a real core of mathematics (he called it 'real mathematics') that he believed was directly accessible by out intuition - this included basic arithmetic (1+1=2) as well as single-quantifier generalizations (For all x, x+1=1+x). And that sounds more realist.
+
+Nominalism can similarly be seen as denying that set theory exists, but affirming the existence of numbers, or can be read as denying the independent existence of numbers altogether.
+
+This is a broad outline of schools that have arisen out of convincing arguments proposed in answer to your question. Many of the arguments are compelling, all of them are interesting. I should also note that people like Alain Badiou (who says: 'Mathematics is Ontology') have also tried to answer the question from non-theoretical and less analytic perspectives. I am not familiar enough with such work to assess it, but it certainly sounds interesting.
+
+shareimprove this answer
+answered Jun 17 '11 at 10:14
+
+Chuck
+3,18711 gold badge1717 silver badges2525 bronze badges
+6
+Surely Plato was the most famous Platonist, not Gödel... – Seamus Jun 17 '11 at 12:25
+2
+Also, mathematical structuralism deserves a mention. I'd read Stewart Shapiro as a realist and Michael Resnik as an anti-realist, so I don't know where you'd put them in your list... – Seamus Jun 17 '11 at 12:26
+2
+@Seamus Yes, structuralism is a strange fruit. I thought about adding it, but it seems to me not to be as ontologically interesting or distinct - you can be a structuralist, broadly construed, even if you are an intuitionist or a Platonist. As in, it seems to me that structuralism itself did not arise out of ontological intuitions of the kind that would inform possible answers to this question ("Do numbers have objective existence?") – Chuck Jun 17 '11 at 13:34 
+1
+@Seamus Also, true about Plato, but I mention Godel because I restrict myself to mathematical Platonism, of which Godel is a very recent exemplar – Chuck Jun 17 '11 at 17:18
+1
+Your last paragraph is somewhat misleading perhaps -- Badiou's Number and Numbers takes this question on fairly directly and is definitely recommending reading. – Joseph Weissman♦ Aug 15 '11 at 3:06
+show 4 more comments
+
+11
+
+Kronecker famously said:
+
+„Die ganzen Zahlen hat der liebe Gott gemacht, alles andere ist Menschenwerk.“
+(something like: "God made the integers; all else is the work of man")
+
+...but I think even this is not true (besides there is no god ;-)
+
+Even for the integers, e.g. the concept of one-ness, two-ness asf, you need some kind of abstraction, an intelligence and therefore an observer (not even a human one, but an observer nevertheless).
+
+So the answer to your question in short is: No.
+
+shareimprove this answer
+answered Jun 17 '11 at 10:03
+
+vonjd
+92311 gold badge88 silver badges1919 bronze badges
+1
+Abstraction or filtering of sense information seems to be the key. This seems to tie objects, numbers and words together. In order to be able to count something I must first recognise it and name it. This suggests that, say, trees do not exist without an observer. Something reacts with our senses, but a tree is a construction of the human mind in response to the sense information. – leancz Jun 17 '11 at 10:41
+@leancz, while I think it might be reasonable to say that a tree does not exist independent of human (or other intelligent) minds, I think it's also reasonable to insist (Descartes notwithstanding) that this tree (the one right outside my window, in case you can't see what I'm pointing at) exists independently. The first is an abstraction, whereas the second is an implementation. – Ben Hocking Jun 17 '11 at 13:52
+I've heard that Kronecker was being facetious, that he was exaggerating about the integers. – Mitch Aug 11 '11 at 12:51
+@Mitch: He was presumably making a pointed remark about Cantors arithmetic of infinities. – Mozibur Ullah Dec 7 '12 at 2:26
+add a comment
+
+7
+
+A number is an abstract thing. It doesn't exist independently of a thought about it.
+
+For example a cat... . A cat can exist without a human observing it - ask the mouse! Or think about Brontosaurus. But a number is abstract - you can compare a basket with 3 bananas and a box with 3 letters, and the common thing among them is, that there are 3 elements.
+
+But if you imagine a monkey, deciding between a basket of 3 bananas and another one with 4 - does he have an idea of the number 3, and does he see a connection to 3 strawberries? Or can he divide 3 bananas to 3 monkey childs?
+
+I'm not sure, but most scientists assume today, that in the great universe, there is more live - not only on earth, and more intelligent species have been evolved, and they will need numbers as well to reason about their world.
+
+See how numbers exist in different cultures, and how they were early used to document ownership. There are different number systems, and not everybody invented the zero, but see how fluently the most potent system was adopted elsewhere. The names of the numbers are convention, but not the numbers themselves.
+
+Think about, how the numbers of electrons and protons determine the atoms.
+
+shareimprove this answer
+answered Aug 10 '11 at 20:16
+
+user unknown
+28933 silver badges99 bronze badges
+add a comment
+
+4
+
+Humans and Numbers exist independent of each other in separate layers of reality. The question assumes some type of interaction between humans and numbers as if they have any effect on each other. Do numbers independent of baboon obsorvers? the answser is yes, do they exist independent of baboon oborvers and also human obsorvers? we need another obsorver to report on that.
+
+Numbers do not exist in this universe in the same manner that humans do and depend upon, so even after a complete catastorphe when all the livingthings have ceased to exist, and the next cycle of life starts all over again, the numbers will be there, ready to be used by any number recognising life form.
+
+shareimprove this answer
+answered Jun 17 '11 at 10:17
+
+Arjang
+77077 silver badges1515 bronze badges
+add a comment
+
+2
+
+The question of existence is meaningless in the sense of Carnap and the logical positivists, and this question is precisely one which does not have meaning. The question of "existence" of one abstract thing in relation to the "existence" of another abstract thing has no bearing on any observation of the senses, and this question is just your brain fooling you into seeing a question from a collection of nonsense words.
+
+shareimprove this answer
+answered Sep 12 '12 at 18:04
+
+Ron Maimon
+1
+add a comment
+
+2
+
+Number do exist as long as the countable objects exist, irrespective of the observer, but if there is no observer what loses its meaning are not the numbers but the "meaning" (understanding of reality) concept instead!
+
+That is to say, numbers as adjectives can exist without observer (like in "two apples"), but as an imaginary abstraction no as the abstraction itself is a work of the observer's mind.
+
+Also counting needs some order whose definition very much depends on the observer (which apple in the basket to be assigned 1, which 2, and etc.), but that a basket has 9 apples need no observer and will keep its meaning even in the absent of the observers.
+
+However, if you ask about zero, infinity, cardinals larger than infinity, negative numbers, non-rational numbers, then one can continue discussing things further. All I said above was about the rational numbers, although I believe everything that we discover has or potentially can have a place in the real out universe.
+
+And as a last point, the physical rules of nature exist irrespective of being witnessed by an observer or not. Such rules have always numbers with themselves (like Pi, e, and maybe many more) even though there be no observer writing down the discovered rules on a piece of paper. That Einstein said Nature is numerically integrating somewhat clarifies this idea better.
+
+shareimprove this answer
+edited Dec 7 '12 at 16:12
+answered Sep 13 '12 at 0:50
+
+owari
+33711 silver badge77 bronze badges
+The question body specifies "observer" as "human observer". What, if ofther animals understand numbers? Extraterrestrians? The later ones haven't been observed, but most serious scientists today assume, that there must exist more life in the universe, and based on the same chemistry. So will they, if intelligent, have numbers? The same numbers (but with other names, of course). – user unknown Dec 6 '12 at 14:35
+@userunknown, as already mentioned the numbers do exist, they exist as long as the countable objects exist, if there is apple then two apples is meaningful anyway, be it for the human being or any other conscious being. However, in the lack of the conscious being what loses its meaning is the "meaning" (interpretation and understanding of the reality) itself and not the numbers! I'll update my answer for better clarification. – owari Dec 6 '12 at 15:13
+@owari: I think if you grant the integers existence, then all the later abstractions have the same ontological status. Contrasting one apple to two apples is not arithmatic. There is no abstraction involved. Thats simply moving things around and noticing differences & similarities. – Mozibur Ullah Dec 7 '12 at 2:31
+@MoziburUllah, and I didn't grant the abstraction, but granted the adjective nature of numbers, so that I said "Numbers do exist as long as the countable objects exist". As no two objects in universe are exactly the same (although the only difference be their position or orientation in space-time which of course won't be their only distinction in reality, also see here), then one and two are intrinsically different as the set of two apples have certainly two elements and such a set is by no means abstract-able to a singleton! – owari Dec 7 '12 at 4:09
+@Owari: I'd agree that you're describing adjectivally. You're describing two apples, not two; further, granting that it is a set, then you have a singleton, the single set of two apples. No two objects can be the same, agreed; but perhaps they are isomorphic, that is if they are swapped, no real difference is achieved. Apples of course look different from each other, so how about we swap two electrons around? – Mozibur Ullah Dec 7 '12 at 4:45
+show 5 more comments
+
+1
+
+Whatever the different schools of thought there are, very roughly divided into the intuitionist/formalist/social constructivist side which says 'no' and the platonist/realist side that says 'yes', there is a great distinction between numbers (and mathematical objects) and physical objects like trees or air.
+
+Just because we have thoughts about the number 2 as well as the tree outside my window, and the sentences 'the tree outside my window objectively exists' is just as parsable and understandable as 'the number 2 objectively exists' (without yet judging if the answers are the same or make sense beyond the superficial), just because we use 'exists' in both sentences, doesn't mean the uses of 'exists' are the same.
+
+We can tell that a particular tree exists though our senses (with whatever classical doubts via dreaming, illusions, mistakes there might be) as well as a pair of physical objects, and we might have philosophical judgments about the objectivity of those kinds of sensations, but that is a different thing from 'tree-ness' and 'two-ness' (the latter is really what 'two' means: if you have two trees in your yard, you don't have 'two-ness' in your front yard).
+
+So asking if numbers have objective existence is more like asking if concepts have objective reality (in distinction to objects that can be sensed directly).
+
+There is the side issue of how can one 'sense' particular numbers. we all accept that we have sense organs that can 'capture' a tree (by sight or touch), but there is no immediate such sense for particular numbers. But even this issues shows that the concept of existence is different for numbers.
+
+shareimprove this answer
+answered Aug 11 '11 at 14:48
+
+Mitch
+3,0551717 silver badges2929 bronze badges
+add a comment
+
+1
+
+If to be is to be the value of a bound variable, and if 1728 is the smallest number that is the sum of two cubes in two different ways, then the number 1728 exists. If moreover, in the absence of human (or other) minds, 1728 would still be the smallest number that is the sum of two cubes in two different ways, then the existence of the number 1728 does not depend on the existence of human (or other) minds.
+
+It seems to me be to be self-evident both that 1728 is the smallest number that is the sum of two cubes in two different ways, and that this would remain true in the absence of human (or other) minds.
+
+shareimprove this answer
+answered Feb 11 '15 at 4:15
+
+WillO
+80755 silver badges1010 bronze badges
+add a comment
+
+0
+
+Here's an argument I presented that the number "6" must exist independently of the mind. The number "6" is the first in the sequence of numbers that are sum of their divisors since 6=1+2+3 and 6 is also divisible by 1,2 and 3. Therefore the number "6" is the answer to what's first in the sequence of an algorithm and this algorithm have existed even if human minds didn't exist.
+
+And the number pi appears when calculating how a river flows etc and that river exists independently of the human mind, therefore the number pi also exists indepedent of the human mind and is not just a mental construction.
+
+shareimprove this answer
+answered Aug 17 '11 at 2:45
+
+Niklas Rosencrantz
+55655 silver badges1818 bronze badges
+5
+Thanks for your answer. Isn't your argument for the independant existance of "6" rather circular? You use mathematics to argue the existance of a number, but mathematics is dependant on the the cardinal and ordinal numbers which include "6". – leancz Aug 17 '11 at 7:03
+1
+What possible objective way of distinguishing between a drop of water, a stream, a river and a torrent is there? We are stuck in our subjectivity. Anything we sense is categorised in our brains. If there is no observer there can be no sensing, no categorisation and no labelling or language. – leancz Aug 17 '11 at 7:15
+Thank you for the investigation. If there is no observer, how is there something instead of nothing since having something clearly is having one which is having 1 and that is just a number so it doesn't exist. So immediately when there is something, there is 1 and that number doesn't exist. – Niklas Rosencrantz Aug 17 '11 at 14:49
+add a comment
+
+0
+
+Mathematics is a science that studies common properties of physical objects which do not depend on the actual physical substance of which the objects are constructed. For example it studies what is in common with all round things, with all triangular things etc.
+
+Certain objects can be said of to consist of other constituent objects. There is a property of being composed of only one object, of two objects, of three objects etc.
+
+All objects that are composed of six other objects have something in common. For example, they can be divided in two objects that have three parts or into three objects that have two parts. This property of being composed of six parts is named "number 6" so the mathematicians could study this common property and then make conclusions about other composed objects (a bunch of flowers, a set of cards etc) without studying them separately.
+
+Thus the numbers as properties of real-word objects exist independently, like any other properties, such as being big, or being round, or being heavy (the common properties of all heavy things for example studies mechanics, thus mass is also something that exists independently).
+
+shareimprove this answer
+answered Sep 23 '11 at 5:14
+
+Anixx
+18011 silver badge88 bronze badges
+1
+Thank you for your answer. If I understand it correctly you have defined numbers from an observer's point of view and then say: "Thus the numbers ... exist independantly." I don't understand how you make this jump. – leancz Sep 23 '11 at 6:44 
+Like mass, like dimensions, like form, like any other property. – Anixx Sep 23 '11 at 11:06
+add a comment
+
+0
+
+As somebody pointed out above - Circles exist regardless of observers, and the ratio between any circle and its radius is constant. For that matter, the ratio between the distances between the center of a sphere and any point on its surface is constant too (1), so these "values" must exist as well, independant of thought about them. In fact, a sphere is defined as a shape where every point on the surface is equi-distant from the center. If numbers don't exist, then that concept can't exist either...
+
+I hear the arguments against the independant existence of numbers, but I cannot wrap my head around their non-existence, where I can easily understand other such arguments. I find it easier to understand the concept of something concrete ("a tree" for example) not existing than numbers not existing. I tend to trust my understanding in issues like this, if something feels like its bordering on the nonsensical like this does, I cannot accept it as true.
+
+I welcome an explanation of a number-less world that I can wrap my head around - I just haven't heard one yet...
+
+shareimprove this answer
+answered Sep 12 '12 at 15:51
+
+Ryno
+72833 silver badges77 bronze badges
+add a comment
+
+0
+
+Not really, they exist in a relation and commitment between God and mankind. To this degree they have a practical status as being ontologically existant.
+
+shareimprove this answer
+answered Dec 7 '12 at 23:42
+
+TheDoctor
+50722 silver badges1010 bronze badges
+add a comment
+
+-4
+
+Insofar as numbers are a vehicle of meaning: Do hieroglyphs exist independently from observers? Do hieroglyphs have an objective existence? If life had not evolved on planet earth would there be hieroglyphs or are hieroglyphs an invention of human minds?
+
+Asking the same questions about hieroglyphs vs numbers seems to expose the answer - numbers were created by man.
+
+shareimprove this answer
+answered Jun 26 '15 at 1:21
+
+Ron Royston
+68144 silver badges1212 bronze badges
+Compare your answer to the top answer. On this site, we're looking for objective answers that ideally look at a philosophical problem from different perspectives. You have made it a habit to 1) not provide references, 2) look only from your own perspective and 3) present your own opinion as a fact. If that's what you want to do, this is not the right site for you. – user2953 Jun 26 '15 at 7:11 
+add a comment
+Your Answer
+Sign up or log in
+ Sign up using Google
+ Sign up using Facebook
+ Sign up using Email and Password
+Post as a guest
+Name
+Email
+Required, but never shown
+
+Post Your Answer
+By clicking “Post Your Answer”, you agree to our terms of service, privacy policy and cookie policy
+
+Not the answer you're looking for? Browse other questions tagged philosophy-of-mathematics ontology or ask your own question.
+Featured on Meta
+Feedback post: Moderator review and reinstatement processes
+Linked
+189
+Was mathematics invented or discovered?
+14
+Do the laws of logic exist independently of human or animal consciousness?
+3
+How can we have a 'natural existence' for complex numbers?
+4
+Expressing identity in mathematics
+Related
+33
+What are the necessary conditions for an action to be regarded as a free choice?
+3
+Are numbers noumena?
+4
+Can observers be particles?
+6
+Archaic mathematical reality as referred to by mathematician Alain Connes
+0
+Does Math, or analogically Language really have any impact on our “Thoughts”?
+1
+Are normal numbers evidence true randomness exists?
+1
+Do whole numbers other than zero actually exist?
+0
+Although Russell's paradox has the virtue of simplicity, is it a distraction from other paradoxes of naive set theory?
+Hot Network Questions
+Organising child care when giving birth
+Sending non-work emails to colleagues. Is it rude?
+Mixing 3.5 hdd and 2.5 hdd in LSI RAID 1
+Can I travel to UK as a cabin crew after being refused entry to Ireland?
+How to (or should one) distinguish between lowercase and uppercase alphabets orally when lecturing?
+Is Purusha (mentioned in Purusha suktam) same as Brahman (Parabrahman)?
+Do the holes in Jacquard loom punched cards represent input data or program code?
+Find the length of a number's "base-jumping" path
+What is the exact concept of bearings?
+Get rows only joined to certain types of row in another table
+Is there any statement that bhakti destroys karma?
+Is there a spell, magical item, or any other method to accurately calculate how long ago an object/construct was created?
+Does driving a speaker with a DC offset AC signal matter?
+How can baseline humanity survive on its own in the future?
+Is there any specific reason why Delta Air Lines doesn't have its own callsign?
+Finding how much time it takes for a complete Earth revolution around the Sun
+Tablet and Wi-Fi AP can't agree on a channel. Which device is violating the 802.11n standard?
+How to bevel selected edges in non-destructive way?
+Is Communism intrinsically Authoritarian?
+Why is this negated with nicht and not kein?
+Use column from Raster Attribute Table as Legend in Leaflet Map
+What's the girl's name?
+Why is/was the National Liberal Party of Romania opposed to Catholic & Hungarian school when they support a German-minority president?
+What difference does horsepower make? If the engine can spin the propeller fast enough, why does it need power behind it?
+ Question feed
+
+PHILOSOPHY
+Tour
+Help
+Chat
+Contact
+Feedback
+Mobile
+Disable Responsiveness
+COMPANY
+Stack Overflow
+Stack Overflow Business
+Developer Jobs
+About
+Press
+Legal
+Privacy Policy
+STACK EXCHANGE
+NETWORK
+Technology
+Life / Arts
+Culture / Recreation
+Science
+Other
+Blog
+Facebook
+Twitter
+LinkedIn
+site design / logo © 2019 Stack Exchange Inc; user contributions licensed under cc by-sa 4.0 with attribution required. rev 2019.11.29.35523
+
+ 

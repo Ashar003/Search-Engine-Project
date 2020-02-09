@@ -1,0 +1,67 @@
+JM
+Jakub Marian's
+Language learning, science  art
+EN DE CZ IT
+about | contact
+  
+Index | English German French  | Mathematics Physics  | Maps Music  | Books
+Do natural numbers exist?
+by Jakub Marian
+ Tip: See my list of the  Most Common Mistakes in English. It will teach you how to avoid mis­takes with com­mas, pre­pos­i­tions, ir­reg­u­lar verbs, and much more.
+
+Imagine a life form consisting of jelly in water whose only sensation of the outer world is a continuous scale of pressure. It is not possible for it to feel no pressure at all (which would be in vacuum) because that would kill it, so there is always some pressure; sometimes greater, sometimes lower. Through gradual changes of pressure, it can detect whether it moves deeper or closer to the surface or that it’s being crushed by a predator’s teeth, but in a very uncertain, “fuzzy” way.
+
+Imagine this creature eventually develops intelligence and tries to analyse the world around it using its only sense. The question is: would it develop a notion similar to that of natural numbers? I believe it wouldn’t (and for the sake of argument just assume it wouldn’t). Suppose it wouldn’t have any understanding of discrete objects at all, and it wouldn’t need it, because it wouldn’t be able to perceive discrete objects.
+
+The basic mathematical object of its “world theory” would probably be something like “blurred” real numbers with some sort of “fuzzy arithmetics”; it would know that you can sort of add pressures and compare pressures, but there wouldn’t be any operations or relations in the mathematical sense; it would feel that some pressure is “somewhat greater” than another one, which, translated to our language, would mean that it is greater with a certain probability (it would be so in a certain number of measurements).
+
+Any theory this creature would be able to develop would be severely limited in comparison to our mathematics and physics. Our viewpoint starting from integers and building up to the continuum of real numbers and then to “fuzzy” objects (e.g. probability densities) is clearly superior because it already contains the poor creature’s theory, but it is able to describe the physical world “better” (in a sense that would be impossible for the creature to understand). We wouldn’t even bother to try to formulate our theories using the creature’s approach, simply because our own approach works so much better.
+
+Platonism
+At this point, Platonists would maintain a very egocentric (or anthropocentric) point of view—that natural numbers are in a way the “purest objects” there are; that the language in which the laws of the universe are formulated already includes the notion of natural numbers. They would consider the poor creature not to be developed enough to be able to see the true nature of things.
+
+Of course, when we speak about natural numbers, we don’t speak about any particular way we denote them; the symbols as well as the principles of notation we choose (e.g. a positional numeral system) are arbitrary. The actual concept that is supposed to be absolute is discreteness.
+
+Our brains are evolutionarily predisposed to understand objects as being discrete. However, the discreteness in mathematics is more fundamental than just that of everyday perception. The language of mathematics itself is discrete. It consists of discrete symbols expressing discrete threads of implications.
+
+To be able to define even the most elementary notions in logic (upon which the rest of mathematics is built), you already have to know what natural numbers are (because you have to be able to enumerate symbols you use). What you do then is that you define natural numbers within the theory in such a way that they intuitively correspond to the idea of natural numbers you already had while defining the theory itself.
+
+Quantum mechanics changes the whole game
+Scientists have realized during the 20th century that there’s something fundamentally wrong with our understanding of objects as being discrete: there is a continuum of states in which an object can be simultaneously, but when we try to measure its state, we are only able get discrete results (one particular state) with a certain probability distribution characterized by the true nature of the object.
+
+Let’s illustrate it using the following example (you can skip to the next section if you are already familiar with the Stern-Gerlach experiment): an object that is electrically charged and at the same time rotates behaves like a magnet (in fact, a permanent magnet is just a “container” containing a lot of small, conveniently aligned spinning electrically charged particles).
+
+If a magnet moves through a magnetic field created by another magnet, the direction of movement naturally changes due to the influence of the other magnet and depends on the direction in which the magnet is pointing. If you change the orientation of the magnet slightly, it will land in a slightly different position; see the first part of the following video:
+
+
+Now, take an electron. People originally thought that an electron was just a little ball of electrically charged matter. Since it is a ball, it can rotate, so it is supposed to behave like a small magnet. Let’s try to send a bunch of electrons through the same device and see what happens (you can see that in the second part of the video). Surprisingly, they all land either at the top or at the bottom, but none in between.
+
+Perhaps the axis of rotation of each electron is pointing just up or down because the device we used to generate the electrons just works this way. So we turn the measuring device 90 degrees to the left. What will happen? If they are just small magnets pointing vertically, they shouldn’t move at all now (as the magnet in the first part of the video that pointed in the perpendicular direction). But what we actually see is the very same pattern as before; some of the electrons move to the left, some to the right, but nothing in between.
+
+“Non-discreteness” is the culprit
+The previous example is where non-discreteness of reality kicks in. We expect the electron to be in one particular state at a time. But it turns out that in quantum mechanics, it must be in many different states at a time for the theory to work. Our senses and cognitive processes cannot cope with that—a cat cannot be simultaneously dead and alive, no matter how hard you try. Whenever we actually perceive an object through our senses, we can perceive only one particular state of this object.
+
+That’s exactly what happens in the experiment. The axes of the electrons point simultaneously up and down. But we cannot see the electron splitting and landing at two places at a time; our cognition is not capable of that. So we see just one of the states of the electron after it passes the experimental device. Which one? That’s random.
+
+This randomness and the process of perception is something physicists have been struggling to explain for decades. But isn’t that natural? Aren’t we in fact like the poor pressure-sensing creature trying to measure which one of two discrete objects a device it created hits? I think it would appear pretty random to it too.
+
+Physicists have proved using mathematics that this randomness is in fact fundamental (that it is not possible that we will get rid of it by creating better measuring devices). But this in fact tells us that we cannot get rid of the randomness as long as we use the language of mathematics in which this theorem was proved. Perhaps the little creature would come to the same conclusion using its own, more limited formulation of the language of mathematics when trying to get data about ordinary objects like chairs and tables.
+
+It’s oblivious arrogance of mankind; many physicists believe that through our reasoning and our measuring devices, we will eventually be able to explain the laws of the universe with any precision we want (and that some of the laws just may be formulated using probability theory).
+
+My little message to them is: what if we just lack the necessary cognitive and perceptive capacity to develop a non-discrete (i.e. quantum-mechanical) language based on non-discrete (i.e. quantum-mechanical) sensory input? What if there is a civilization that has this ability? They probably wouldn’t even bother to define anything like natural numbers…
+
+But can we be at least sure that within the limits of our cognitive abilities, the scientific method gives as the right results? Unfortunately, we cannot. But more on that in my article Are scientific theories objective?.
+
+By the way, I have written several educational ebooks. If you get a copy, you can learn new things and support this website at the same time—why don’t you check them out?
+
+ 4
+Subscribe to my educational newsletter
+to receive a weekly summary of new articles
+Enter your email address below:
+@
+Subscribe
+I will send you one of my ebooks for free as a little gift.
+Contact  •  About  •  Copyright  •  Privacy
+Facebook21k+Email12k+Twitter8k+Redditnew
+Follow me to get updates and engage in a discussion

@@ -1,0 +1,144 @@
+
+SKIP TO MAIN CONTENT
+BIZ & IT TECH SCIENCE POLICY CARS GAMING & CULTURE STORE FORUMS
+SUBSCRIBE
+SIGN IN
+GAMING & CULTURE —
+PS3 hacked through poor cryptography implementation
+A group of hackers named fail0verflow revealed in a presentation how they …
+CASEY JOHNSTON - 12/30/2010, 12:25 PM
+
+WITH 76 POSTERS PARTICIPATING
+SHARE ON FACEBOOK
+SHARE ON TWITTER
+A group of hackers called fail0verflow claim they've figured out a way to get better control over a PlayStation 3 than ever before. After they worked through a number of Sony's security measures, they found the keystone to gaining access to the system's innards was the PS3's poor use of public key cryptography.
+
+At the Chaos Communication Conference 27C3, the team gave a 45-minute presentation on the methods they used to work through the PS3's various security levels, which include a chain of trust, a hypervisor, and signed executables. Their primary goal was to restore the capability to run Linux, something that was forcibly removed from the original PS3 and never possible on the PS3 Slim.
+
+After beating several other security measures, the group was able to locate the PS3's ECDSA signature, a private cryptographic key needed to sign off on high-level operations. Normally, these kinds of keys are difficult to figure out, and require running many generations of keys to crack. 
+
+But when fail0verflow worked backwards from generated keys, they found out that a parameter that should have been randomized for each key generation wasn't being randomized at all. Instead, the PS3 was using the same number for that variable, every single time, making it easy to work out acceptable keys.
+
+If this really works, it's a big slip on Sony's part. While PS3s are no stranger to software updates, this seems like it might affect operation on too many levels to be an easy fix. Fail0verflow's presentation is available in three parts on YouTube, and they also plan to put up a demo of their methods on their website.
+
+
+
+SPONSOR CONTENT
+Machine Learning Takes the Guesswork Out of Design Optimization
+READER COMMENTS
+WITH 76 POSTERS PARTICIPATING
+SHARE THIS STORY
+SHARE ON FACEBOOK
+SHARE ON TWITTER
+SHARE ON REDDIT
+CASEY JOHNSTON
+Casey Johnston is the former Culture Editor at Ars Technica, and now does the occasional freelance story. She graduated from Columbia University with a degree in Applied Physics.
+TWITTER @caseyjohnston
+
+
+Channel Ars Technica
+
+Nintendo's Corey Olcsvary plays your Super Mario Maker 2 levels
+Corey Olcsvary from Nintendo Treehouse joins us to play through a selection of user-generated Super Mario Maker 2 levels. Watch as he talks us through his strategies for clearing each stage and offers his impressions of what works and doesn’t with each level’s design. Corey then goes behind the scenes to explain the design ideas behind a custom course created by Nintendo Treehouse.
+
+Nintendo's Corey Olcsvary plays your Super Mario Maker 2 levels
+Nintendo's Corey Olcsvary plays your Super Mario Maker 2 levels
+Bioware answers unsolved mysteries of the Mass Effect universe
+Bioware answers unsolved mysteries of the Mass Effect universe
+First Look: Nintendo Ring Fit Adventure
+First Look: Nintendo Ring Fit Adventure
+Civilization: It's good to take turns | War Stories
+Civilization: It's good to take turns | War Stories
+Dead Cells: How to avoid falling to your death (and resurrection) | War Stories
+Dead Cells: How to avoid falling to your death (and resurrection) | War Stories
+Warframe's Rebecca Ford reviews your characters 
+Warframe's Rebecca Ford reviews your characters
+Subnautica: A world without guns | War Stories
+Subnautica: A world without guns | War Stories
+This War of Mine | War Stories
+This War of Mine | War Stories
+Return of the Obra Dinn: Lost in translation | War Stories
+Return of the Obra Dinn: Lost in translation | War Stories
+How Slay the Spire’s Original Interface Almost Killed the Game | War Stories
+How Slay the Spire’s Original Interface Almost Killed the Game | War Stories
+Amnesia: The Dark Descent - The horror facade | War Stories 
+Amnesia: The Dark Descent - The horror facade | War Stories
+Command & Conquer: Tiberian Sun | War Stories
+Command & Conquer: Tiberian Sun | War Stories
+Blade Runner: Skinjobs, voxels, and future noir | War Stories
+Blade Runner: Skinjobs, voxels, and future noir | War Stories
+Dead Space: The drag tentacle | War Stories
+Dead Space: The drag tentacle | War Stories
+Aliens versus Predator: The 11th hour decision | War Stories
+Aliens versus Predator: The 11th hour decision | War Stories
+Serious Sam: Saved by a vertical slice | War Stories
+Serious Sam: Saved by a vertical slice | War Stories
+Star Control: Science non-fiction | War Stories
+Star Control: Science non-fiction | War Stories
+ Ultima Online: The Virtual Ecology | War Stories
+Ultima Online: The Virtual Ecology | War Stories
+First Look: Xbox Adaptive Controller
+First Look: Xbox Adaptive Controller
+Blizzard answers unsolved mysteries of the Hearthstone universe
+Blizzard answers unsolved mysteries of the Hearthstone universe
+Unsolved mysteries of Warframe
+Unsolved mysteries of Warframe
+Unsolved mysteries of League of Legends
+Unsolved mysteries of League of Legends
+More videos
+← PREVIOUS STORY
+NEXT STORY →
+Related Stories
+Sponsored Stories
+Powered by
+[Photos] Just Some Things Put To Scale So You Realize How Scary Things Really Are
+[Photos] Just Some Things Put To Scale So You Realize How Scary Things Really Are
+
+PostFun
+
+[Pics] Red Carpet Dresses That Will Never Be Forgotten
+[Pics] Red Carpet Dresses That Will Never Be Forgotten
+
+History 101
+
+[Photos] Meet The Women Behind The Biggest NFL Stars
+[Photos] Meet The Women Behind The Biggest NFL Stars
+
+Bob's Hideout
+
+Everlane's Affordable Cashmere Sweater Will Become Your Favorite This Season
+Everlane's Affordable Cashmere Sweater Will Become Your Favorite This Season
+
+Everlane
+
+[Gallery] This Wheel Of Fortune Player Was Acting Strangely Then Pat Realized Why
+[Gallery] This Wheel Of Fortune Player Was Acting Strangely Then Pat Realized Why
+
+History A2Z
+
+Seniors Should Be Eating This To Wash Out Sugar From Blood
+Seniors Should Be Eating This To Wash Out Sugar From Blood
+
+ouremedy.com
+
+Today on Ars
+STORE
+SUBSCRIBE
+ABOUT US
+RSS FEEDS
+VIEW MOBILE SITE
+CONTACT US
+STAFF
+ADVERTISE WITH US
+REPRINTS
+NEWSLETTER SIGNUP
+Join the Ars Orbital Transmission mailing list to get weekly updates delivered to your inbox.
+
+SIGN ME UP →
+CNMN Collection
+WIRED Media Group
+© 2019 Condé Nast. All rights reserved. Use of and/or registration on any portion of this site constitutes acceptance of our User Agreement (updated 5/25/18) and Privacy Policy and Cookie Statement (updated 5/25/18) and Ars Technica Addendum (effective 8/21/2018). Ars may earn compensation on sales from links on this site. Read our affiliate link policy.
+Your California Privacy Rights
+The material on this site may not be reproduced, distributed, transmitted, cached or otherwise used, except with the prior written permission of Condé Nast.
+Ad Choices
+

@@ -1,0 +1,382 @@
+
+
+All
+Forums
+PLAYSTATION Gaming Discussion
+PS3 Gaming & General Discussion
+PS3 Game Ripping, Custom Mods
+How the PS3 Hypervisor was hacked, now fully explained
+Discussion in 'PS3 Game Ripping, Custom Mods' started by Zeus, Jan 28, 2010.
+
+PS4 Save Wizard MAX
+Page 2 of 2
+< Prev12
+2,415
+0
+0
+crypysmoker
+crypysmoker
+Loyal Member
+Joined:Jan 15, 2006
+Occupation:Bothering people
+Location:A hole in a box somewhere over the rainbow
+jesus..
+You guys dont seem to still understand this only works UNDER LINUX. Your not using the PS3 OS at all, this will only function under linux.. So stop talking about backups.. and stop pretending like half of you understand what is being done.
+
+This is at least a year away from a hack any of you forum trolls can use it for free games. oh.. and good luck on the whole downloading of 40gb+ games daily ;)
+[​IMG]
+
+[​IMG]
+
+
+Dont trade your games to gamestop for crap
+http://www.goozex.com/referral.asp?idr=4462414889
+crypysmoker, Jan 28, 2010#21
+60
+0
+0
+Questioner
+Questioner
+Loyal Member
+Joined:Jun 19, 2007
+Caution for sure, but we could very well see some significant user-end developments before a year.
+
+And I download bluray isos bigger than that all the time which dont cost nearly as much as games, only takes 3 hours on a consumer cable modem. Thats 2 a night.
+Last edited by a moderator: Jan 28, 2010
+Questioner, Jan 28, 2010#22
+3,798
+0
+0
+iLLNESS
+iLLNESS
+Loyal Member
+Joined:Aug 26, 2005
+Occupation:HV Industrial Electrician, Mechanic + Emergency Re
+Location:Canada
+crypysmoker said: ↑
+jesus..
+You guys dont seem to still understand this only works UNDER LINUX. Your not using the PS3 OS at all, this will only function under linux.. So stop talking about backups.. and stop pretending like half of you understand what is being done.
+
+This is at least a year away from a hack any of you forum trolls can use it for free games. oh.. and good luck on the whole downloading of 40gb+ games daily ;)
+well i can grab about 130GB a day on my 15mbit connection. and with docsis3.0 people using 100mbit, i don't think that's even remotely an issue.
+My ps3 is way better then yours.
+PIC based Jailbreakers feel free to visit my writeup for information and hexes here
+iLLNESS, Jan 29, 2010#23
+209
+0
+0
+weeboo
+weeboo
+Loyal Member
+Joined:Oct 28, 2009
+as illness said from previous threads, homebrew scene from previous console, ps2... has been stagnant. only very few devs made homebrew apps or games. if youre active members in psx-scene site, youd know it what im talking about... hdloader (isoloader from hd), sms player (xvid).. dgen (dreamcast emu), ps2menu.
+
+i hate to break this but i think itd take years before game loader surfaces using this exploit since playstation devs are not that open to talk about application capable of loading games off hd. go to ps2devdotorg and see what im talking about.
+
+if you check ps2, devs finally able to advance the mc exploit thats been discovered many years ago to today in loading burned games without putting a modchip in a ps2... but how many years has it been when they finally created one.... it took them years and created it when ps2 is dying and no one cares about it anymore.... so how many years do you think if ever someone code a game/iso loader for ps3.... when ps4 comes out? lulz,
+
+all im sayin, even there are more exploits thatd be discovered in later ps3 firmware if devs dont use these exploits and cant create programs.... its useless. as of now, its a dream... since not much of psx devs out that could pull such a program.
+Last edited by a moderator: Jan 29, 2010
+"First get your facts; then you can distort them at your leisure."
+Mark Twain
+weeboo, Jan 29, 2010#24
+7,336
+1
+0
+ThreeDog
+ThreeDog
+Loyal Member
+Joined:Dec 4, 2008
+crypysmoker said: ↑
+This is at least a year away from a hack any of you forum trolls can use it for free games. oh.. and good luck on the whole downloading of 40gb+ games daily ;)
+I'll make you a deal, we'll make them understand that if you use your brain and listen to what people are telling you in every thread about game sizes :p
+Thrown in the towel - Deletion requested.
+ThreeDog, Jan 29, 2010#25
+3,748
+1
+0
+MadonnaProject
+MadonnaProject
+Loyal Member
+Joined:Dec 22, 2005
+Now first thing to do should be to make an iso loader.
+
+then move onto the usual garbage of snes smulators et al....
+[My links are not selling counterfeit products, and link to a genuine lawfirm, if people can make use of it, more the better. I have never spammed or flooded my posts with my "message". NEVER a single time. With all due respect, I hope you realise it takes all kinds to make this community. Some of us are schoolkids who link to manga websites, others have our own businesses who may link to it. Not all fingers are the same, and not everyone spams. Sincerely].
+MadonnaProject, Jan 29, 2010#26
+772
+0
+0
+chucky_uk
+chucky_uk
+Loyal Member
+Joined:Aug 4, 2005
+crypysmoker said: ↑
+jesus..
+You guys dont seem to still understand this only works UNDER LINUX. Your not using the PS3 OS at all, this will only function under linux.. So stop talking about backups.. and stop pretending like half of you understand what is being done.
+
+This is at least a year away from a hack any of you forum trolls can use it for free games. oh.. and good luck on the whole downloading of 40gb+ games daily ;)
+40gb i eat for breakfast!!! My 50mb connection is unlimited and im regulary moving 100's of GB's a week without issue!!
+
+And only a handfull of games use 40GB, wasnt NFS only 4.5Gb??
+
+And you have no idea the same as me if this will turn into a real hack which opens the system!!! To say it's a year away is ridiculous, you like me don't know that a hack hasn't already been created but not released...
+
+Lets just wait and see but not all people want it for piracy, i want the system to open up for a proper media player like the old xbox had...
+chucky_uk, Jan 29, 2010#27
+7
+0
+0
+Xagest
+Xagest
+Loyal Member
+Joined:Oct 11, 2007
+Hopefully software access to kernel level access will come at some point. It also appears that this exploit is only useful for Original PS3s, not Slims. You can't install a Linux OS on a Slim.
+
+A hardware mod requirement also proves to be a harsh barrier when it comes to growing the homebrew community. Relative few people are interested in soldering up their systems, modchip or otherwise, so few people are able to contribute. People tend to look towards a Return on Investment. Hacking to play pirated games is the easiest way to see your money come back.
+
+The homebrew community for the Wii and iPhone are amazing. Access is simple, so people are doing quite a lot with their custom applications for both systems. Hopefully a software hack will come out of this, because that's probably the only way we'll be able to see any meaningful progress with the system.
+Xagest, Jan 29, 2010#28
+13
+0
+0
+forcefed03
+forcefed03
+Loyal Member
+Joined:Jan 30, 2010
+thanks a ton
+forcefed03, Jan 30, 2010#29
+51
+3
+0
+opiate81
+opiate81
+Loyal Member
+Joined:Jul 16, 2006
+Well Im mostly interested in him mentioning that 3D isnt locked in Linux more so that a driver hasnt been made for it.
+Get a 3D driver and all the phat users get all the benifits of a cracked console minus game loading.
+
+Lastly I doubt you would EVER see an ISO loader.. a HDD game loader maybe.
+ISOS waste space unless they get all the padding removed.
+
+(pedantic much?)
+opiate81, Jan 31, 2010#30
+711
+29
+28
+trancehead
+trancehead
+Loyal Member
+Joined:Oct 17, 2006
+Occupation:Laboratory Technician
+Location:Perth, West Australia
+aduszonice said: ↑
+Got some info from geohots blog:
+
+"A way has been found to run the exploit without glitching hardware (i.e. no fpga needed). It's an overflow bug now.
+Will update when more info comes out.
+A file will be released within the hour (a c file, of course). Oh and this works on all FW versions, supposedly."
+
+Hope its true...
+
+Farewell
+Aduszonice
+lol, just tried a few search engines for the phrase "A way has been found to run the exploit without glitching", and maxconsole was the only site this come up on.
+
+the "i hope its true..." also tells me that this guy is full of it.
+why would geohot successfully hack the hypervisor then lie about another form of hack hes discovered that does the same thing.
+ACES IN THE PALM
+trancehead, Jan 31, 2010#31
+300
+0
+0
+technolust
+technolust
+Loyal Member
+Joined:Jun 15, 2007
+trancehead said: ↑
+lol, just tried a few search engines for the phrase "A way has been found to run the exploit without glitching", and maxconsole was the only site this come up on.
+
+the "i hope its true..." also tells me that this guy is full of it.
+why would geohot successfully hack the hypervisor then lie about another form of hack hes discovered that does the same thing.
+
+because that was not geohot that said another way had been found, it was some lame n00b who called him self "hacker" on geohots blog who said that.
+he soon deleted all his posts on the blog after saying that. if what he said was 100% true he would have posted his findings on the http://wiki.ps2dev.org/ site
+technolust, Feb 1, 2010#32
+51
+3
+0
+opiate81
+opiate81
+Loyal Member
+Joined:Jul 16, 2006
+A quote from some guy off the blog..
+not much but a glimmer of hope maybe :)
+
+
+Hello,
+
+Ive been looking into linux distros for ps3 and found the following:
+
+Sony Zego BCU-100 server contains cell and RSX
+
+Ok, the RSX in Zego seems to have slightly lower memory but it appears that the Zego is basically a PS3 in server case.
+
+Yellow Dog linux's latest distro, according to their website, FULLY supports the Zego RSX:
+
+Sony ZEGO BCU-100
+
+1. Notes: The Cell and RSX (GPU) are fully supported.
+
+http://www.yellowdoglinux.com/suppor...are/sony.shtml
+
+Now, if the Zego is the same architecture as PS3 then possibly the driver will now work with GH's unlocked PS3. If not, then could this not at least be a starting point for hashing a driver together?
+opiate81, Feb 1, 2010#33
+300
+0
+0
+technolust
+technolust
+Loyal Member
+Joined:Jun 15, 2007
+opiate81 said: ↑
+A quote from some guy off the blog..
+not much but a glimmer of hope maybe :)
+its all good info which is needed, but geos blog is quickly filling up with spammers and garbage posts.
+but until a way to run unsigned code is found then the ps3 will remain safe from the pirates.
+technolust, Feb 2, 2010#34
+15
+0
+0
+MajorHerbie
+MajorHerbie
+Loyal Member
+Joined:Feb 7, 2010
+dvader2009 said: ↑
+Perhaps if people didn't publish this information in the first place they wouldn't respond to "prevent" this kind of attack..
+lol, nicely said
+MajorHerbie, Feb 7, 2010#35
+(You must log in or sign up to reply here.)
+Page 2 of 2
+< Prev12
+Share This Page
+
+Log in
+
+
+
+ANXChip
+
+Shop01Media	Buy SX OS
+ANXChip
+ Xecuter SX Pro
+ Xecuter SX Gear
+ Switch SX OS
+ SX Pro USA
+ Buy SX Pro Kaufen
+ R4i Gold
+ R4i SDHC
+ R4 Scheda
+ Sky3DS+ Plus
+ N2 Elite
+ R4 3DS XL
+ EZ-Flash Omega
+ Stargate 3DS Flashcard
+ Linker 3DS
+ R4 carte
+SXSwitch
+ Buy SX Pro
+ Comprar SX Pro
+ Xecuter SX OS
+ Acheter SX OS
+ Comprar SX Gear
+ SX Gear UK
+ R4 Gold
+ Sky3DS+
+ R4i SDHC
+ Stargate 3DS
+ N2 Elite
+ EZ Flash
+Staff Online Now
+GaryOPA
+GaryOPA
+Master Phoenix Admin
+Users Online Now
+GaryOPA
+Total: 323 (members: 1, guests: 285, robots: 37)
+Forum Statistics
+Discussions:47,183
+Messages:355,280
+Members:61,781
+User Record:1,098
+Latest Member:descatal
+Top Posters
+GaryOPA
+10
+goldeneyejames
+3
+Paul Smart
+3
+jdelf
+1
+alexqueen
+1
+switchnewbo
+1
+White Lord
+1
+descatal
+1
+ub3r1337
+1
+MeSonySpy
+1
+Share This Page
+
+
+Quality Sites
+Play free slots for fun in demo mode on any device.
+
+MaxConsole
+All General PlayStation Nintendo Xbox Mobile PC Gaming Retro ReviewsForums
+Search Forums
+New Posts
+Recent Activity
+Notable Members
+Current Visitors
+ SupportResourcesMedia
+ Log in
+
+Search...
+ ABOUT MAXCONSOLE
+Since 1995, MaxConsole has been bringing you the very latest in Daily Gaming News for Nintendo, PlayStation and Xbox, and recently we expanded to include the Mobile & PC Gaming, plus we still contain vast resources for Retro Gamers, with total scene coverage on all the things that matter like ROMs, FlashCarts, Modding, Homebrew and Emulators.
+
+    
+ OFFICIAL SUPPORT FORUMS
+ Classic 2 Magic Support
+ Team Rebug Support
+ N^2 Elite Support
+ Stargate 3DS Support
+ Gateway 3DS Support
+ QUICK NAVIGATION
+ Browse our very Popular Forums
+ View our most Active Members
+ Or checkout our Awesome Reviews
+ Plus study our Modding Tutorials
+ Check Out Our Vast Resources
+ CONTACT AND INFO
+Please contact us if you have any issues with any of the content that is contained on our website, or if you wish to place ads for your company on our pages, or if you have any problems accessing your forum account.
+
+ P.O. Box 629, Nashville, TN 37202
+ info @ maxconsole . com
+ https://www.maxconsole.com/
+MaxConsole v3.2 © 1995-2019 - All Rights Reserved.
+Contact Us
+Help
+Home
+Top
+RSS
+Terms and RulesPrivacy PolicyForum software by XenForo™ © 2010-2018 XenForo Ltd.
+XenPorta 2 PRO © Jason Axelrod from 8WAYRUN.COM.
+MaxConsole v3.0 based on Nerva Theme by ©IPBForo.
+Some XenForo functionality crafted by Audentio Design.

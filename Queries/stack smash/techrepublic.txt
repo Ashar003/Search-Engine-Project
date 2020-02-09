@@ -1,0 +1,140 @@
+
+   
+SEARCH
+IT Policy Downloads 5G Developer Top DaaS providers Security More 
+Newsletters Forums Resource Library TR Premium
+ 
+Basics of stack-smashing attacks and defenses against them
+
+
+by Chad Perrin in IT Security, in Tech & Work  on November 30, 2009, 10:58 PM PST
+Understanding the basics of stack-smashing attacks can teach admins what OSes are best protected against them and developers how to protect their programs from stack buffer overflow vulnerabilities.
+
+A memory structure used in many programming languages to store state -- variable values, for instance -- is known as the "stack." The most well-known languages to rely heavily on the stack are probably C and C++. Forth is a language that has gained some fame specifically for its focus on stack-based programming. Program control flow is also managed by the stack.
+
+Variables whose memory is allocated on the stack need to be carefully managed so that data stored in them will not exceed the stack space that has been allocated. If it does, that additional data can overwrite other data stored on the stack and cause problems for other variables and program control flow.
+
+If a malicious security cracker is able to intentionally exceed the stack space allocated to a variable, he or she can use malformed data to actually affect program control flow in a deliberate way. This sort of security compromise is known as a "stack-smashing attack" and, depending on the software whose vulnerability to the attack is exploited and that program's execution environment, might even lead to a root compromise of the OS itself.
+
+Memory management vulnerabilities such as stack-smashing attacks are extremely dangerous. The stack-smashing attack is in fact a type of buffer overflow attack, and may sometimes be called a stack buffer overflow attack. Many vulnerabilities can only affect the specific parts of the system the vulnerable software was meant to affect, but memory management vulnerabilities can often "break out" of the intended limits on the software to affect other parts of the system, turning an apparently innocuous piece of software into a terrible threat to the rest of the operating environment.
+
+
+Server Monitoring
+
+Stay on top of server outages and performance issues with our server monitoring tool built for cloud-scale. Monitor your entire server infrastructure and get in-depth visibility into key performance indicators of your data center's Windows & Linux...
+
+Downloads provided by ManageEngine
+A number of software solutions meant to protect against, or detect, stack-smashing vulnerabilities are available. Among the ways to protect your system against stack-smashing attacks are non-executable stacks and stack canaries. Each of these includes several subtypes.
+
+Non-Executable Stack: Both hardware- and software-based non-executable stack protections exist. They work by differentiating between executable stacks and non-executable stacks, so that data not intended to be executed can be stored in non-executable stack. Then, if a malicious security cracker (or a bug in your program) overwrites the end of a variable, the operating system at least won't try to execute the malformed data. A number of operating systems implement variations on non-executable stack management, including FreeBSD PG_NX, Microsoft Windows Data Execution Prevention (not the same thing as "Software DEP"), OpenBSD W^X, and Red Hat Linux Exec Shield.
+Stack Canaries: Stack canaries include random canaries, random XOR canaries, and terminator canaries. In essence, a canary is a designated piece of data used to validate stored data so that, when malformed data appears, the difference can be identified and hopefully an attempted vulnerability exploit can be defanged. In theory, this requires a would-be attacker to access the stack indirectly to avoid overwriting the "canary", though implementations may vary in their effectiveness.
+ADVERTISING
+
+An entire book could be written about this subject. Further investigation of this topic is left as an exercise for the reader.
+
+WHITE PAPERS, WEBCASTS, AND DOWNLOADS
+ 
+8x8's Enterprise Engagement Management Platform: Moving Toward an Integrated Approach
+White Papers from 8x8, Inc.
+
+ 
+Free 30-day trial of Watson Studio Desktop and IBM SPSS Modeler
+Resource Center from IBM
+
+ 
+Tech Pro Research: IT Budget Research Report 2019
+Research from TechRepublic Premium
+
+ 
+Scaling data science: How best-in-class companies innovate with machine learning
+White Papers from IBM
+
+ 
+ESG Technical Validation on IBM Watson Studio and Watson Machine Learning
+White Papers from IBM
+
+
+
+EDITOR'S PICKS
+
+Transgender employees in tech: Why this "progressive" industry has more work to do
+
+Python is eating the world: How one developer's side project became the hottest programming language on the planet
+
+How iRobot used data science, cloud, and DevOps to design its next-gen smart home robots
+
+Beyond the PC: Lenovo's ambitious plan for the future of computing
+
+Straight up: How the Kentucky bourbon industry is going high tech
+
+Inside the Raspberry Pi: The story of the $35 computer that changed the world
+Comment and share: Basics of stack-smashing attacks and defenses against them
+
+By Chad Perrin
+Chad Perrin is an IT consultant, developer, and freelance professional writer. He holds both Microsoft and CompTIA certifications and is a graduate of two IT industry trade schools.
+
+ | Full Bio | See all of Chad's content
+TECH & WORK TECH INDUSTRY CXO SMBS INNOVATION DEVELOPER TECH & WORK ON ZDNET 
+by TaboolaPromoted Links
+Recommended
+The 21 Hottest Gifts Of 2019
+ZangDeal
+Wells Fargo $400 Welcome Bonus Offer. Learn More
+Wells Fargo - Member FDIC
+You Should Never Shop on Amazon Without Using This Trick – Here’s Why
+Honey
+Intel officially unveils Chaco Canyon, first fanless NUC in five years
+10 ways to spot top technology talent during the interview process
+The best Black Friday 2019 deals on smartphones
+
+EDITOR'S PICKS
+
+Transgender employees in tech: Why this "progressive" industry has more work to do
+
+Python is eating the world: How one developer's side project became the hottest programming language on the planet
+
+How iRobot used data science, cloud, and DevOps to design its next-gen smart home robots
+
+Beyond the PC: Lenovo's ambitious plan for the future of computing
+
+WHITE PAPERS, WEBCASTS, AND DOWNLOADS
+Product Tour of IBM Watson Machine Learning with Watson Studio
+Training From IBM
+
+How to Solve the Enterprise Communications Crisis with an Open Cloud Strate...
+White Papers From 8x8, Inc.
+
+Tech Pro Research: Using Tech to Make Shopping Easier and More Enjoyable
+Downloads From TechRepublic.com
+
+Digital Transformation ebook: Guide to becoming a digital transformation ch...
+Downloads From TechRepublic Premium
+
+Special report: Blockchain in business: Where are we now, and predictions for the next decade
+Microsoft Ignite 2019: Azure Arc, HoloLens 2, Edge, Quantum and Teams
+Year-round IT budget template
+Digital Transformation ebook: Guide to becoming a digital transformation champion
+SERVICES
+About Us
+Membership
+Newsletters
+RSS Feeds
+Site Map
+Site Help & Feedback
+FAQ
+Advertise
+Reprint Policy
+TR Premium Terms of Service
+EXPLORE
+Blogs
+Downloads
+TechRepublic Forums
+Meet the Team
+TechRepublic Academy
+TechRepublic Premium
+Resource Library
+Photos
+Videos
+    
+© 2019 CBS Interactive. All rights reserved. Privacy Policy | Cookies | Ad Choice | Terms of Use | Mobile User Agreement
+A ZDNet site | Visit other CBS Interactive sites: 

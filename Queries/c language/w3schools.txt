@@ -1,0 +1,189 @@
+w3schools.in
+Search...
+Home
+Web Design
+Programming
+Client Side Scripting
+Server Side Scripting
+Database
+Data Interchange
+Computer Science
+More
+cprogramming-Logo
+C Programming Tutorials
+C Tutorial
+C Introduction
+Limitation of C Programming Language
+History of C Programming Language
+C Installation
+C Program Structure
+C Input and Output (I/O)
+C Format Specifiers
+Declaration & Assignments
+C Tokens
+C Identifiers
+C Keywords
+C Constants
+C Operators
+C Data Types
+C Variables
+C Storage Classes
+C Preprocessors
+C Header Files
+C Type Casting
+Flow Control
+C Decision Making
+C if Statements
+C if-else Statements
+C Nested if-else Statements
+C else-if Statements
+C goto Statement
+C switch Statements
+C Loops
+C while loops
+C do while loops
+C for loops
+Functions
+C Functions
+C Function Arguments
+C Library Functions
+C Variable Scope
+C Custom Header File
+C Recursion
+C Array
+C Arrays
+C Strings
+C Pointers
+C Pointers
+C Memory Management
+C Memory Management
+C Dynamic Memory Allocation
+C Structure Union
+C Structures
+C Unions
+C typedef
+C File Handling
+C File Handling
+C fopen
+C fclose
+C getc
+C putc
+C getw
+C putw
+C fprintf
+C fscanf
+C fgets
+C fputs
+C feof
+Other
+C Command Line Arguments
+C99 Features
+C Error Handling
+Bit Fields in C
+
+ 
+C is a high-level structured oriented programming language, used in general-purpose programming, developed by Dennis Ritchie at AT&T Bell Labs, the USA between 1969 and 1973.
+
+
+ 
+Table of Contents
+1. Some Facts About C Programming Language
+2. Uses of C Programming Language
+3. C Has Become Very Popular for Various Reasons
+4. Features of C Programming Language
+5. Advantages of C
+6. Disadvantages of C
+In 1988, the American National Standards Institute (ANSI) had formalized the C language.
+C was invented to write UNIX operating system.
+C is a successor of 'Basic Combined Programming Language' (BCPL) called B language.
+Linux OS, PHP, and MySQL are written in C.
+C has been written in assembly language.
+In the beginning, C was used for developing system applications, e.g. :
+
+Database Systems
+Language Interpreters
+Compilers and Assemblers
+Operating Systems
+Network Drivers
+Word Processors
+
+One of the early programming languages.
+Still, the best programming language to learn quickly.
+C language is reliable, simple, and easy to use.
+C language is a structured language.
+Modern programming concepts are based on C.
+It can be compiled on a variety of computer platforms.
+Universities preferred to add C programming in their courseware.
+C is a robust language with a rich set of built-in functions and operators.
+Programs written in C are efficient and fast.
+C is highly portable; programs once written in C can be run on other machines with minor or no modification.
+C is a collection of C library functions; we can also create our function and add it to the C library.
+C is easily extensible.
+C is the building block for many other programming languages.
+Programs written in C are highly portable.
+Several standard functions are there (like in-built) that can be used to develop programs.
+C programs are collections of C library functions, and it's also easy to add functions to the C library.
+The modular structure makes code debugging, maintenance, and testing easier.
+C does not provide Object Oriented Programming (OOP) concepts.
+There are no concepts of Namespace in C.
+C does not provide binding or wrapping up of data in a single unit.
+C does not provide Constructor and Destructor.
+
+
+Limitation of C Programming Language ❯
+
+
+ 
+
+ 
+
+Courses
+HTML (18)
+CSS 3 (16)
+Bootstrap 4 (10)
+Photoshop (1)
+C Programming (60)
+C Programs (55)
+C++ (49)
+C++11 (9)
+C# (16)
+C++ Programs (17)
+Java (62)
+Java Programs (28)
+JAVA Questions and Answers (18)
+Swift (13)
+Android (2)
+JavaScript (11)
+jQuery (6)
+R Programming (17)
+PHP (37)
+PHP Scripts (13)
+Wordpress (12)
+RESTful Web Services (7)
+Laravel (9)
+Python (37)
+Python Programs (1)
+Python Data Science (5)
+SQL (10)
+MySQL (14)
+MongoDB (21)
+XML (5)
+JSON (11)
+HTTP (HyperText Transfer Protocol) (1)
+Data Structures (21)
+Operating System (20)
+DBMS (29)
+Software Development Life Cycle (SDLC) (10)
+Cloud Computing (37)
+Software Testing (16)
+GIT (2)
+Ethical Hacking (14)
+Cyber Security (23)
+Big Data Hadoop (1)
+Technical Writing (7)
+Definition (22)
+Entrepreneurship (23)
+
+ 
+© w3schools.in - All Rights Reserved.
+About Us  Contact Us  Copyright  Privacy Policy  

@@ -1,0 +1,113 @@
+TECH 
+FINANCE 
+POLITICS 
+STRATEGY 
+LIFE 
+BI PRIME 
+INTELLIGENCE 
+ALL
+Log In
+How Do Microwaves Cook Food?
+Dina Spector Jun 10, 2014, 2:34 PM
+microwave
+Jaroslav Moravcik/Shutterstock
+Microwave ovens cook food incredibly fast, warming up refrigerated leftovers in minutes or less. But how does this great invention work?
+
+Here, we explore the science behind one of the most revolutionary household appliances of the 20th century.
+
+Microwaves Are A Form Of Energy
+Microwaves are electromagnetic waves that fly through space at the speed of light. We can't see microwaves, but if you could, you would see the microwave cooking chamber light up with an intense glow.
+
+Microwaves are shorter than radio waves but longer than infrared radiation. The microwave used for cooking is about 12 centimeters from crest to crest, says Louis Bloomfield, a professor of physics at the University of Virginia. At this wavelength, microwaves are readily absorbed by most foods. But the particles in a microwave, known as photons, don't have enough energy to damage molecules and cause cancer like ultraviolet rays or X-rays.
+
+800px BW_EM_spectrum
+Microwaves are sandwiched between radio waves and infrared light on the electromagnetic spectrum. The microwaves used in cooking around 12 centimeters, or a little wider than the diameter of a baseball. Wikimedia Commons
+The Microwave Oven
+A component called the magnetron generates microwaves from electricity inside the microwave oven. To power the magnetron, a transformer converts the standard household electricity from a wall socket of 120 volts to about 4,000 volts or higher. The voltage heats a filament at the center of the magnetron, boiling off electrons.
+
+microwave
+Electrons are emitted as the filament heats up. engineerguy
+The electrons would rush out in straight line toward an anode, or positive terminal, that surrounds the filament, but two ring magnets above and below the anode bend the electrons back toward the filament and they fly around in a circular path.
+microwave a
+Magnets bend the electrons back toward the filament in a curved path. engineerguy
+Microwaves are created as the electrons whip past cavities, or openings, in the anode.
+microwave b
+Cavities in the ring-shaped anode create a microwave "whistle" as the electrons blow past. engineerguy
+"It's like blowing across the top of a glass bottle," says Bob Schiffmann, president of the International Microwave Power Institute. But instead of producing a sound whistle, oscillating waves are generated at a specific frequency, typically 2.45 gigahertz. The microwaves are transmitted into the cooking compartment by an antenna where they are bounced around eventually penetrating the food. 
+microwave c
+Dan Izzo/YouTube
+The microwave door contains a metal mesh that reflects the microwaves like a mirror and keeps them from leaking out. The mesh holes are too small for microwaves to escape through but large enough that visible light can, so we can see what's cooking inside.
+Most microwaves have a glass turntable that moves the food around like a carousel so that it heats evenly. If the food wasn't being rotated, parts of your meal would get stuck in the microwave's hot and cold spots.
+
+Microwave Diagram_04
+Mike Nudelman/Business Insider
+How Microwaves Cook Food
+When you hit the start button "it usually takes about 2 seconds to heat up a filament inside the magnetron tube," says Schiffmann. The microwaves are then blasted into the food compartment.
+
+The commonly used frequency of microwaves, 2.45 gigahertz, is easily absorbed by water, fat, and sugar. Says Bloomfield: "The waves are at the right frequency to penetrate deep into food and they deliver cooking power primarily to the food's water content. Water-free solids barely absorb microwaves." That's why microwave-safe containers don't get as hot as the food inside them.
+
+Microwaves heat food, like a cup of coffee or a slice of lasagna, by twisting water molecules back and forth. Water molecules are positively charged at one end and negatively charged at the other. A single water molecule looks like Mickey Mouse's head, says Bloomfield. You can think of the negatively charged oxygen atom as Mickey's face and the two smaller positively charged hydrogen atoms as Mickey's ears.
+
+The positively charged end of the water molecule tries to align itself with the microwave's electric field while the negatively charged end points the other way. But because the field reverses 2.5 billion times a second, Mickey's ears and face are being twisted back and forth rapidly.
+
+As the molecules twist back and forth, they rub into each other. This creates friction, which produces heat.
+
+water molecules
+A single water molecule has a negative and positive charge at both ends. engineerguy
+A microwave cooks food much faster than a conventional oven because it heats both the inside and outside of the food the same time, says Schiffmann. A conventional oven or frying pan heats the surface of the food first and the heat gradually moves toward the center. Because the air inside the microwave oven is room temperature, foods don't get brown or crispy as they would with other forms of cooking.
+NOW WATCH: Research Reveals Why Men Cheat, And It's Not What You Think
+More: Technology Microwave Food Cooking 
+
+Career Builder
+FIND A JOB
+Tech Jobs	C-Level Jobs
+Media Jobs	Design Jobs
+Finance Jobs	Sales Jobs
+See All Jobs »
+    
+* Copyright © 2019 Insider Inc. All rights reserved. Registration on or use of this site constitutes acceptance of our 
+Terms of Service
+, 
+Privacy Policy
+and
+Cookies Policy
+.
+Sitemap
+ 
+Disclaimer
+ 
+Commerce Policy
+ 
+Coupons
+ 
+Made in NYC
+ Stock quotes by
+finanzen.net
+International Editions: 
+INTL
+ 
+DE
+ 
+AUS
+ 
+FR
+ 
+IN
+ 
+IT
+ 
+JP
+ 
+MY
+ 
+NL
+ 
+SE
+ 
+PL
+ 
+SG
+ 
+ZA
+ 
+ES

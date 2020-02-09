@@ -1,0 +1,169 @@
+
+Search on Information Security…
+Log in Sign up
+By using our site, you acknowledge that you have read and understand our Cookie Policy, Privacy Policy, and our Terms of Service.
+
+Information Security
+Home
+Questions
+Tags
+Users
+Unanswered
+How stack smashing is prevented?
+Ask Question
+Asked 6 years, 2 months ago
+Active 4 years, 11 months ago
+Viewed 2k times
+
+
+7
+
+
+2
+I just read AlephOne's paper on smashing the stack, and implemented it on my machine (Ubuntu 12.04), it was a bit old so had to take a lot of help from the internet but I enjoyed it.
+
+Now, I want to learn how is that prevented in real life.
+
+It would be great if you can suggest me some papers or online resources that demonstrate how it is prevented.
+
+attacks exploit known-vulnerabilities buffer-overflow
+shareimprove this question
+edited Dec 16 '13 at 13:48
+user10211
+asked Sep 8 '13 at 12:21
+
+Jaydeep Solanki
+22744 silver badges99 bronze badges
+add a comment
+2 Answers
+activeoldestvotes
+
+12
+
+There are two primary techniques for mitigating stack based buffer overflows.
+
+The first technique is attacking the problem at the roots. Buffer overflows occur when a program tries to write outside the bounds of a data structure. The most effective way to stop a buffer overflow is to stop this from occurring. Use a programming language, be it Java, Python, Ruby, that will manage the memory for you. If you must use C, ensure that you perform proper checks before writing to a buffer.
+
+The second technique involves mitigating the damage a buffer overflow can cause. Techniques like stack canaries, DEP and ASLR fall under this category. They work to limit the damage a buffer overflow can cause by making it more difficult for an attacker to execute arbitrary code after an overflow. Such techniques can be defeated. For more information about DEP and ASLR, see this question.
+
+shareimprove this answer
+edited Mar 17 '17 at 13:14
+
+Community♦
+1
+answered Sep 8 '13 at 12:46
+user10211
+add a comment
+
+
+4
+
+Just a small note:
+
+Since, you were using Ubuntu 12.04 for the testing, you must have given your system a command (assuming that you took a lot of help from the internet and this was the first time your were trying to smash the stack):
+
+echo 0 > /proc/sys/kernel/randomize_va_space
+Or some related command. This command basically disables the ASLR (mentioned by Terry) on the system. By default, ASLR is an enabled feature on the kernel versions 2.6 and above.
+
+(Actually wanted to post this as a comment, but was not able to do so because of Reputation issues :))
+
+shareimprove this answer
+edited Oct 20 '14 at 4:03
+answered Oct 2 '13 at 3:09
+
+Rahil Arora
+4,01322 gold badges1818 silver badges3939 bronze badges
+add a comment
+Your Answer
+Sign up or log in
+ Sign up using Google
+ Sign up using Facebook
+ Sign up using Email and Password
+Post as a guest
+Name
+Email
+Required, but never shown
+
+Post Your Answer
+By clicking “Post Your Answer”, you agree to our terms of service, privacy policy and cookie policy
+
+Not the answer you're looking for? Browse other questions tagged attacks exploit known-vulnerabilities buffer-overflow or ask your own question.
+Blog
+Copying code from Stack Overflow? You might paste security vulnerabilities, too
+Featured on Meta
+Feedback post: Moderator review and reinstatement processes
+
+Linked
+110
+How do ASLR and DEP work?
+Related
+85
+Stack Overflows - Defeating Canaries, ASLR, DEP, NX
+3
+Stack smashing keep getting segmentation fault
+5
+Smashing the stack if it grows upwards
+5
+NX bit: does it protect the stack?
+0
+Fomat String vulnerability used to display data outside the function stack frame?
+0
+8 extra bytes in stack
+3
+How to overwrite ebp on stack alignment?
+0
+Offset in Stack
+2
+Can stack overflow be prevented by pushing return address first?
+Hot Network Questions
+Does driving a speaker with a DC offset AC signal matter?
+Writing style in academic English
+Find the length of a number's "base-jumping" path
+Stack Exchange Answerer
+Why is this negated with nicht and not kein?
+Is Purusha (mentioned in Purusha suktam) same as Brahman (Parabrahman)?
+How are names of enharmonic notes determined?
+Germany's Ladenschlussgesetz in comparison to a debatable law in Israel
+Will transcribing music improve my ability to play a song by ear?
+If thermodynamics says entropy always increases, how can the universe end in heat death?
+Can Alice win the game?
+Why is/was the National Liberal Party of Romania opposed to Catholic & Hungarian school when they support a German-minority president?
+Is it acceptable to say that a divergent series that tends to infinity is 'equal to' infinity?
+How to compare the signature of two functions?
+What are the advantages of taking "Sculptor of Flesh" eldritch invocation over taking Polymorph as a spell?
+Fingering for Bach's Toccata in E-minor BWV914
+Dice game with rules and three dice
+Is Communism intrinsically Authoritarian?
+more hot questions
+ Question feed
+
+INFORMATION SECURITY
+Tour
+Help
+Chat
+Contact
+Feedback
+Mobile
+Disable Responsiveness
+COMPANY
+Stack Overflow
+Stack Overflow Business
+Developer Jobs
+About
+Press
+Legal
+Privacy Policy
+STACK EXCHANGE
+NETWORK
+Technology
+Life / Arts
+Culture / Recreation
+Science
+Other
+Blog
+Facebook
+Twitter
+LinkedIn
+site design / logo © 2019 Stack Exchange Inc; user contributions licensed under cc by-sa 4.0 with attribution required. rev 2019.11.29.35523
+
+ 

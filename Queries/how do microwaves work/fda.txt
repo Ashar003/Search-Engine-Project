@@ -1,0 +1,129 @@
+Skip to main content
+Skip to FDA Search
+Skip to in this section menu
+Skip to footer links
+U.S. flag An official website of the United States government Here’s how you know 
+U.S. Food and Drug Administration 
+Search FDA
+ Home  Radiation-Emitting Products  Resources for You (Radiation-Emitting Products)  Microwave Oven Radiation
+Microwave Oven Radiation
+Share
+Tweet
+Linkedin
+Email
+Print
+ 
+What is Microwave Radiation?
+Cooking with Microwaves
+Avoiding Injuries from Super-Heated Water in Microwave Ovens
+Microwave Oven Safety Standard
+Microwave Ovens and Health
+Have Radiation Injuries Resulted from Microwave Ovens?
+Microwave Ovens and Pacemakers
+Checking Ovens for Leakage and Other Radiation Safety Problems
+How to Report Microwave Oven Radiation Safety Problems
+Tips on Safe Microwave Oven Operation
+Additional Information from FDA's Consumer Health Information Staff
+The Food and Drug Administration (FDA) has regulated the manufacture of microwave ovens since 1971. Microwave oven manufacturers are required to certify their products and meet safety performance standards created and enforced by the FDA to protect the public health. On the basis of current knowledge about microwave radiation, the Agency believes that ovens that meet the FDA standard and are used according to the manufacturer's instructions are safe for use.
+
+What is Microwave Radiation?
+Microwaves are a form of "electromagnetic" radiation; that is, they are waves of electrical and magnetic energy moving together through space. Electromagnetic radiation spans a broad spectrum from very long radio waves to very short gamma rays. The human eye can only detect a small portion of this spectrum called visible light. A radio detects a different portion of the spectrum, and an X-ray machine uses yet another portion. 
+
+Visible light, microwaves, and radio frequency (RF) radiation are forms of non-ionizing radiation.  Non-ionizing radiation does not have enough energy to knock electrons out of atoms. X-rays are a form of ionizing radiation. Exposure to ionizing radiation can alter atoms and molecules and cause damage to cells in organic matter. 
+
+Microwaves are used to detect speeding cars and to send telephone and television communications. Industry uses microwaves to dry and cure plywood, to cure rubber and resins, to raise bread and doughnuts, and to cook potato chips. But the most common consumer use of microwave energy is in microwave ovens. Microwaves have three characteristics that allow them to be used in cooking: they are reflected by metal; they pass through glass, paper, plastic, and similar materials; and they are absorbed by foods.
+
+Back to Top Arrow
+
+Cooking with Microwaves
+Microwaves are produced inside the oven by an electron tube called a magnetron. The microwaves are reflected within the metal interior of the oven where they are absorbed by food. Microwaves cause water molecules in food to vibrate, producing heat that cooks the food. That's why foods that are high in water content, like fresh vegetables, can be cooked more quickly than other foods. The microwave energy is changed to heat as it is absorbed by food, and does not make food “radioactive” or "contaminated."
+
+Although heat is produced directly in the food, microwave ovens do not cook food from the "inside out." When thick foods are cooked, the outer layers are heated and cooked primarily by microwaves while the inside is cooked mainly by the conduction of heat from the hot outer layers.
+
+Microwave cooking can be more energy efficient than conventional cooking because foods cook faster and the energy heats only the food, not the whole oven compartment. Microwave cooking does not reduce the nutritional value of foods any more than conventional cooking. In fact, foods cooked in a microwave oven may keep more of their vitamins and minerals, because microwave ovens can cook more quickly and without adding water.
+
+Glass, paper, ceramic, or plastic containers are used in microwave cooking because microwaves pass through these materials. Although such containers cannot be heated by microwaves, they can become hot from the heat of the food cooking inside. Some plastic containers should not be used in a microwave oven because they can be melted by the heat of the food inside. Generally, metal pans or aluminum foil should also not be used in a microwave oven, as the microwaves are reflected off these materials causing the food to cook unevenly and possibly damaging the oven. The instructions that come with each microwave oven indicate the kinds of containers to use. They also cover how to test containers to see whether or not they can be used in microwave ovens.
+
+Back to Top Arrow
+
+Avoiding Injuries from Super-Heated Water in Microwave Ovens
+The FDA received reports in the past of serious skin burns or scalding injuries around people's hands and faces as a result of hot water erupting out of a cup after it had been overheated in a microwave oven. Super-heated water (water heated past its boiling temperature) does not appear to be boiling and occurs when water is heated by itself in a clean cup. If super-heating has occurred, a slight disturbance or movement such as picking up the cup, or pouring in a spoon full of instant coffee, may result in a violent eruption with the boiling water exploding out of the cup. Adding substances such as instant coffee or sugar before heating greatly reduces this risk.
+
+Users should closely follow the precautions and recommendations provided in the microwave oven instruction manuals, specifically regarding heating times. Users should make sure that they do not exceed the recommended heating times when determining the best time settings to heat water to the desired temperature.
+
+Back to Top Arrow
+
+Microwave Oven Safety Standard
+Through its Center for Devices and Radiological Health (CDRH), the FDA sets and enforces standards of performance for electronic products to assure that radiation emissions do not pose a hazard to public health.
+
+A Federal standard (21 CFR 1030.10) limits the amount of microwaves that can leak from an oven throughout its lifetime to 5 milliwatts (mW) of microwave radiation per square centimeter at approximately 2 inches from the oven surface. This limit is far below the level known to harm people. Microwave energy also decreases dramatically as you move away from the source of radiation. A measurement made 20 inches from an oven would be approximately 1/100th of the value measured at 2 inches from the oven.
+
+The standard also requires all ovens to have two independent interlock systems that stop the production of microwaves the moment the latch is released or the door is opened. In addition, a monitoring system stops oven operation in case one or both of the interlock systems fail.
+
+All ovens must have a label stating that they meet the safety standard. In addition, the FDA requires that all ovens have a label explaining precautions for use. This requirement may be dropped if the manufacturer has proven that the oven will not exceed the allowable leakage limit even if used under the conditions cautioned against on the label.
+
+To make sure the standard is met, FDA tests microwave ovens in its own laboratory. The FDA also evaluates manufacturers' radiation testing and quality control programs at their factories.
+
+Microwave Ovens and Health
+Microwave radiation can heat body tissue the same way it heats food. Exposure to high levels of microwaves can cause a painful burn. Two areas of the body, the eyes and the testes, are particularly vulnerable to RF heating because there is relatively little blood flow in them to carry away excess heat. Additionally, the lens of the eye is particularly sensitive to intense heat, and exposure to high levels of microwaves can cause cataracts. But these types of injuries – burns and cataracts – can only be caused by exposure to large amounts of microwave radiation.
+
+Consumers should take common sense precautions regarding handling of hot foods and beverages.  For more safety recommendations see the section of this page titled: Tips on Safe Microwave Oven Operation.
+
+Back to Top Arrow
+
+Have Radiation Injuries Resulted from Microwave Ovens?
+Most injuries related to microwave ovens are the result of heat-related burns from hot containers, overheated foods, or exploding liquids. Most injuries are not radiation-related. That said, there have been very rare instances of radiation injury due to unusual circumstances or improper servicing. In general, microwave oven radiation injuries are caused by exposure to large amounts of microwave radiation leaking through openings such as gaps in the microwave oven seals. However, FDA regulations require that microwave ovens are designed to prevent these high level radiation leaks.
+
+Back to Top Arrow
+
+Microwave Ovens and Pacemakers
+At one time there was concern that radiation leakage from microwave ovens could interfere with certain electronic cardiac pacemakers. Similar concerns were raised about pacemaker interference from electric shavers, auto ignition systems, and other electronic products. While FDA does not specifically require microwave ovens to carry warnings for people with pacemakers, this problem has largely been resolved as today’s pacemakers are designed to shield against such electrical interference. However, patients with pacemakers are encouraged to consult their physicians if they have concerns.
+
+Back to Top Arrow
+
+Checking Ovens for Leakage and Other Radiation Safety Problems
+There is little cause for concern about excess microwaves leaking from ovens unless the door hinges, latch, or seals are damaged. The FDA recommends looking at your oven carefully, and not using an oven if the door doesn’t close firmly or is bent, warped, or otherwise damaged.
+
+The FDA also monitors appliances for radiation safety issues and has received reports of microwave ovens that appear to stay on – and operate – while the door is open. When operating as intended, microwave ovens have safety features to prevent them from continuing to generate microwaves if the door is open. However, if an oven does continue to operate with the door open, consumers cannot be 100 percent sure that microwave radiation is not being emitted. Thus, if this occurs, the FDA recommends immediately discontinuing use of the oven.
+
+Back to Top Arrow
+
+How to Report Microwave Oven Radiation Safety Problems
+If you suspect a radiation safety problem with your microwave oven, you may contact the microwave oven manufacturer. Manufacturers who discover that any microwave ovens produced, assembled, or imported by them have a defect or fail to comply with an applicable Federal standard are required to immediately notify FDA. In addition, manufacturers/importers are required to report all accidental radiation occurrences to the FDA, unless the incident is associated with a defect or noncompliance that has previously been reported (21 CFR 1002.20).
+
+You may also report any suspected radiation-related problems or injuries to the FDA by completing and mailing the Accidental Radiation Occurrence Report form.
+
+Back to Top Arrow
+
+Tips on Safe Microwave Oven Operation
+Follow the manufacturer's instruction manual for recommended operating procedures and safety precautions for your oven model.
+Use microwave safe cookware specially manufactured for use in the microwave oven.
+Don't operate a microwave oven if the door does not close firmly or is bent, warped, or otherwise damaged.
+Stop using a microwave oven if it continues to operate with the door open.
+As an added safety precaution, don't stand directly against an oven (and don't allow children to do this) for long periods of time while it is operating.
+Do not heat water or liquids in the microwave oven longer than recommended in the manufacturer’s instructions.
+Some ovens should not be operated when empty. Refer to the instruction manual for your oven.
+Regularly clean the oven cavity, the outer edge of the cavity, and the door with water and a mild detergent. A special microwave oven cleaner is not necessary. Be sure to not use scouring pads, steel wool, or other abrasives.
+For more consumer information on microwave oven radiation, contact the Staff of the Division of Industry and Consumer Education (DICE) by email at DICE@cdrh.fda.gov.
+
+Back to Top Arrow
+
+Additional Information from FDA's Consumer Health Information Staff
+FDA Consumer Update: 5 Tips for Using Your Microwave Oven Safely
+Back to Top Arrow
+
+Content current as of:
+12/12/2017
+
+Resources for You (Radiation-Emitting Products)
+Footer Links
+FDA Archive
+About FDA
+Accessibility
+Visitor Information
+Website Policies / Privacy
+No FEAR Act
+FOIA
+HHS.gov
+USA.gov
+ Follow FDA on Facebook Follow FDA on Twitter View FDA videos on YouTube Subscribe to FDA RSS feedsFDA Homepage Contact Number1-888-INFO-FDA (1-888-463-6332)

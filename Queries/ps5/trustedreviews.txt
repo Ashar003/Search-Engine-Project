@@ -1,0 +1,180 @@
+hero profile
+HOME
+ 
+BLACK FRIDAY
+ 
+REVIEWS
+ 
+BEST LISTS
+ 
+PHONES
+ 
+COMPUTING
+ 
+HOME TECH
+ 
+TV / AUDIO
+MORE 
+Search
+Search
+Type to search
+TRENDING: Black Friday 2019 iPhone 11 review iPhone 11 Pro Best iPhone PS5 Best free VPN
+Home  Tech news
+PS5 latest news: Everything we know about Sony’s PlayStation 5 console
+Trusted Reviews has compiled everything you need to know about PS5 including all the latest news, release date, games, specs, features and more. We'll be updating this article on a frequent basis, so be sure to check back for all the latest.
+Jade King Contact via Twitter | November 25, 2019 4:07 pm GMT
+  
+Best Game Consoles
+
+The next generation of gaming consoles is drawing closer and closer, with both Sony and Microsoft beginning to show their hands with small glimpses at their respective hardware’s specs, games and general capabilities. However, the full picture still remains very cloudy. 
+
+After months of speculation, Sony has confirmed the obvious – its next console will be none other than the PS5 (or PlayStation 5 if you fancy being all official). With a release date set for the latter months of 2020, the company is slowly teasing details before what we anticipate will be a full blown reveal in the early parts of next year. 
+
+Trusted Reviews has compiled everything you need to know about PS5 including all the latest news, release date, games, specs, features and more. We’ll be updating this article on a frequent basis, so be sure to check back for all the latest.
+
+PS5 at a glance
+On balance, we predict the following to occur in the coming weeks, months and, well, year:
+
+The PS5 will launch in the later months of 2020, expect a full reveal event in the coming months
+E3 2020 will likely feature both PS5 and Xbox 2 as they compete to showcase their hardware and software
+In terms of launch titles, we can expect a major selection of third and first-party experiences
+Some of the confirmed features include improved loading times, 8K resolution and ray tracing
+Your entire physical and digital libraries will be available at launch, if all goes to plan
+PS5 news – Samsung SSD could be used in next-gen consoles
+According to a recent presentation from Samsung in Tokyo, Japan – the company’s SSD technology will be used in the next-generation of consoles. The presentation only makes reference to “consoles” and doesn’t namedrop the PS5 or Project Scarlett specifically, so perhaps it has made a partnership with both? Samsung claims that its distinct SSD technology will be faster than standard drives – enhancing loading times and other processes significantly.
+
+PS5 SSD 
+
+PS5 console – Leaked images show potential devkit in the wild
+New images have emerged that potentially depict the long-rumoured PlayStation 5 development kit in the wild, although where exactly the picture was taken is unknown. Coming to us courtesy of ZoneOfTech, the image features the same design mentioned in previous patents and hinted at during Wired’s most recent piece, the same one which confirmed the console’s name and release window.
+
+PS5 
+
+It’s not the prettiest piece of hardware in the world, resembling something you’d cook toasties in as opposed to playing the latest games. Fortunately, development kits are seldom representative of final hardware, often seen as huge, unwieldly black boxes housing components in a way never meant for average players to use. The image even describes it as a prototype, featuring all manner of knobs and switches the launch model likely won’t have.
+
+PS5 release date – When is the PlayStation 5 coming out?
+The PS5 will be launching in the latter months of 2020, Sony has confirmed. We imagine this will land in November, ensuring the console is comfortably in the homes of players ahead of the Christmas period. We’ll be sure to share more specific the second we hear more.
+
+PS5 backwards compatibility – Yes, you can play all your old PS4 games
+PS5 system architect Mark Cerny (also known as the creator of Knack) has confirmed that the upcoming console will be compatible with existing PS4 titles. He hasn’t confirmed whether this will encompass the entire library and all existing PSVR experiences, though. Having access to everything on PS4 on day one would be a genuine game-changer, if you’ll pardon the pun.
+
+We’re also curious to see whether the PS5 will apply benefits to existing games in a similar way to PS4 Pro. Imagine playing the likes of Days Gone and Horizon Zero Dawn at a solid 60fps. Yes, please! Better yet, a recent patent teases that backward compatibility on PS5 will improve more than just loading times.
+
+PS5 Boost mode – Will it have one like the PS4 Pro?
+One of the PS4 Pro’s key features is a ‘Boost Mode’ which enhances performance on games yet to receive official patches for the console. Alongside supersampling, it provides players with 1080p displays a reason to upgrade from the base console.
+
+It remains unclear whether your PS4 library will receive a similar selection of upgrades when played on PS5, or if developers will need to issue special patches to make it so. Having the ability to insert any disc or launch any digital title and have improvements automatically applied to them on next-gen hardware sounds too good to be true, but you never know.
+
+Related: Final Fantasy 7 Remake Preview
+
+
+
+PS5 Specs – How powerful will the PlayStation 5 be?
+Speaking to Wired, system architect Mark Cerny detailed some of the major specifications for its next-generation console.
+
+For starters, it will boast an advanced AMD Ryzen processor alongside a GPU with AMD Navi architecture capable of ray tracing, a feature currently only available in high-end gaming rigs. It will also support 8K graphics, although whether or not this will be upscaled remains unknown given how such resolutions are exclusive to the high-end PC and television space.
+
+The PS5 (or whatever Sony ends up calling it) will be compatible with the current version of PlayStation VR, and no plans have been announced for a successor to launch alongside the new console. In terms of memory, it will feature a specialised HDD of sorts that will allow games and processes to load up to 19 times faster than previous consoles.
+
+In a recent interview with CNET, Sony Interactive Entertainment President Jim Ryan touched on some of the features coming to PS5 ahead of its formal reveal. For starters, it will aim to support crisp 4K visuals at a silky-smooth 120Hz for displays that support it at launch.
+
+Ryan also expanded on the importance of cross-generational and providing players with a smooth transition between consoles. “Whether it’s backwards compatibility or the possibility of cross-generational play, we’ll be able to transition that community to next-gen,” he said.
+
+“It won’t be a binary choice about whether you have to be either on PlayStation 4 or next-gen to continue your friendship.” It’s evident that Sony wants to maintain the millions of players it has amassed in the past five years, and it’s taking the right steps to make that happen.
+
+Related: Cyberpunk 2077 Preview
+
+
+
+PS5 Cloud gaming – Sony and Microsoft are teaming up to take on Google?
+The ability to stream games from the Cloud is increasingly important and Sony’s weaknesses in this area have been previously documented. Hence our interest in the news that Sony and Microsoft have formed an alliance to build cloud based solutions on Microsoft’s Azure platform, the 2nd largest Cloud provider after Amazon.
+
+“The two companies will explore the use of current Microsoft Azure datacenter-based solutions for Sony’s game and content-streaming services… These efforts will also include building better development platforms for the content creator community,” according to the companies.
+
+This follows Microsoft setting up a cloud gaming division this time last year, again based on Azure, to explore how to host and stream games from the Azure platform, rather than by running games on the console itself. And let’s not forget about Google Stadia, Sony and Microsoft’s unexpected partnership might be a sign of them planning to take on the technological giant in the years to come.
+
+Nvidia GeForce Now also shouldn’t be discounted, as the platform will tie-in the player’s existing library across a variety of PC clients, making it an attractive proposition for those who don’t want to build a library from scratch, which is the case for Stadia right now, with a few key exceptions.
+
+Sony recently lowered the monthly and annual pricing for PlayStation Now, which now costs a far more reasonable £8.99 with a free trial also available for new users. This is most definitely the start of several moves by the company in a larger cloud gaming strategy. It’s a small step, but a necessary one if it ever hopes to compete with Microsoft’s efforts.
+
+PS5 VR – Will your headset and peripherals work at launch?
+It has been confirmed that existing PlayStation VR headsets will work with PS5 at launch, meaning there is currently no plans for a new iteration of the hardware to be released alongside Sony’s console. This settles some worries while also raising a bunch of interesting questions. For example – will virtual reality experiences developed specifically for PS5 also work on these headsets, and will everything we need carry over?
+
+Related: Best PSVR Games
+
+Astro Bot
+
+There’s also peripherals such as the PlayStation Camera and Move controllers, both of which are essential for the use of PSVR, so will presumably be operable on the new system without any major effort from the player. If so, we’d be delighted. If not, Sony would be best to clear things up during the console’s eventual reveal.
+
+PSVR has now sold an impressive total of 4 million headsets, cementing it as one of the most popular forms of virtual reality on the planet. The accessibility of only needing a console and a selection of games makes it a rather appealing proposition to your average gamer. Sony is aware of that, and feels like the medium has a long road ahead of it.
+
+“I think that the hardware experience will improve the VR experience. VR has a lot to learn even at companies that have been making games for a long time. I realized that as soon as I started VR. I had to learn a lot because I couldn’t do it with normal TV games,” said Sony’s Shuhei Yoshida (via WCCFTech).
+
+“But we had to have many guidelines for danger, but with the developer’s ingenuity, we were able to see how to do it, and VR makes us think about what the human abilities are, and after three years such knowledge is growing.” Here’s hoping things will only continue to evolve with the arrival of PS5 in 2020.
+
+PS5 Games – Have any titles been announced?
+Sony’s next-generation console is drawing closer and closer, and this means it’s becoming far easier to predict what experiences will be arriving on the platform both at launch and during the weeks, months and years that will follow.
+
+With Sony having recently purchased Insomniac Games, and the enormous success of the first instalment, a sequel to Marvel’s Spider-Man on PS5 is already guaranteed, with the first title having left its narrative on a juicy cliffhanger we’re eager to see resolved. There’s also the likes of Resistance, Ratchet and Clank and others we’d love to see the developer revisit.
+
+Horizon Zero Dawn is another first-party blockbuster that most definitely has a sequel in the works right now, ready and waiting to pounce onto PS5 when the time comes. While I personally wasn’t the biggest fan, developer Guerrilla Games produced a vast, beautiful world with a compelling story and mechanics to match its visual ambition. Combine that with ray-tracing and more powerful hardware and our jaws will be firmly on the floor.
+
+Related: Best PS4 Games
+
+
+
+While Hideo Kojima’s Death Stranding is due to launch in the coming weeks, we wouldn’t be hugely surprised if an enhanced edition of sorts lands on PS5 once the console is in the homes of players. The Last of Us Part 2, Naughty Dog’s harrowing narrative adventure receiving a similar treatment wouldn’t go amiss either. The question is, will our existing PS4 library be automatically enhanced purely by being inserted into PS5? We imagine the reality is a little more complicated.
+
+Oh, and let’s not forget Final Fantasy 7 Remake. The first episode of Square Enix’s epic venture is due to arrive on PS4 in March 2020. But after that, it could be a cross-generational release or one exclusive to Sony’s new platform. Bluepoint Games, a developer renown for remaking countless classics, has confirmed it’s working on a big project for the next-generation console. Fingers crossed for a Demon’s Souls remake!
+
+PS5 Design – What could it look like?
+A recent patent has emerged which teases a highly unlikely design for PlayStation 5. It’s a radical ‘Flying V’ design which features a distinct dip down the middle, with an assortment of different buttons present on either side.
+
+PS5
+
+This very same design was confirmed by Wired to be an official development kit for PlayStation 5 in a recent article, which honestly came as a shock to everyone here at Trusted. It’s a very unusual aesthetic, but kits used by studios for development seldom resemble the retail console we’ll see end up owning.
+
+PS5 controller – Here’s our first look at the Dualshock 5 controller
+A patent has emerged which reveals what is potentially our first glimpse at the PS5 controller – presumed to be the Dualshock 5 – beyond a few fleeting descriptions from Sony. At first glance, it seems incredibly similar to its older sibling, albeit with a few important alterations to the overall design.
+
+Related: Best PS5 Games
+
+Dualshock 5 patent 
+
+The above image from the aforementioned patent shows all of the changes being made to the new controller, which appears to eliminate the lightbar entirely while incorporating an overall smaller form factor. The space between the thumbsticks is somewhat tighter, echoed across the device’s entire profile.
+
+Positioning of the headphone jack has been altered slightly, and the USB connection has also presumably been moved, chances are it will be USB-C this time around. Rumours are abound that the device could connect to the console via wi-fi, although this is still unconfirmed.
+
+Jade King
+Contact via Twitter
+Contact via LinkedIn
+Games Writer
+Jade is the dedicated games writer at Trusted Reviews. She handles all things gaming whether it be news, reviews, events or silly features. Seen at outlets such as MTV UK, Kotaku and Trusted Reviews (…
+Jade King
+Unlike other sites, we thoroughly review everything we recommend, using industry standard tests to evaluate products. We’ll always tell you what we find. We may get a commission if you buy via our price links. Tell us what you think – email the Editor
+
+Xbox One X Gears 5 Limited Edition bundle price slashed in this Black Friday bargain
+Amazon UK has a selection of Xbox One console bundles on offer throughout the Black Friday weekend - including a limited edition bundle inspired by Gears 5. 
+Trusted Reviews
+You Should Never Shop on Amazon Without Using This Trick – Here’s Why
+Honey
+|
+Sponsored
+Content archive
+Find a review
+About TrustedReviews
+Contact our editorial team
+Why we are different
+Labelling of commercial content
+IPSO Editors' Code of Practice
+Privacy & cookie policy
+Terms & Conditions
+Third party advertising policy
+Follow Trusted Reviews via RSS
+Competitions
+Advertise with us
+Privacy Settings
+> We may get a commission when you buy via a link <
+IAB Gold StandardJIC WEBS Brand Safety
+ © Copyright TI Media Limited. 161 Marsh Wall, London, E14 9SJ. All rights reserved. IPSO Regulated
+   

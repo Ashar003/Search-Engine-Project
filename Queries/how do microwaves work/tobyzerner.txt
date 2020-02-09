@@ -1,0 +1,72 @@
+« Back to tobyzerner.com
+The Physics of Microwave Ovens
+Year 12 Physics Information Search Presentation
+Microwaves are an essential part of the modern kitchen due to their ability to quickly and easily heat food and drink. This page explains how they work, and explores some of the physical concepts involved in their operation.
+
+Table of contents
+The Production of Microwaves in a Magnetron
+Heating the Food with Microwaves
+Limitations & Consequences of Using Microwave Heating
+References
+The Production of Microwaves in a Magnetron
+Figure 1: Electrons emitted from the cathode undergo curved motion towards the anode (Nave 2005).
+Figure 1: Electrons emitted from the cathode undergo curved motion towards the anode (Nave 2005).
+For food to be heated in a microwave oven, microwaves must pass through the food. Microwaves are electromagnetic waves with a frequency of about 2.45 GHz and a wavelength of about 12.2 cm; in the electromagnetic spectrum, they fall before infrared light but after radio waves (Heckert 2007). In a microwave oven, microwaves are produced by a device called a magnetron. This device takes the form of a hollow tube, with a cylindircal cathode running through the centre and the outside of the tube, shaped with several cavities, acting as an anode (Gallawa 2008). Thus, an electric field exists in the gap inside the tube. This structure is shown in Figure 1.
+
+A permanent magnetic field exists perpendicular to the electric field and parallel to the length of the tube. Electrons in the cathode are stripped into the electric field due to thermionic emission (high temperature in the cathode causing the electrons to be excited and released) (Nave 2005). They accelerate towards the anode, the outside of the tube, due to the force applied on them by the electric field. However, on their way, the magnetic field also applied a force to them which curves their motion. The resulting paths some electrons might take are shown in Figure 1.
+
+Figure 2: Electrons cause excess negative charge to be pushed back around the cavity, creating microwave oscillations (Nave 2005).
+Figure 2: Electrons cause excess negative charge to be pushed back around the cavity, creating microwave oscillations (Nave 2005).
+Because of their curved motion, the electrons are pushed towards an area where there is excess negative charge in the anode (one side of a cavity.) This excess negative charge is pushed back around the cavity, creating an oscillation of electric and magnetic fields due to a moving charge (Nave 2005). The frequency at which this resonation occurs is consistent with that of microwaves; since electric and magnetic fields are emitted perpendicularly to each other and perpendicular to the direction of travel at this frequency, microwaves are effectively emitted. This process is illustrated in Figure 2.
+
+Heating the Food with Microwaves
+Figure 3: Movement of microwaves within a microwave oven (Riaz 2007).
+Figure 3: Movement of microwaves within a microwave oven (Riaz 2007).
+The microwaves produced by the magnetron are directed towards a spinning propellor made of metal. One of the properties of microwaves is that they are reflected off of metal, and so they reflect off of the “stirrer fan” and into the oven chamber. The oven chamber is lined with metal so that the microwaves will continue to bounce around in the chamber until they are absorbed (Heckert 2007). Figure 3 shows the basic movement of microwaves within a microwave oven.
+
+Microwaves are absorbed by some of the chemicals in foods—most optimally water. This is because water molecules are polar, meaning that the distribution of charge within the molecule is not symmetrical; one side of the molecule is slightly positive, and the other is slightly negative. Thus, in the presence of the electric field component of a microwave, a force will be applied to both dipoles of the molecule which will cause it to rotate (Heckert 2007). In Figure 4, two water molecules are shown in the positions where the force on their dipoles due to the electric field of a wave is at a minimum.
+
+Figure 4: The rotation of water molecules under the influence of the electric field component in an electromagnetic wave. (Black arrows represent electric field.)
+Figure 4: The rotation of water molecules under the influence of the electric field component in an electromagnetic wave. (Black arrows represent electric field.)
+Because the electric field is continually oscillating, the water molecules continually rotate. The frequency of microwaves (2.45 GHz) is optimal because the time it takes for the electric field to oscillate is consistent with the time it takes for a water molecule to rotate 180° (Heckert 2007). Thus, the water molecules are rotating as quickly as possible.
+
+As the water molecules rotate, they bump into other molecules surrounding them and transfer some of their kinetic energy. By the Kinetic Particle Theory, if the particles in the food have more kinetic energy, then the food will be hotter.
+
+See this in action! (Interactive Java applet from PhET.)
+
+Limitations & Consequences of Using Microwave Heating
+Constructive & Destructive Interference
+Constructive and destructive interference between microwaves can cause uneven heating in the food. At every point in the oven chamber, there are several microwaves interfering with each other, meaning the resulting electric field at that point is the sum of their respective electric fields. If the interference is constructive, the resulting electric field at that point will be greater, and thus the particles in the food will gain more kinetic energy and the food will be hotter. If the interference is destructive, there may be no resulting electric field so the food will stay cold at that point (Heckert 2007). Since microwaves reflect off the metal interior walls of the oven chamber, they may bounce around for a while before they are absorbed, thus increasing the chances of constructive and destructive interference occurring (Heckert 2007).
+
+Since microwaves have a wavelength of about 12.2 cm, the distances between these two extremes is usually only a few centimeters—this can be problematic with respect to heating food (Heckert 2007). Rotating turntables are included in most microwave ovens and move the food around in attempt to spread the effect of the heating “hotspots” over all of the food; the effect of constructive and destructive interference is not localized to particular points in the food (Heckert 2007).
+
+Rotation of Molecules
+The principle of heating food in a microwave oven is based on a molecule’s ability to rotate. This imposes certain limitations on the types of foods that can be heated. For example, ice is a solid and so its molecules cannot rotate as easily as in liquid water. Thus, ice is not heated as effectively by microwaves, and must be heated by means of normal heat conduction (Heckert 2007). The results is that frozen foods can heat unevenly and less efficiently. Objects containing minimal water will also take longer to be heated, as there will be less water molecules rotating and thus less kinetic energy being transferred to the food. While this can be advantageous for things like plastic and glass (so they can be used as containers), microwave heating on drier foods is not as effective.
+
+Effect on Metals
+It is common belief that heating any kind of metal inside a microwave oven can be hazardous (‘Today’s Microwaves Can Handle Metal Objects’ 2007). Microwaves tend to reflect off of metals, which is useful for the purposes of keeping microwaves from escaping the oven chamber. However, if metal is used as a container for the food being heated, the microwaves will be reflected rather than absorbed by the food; the food stays cold. This can be problematic as when the microwaves are not absorbed, they accumulate and may eventually reflect back into the magnetron, which can potentially damage it (Chemistryquestion.com 2003). However, modern magnetrons are built to handle large amounts of microwave input, so usually this microwave reflection is relatively harmless (‘Today’s Microwaves Can Handle Metal Objects’ 2007).
+
+Additionally, because microwaves consist of an electric field, the mobilized electrons in a metal’s surface move according to the oscillations of the electric field. In a thick metal object, the heat created from this friction can dissipate, but a thin object will become very hot very quickly (Chemistryquestion.com 2003). Metallic objects with sharp points (such as forks) can have strong electric charge build up on their tips, causing air particles to be ionized, and thus allowing the excess charge to jump to the nearest conductor, creating sparking (Heckert 2007). However, this phenomenon too is mostly harmless to the food and the microwave oven (‘Today’s Microwaves Can Handle Metal Objects’ 2007).
+
+References
+Gallawa, J 2008, The Magnetron Tube Used In Microwave Ovens, viewed 31 August 2010, <http://www.gallawa.com/microtech/magnetron.html>.
+
+Heckert, P 2007, How Do Microwave Ovens Work?, Suite101, viewed 31 August 2010, <http://physics.suite101.com/article.cfm/how_do_microwave_ovens_work>.
+
+Heckert, P 2007, Microwave Ovens Heat Food Unevenly, Suite101, viewed 31 August 2010, <http://physics.suite101.com/article.cfm/microwave_ovens_heat_food_unevenly>.
+
+Heckert, P 2007, Why no metal in Microwave Ovens?, Suite101, viewed 7 August 2010, <http://physics.suite101.com/article.cfm/why_no_metal_in_microwave_ovens>.
+
+McCullough, J, Superposition Principle and Interference, viewed 7 August 2010, <http://www.cabrillo.edu/~jmccullough/Applets/Applets_by_Topic/Superposition_Interference.html>.
+
+Nave, R 2005, The Magnetron, viewed 31 August 2010, <http://hyperphysics.phy-astr.gsu.edu/hbase/waves/magnetron.html>.
+
+Riaz, R 2007, How Products are Made: Microwave Oven, Advameg, viewed 7 August 2010, <http://www.madehow.com/Volume-1/Microwave-Oven.html>.
+
+Thomlet, J 2000, ‘Microwave; Anatomy How it works’, Sydney Morning Herald 02 March, p. 38, viewed 7 August 2010, eLibrary.
+
+‘Today’s Microwaves Can Handle Metal Objects’ 2007, Wisconsin State Journal 05 April, p. B1, viewed 7 August 2010, eLibrary.
+
+Why is it prohibited to warm up metal by microwave? 2003, Chemistryquestion.com, viewed 7 August 2010, <http://www.chemistryquestion.com/English/Questions/ChemistryInDailyLife/23c_microwave_metal.html>.
+
+© 2010 Toby Zerner.

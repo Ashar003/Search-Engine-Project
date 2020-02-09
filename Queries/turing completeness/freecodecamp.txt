@@ -1,0 +1,150 @@
+Search 5,000+ tutorials
+freeCodeCamp.org
+/news
+/forum
+/learn
+19 MAY 2016
+/
+#JAVASCRIPT
+JavaScript Is Turing Complete— Explained
+JavaScript Is Turing Complete— Explained
+by rajaraodv
+
+If you start learning functional programming in JavaScript, you’ll probably hear about lambda calculus, Turing machine, Turing complete and somehow “JavaScript is Turing complete”.
+
+But, no one seem to explain, in simple terms, what it actually means. What’s the relation b/w a Turing “machine” and JavaScript “language”? Also, most people use jargon to explain jargon like so:
+
+In computability theory, a system of data-manipulation rules (such as a computer’s instruction set, a programming language, or a cellular automaton) is said to be Turing complete or computationally universal if it can be used to simulate any single-taped Turing machine. The concept is named after English mathematician Alan Turing. A classic example is lambda calculus.
+So this is my attempt at explaining these comcepts simply.
+
+Turing Machines
+Back in the day, people wanted to know how to create a machine that could do all the calculations they were doing by hand. They wanted to know how to build such a machine and how it might work.
+
+Alan Turing came up with a hypothetical machine that could take any program of any complexity and run it. It could be implemented using a simple tape, a head that moves left and right, could store data by reading, writing, and erasing the contents of square cells. Given long enough tape and enough time, it could compute any program.
+
+In other words, he explained how someone can build a computer. And called the computer a “Turing machine”
+
+Trivia: Back in Alan Turing’s days, the word “Computer” meant the person who manually computes programs (not the machines) :)
+So powerful yet so simple
+Turing machines soon became very popular, and eventually a standard because while they provided a powerful mechanism to calculate anything, they were also easy to understand. As described in the video below, Turing machines use a tape to keep track of states and run computations.
+
+“Single” Vs “Multi” Tape Turing Machines
+One other jargon you’ll hear about Turing machines is the concept of “single” tape.
+
+
+The initial version of the Turing machine had just a long single tape. Later on, people came up with the concept of “multiple” tape Turing machines that used two to five tapes. Multi-tape Turing machines were not any more powerful than single-tape ones, but they helped to simplify programs.
+
+So explicitly saying “single” tape isn’t necessary.
+
+Turing Complete
+If a physical machine (like a computer) or virtual machine, which is a software, (like JavaVM) can take any program and run it just like a Turing machine, then that machine is called “Turing Complete”. PS: It’s kind of a certification.
+
+Examples: Turing complete Vs Turing incomplete machine
+
+Not Turing Complete
+A calculator is a good example of a Turing incomplete machine because it can only perform a small pre-defined subset of calculations.
+
+However a home computer (Mac or a PC) is a Turing complete machine because it can do any calculation that a Turing machine can do if we give it enough memory and time.
+
+“JavaScript Is Turing Complete”
+If you think about it, a Turing machine is just a concept — it means that any “thing”(physical or virtual) that takes any program and run it is essentially a Turing Machine. And if that “thing” can run every program that a “Turing Machine” can run, then it is called “Turing Complete”.
+
+Now if you think about any modern programming language, they also take programs(written by us) as input and run them. Further, any program that can be theoretically written to run for a Turing machine can also be written in JavaScript. Thus, JavaScript is Turing complete.
+
+That’s it!
+
+??? If you like this post, please 1. ❤❤❤ it below on Medium and 2. please share it on Twitter. You may retweet the below card???
+
+My Other Posts
+LATEST: Functional Programming In JS — With Practical Examples (Part 1)
+
+Functional Programming
+JavaScript Is Turing Complete — Explained
+Functional Programming In JS — With Practical Examples (Part 1)
+ES6
+5 JavaScript “Bad” Parts That Are Fixed In ES6
+Is “Class” In ES6 The New “Bad” Part?
+WebPack
+Webpack — The Confusing Parts
+Webpack & Hot Module Replacement [HMR] (under-the-hood)
+Webpack’s HMR And React-Hot-Loader — The Missing Manual
+Draft.js
+Why Draft.js And Why You Should Contribute
+How Draft.js Represents Rich Text Data
+React And Redux :
+Step by Step Guide To Building React Redux Apps
+A Guide For Building A React Redux CRUD App (3-page app)
+Using Middlewares In React Redux Apps
+Adding A Robust Form Validation To React Redux Apps
+Securing React Redux Apps With JWT Tokens
+Handling Transactional Emails In React Redux Apps
+The Anatomy Of A React Redux App
+Salesforce
+Developing React Redux Apps In Salesforce’s Visualforce
+Thanks for reading!
+
+If this article was helpful, tweet it or share it.
+
+Happy holidays from freeCodeCamp.org.
+Become a monthly supporter of freeCodeCamp.org. Or make a tax-deductible year end gift. Every little bit helps.
+
+Support freeCodeCamp
+payments-options
+Countinue reading about
+
+JavaScript
+What's New In The 2019 State of JavaScript Survey
+The Next.js Handbook
+How to Set Up an Integrated Development Environment (IDE)
+See all 1509 posts →
+We have been programming for thousands of years
+#PROGRAMMING
+We have been programming for thousands of years
+4 YEARS AGO
+6 Absurd Ideas For Building Your First Web App
+#WEB DEVELOPMENT
+6 Absurd Ideas For Building Your First Web App
+4 YEARS AGO
+freeCodeCamp is a donor-supported tax-exempt 501(c)(3) nonprofit organization (United States Federal Tax Identification Number: 82-0779546)
+
+Our mission: to help people learn to code for free. We accomplish this by creating thousands of videos, articles, and interactive coding lessons - all freely available to the public. We also have thousands of freeCodeCamp study groups around the world.
+
+Donations to freeCodeCamp go toward our education initiatives, and help pay for servers, services, and staff.
+
+You can make a tax-deductible donation here.
+
+Our Nonprofit
+About
+Alumni Network
+Open Source
+Shop
+Support
+Sponsors
+Academic Honesty
+Code of Conduct
+Privacy Policy
+Terms of Service
+Copyright Policy
+Trending Guides
+2019 Web Developer Roadmap
+Python Tutorial
+CSS Flexbox Guide
+JavaScript Tutorial
+Python Example
+HTML Tutorial
+Linux Command Line Guide
+JavaScript Example
+Git Tutorial
+React Tutorial
+Java Tutorial
+Linux Tutorial
+CSS Tutorial
+jQuery Example
+SQL Tutorial
+CSS Example
+React Example
+Angular Tutorial
+Bootstrap Example
+How to Set Up SSH Keys
+WordPress Tutorial
+PHP Example

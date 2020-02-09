@@ -1,0 +1,194 @@
+Science ABC
+What are you looking for?
+
+NatureHumansTechPure SciencesEye OpenersSocial ScienceVideos
+HomeTechnologyHow Does a Microwave Oven Work?
+How Does a Microwave Oven Work? Akash Peshin  4 Aug 2018 (Updated: 27 Aug 2019)
+One day, after walking past a microwave radar he’d been working on, American engineer Percy Spencer found that the chocolate bar in his pocket had melted. Spencer realized that the intense microwave energy put out by magnetrons could not only be used to hunt enemies in war, but also cook pasta once in a while.
+
+This discovery was revolutionary and purely accidental, a combination of adjectives we find irresistibly delightful. The first food item Spencer then deliberately cooked with microwaves – and I doubt this comes as a surprise – was popcorn. The second item he cooked without resting it on a flame, from a distance as though by sheer magic, was an egg, which exploded in the face of one of the experimenters. The moment was historic.
+
+Pency Spencer
+Percy Spencer with a primitive microwave oven.
+
+Raytheon, the firm that had employed Spencer, immediately filed a patent for a device that would cook or recook food by enclosing it and then bombarding it with microwaves. The device, with absolutely no regard for creativity, was simply called the microwave oven. But how does one work? Why did the chocolate bar melt?
+
+Radiation
+Heat between a source and a recipient can be transferred in three ways: conduction, when the two are in direct contact, like when you touch a hot cup; convection, when the heat is transferred by a medium, usually fluid, like when hot air contacts colder air; and finally, radiation, when the heat is transferred by the means of an electromagnetic wave, which requires no medium to propagate, such as the warmth imparted by the sun’s light that travelled millions of miles through empty space. Microwaves are electromagnetic waves, radiation is how the heat in a microwave oven is transferred.
+
+The three types of heat transfer.
+The three types of heat transfer.
+
+However, it is still unclear how the heat is distributed throughout the food being subjected to the waves. Microwaves are extremely adept at exciting and vibrating water molecules, and since food is mostly water, the vigorous motion of the molecules creates intermolecular friction, which generates the heat to cook the food item. Although, why the water molecule? Well, because it’s an excellent dipole.
+
+Why Microwaves Target Water Molecules
+A water molecule is formed when two hydrogen atoms bond to a single oxygen atom. The molecule, however, is shaped like an upside-down “Y”; the two positive hydrogen atoms are squeezed together on one end, while the highly negative oxygen atom clings to the other. One end of the molecule therefore exhibits a positive charge, while the opposite end exhibits a negative charge: the molecule forms a di-pole.
+
+water molecule dipole
+The water molecule is an excellent dipole. (Photo Credit: Wikimedia Commons)
+
+When an electric field contacts a dipole, the dipole tries to align itself with the field’s charge, but microwaves are not just any electric field; they are a rapidly alternating one. As the field alternates, so does the dipole’s alignment, which is to say, the dipole rotates. The water molecule set in such vigorous rotation by the microwaves sets off other molecules in vigorous rotation. Soon, every water molecule is excited and rotating. The vibrational energy dispersed raises the temperature of the food item.
+
+Why Microwaves?
+The energy of an electromagnetic wave increases with an increase in its frequency, so why don’t we use infrared or ultraviolet rays to cook food more quickly and efficiently? Infrared or ultraviolet rays aren’t used because they are absorbed by the food item’s surface before they reach the water beneath. Microwaves, however, can penetrate to greater depths, where the water lies. Heating the meat with infrared or ultraviolet might make it ‘look’ hot, but the flesh beneath will remain uncooked. That being said, prolonged infrared heating will eventually heat the meat as well, something that is evident in regular heating, when one cooks on a stove. In fact, many ovens are infrared-based.
+
+infrared oven
+Ting! (Photo Credit: buykitchenstuff.com)
+
+Then there are radio waves – electromagnetic waves of even lower frequencies. Why don’t we use them? Wouldn’t they be, inferring from the trend, even more penetrative? Radio waves were actually used to heat food even before microwaves! However, because most of modern communication technology came to be based on radio waves, continuing to use them to heat food would have definitely caused electronic interference.
+
+Lastly, while microwave heating is the quickest and most efficient way to cook food, not every food can be heated with equal ease. Obviously, food items suffused with moisture are the easiest to heat. Food items containing sugar or fat, however, require greater effort. This is because the dipole movement of their molecules is much less than the dipole movement of water molecules.
+
+meme
+
+Also, one must avoid microwaving any food item in a metal container. The fact that metals reflect electromagnetic waves is the working principle of radar. If you feed an oven a metal bowl, most of the microwave energy, as though a metallic ship, will be reflected by it.
+
+Remember that microwave ovens are constructed in a way that allows no waves to escape them, so the reflected energy bounces off the walls and is re-reflected by the metal bowl. What ensues is the greenhouse effect: the energy accumulates and causes the temperature inside the oven to reach dangerous levels, which could eventually cause the oven to explode in your face. If the danger of this happening isn’t apparent to you, perhaps you should just stick to microwave popcorn!
+
+References
+Bluffton
+IEEE Xplore Digital Library
+University Of Southern California
+The short URL of the present article is: http://sciabc.us/MPw7t
+Help us make this article better
+ FACEBOOK
+ PREV ARTICLE NEXT ARTICLE 
+About the Author:
+
+Akash Peshin is an Electronic Engineer from the University of Mumbai, India and a science writer at ScienceABC. Enamored with science ever since discovering a picture book about Saturn at the age of 7, he believes that what fundamentally fuels this passion is his curiosity and appetite for wonder.
+
+More from this author.
+Science ABC YouTube Videos
+
+
+Forensic Science: How Do Doctors Determine Time of Death (Pallor, Algor, Rigor and Livor Mortis)?
+
+Why Is Space Cold If There Are So Many Stars?
+
+Why Do You Hear A Rumbling Sound When You Close Your Eyes Too Hard?
+
+Hawking Radiation Explained: What Exactly Was Stephen Hawking Famous For?
+
+Current Vs Voltage: How Much Current Can Kill You?
+
+Coefficient Of Restitution: Why Certain Objects Are More Bouncy Than Others?
+
+Jump From Space: What Happens If You Do A Space Jump?
+
+Does Earth Come To The Same Spot Every Year On Your Birthday?
+
+RELATED POSTS
+Computer mouse
+How Does A Computer Mouse Work?
+ Ashish  July 9, 2016
+
+How Do Calculators Work?
+ Akash Peshin  January 10, 2016
+Inductor
+What Are Inductors And What Is Induction?
+ Akash Peshin  July 1, 2018
+Speed of light
+How Did We Measure The Speed Of Light?
+ Akash Peshin  January 18, 2018
+
+Jetpacks: How Do They Work To Make Individual Flights Possible?
+ Ashish  June 22, 2015
+HYDRAULIC_COMPRESSION_MOLDING_PRESSES
+What Is A Hydraulic Press And How Does It Work?
+ Venkatesh Vaidyanathan  January 14, 2019
+Green eco city and sustainable architecture banner(kotoffei)s
+What Is Green Building Technology?
+ Sarthak Singh Gaur  October 20, 2019
+internet, serverr, web, CDN network
+How Does Content Delivery Network (CDN) Work?
+ Hussain Kanchwala  January 17, 2019
+
+5 Qualities of Animals That Humans are Trying to Emulate Artificially
+ Ashish  August 12, 2015
+Winglets
+Why Are Aircraft Wings Curved At The End?
+ Team ScienceABC  December 9, 2015
+world of biometrics
+What Are Some Of The Lesser Known Methods of Identification?
+ Ashish  May 7, 2016
+gpu process
+What Is A GPU And How Does It Help Run High-Graphic Games?
+ Venkatesh Vaidyanathan  November 20, 2018
+More articles from Technology
+Parking assistance screen of luxury car, sunny day(bonzodog)s
+How Does A 360-Degree Camera Parking System Work?
+ November 25, 2019  TechnologyThe automobile layout describes where on the vehicle the engine and drive wheels are found(Studio BKK)S
+What Is A Four-Wheel Drive System And How Does It Work?
+ November 23, 2019  TechnologySheets of paper, child's drawing and magnets on refrigerator door in kitchen( New Africa)s
+How Does Magnet Paper Work?
+ November 7, 2019  TechnologyEarth in space, worldwide exchange of information by internet and connected satellites(NicoElNino)s
+What Is A Satellite Navigation System?
+ November 5, 2019  TechnologyGreen eco city and sustainable architecture banner(kotoffei)s
+What Is Green Building Technology?
+ October 20, 2019  TechnologyInside view of new clean staniless microwave oven with a tomato soup in white plate( Marian Weyo)s
+Why Do We Need A Turntable In Microwaves?
+ October 14, 2019  TechnologyThe leading edges of an unmanned scramjet glow from friction as it flys toward outer space near the edge of Earth's atmosphere(Marc Ward)s
+What Is A Scramjet Engine?
+ October 12, 2019  TechnologyConcept of an abstract quantum computer(Concept of an abstract quantum computer(plotplot)s
+What Is Quantum Supremacy?
+ October 11, 2019  Technologyspeedometer vs gps
+Speedometer Vs GPS: Whose Speed Reading Is More Accurate?
+ October 9, 2019  TechnologyCar charging station for self-sufficient and first photovoltaic panels in Europe. it is also free( Juan Enrique del Barrio)s
+Why Don’t We Power Cars With Solar Energy?
+ October 4, 2019  Technology
+LOAD MORE
+GET MORE STUFF LIKE THIS
+IN YOUR INBOX
+Subscribe to our mailing list and get interesting stuff and updates to your email inbox.
+
+Enter your email here
+ 
+we respect your privacy and take protecting it seriously
+
+POPULAR POSTS
+
+Why Are There Stones Alongside Railway Tracks?
+
+Circle Of Willis: Anatomy, Diagram And Functions
+Huntsman spider
+What Is The Huntsman Spider? How Big Is It? Does It Bite?
+airplane boeing
+Why Are Airplanes Usually White?
+Sand dollar in beach
+What Are Sand Dollars?
+Sheephead Fish Archosargus probatocephalus
+Sheepshead Fish: Facts About The Fish With Human Teeth
+
+What Is Aphantasia?
+Golden spiral galaxy (Logarithmic spiral)
+What Is The Fibonacci Sequence? Why Is It So Special?
+Bullet on trainTrain
+What Would Happen If You Shot A Bullet On A Train?
+
+Coefficient Of Restitution: Definition, Explanation And Formula
+RECENT POSTS
+Conformity word cloud concept. Collage made of words about conformity(Boris15)s
+What Is Conformity? Why Do We Conform?
+Diverse group of people talking in different languages( Cienpies Design)S
+Can You Forget Your First Language?
+Visible temperature inversion in Røros Norway(ChuckNaage)S
+What Is A Temperature Inversion?
+
+What Is Vorarephilia?
+synchronicity
+What Is Synchronicity?
+report this ad
+ScienceABC participates in the Amazon Associates Program, affiliate advertising program designed to provide a means for sites to earn commissions by linking to Amazon. This means that whenever you buy a product on Amazon from a link on here, we get a small percentage of its price. That helps support ScienceABC with some money to maintain the site. Amazon and the Amazon logo are trademarks of Amazon.com, Inc. or its affiliates.
+
+Science ABC Copyright © 2019.
+About UsPrivacy PolicyTerms of UseContact Us
+xx
+Share to Facebook
+, Number of shares
+Share to Twitter
+Share to LinkedIn
+Share to Reddit
+, Number of shares
+Share to WhatsApp
+More AddThis Share options
+, Number of shares

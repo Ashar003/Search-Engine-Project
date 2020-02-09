@@ -1,0 +1,164 @@
+Icon of a person: white decorative
+Home
+Surprising Science
+Personal Growth
+Mind & Brain
+Sex & Relationships
+Technology & Innovation
+Culture & Religion
+Politics & Current Affairs
+Gear
+Videos
+Thought Fix
+Think Again Podcasts
+Big Think Edge
+Edge Weekly
+Sponsored by Stand Together
+Sponsored by Pfizer
+Sponsored by Charles Koch Foundation
+Sponsored by the Institute for Humane Studies
+Sponsored by Lumina Foundation
+Sponsored by Northwell Health
+Sponsored by yes. every kid.
+Sponsored by Intel The Nantucket Project
+Big Think
+DISCOVER
+VIDEO
+NEWSLETTERS
+SHOP
+JOIN PREMIUMSIGN IN
+Subscribe to our Mind & Brain newsletter
+Enter email address
+Mind map visualization
+Here's how to prove that you are a simulation and nothing is real
+How do you know you are real? A classic paper by philosopher Nick Bostrom argues you are likely a simulation.
+PAUL RATNER
+20 June, 2019
+Philosopher Nick Bostrom argues that humans are likely computer simulations in the "Simulation Hypothesis".
+Bostrom thinks advanced civilizations of posthumans will have technology to simulate their ancestors.
+Elon Musk and others support this idea.
+
+
+Are we living in a computer-driven simulation? That seems like an impossible hypothesis to prove. But let's just look at how impossible that really is.
+
+For some machine to be able to conjure up our whole reality, it needs to be amazingly powerful, able to keep track of an incalculable number of variables. Consider the course of just one human lifetime, with all of the events it entails, all the materials, ideas and people that one interacts with throughout an average lifespan. Then multiply that by about a hundred billion souls that have graced this planet with their presence so far. The interactions between all these people, as well as the interactions between all the animals, plants, bacterium, planetary bodies, really all the elements we know and don't know to be a part of this world, is what constitutes the reality you encounter today.
+
+Composing all that would require coordinating an almost unimaginable amount of data. Yet, it's just "almost" inconceivable. The fact that we can actually right now in this article attempt to come up with this number is what makes it potentially possible.
+
+So how much data are we talking about? And how would such a machine work?
+
+
+ 
+ 
+
+TOP ARTICLES
+1/5
+READ MORE
+10 must-have STEM toys that are backed
+by science
+
+
+In 2003, the Swedish philosopher Nick Bostrom, who teaches at University of Oxford, wrote an influential paper on the subject called "Are you living in a computer simulation" that tackles just this subject.
+
+In the paper, Bostrom argues that future people will likely have super-powerful computers on which they could run simulations of their "forebears". These simulations would be so good that the simulated people would think they are conscious. In that case, it's likely that we are among such "simulated minds" rather than "the original biological ones."
+
+In fact, if we don't believe we are simulations, concludes Bostrom, then "we are not entitled to believe that we will have descendants who will run lots of such simulations of their forebears." If you accept one premise (that you'll have powerful super-computing descendants), you have to accept the other (you are simulation).
+
+That's pretty heavy stuff. How to unpack it?
+
+As he goes into the details of his argument, Bostrom writes that within the philosophy of mind, it is possible to conjecture that an artificially-created system could be made to have "conscious experiences" as long as it is equipped with "the right sort of computational structures and processes." It's presumptuous to assume that only experiences within "a carbon‐based biological neural networks inside a cranium" (your head) can gives rise to consciousness. Silicon processors in a computer can be potentially made to mimic the same thing.
+
+Of course, at this point in time this isn't something our computers can do. But we can imagine that the current rate of progress and what we know of the constraints imposed by physical laws can lead to civilizations able to come up with such machines, even turning planets and stars into giant computers. These could be quantum or nuclear but whatever they would be, they could probably run amazingly detailed simulations.
+
+In fact, there is number to represent the kind of power needed to emulate a human brain's functionality, which Bostrom gives as ranging from 1014 to 1017 operations per second. If you hit that kind of computer speed, you can run a reasonable enough human mind within the machine.
+
+Simulating the whole universe, including all the details "down to the quantum level" requires more computing oomph, to the point that it may be "unfeasible," thinks Bostrom. But that may not really be necessary as all the future humans or post-humans would need to do is to simulate the human experience of the universe. They'd just need to make sure the simulated minds don't pick up on anything that doesn't look consistent or "irregularities". You wouldn't have to recreate things the human mind wouldn't ordinarily notice, like things happening at the microscopic level.
+
+Representing the goings on among distant planetary bodies could also be compressed - no need to get into amazing detail among those, certainly not at this point. The machines just need to do a good enough job. As they would keep track of what all the simulated minds believe, they could just fill in the necessary details on demand. They could also edit out any errors if those happen to take place.
+
+Bostrom even provides a number for simulating all of human history, which he puts at around ~1033 ‐ 1036 operations. That would be the goal for the sophisticated enough virtual reality program based on what we already know about their workings. In fact, it's likely just one computer with a mass of a planet can pull off such a task "by using less than one millionth of its processing power for one second," thinks the philosopher. A highly advanced future civilization could build a countless number of such machines.
+
+What could counter such a proposal? Bostrom considers in his paper the possibility that humanity will destroy itself or be destroyed by an outside event like a giant meteor before it reaches this post-human simulated stage. There are actually many ways in which humanity could always be stuck in the primitive stages and not ever be able to create the hypothetical computers needed to simulate entire minds. He even allows for the possibility of our civilization becoming extinct courtesy of human-created self-replicating nanorobots which turn into "mechanical bacteria".
+
+Another point against us living in a simulation would be that future posthumans might not care to or be allowed to run such programs at all. Why do it? What's the upside of creating "ancestor simulations"? He thinks that it's not likely the practice of running such simulations would be so widely assumed to be immoral that it would be banned everywhere. Also, knowing human nature, it's unlikely that there wouldn't be someone in the future who would not find such a project interesting. This is the kind of stuff we would do today if we could and chances are, we would continue to want to do in the far distant future.
+
+"Unless we are now living in a simulation, our descendants will almost certainly never run an ancestor‐simulation," writes Bostrom.
+A fascinating outcome of all this speculation is that we have no way of knowing what the true reality of existence really is. Our minds are likely accessing just a small fraction of the "totality of physical existence." What we think we are may be run on virtual machines that are run on other virtual machines - it's like a nesting doll of simulations, making it nearly impossible for us to see beyond to the true nature of things. Even the posthumans simulating us could be themselves simulated. As such, there could be many levels of reality, concludes Bostrom. The future us might likely never know if they are at the "fundamental" or "basement" level.
+
+Interestingly, this uncertainty gives rise to universal ethics. If you don't know you are the original, you better behave or the godlike beings above you will intervene.
+
+What are other implications of these lines of reasoning? Ok, let's assume we are living in a simulation – now what? Bostrom doesn't think our behavior should be affected much, even with such heavy knowledge, especially as we don't know the true motivations of future humans behind creating the simulated minds. They might have entirely different value systems.
+
+If you think this proposal sounds plausible, you would not be alone. Elon Musk and many others are fairly convinced we are just sophisticated self-aware computer programs or maybe even video games.
+
+You can take the plunge and read the full paper by Nick Bostrom for yourself here.
+
+Check out Nick Bostrom’s TED talk on superintelligencies:
+
+FROM YOUR SITE ARTICLES
+Is There Evidence That We're Living in a Computer Simulation? - Big ... ›
+3 arguments why we live in a matrix and 3 arguments that refute ... ›
+There's a 20% Chance We're All Sims. - Big Think ›
+RELATED ARTICLES AROUND THE WEB
+15 Irrefutable Reasons We Might Be Living in a Simulation ›
+The Simulation Hypothesis: are we living in a video game? - Vox ›
+Elon Musk Is Wrong. We Aren't Living in a Simulation - VICE ›
+ai future nick bostrom technology brain artificial intelligence computers intelligence philosophy consciousness
+SPONSORED CONTENT
+This Boy Says That He’s a Martian, And Here’s Why Scientists Are Starting to Believe Him
+This Boy Says That He’s a Martian, And Here’s Why Scientists Are Starting...
+By The Primary Market
+  
+by TaboolaSponsored LinksYou May Like
+20 Most Stunning News Anchors
+YourDailyDish
+How To Entirely Empty Your Bowels Every Morning - Top Surgeon Explains How
+Gundry MD | Supplement
+Mom Gets Strange Feeling About Future Son-In-Law, Checks Old Photos And Confirms Her Suspicions Are Correct
+IcePop
+The New Chevrolet Silverado Is Simply Astonishing!
+Chevrolet Silverado | Search Ads
+She Thought It Was A Blue Whale Until She Looked At The Pictures She Took
+DirectExpose
+Affordable All-Inclusive Vacations That Are Simply Astonishing!
+All-Inclusive Vacations | Search Ads
+
+TRENDING
+Science and Buddhism agree: There is no "you" there
+U.S. in Top 10 of most dangerous countries for women
+ 
+Lasers could cut lifespan of nuclear waste from "a million years to 30 minutes," says Nobel laureate
+ 
+How designers are fighting the rise of facial recognition technology
+ 
+10 new things we’ve learned about death
+FEATURED VIDEO
+VIDEOS
+Steven Pinker: Are guns to blame for America’s homicide rate?
+STEVEN PINKER
+We need to enact policies founded on solid research — more importantly, though, we have to stop suppressing research into hot topics.
+  
+MIND & BRAIN
+Thinking about one’s birth is as uncanny as thinking of death
+MIND & BRAIN
+Teachers show biases against overweight kids, including giving them lower grades
+TECHNOLOGY & INNOVATION
+How to dismantle a nuclear bomb
+ 
+SURPRISING SCIENCE
+Nom-nom or dinner call? Silverbacks sing as they eat.
+THINK AGAIN PODCASTS
+Deborah Levy – it's those thoughts that are slightly awkward that need an airing
+GEAR
+These science-backed mindfulness meditation exercises are built just for you
+MIND & BRAIN
+Trigger warnings don’t help people cope with distressing material
+ 
+SURPRISING SCIENCE
+Astrophysicists discover why black holes and neutron stars shine bright
+Scroll down to load more…
+na
+
+
+
+Ad nanananananananananana

@@ -1,0 +1,813 @@
+rdist
+January 27, 2010
+How the PS3 hypervisor was hacked
+Filed under: Embedded,Hacking,Hardware,Security,Software protection — Nate Lawson @ 1:59 am
+George Hotz, previously known as an iPhone hacker, announced that he hacked the Playstation 3 and then provided exploit details. Various articles have been written about this but none of them appear to have analyzed the actual code. Because of the various conflicting reports, here is some more analysis to help understand the exploit.
+
+The PS3, like the Xbox360, depends on a hypervisor for security enforcement. Unlike the 360, the PS3 allows users to run ordinary Linux if they wish, but it still runs under management by the hypervisor. The hypervisor does not allow the Linux kernel to access various devices, such as the GPU. If a way was found to compromise the hypervisor, direct access to the hardware is possible, and other less privileged code could be monitored and controlled by the attacker.
+
+Hacking the hypervisor is not the only step required to run pirated games. Each game has an encryption key stored in an area of the disc called ROM Mark. The drive firmware reads this key and supplies it to the hypervisor to use to decrypt the game during loading. The hypervisor would need to be subverted to reveal this key for each game. Another approach would be to compromise the Blu-ray drive firmware or skip extracting the keys and just slave the decryption code in order to decrypt each game. After this, any software protection measures in the game would need to be disabled. It is unknown what self-protection measures might be lurking beneath the encryption of a given game. Some authors might trust in the encryption alone, others might implement something like SecuROM.
+
+The hypervisor code runs on both the main CPU (PPE) and one of its seven Cell coprocessors (SPE). The SPE thread seems to be launched in isolation mode, where access to its private code and data memory is blocked, even from the hypervisor.  The root hardware keys used to decrypt the bootloader and then hypervisor are present only in the hardware, possibly through the use of eFUSEs. This could also mean that each Cell processor has some unique keys, and decryption does not depend on a single global root key (unlike some articles that claim there is a single, global root key).
+
+George’s hack compromises the hypervisor after booting Linux via the “OtherOS” feature. He has used the exploit to add arbitrary read/write RAM access functions and dump the hypervisor. Access to lv1 is a necessary first step in order to mount other attacks against the drive firmware or games.
+
+His approach is clever and is known as a “glitching attack“. This kind of hardware attack involves sending a carefully-timed voltage pulse in order to cause the hardware to misbehave in some useful way. It has long been used by smart card hackers to unlock cards. Typically, hackers would time the pulse to target a loop termination condition, causing a loop to continue forever and dump contents of the secret ROM to an accessible bus. The clock line is often glitched but some data lines are also a useful target. The pulse timing does not always have to be precise since hardware is designed to tolerate some out-of-spec conditions and the attack can usually be repeated many times until it succeeds.
+
+George connected an FPGA to a single line on his PS3’s memory bus. He programmed the chip with very simple logic: send a 40 ns pulse via the output pin when triggered by a pushbutton. This can be done with a few lines of Verilog. While the length of the pulse is relatively short (but still about 100 memory clock cycles of the PS3), the triggering is extremely imprecise. However, he used software to setup the RAM to give a higher likelihood of success than it would first appear.
+
+His goal was to compromise the hashed page table (HTAB) in order to get read/write access to the main segment, which maps all memory including the hypervisor. The exploit is a Linux kernel module that calls various system calls in the hypervisor dealing with memory management. It allocates, deallocates, and then tries to use the deallocated memory as the HTAB for a virtual segment. If the glitch successfully desynchronizes the hypervisor from the actual state of the RAM, it will allow the attacker to overwrite the active HTAB and thus control access to any memory region. Let’s break this down some more.
+
+The first step is to allocate a buffer. The exploit then requests that the hypervisor create lots of duplicate HTAB mappings pointing to this buffer. Any one of these mappings can be used to read or write to the buffer, which is fine since the kernel owns it. In Unix terms, think of these as multiple file handles to a single temporary file. Any file handle can be closed, but as long as one open file handle remains, the file’s data can still be accessed.
+
+The next step is to deallocate the buffer without first releasing all the mappings to it. This is ok since the hypervisor will go through and destroy each mapping before it returns. Immediately after calling lv1_release_memory(), the exploit prints a message for the user to press the glitching trigger button. Because there are so many HTAB mappings to this buffer, the user has a decent chance of triggering the glitch while the hypervisor is deallocating a mapping. The glitch probably prevents one or more of the hypervisor’s write cycles from hitting memory. These writes were intended to deallocate each mapping, but if they fail, the mapping remains intact.
+
+At this point, the hypervisor has an HTAB with one or more read/write mappings pointing to a buffer it has deallocated. Thus, the kernel no longer owns that buffer and supposedly cannot write to it. However, the kernel still has one or more valid mappings pointing to the buffer and can actually modify its contents. But this is not yet useful since it’s just empty memory.
+
+The exploit then creates a virtual segment and checks to see if the associated HTAB is located in a region spanning the freed buffer’s address. If not, it keeps creating virtual segments until one does. Now, the user has the ability to write directly to this HTAB instead of the hypervisor having exclusive control of it. The exploit writes some HTAB entries that will give it full access to the main segment, which maps all of memory. Once the hypervisor switches to this virtual segment, the attacker now controls all of memory and thus the hypervisor itself. The exploit installs two syscalls that give direct read/write access to any memory address, then returns back to the kernel.
+
+It is quite possible someone will package this attack into a modchip since the glitch, while somewhat narrow, does not need to be very precisely timed. With a microcontroller and a little analog circuitry for the pulse, this could be quite reliable. However, it is more likely that a software bug will be found after reverse-engineering the dumped hypervisor and that is what will be deployed for use by the masses.
+
+Sony appears to have done a great job with the security of the PS3. It all hangs together well, with no obvious weak points. However, the low level access given to guest OS kernels means that any bug in the hypervisor is likely to be accessible to attacker code due to the broad API it offers. One simple fix would be to read back the state of each mapping after changing it. If the write failed for some reason, the hypervisor would see this and halt.
+
+It will be interesting to see how Sony responds with future updates to prevent this kind of attack.
+
+[Edit: corrected the description of virtual segment allocation based on a comment by geohot.]
+
+Share this:
+TwitterFacebook
+Related
+A new direction for homebrew console hackers?
+In "Crypto"
+PS3 hypervisor exploit reproduced
+In "Embedded"
+Protecting memory from DMA
+In "Hardware"
+Comments (107)
+107 Comments
+
+Thanks for explanation, very helpful!
+Can you explain what is lv1 please?
+
+Comment by Seed — January 27, 2010 @ 5:48 am
+
+
+lv1 (and lv0) are privilege levels in the PPE, used for the hypervisor.
+
+Comment by Nate Lawson — January 27, 2010 @ 9:51 am
+
+
+lvl 1 cache on the processor
+
+Comment by emote — January 27, 2010 @ 9:59 am
+
+
+No.
+
+Comment by Nate Lawson — January 27, 2010 @ 10:20 am
+
+
+Very good and explanation, what I was looking for.
+
+Clever trick.
+
+However, the isolated SPE stills dominates the whole thing, authentication trust chain has not been been compromised (and will not… I think :D ).
+
+Question is: what does the famous “dedicated to sytem” SPE stands for ? OS/Interface fundamentals ? Weird… Runtime authentication rather huh ??
+
+Comment by Gropainisse — January 27, 2010 @ 6:44 am
+
+
+The isolated SPE can still be used as a decryption oracle, where the attacker submits various things to it for decryption even though she doesn’t know the actual keys. So one attacker using this exploit can enable others by providing them plaintext.
+
+Hopefully there are other mechanisms (e.g., lockout of some keys before booting OtherOS) to prevent this.
+
+Comment by Nate Lawson — January 27, 2010 @ 9:55 am
+
+
+http://en.wikipedia.org/wiki/Ring_(computer_security)
+
+Comment by aaa — January 27, 2010 @ 6:45 am
+
+
+Excellent article, thanks. I pointed a few other people to it.
+
+The hack doesn’t sound as complicated as I’d expected. I’m kind of surprised that the bus lines are so easy to access, aren’t they usually buried in this sort of device?
+
+If I were Sony I’d be tempted to disable as much of the Linux support as needed to stop this sort of thing without people actually being able to say that the support has been completely removed.
+
+Comment by Mike Hearn — January 27, 2010 @ 6:56 am
+
+
+I guess since these lines were such high speed and the contents encrypted, they weren’t considered a target. Too high speed… where did I hear that? Oh yeah, Xbox1. And once again, encryption is not integrity protection.
+
+Since encryption keys for games should not be needed by Linux, I’d be surprised if they didn’t erase them before booting it. Still, it’s possible a variant of this attack could succeed earlier or (more likely) that a software flaw will be found from disassembling the hypervisor.
+
+Comment by Nate Lawson — January 27, 2010 @ 9:59 am
+
+
+As far as I’m aware, OtherOS (Linux) support has been removed entirely from the PS3 slim, which is now the only model on sale. So for this exploit to be researched from what’s been discovered already, you need access to the older, larger PS3 model.
+
+Comment by Mike — January 28, 2010 @ 3:49 pm
+
+
+Yes, it has been removed from the slim, unfortunatly. I still have the PHAT, though. I will wait for a modchip to be released before i try doing this. :D
+
+P.S.: Does anyone know if its possible to use a 500gb 2.5″ SATA drive in a PHAT PS3?
+
+Comment by JoeyD1 — January 29, 2010 @ 12:02 pm
+
+
+Yes! I have a Samsung 500Mb
+http://whirlpool.net.au/wiki/?tag=ps3_hdd
+
+Comment by JT — February 13, 2010 @ 2:28 pm
+
+
+Great explanation on the code and exploitation details, will help out a lot of people to understand how it works.
+
+Comment by SimonLR — January 27, 2010 @ 7:34 am
+
+
+Great writeup Nate.
+
+Comment by Danny Quist — January 27, 2010 @ 7:44 am
+
+
+It’s an interesting tradeoff — if Sony never allowed guest OS access at all, there might have been even more interest in compromising its security model. With Linux a legit option out of the box, a number of folks interested in breaking in lose their motivation to do so. The XBOX, on the other hand, had everyone’s undivided attention to get in.
+
+Regardless, a nice hack, and good work by an obviously very talented fellow.
+
+Comment by Jordan — January 27, 2010 @ 7:44 am
+
+
+Yes, I also find comparing system timelines fascinating. I agree that Linux support probably helped extend the time to hack.
+
+Comment by Nate Lawson — January 27, 2010 @ 10:00 am
+
+
+Agreed.
+
+I saw a great example of such a timeline in a 25C3 presentation. I uploaded the slide here without permission: http://www.flickr.com/photos/55502932@N00/4314288066/sizes/o/
+
+It shows a few interesting properties for 12 popular entertainment embedded devices:
+-security system features
+-time from product release to ~”ring 0″ compromise
+-attacker’s motivation
+-net effect of compromise
+
+Bushing (who chimed in above) and marcan [0] invited Michael Steil [1] to present the chart during their “Console Hacking 2008: Wii Fail” presentation [2]. You can view the relevant portion of (low-res) video here: http://video.google.com/videoplay?docid=-8144903488727085262#45m20s
+
+Thanks for the informative post, Nate.
+
+-Tyler
+
+[0] http://www.hackmii.com
+[1] http://www.michael-steil.de/
+[2] http://hackmii.com/2009/01/25c3-presentation/
+
+Comment by Tyler Oderkirk — January 29, 2010 @ 9:39 am
+
+
+I guess the obvious question is whether the PS3 slims are vulnerable, since the Linux boot option is gone from these systems. Is this a vulnerability only in the older systems?
+
+Comment by Marcus — January 27, 2010 @ 8:15 am
+
+
+This attack would not work as it stands on the Slim because you need to be able to run arbitrary kernel code to attack the hypervisor. However, knowledge gained from it could be used to attack the Slim, depending on how much was changed there.
+
+Comment by Nate Lawson — January 27, 2010 @ 10:01 am
+
+
+It makes you wonder if Sony didn’t foresee this kind of attack during the slim design and chose to leave out the alternate OS feature to prevent it.
+
+Comment by Marcus — January 27, 2010 @ 12:10 pm
+
+
+I think the best theory is that people who buy it just to run Linux don’t buy enough games to justify the subsidy of the low-cost Slim.
+
+Comment by Nate Lawson — January 27, 2010 @ 12:58 pm
+
+
+Well if I understand the new PS3 right, There is no Guest OS access now. They removed the ability to install Linux on the latest version.
+
+However that doesn’t mean a similar hack won’t work I guess.
+
+Comment by Dan M — January 27, 2010 @ 8:36 am
+
+
+How big is the hypervisor on the 360 and on the PS3? 100k 1MB 10MB?
+
+Comment by Louise — January 27, 2010 @ 8:39 am
+
+
+I don’t know. However, Sony has indicated that game developers need to reserve at least 24 MB of the 256 MB RAM for system use.
+
+Comment by Nate Lawson — January 27, 2010 @ 10:03 am
+
+
+hey nate
+
+thanks for the great writeup!
+
+Comment by bioh — January 27, 2010 @ 9:11 am
+
+
+if i remember correctly, the guy who dumped the gameboy bios used a glitching technique too. interesting that it worked here too.
+
+Comment by etcet — January 27, 2010 @ 9:56 am
+
+
+Wow, this is way cool dude.
+
+RT
+
+Comment by John Wods — January 27, 2010 @ 10:24 am
+
+
+I’d like to see an explanation of this “hack” diagrammed. Do programmers diagram anything anymore?
+
+Comment by supercommando440 — January 27, 2010 @ 10:32 am
+
+
+If you create a nice diagram, I’ll update the post with it and give you credit.
+
+Comment by Nate Lawson — January 27, 2010 @ 1:03 pm
+
+
+“It will be interesting to see how Sony responds with future updates to prevent this kind of attack.” — Probably by blocking linux on the PS3 and never allowing it to run on any of their future products. Good work!
+
+Comment by Richard — January 27, 2010 @ 11:11 am
+
+
+I doubt this is the response. Since they can contribute changes to the Linux kernel, they can change the hypervisor API. However, I don’t think this is required to fix this type of hole.
+
+Comment by Nate Lawson — January 27, 2010 @ 1:00 pm
+
+
+Yes, that’s exactly what’s going to happen.
+
+Comment by Wouter Verhelst — March 29, 2010 @ 2:36 am
+
+
+News seems to indicate that, doesn’t it. Kind of a silly response because all the systems that run Linux now can continue to be a source of keys for decrypting future software unless they revoke said versions.
+
+http://geohotps3.blogspot.com/2010/03/wait-you-are-removing-feature.html
+
+Comment by Nate Lawson — March 29, 2010 @ 9:46 pm
+
+
+The hypervisor is patchable, right? Then it should be relatively easy for Sony to fix this, although people can just not update.
+
+Thanks a lot for this analysis.
+
+Comment by andychiw — January 27, 2010 @ 11:49 am
+
+
+Yes, a specific patch is to just read back every change they write out to memory. If the contents don’t match, something very bad happened and they should hang. Of course, there are a lot of other avenues to use with this attack so they should also revisit their hypervisor design to give the OtherOS kernel much less control (e.g., of the memory layout).
+
+Comment by Nate Lawson — January 27, 2010 @ 1:02 pm
+
+
+Problem is, that simple fix effectively halves memory bandwidth, and also takes clocks off the CPU (or a core, anyway) to do the comparison. If this were a general purpose machine that would be acceptable, but with people having designed and tested for a specific set of hardware and performance tweaked to “acceptable” on it, to affect memory bandwidth that drastically would surely cause problems in existing games.
+
+Very interesting writeup on the exploit though, thanks Nate
+
+Comment by germania — January 28, 2010 @ 8:01 am
+
+
+I agree there may be better fixes. But this only halves the bandwidth for changing the page-table entries. Since the GPE supports superpages, this is probably not a frequent operation. I’m guessing the exploit has to create millions of PTEs in order to be reachable with a button press (say, 250 ms for an average human). So that is definitely abnormal behavior.
+
+However, since I’m not familiar with the PS3 internals, this is all futile speculation, and I’d rather wait and see.
+
+Comment by Nate Lawson — January 28, 2010 @ 10:31 pm
+
+
+Sounds like its too late though. Once a system is hacked any future updates will likely just fall as well. Either the update itself is modified to disable the security patch or the system is hacked to the point an update would not prevent unauthorized access. Lesson for ps4 in my opinion. Though if sony doesn’t use the cell in the next playstation it might just fall to hackers more quickly. The security of this ps3 is inherent in the cell is it not?
+
+Comment by Temi — January 27, 2010 @ 4:06 pm
+
+
+It depends on if the system uses eFuses to prevent downgrades. Or if the bootloader cannot be compromised from the vantage point of the hypervisor. There’s a lot more to be discovered here and dumping the HV is only a first step.
+
+Comment by Nate Lawson — January 27, 2010 @ 6:26 pm
+
+
+ROMMark is not used for the authentication of PS3 game discs, this rumour was started by some PSP moron named “Mathelieu” and everyone has taken it and run with it. ROMMark is used as a part of the AACS key mechanism for BD video, that’s all; it’s got SFA to do with the PS3’s BD games discs.
+
+As to this being called a “hack” – I know it’s semantics, but this is nothing more than an exploit and George Hotz trying to garner as much media attention as he can from it. It’s a good trick, but far from a real “hack”. Show me a “Hello World!” and I’ll recognise it as a true hack, until then, you’ve put a tiny chip in the armour, is all.
+
+Cue SCE’s next FW update blocking it by removal and modification of specific memory allocation routines in the HV. Hole closed.
+
+Finally, all those saying that the attack can utilise the 7th SPE as an orcale, how do you know this? What makes people think that the reserved SPU will actually function in such a way? Obviously, no one has really replicated this and tried it to determine what the isolated code running in the reserved SPU really does prior to processing any decryption operations. I seriously doubt that there is no state checking of the system/HV prior to decryption being performed.
+
+…from Someone sick that’s and tired of media whores.
+
+Comment by ThePope — January 27, 2010 @ 5:58 pm
+
+
+Fascinating comments. Can you point to proof that ROM Mark is not used on game discs?
+
+As far as oracle attacks on the SPE, it’s possible decryption keys are disabled by the time OtherOS is booted. Or they may not. Or as you point out, there may be some challenge/response auth of the caller to the SPE in order to verify it is not being used as an oracle.
+
+There’s a lot more to be discovered. Thanks for your comment.
+
+Comment by Nate Lawson — January 27, 2010 @ 6:28 pm
+
+
+Nate,
+
+I can’t provide you what you ask for with respect to ROMMark for a number of reasons; the most important one beng that because putting that information into the public arena is not in my interests. Actually, as you’re ex-CRI and you would have had access to the Philips documentation, IIRC it even statest that ROMMark can only be utilised on BD-Video discs, not for BD-ROM discs.
+
+I would suggest for those that are interested, go out and get yourself a BD drive, make the required FW modifications and attempt to read the ROMMark ID from within the PIC zone of a PS3 game disc. QED.
+
+Yes, there is much to be learnt and understood about the entire PS3 security paradigm, and all of that has to happen before the words “The PS3 has been hacked” can truly be bandied about with the glee and abandon that appears to be doing the rounds.
+
+All George has done is create an exploit (which I do think was a good trick) and then he’s just dumped it out there effectively stating “now everyone else do the hard work”. All of this, after him making the comments to a BBC reporter about “access to root keys” and other rubbish he’s obviously not even sure of himself.
+
+Such big words need big actions to back them up, in this case, those are severely lacking. I think a lot of people will be disappointed when they pull down LV1 (which is all he has, where pray tell, is LV0 and the SYSCON config?) There is a hell of a lot more to the PS3’s security and George isn’t the first one to slowly realise that; it’s just that many of the others before him had the foresight to keep their mouths shut until they grasped it.
+
+ThePope.
+
+Comment by ThePope — January 27, 2010 @ 6:50 pm
+
+
+The SPEs can be used as oracles, although perhaps not from OtherOS. On a TEST, you can dump lv2 and games. Combine that with this, and thats everything. It’s just a matter of software to get lv2 to load using this.
+
+Comment by George Hotz — January 27, 2010 @ 10:53 pm
+
+
+I don’t think anyone disagrees that there’s a lot more that needs to be discovered. Until more is known about the HV from disassembling it, we can’t predict what happens next.
+
+Comment by Nate Lawson — January 28, 2010 @ 9:35 am
+
+
+Oh, it can’t specify the new segment HTAB address. I just spam until I get the right one :D
+
+Comment by George Hotz — January 27, 2010 @ 6:03 pm
+
+
+Thanks for the correction, I’ve updated the post.
+
+Comment by Nate Lawson — January 27, 2010 @ 6:23 pm
+
+
+Nice analysis of the situation Nate i’m lost already! Great reading.
+
+Comment by Final Baton — January 27, 2010 @ 6:38 pm
+
+
+I also seen a lot of things ignored in his work, like volatile memory that can still be accessed when isolation bit is set on SPEs, local stores overwrite themselves relatively easy with valid data as well as a cache vulnerability(cough cough phrack paper), a lot of open sores in GPU even from stuff Sony left in the kernel etc..
+
+That loader-ROM is a very smart design idea, and they left the OCD interface where it belongs, under the chip, most likely disabled. Pwning LPAR doesn’t yield much, and by the way his hack doesn’t unlock push-buffer operations blocked for the GPU. A driver can still be made, most devs are too PC(politically correct(licensing)) or lazy to accomplish that though.
+
+@Guy Complaining about information sharing: I’ve yet to see anything that isn’t at least 15 years old done on any of these new devices. I somehow doubt you or you’re super hax0r friends can yield anything any young reverser out here reversing protectors can’t..All the good reversers work for vendors and government..people who can do consumer electronics and software protectors are a dime a dozen. I know a high school dropout who unpacks SecuRom VMs the night he gets them, and can do the same with protector dongles. You gotta work hard in this field or you end up homeless or working at some department store or whatever..
+
+Comment by chexmix — January 27, 2010 @ 8:31 pm
+
+
+It does give you full access to the GPU. This really is a full hack of the PS3, despite how long it takes some people to believe it. The isolated SPEs can be viewed as black box crypto engines. Whether we can ever run them without a system is somewhat irrelevant. For example, the iPhone and PSP both have crypto engines that require the hardware, but are both widely hailed as hacked.
+
+Comment by George Hotz — January 27, 2010 @ 10:31 pm
+
+
+An interesting development would be if you can’t just treat SPEs as black box crypto oracles. I could see one of two scenarios: if they validate the memory of the caller (integrity checks) or require some kind of chall/response before providing the plaintext. Both methods can be bypassed but it will be fun to see if Sony went to that extent in their design.
+
+Comment by Nate Lawson — January 28, 2010 @ 9:41 am
+
+
+I really don’t get why you can specify the address when creating a new virtual segment. I mean, you are not supposed to know anything about the real memory addressing. The kernel should have a virtual memory for itself, managed by the hypervisor, and work within its limits. Why are you allowed to know the real memory address of a buffer? Why are you allowed to specify a real memory address for a new virtual segment and not a memory address on its own kernel memory space? I just don’t understand why your are allowed to do all that from a “virtualized” environment.
+
+Besides that, I assume that if the hypervisor knows that some memory address is mapped by the kernel it won’t allow to build the HTAB there. But I think is pretty stupid to keep this information somewhere not in the same HTAB. I mean, what’s the point of this duplication? Why don’t just look the HTAB when deciding if some memory is or not allowed to be the destination of the new HTAB?
+
+Comment by adlpz — January 28, 2010 @ 12:46 am
+
+
+The caller cannot specify the address of the HTAB. That was a mistake in the original article, which I’ve now corrected. Even if the HV did not allow you to know any addresses, you could just keep repeatedly trying until it succeeded. You would create a virtual segment, switch to it, try to write to an out-of-range address, catch the trap, and repeat. While I’m not a PS3 expert, this approach would probably also work.
+
+Comment by Nate Lawson — January 28, 2010 @ 9:26 am
+
+
+If it were on me i would hire all these guys to give them all the time they need to do creative work. Awsome minds of the world. In the end they make the future more secure by releasing flaws in the design of systems.
+
+Comment by Tudi — January 28, 2010 @ 1:06 am
+
+
+fuckin fantastic dude! big ups to the hack author!! i dont even own a ps3
+
+Cheers
+
+Comment by wow — January 28, 2010 @ 2:35 am
+
+
+Nice Read, Thanks for giving the write up
+
+Comment by Reza Hashemi — January 28, 2010 @ 2:42 am
+
+
+“One simple fix would be to read back the state of each mapping after changing it. If the write failed for some reason, the hypervisor would see this and halt.”
+
+Guess they can’t do it as it could slow down some poorly programmed games?
+
+Comment by Peter — January 28, 2010 @ 3:38 am
+
+
+well, I think they’ll prefer having some slight slowdowns on some games than a security hole.
+
+Anyway poorly programmed games already have slowdowns.
+
+Comment by Kca — January 28, 2010 @ 6:18 am
+
+
+Yes, I don’t know how it would perform. They either need to have trusted memory (on-die or at least in same package) or they need to treat it as untrusted. Since the latter is a software change, I think that’s the route they’ll go.
+
+Comment by Nate Lawson — January 28, 2010 @ 9:37 am
+
+
+Even well programmed ones. Memory bandwidth and latency are crucial to programs with as much “stuff” happening as any modern game. If you double the write time and half the throughput, then the specs the game was designed for go out the window (and changing “write this memory address” to “write this memory address, read this memory address, compare, logic branch to halt or continue” makes half fairly optimistic I would say).
+
+Comment by germania — January 29, 2010 @ 5:47 am
+
+
+The write verification would be only for PTEs and other critical system structures, not every memory access. These are typically small and only occur when memory is being allocated. CPUs can have a TLB exactly because these things are small.
+
+Comment by Nate Lawson — January 29, 2010 @ 10:01 am
+
+
+What happens if they update the ps3 to tone down the duty cycle of the hypervisor in order to accommodate the cut in bandwidth (IE “write this memory address, read this memory address, compare, logic branch to halt or continue” but only perform this “read this memory address, compare, logic branch to halt or continue” part less often). Causing the hypervisor to check for invalid writes and it’s associated halting to only be performed say every ten cycles would still provide an updated security, but also have a smaller hit in performance for certain games. I’m not sure if I follow everything but that’s my thought.
+
+Comment by Benjamin Roy — February 15, 2010 @ 4:40 pm
+
+
+SONY will do nothing at all about this “hack”.
+
+In the first place, it is all about the 1st PS3 model, the new slim doesn’t have such “hole”.
+Any change of the firmware about that “hack” could be actually dangerous for SONY itself.
+Until this turns out into Hacked Game Paradise, why you should worry about, maybe it will increase the amount of PS3 sold.
+
+Comment by georgatos — January 28, 2010 @ 8:38 am
+
+
+Have you got any info (schema, picture, ascii or whatever) of ps3 board, to know where are located the memory bus lines we can try to glitch ?
+Thanks, very welldone article.
+KP
+
+Comment by kernelpanik — January 28, 2010 @ 12:36 pm
+
+
+Geohot’s blog has a zip file that contains a diagram showing what line he glitched. Here’s the datasheet for the chip that he’s glitching: http://www.elpida.com/pdfs/E1033E40.pdf
+
+Based on that, it looks like the line he used was either RQ10 or RQ2, which (according to the datasheet “carry control and address information to the device.”)
+
+Very nice writeup, Nate. :)
+
+Comment by bushing — January 28, 2010 @ 1:08 pm
+
+
+No backup discussion here so don’t stop reading half way through when I mention game discs:
+
+One other experienced person I talked to suggested that most of the code base for the PS3 in terms of functionality is distributed on game discs. If you look at the data layout on all units including the SLIM it looks as if all that resides on the PS3 itself from the factory is the flash and a bit of data that is encrypted on the hard disk. If you do static analysis of the unencrypted ELFs on the HDD using the swap method for decryption you can see it’s mostly a kernel of sorts and a lot of markup and applet code for the XMB. There are interesting calls and imports in the ELFs that are inside other encrypted code.
+
+By the way on decrypted HDD the individual files aren’t sighed, only large blocks of data they reside in, same affect but just noteworthy.
+
+Can this POKE inject shellcode like it does on Linux kernel and older implementations? Like modifying segment registers on PPE or overwriting close to a callback? If so what’s stopping people from going further?
+
+Also in 2.80+ GPU operations and memory structures are in fact blocked.
+
+Comment by chexmix — January 28, 2010 @ 3:18 pm
+
+
+Please keep comments technical and contribute to the discussion. While I generally avoid moderating, I will delete aggressively on this post since it is devolving to ad-hominem attacks. If your comment was deleted, either write something technical and leave out the insults or don’t bother resubmitting. Thanks.
+
+Comment by Nate Lawson — January 28, 2010 @ 10:18 pm
+
+
+You do realise that this hack only goes through the first security layer and the tough parts still are not hacked? Most likely this kind of breach was expected to happen while designing the hardware and hence the additional layers of security.
+
+Master key and all the sensitive stuff is done inside isolated SPU and that is not accessible via this hack. Basicly this allows access under linux but it doesn’t facilitate backups/hacking gameos in any way.
+
+The thing is that master key is not accessible in sw and even if the isolated SPU is kicked out gameos will not function anymore(if someone found a way to inject this attack in gameos)
+
+More info here:
+http://streetskaterfu.blogspot.com/2010/01/ps3-is-hacked-urban-legend-continues.html
+
+Comment by not hacked — January 29, 2010 @ 2:20 am
+
+
+I’ll take that as a no on the shell code through POKE on PPE. It begs to question how this is a breach of security if there is literally no way to instruct anything? Also as has already been mentioned the vital security mechanisms are still in total hardware isolation with only publicized input vectors. You’re basically black-boxing hardware isolation. I doubt anything will come of the ROM, and unless you find a way to dump local stores or SPE RAM the only potential attack vectors left are potential memory corruption through lvl1 calls.
+
+Bottom Line: It doesn’t jump to a payload. My fix = ignore it
+
+Comment by demicox — January 29, 2010 @ 8:20 am
+
+
+lol there is a bet going on among devs that a year from now nothing will come of this, not even documented undocumented symbols on that wiki. This comes after confirmation you can’t actually patch that HV code in main RAM, and you can’t inject any code with this and have it executed. OtherOS still doesn’t have access to privileged LPAR despite claims. This merely reads and corrupts to privileged memory with PEEK and POKE. His POKE wouldn’t work even if it was written correctly..
+
+Sure you could disassemble and look for vital algo and vulnerabilities..but that’s what we’re betting on will never happen, and if so it’ll never be published.
+
+I’m not trolling here, but anyone who has been around reversing long enough knows this is almost certain to be the fate of this work unless the author continues to publicize.
+
+Comment by David b — January 29, 2010 @ 3:45 pm
+
+
+Kanna Shimizu is rocking your ass reverse engineers and thus she is officially my new hero!
+
+http://www.ibm.com/developerworks/power/library/pa-cellsecurity/
+
+3 years and counting… Cell BE!
+
+Oh by the way the hardware encryption root key is: ;)
+
+Comment by Final Baton — January 29, 2010 @ 5:48 pm
+
+
+The thing that article points out that I think is most important is how true hardware isolation eliminates the side channel problem with modern crypto ciphers even with PKI.
+
+The CELL is a prime candidate for POS systems and financial and telcom networks. This is bad news if you’re like most these people who make a living off security engineering and reversing. Can you physically change the state of an eFuse, or do cipher layer attacks on AES? Answer=NO and there is literally no argument to this. Nothing in chip reversing or shellcode attacks is a threat to the CELL when implemented like has been done on the PS3.
+
+Under conditions better than this ‘exploit’ is capable of, you’d have shellcode running at another security level that yields no more resources than ones provided by the vendor.
+
+If you’re one of the people who have associated with sensationalizing this just hope it was/is under a pseudonym. It’s not good for your credibility as at it’s best this is a dump of non-vital code, that as one commenter pointer out will only at best expose input vectors to actual security handling code.
+
+They don’t hire grad students at IBM. This work is only controversial to people with no professional insight in any part of the IT industry, more complex reversing happens daily.
+
+Comment by Bob — January 30, 2010 @ 3:31 am
+
+
+“Bob”, you’re well into hyperbolic territory. Let me refer you to Flylogic’s blog for references on resetting fuses. Also, see my own blog for more articles on how crypto can be bypassed. Instead of trying to guess at the impact of this hack, why not take a “wait and see” attitude? I am.
+
+Comment by Nate Lawson — January 30, 2010 @ 5:40 pm
+
+
+No UV on the CELL, and no cipher attacks on DMA AES. I seriously don’t see how the PS3 DRM is jeopardized unless injection is found through an outside input vector. With the PS3 beyond those concepts only exists meshes of silicon logic and even Flylogic doesn’t do logic that dense, and when they do it’s just on it’s high level logic blocks.
+
+If anyone gets a injection with this ‘exploit’ even under perfect conditions it doesn’t pose a threat to the native firmware. By the way patching HV call behavior would be considered ‘injection’ and it being on active real memory under controlled registers it’s almost certain to fail. Instructing the machine to do something under a comparatively privileged state is what this is presented as, it doesn’t actually inject it’s instructions though..
+
+I may be too cynical but stuff like this isn’t new. They barely keep tethered injections on i-products and that has comparatively weaker isolation and crypto infrastructure. Actually I think their are i-products they no longer have injections for like the ipt3.
+
+Comment by Bob — January 31, 2010 @ 12:39 am
+
+
+You seem to understand a lot of the background. My experience with motivated, skilled attackers comes from the smart card industry. Attacks that are commonplace now there (DPA, DEMA, glitching, etc.) have not yet been “ported” to these bigger systems. There are challenges to doing so, but I expect these attacks will be effective once this hapens.
+
+Every industry has to learn through experience and there are quite a few that haven’t been subject to advanced attacks… video game systems are one of them. Xbox360 found out about timing attacks a couple years ago. DPA next?
+
+Comment by Nate Lawson — January 31, 2010 @ 10:59 am
+
+
+DPA and DEMA wouldn’t work on the CELL without input vectors. It’s still questionable even if a unstable injection happens because existing research isn’t based on PKI. This is what I mean with true hardware isolation blocking side channel attacks. It’s security through obscurity, but the obscurity is dense enough and sensitive enough to block 99% of attackers, and the remaining are dictated by politics and proposed ethics.
+
+It could be when the disassembles of all those HV calls are understood it could still be the same capabilities that the kernel has. The reality is even if that work is done, you’ll never see the research publicized, especially the undocumented calls. The only researchers on the PS3 are people with a release team mentality.
+
+Comment by Bob — January 31, 2010 @ 1:24 pm
+
+
+Who said PKI has anything to do with it? Also, see this great paper by Jaffe on DPA with unknown input.
+
+Again, please use citations and not claim something is impossible without evidence to back it up.
+
+Comment by Nate Lawson — February 1, 2010 @ 9:58 am
+
+
+The “Pandora” hack allowed full control of the PSP’s boot sequence through, among other things, a forged signature of the IPL. This was done with an timing attack on the hardware crypto engine. These sorts of attacks are getting more useful, not less.
+
+Comment by Jim — February 1, 2010 @ 2:20 pm
+
+
+“Unknown input” in their context means crypt text not calls into discreet logic.
+
+What citations? The only true credible resource on the CELL is the SPI doc. It supports all my theories. I can easily state from it though and show all the stuff that has been looked over.
+
+“It is shown here as pseudocode for
+readability and because some external devices, such as an I/O bridge chip and read-only
+memory (ROM), exist in a system but are beyond the scope of this document”
+
+“and that the following firmware is already loaded
+into a ROM attached to the I/O bridge chip, such that the entry point is at the address specified in
+the PPE SReset Vector field of the configuration ring, with the low-order address bits equal to
+x‘100’”
+
+“PPSS PowerPC Processor Storage Subsystem”
+
+Also the IBM docs show embedded use of 2048bit x.509 AES. I’m not going to keep doing banters here though, a year from now when everyone is still ‘keeping it private’ my point will be well proven. I’m off to do more interesting things, this is clearly vapor-hacking.
+
+Comment by Bob — February 1, 2010 @ 7:34 pm
+
+
+I love this part: “2048bit x.509 AES”. Now I know you’re trying to troll us. :-)
+
+Comment by Nate Lawson — February 2, 2010 @ 9:13 am
+
+
+@nate: on the contrary 256byte x.509/pki AES is accelerated on the CELL. On the Geohot blog buried in comments is a link to a IBM SDK PDF that actually directly references it as hardware supported ‘2048bit AES based on x.206 infrastructure’. I was going to do direct quoting and a link but I didn’t want to dig through hundreds of comments. Even Intel has AES instructions now that can easily do that.
+
+I’m not trolling I just don’t like misdirection via sensationalism..you can be a cynic but a year from now I’d bet money out of pocket this ‘exploit’ will be lucky to yield even documentation for those lvl1 symbols. People who have staggering genius in the field of reversing aren’t going to do a game console, at most you can inspect a glitch that opens no vectors like this, and it’s clearly by design.
+
+Comment by Bob — February 3, 2010 @ 3:30 am
+
+
+The x.206 is clearly a typo, going on no sleep here. If you want to dig through his comments though the IBM link for that SDK is somewhere in there. I only backed up the hardware initialization doc.
+
+Comment by Bob — February 3, 2010 @ 3:33 am
+
+
+Bob, what you’re saying still makes no sense. AES is a symmetric algorithm and has a 128-bit block size with 128/192/256 bit keys. X.509 is a certificate standard, which applies to public key algorithms. These are very different things.
+
+I think what you’re trying to say is that it has two hardware acceleration units: AES and 2048-bit modexp (used with RSA, etc.)
+
+Comment by Nate Lawson — February 3, 2010 @ 9:09 am
+
+
+I was thinking about 2048bit RSA with PKI. It says it in the IBM SDK doc that I haven’t read in a while. You’re responding like the inconsistency makes a difference. Still adequate security. Only time will tell. From a logical stand point though this ‘exploit’ is irrelevant in terms of reverse engineering the DRM on the PS3. I think it’s clear the author(Geohot) even realizes it which is why he took the best possible exit route.
+
+Comment by Bob — February 3, 2010 @ 11:34 pm
+
+
+I bet Sony just camouflage the otherOs away on the slim with the hypervisor, The problem with covering up security holes is that it gets sloppy over time and instead of pulling things off completely they shut them down. Access to these vulnerability becomes another horde to bypass. At least if it is software only.
+Sony certainly did a tight job reverting the GPU and SPE away for custom coding. Hehe I’m going for biological abstraction its a CELL so somewhere there should be a jump into these processing units. Even hardware has a snitch somewhere. I’m just saying.
+
+Comment by WulfCry — February 1, 2010 @ 5:19 am
+
+
+Why can’t you just open up the chip to get the root key using electron microscope?
+
+Why can’t there be bit exact copies of a PS3 game?
+
+I’m guessing not many people have PS3 yet and the BD format is not in wide spread use yet, that is why the PS3 isn’t cracked.
+
+If the PS3 can play games, it can be repeated
+
+Comment by joelee123 — February 3, 2010 @ 12:30 pm
+
+
+Yes, I don’t think anyone but the fanboys are claiming it is impossible to hack. But to take the other side, things like broadcast encryption schemes (not a single global root key, but a tree of keys that can be selectively revoked) and forensic marking can make it too costly to hack on a wide scale.
+
+We’ll have to wait and see if Sony used defense-in-depth and planned for this eventuality or built a really tall wall with nothing more behind it.
+
+Comment by Nate Lawson — February 5, 2010 @ 11:09 pm
+
+
+The Cell BE is not a smartcard, it’s a 234 million transistor chip. How exactly do you plan to find the key? PS3 BDs cannot be fully copied to a BD-R, there’s no fanboyism in that, it simply cannot be done. If it could you would have been plenty of counterfeits coming from Asia already.
+
+Comment by Alfred — February 5, 2010 @ 11:28 pm
+
+
+Hint: you don’t look at 233.9 million transistors first. And who said you have to copy discs to BD-R? DVD-Rs have an unwritable CSS block, but you can make copies of DVD-ROMs.
+
+Comment by Nate Lawson — February 8, 2010 @ 9:26 am
+
+
+First thanks for at very good writeup!
+
+Second i have a question for Nate or George Hotz. In one of Georges posts on his blogs he mentiones he can kick out the locked SPE which is used by the hypervisor. Would it not be possible to insert your own SPE code there instead and listen to the mailboxes and signal channels to find out something about the protocole used to communicate with the locked SPE?
+
+Or perhaps this is not possible because it can be detected that the SPE has been kicked out and the hypervisor denies communicating with the SPE. But if full write access is available to the hypervisor code this check can be disabled?
+
+I have a good understanding of the Cell processor but unfortunately not so much about hardware, so i can not try Georges exploit myself.
+
+Comment by Kinn — February 4, 2010 @ 6:14 am
+
+
+No, the SPU will only enter isolated mode to run code signed with the root key. So such attack is not possible. This was hyped a lot but the so called “hack” is very limited. One year from now we can revisit all of this and see that nothing has been accomplished.
+
+Comment by Alfred — February 5, 2010 @ 4:17 am
+
+
+Here in lay the issue , where is the root key check routine held , does it get moved to memory , does it have a pointer set some where to point to the routine. Lot’s of questions , if he has bypassed the hypervisor there are good odds , that anything stored in ram can be damaged , flipping bits during the key check routine could lead to a good find.
+
+Been in this game for quite sometime and even trivial finds can sometimes lead to breakthroughs.
+
+Comment by Joe — February 5, 2010 @ 7:44 am
+
+
+According to public docs, each SPE has its own private memory area and external access is locked out before the code is decrypted and executed there. So the next phase would be to try to interact with the SPE and see how it behaves when various messages are sent through the memory area it shares with the PPE.
+
+Comment by Nate Lawson — February 5, 2010 @ 11:12 pm
+
+
+As far as i know normal users can run code in isolated mode also? There is an IBM SDK available for that, so it should be possible:
+
+https://www-01.ibm.com/chips/techlib/techlib.nsf/techdocs/AEBFE7D58B5C36E90025737200624B33
+
+Comment by Kinn — February 9, 2010 @ 12:50 am
+
+
+Anyone know in what forums serious PS3 reversing is being discussed?
+
+Comment by foobar — February 6, 2010 @ 8:30 am
+
+
+Another idea, how about supplying the bd-rom mark (as a file) with the backed-up bd-rom image. Then have the hacked disc reader read mark from the file along with the bd-rom image.
+
+What is preventing ppl to do that when GeoHotz has given you lv1 access to hardware?
+
+Comment by joelee123 — February 8, 2010 @ 11:09 am
+
+
+yes, this kind of thing is done on the Xbox 360.
+
+Comment by Nate Lawson — February 9, 2010 @ 2:20 pm
+
+
+If it is done, what is preventing the PS3 from doing the same thing?
+
+Comment by joelee123 — February 10, 2010 @ 10:53 am
+
+
+Nothing except hacking the drive firmware. But if you’ve read elsewhere, it isn’t as easy as the Xbox 360 because it wasn’t outsourced to a 3rd party. Sony was able to integrate it more with the main system, which was a good idea.
+
+Comment by Nate Lawson — February 11, 2010 @ 10:39 am
+
+
+http://www.scei.co.jp/ps3-license/index.html
+
+Comment by JéJ291fr — February 15, 2010 @ 3:16 am
+
+
+Very nice detailed post- Now that he has all the call adresses for hypervisor he can simply release a injectable file that injects to hypervisor on system start up. Creating a complete hypervisor bypass and release small code files for individual games and a user controled injector for the everyday gamer to use and (pro claim themselves hackers/coders). Getting the code for the cheats isnt hard at all after this. A simple patch dump or cracking open a few files on your game with hex editor can lead to numerous code caves. Its the release of that auto inject on start up bypass everyone is waiting for then the ps3 will be swarmed by the coding community and there will be hacks for every mmo sony has to offer.
+
+Just my word on the subject.
+
+Comment by here ya go — March 8, 2010 @ 10:33 am
+
+
+I don’t think you’re right that this provides a software-only method to compromise the hypervisor. Now that they’ve dumped the HV, they may find software flaws in it that could later be exploited. But simply knowing the syscall addresses and code doesn’t mean you now have a software-only exploit.
+
+The rest of what you said is loosely accurate.
+
+Comment by Nate Lawson — March 8, 2010 @ 1:19 pm
+
+
+Loosely accurate? Once you have the start up procedure and the call addresses. On any C++ based software you dont need a bug or a glitch. A simple exploit file INJECTED on system start up that manipilates the hypervisors activity leaveing it open for any type of attack. (Injection is use to hack many many online based software/games.)It is the same as any anticheat engine/firewall it can be controlled manipulated and bypassed during start up. What this exploit did was give us acess to the call adresses and start up proceedures needed to create that bypass. Now any C++ programer can create a injectable bypass for the hypervisor. Provided he has the start up syquence and call addresses.The fact he gave us read and write acess through his exploit technique is irelivant all he had to do to start a forest fire was give the start up proceedure and dump in source code. Unfortunatly he hasnt and nobody wants to tear apart thier 350-500 dollar machine to get those files. You seem to have given alot of technical information about how things work and very little about how things are hacked after this glitch exploit. Injection is the only way this system can be hacked. Everything else is just glitching through security holes. Once a bypass is installed on the ps3 and rigged to inject on sytem start up it is hacked. End of story you cant argue this fact with me either 90% of anticheat software is hacked through injection.
+
+Comment by A Hacker Says — March 17, 2010 @ 7:06 am
+
+
+Again, I agree. The aspect I questioned at first was that it sounded like you were saying this automatically enables a software-only injection route. Reviewing your comments, it sounds like you may agree that a hardware method is still required (i.e., to glitch the hypervisor with an address-line change using a modchip). In that case, we’re still in agreement.
+
+Comment by Nate Lawson — March 17, 2010 @ 2:28 pm
+
+
+Well,
+
+Suprisingly, I installed linux on my ps3 fat before the 3.21 patch and proved my theory. I successfully injected a speed gear hack into an online game played through psn (MAG). Since it is was a universal hack (I use it on alot of online based games and the only anti cheat that seems to detect it is hackshield pro)it worked fine no bypass just a simple file injection directly in the games execution file on start up. Unfortunatly they have patched the other os feature now and this method is useless without out a os that allows you to run windows platform applications.
+
+Comment by A hacker — April 5, 2010 @ 11:45 am
+
+
+Is the bd drive integrated to a point that a unit similar in theory to the wode jukebox could not be used?
+
+Is the bandwidth to great for that type of “drive emulation”?
+
+Is there a checksum or something else that could notice if a file was presented that way?
+
+Just my thoughts as of now
+
+Comment by Travis Wenks — March 31, 2010 @ 10:29 pm
+
+
+The simple software fix for this exploit is to not recycle previously client-accessible memory as page table memory, ever. Poof, hole closed — now your glitched mapping won’t ever contain any page tables even if you have read/write access.
+
+Sony’s reaction, disabling OtherOS altogether, seems hugely petty and indicative of Sony’s ignorance of fairly basic systems programming. I mean, has no one within Sony (or of the original PS3 hypervisor team anyhow) written a page-granularity memory allocator?
+
+Comment by Esta O.G. — April 8, 2010 @ 8:45 am
+
+
+its unclear why he grounded the line. what value he didnt want written at that time? (not specific of course, just general). also do we know how he thought all that? the methodology? why that line specifically??
+
+Comment by nio — November 20, 2010 @ 5:26 pm
+
+
+RSS feed for comments on this post.
+
+About
+Introduction to rdist
+Find Articles
+Search for:
+ 
+Twitter
+Let's look at the dynamite poll last week showing @AlyseGalvin is within 3 points of winning Alaska. Summary: pleas… twitter.com/i/web/status/1… 1 year ago
+#Baysec is TONIGHT, 7-10ish pm at Patriot House (2 Embarcadero Center, SF). Info at baysec.net 1 year ago
+RT @bridgetcgalvin: HOLY SHIT 3 POINTS ALASKA WE CAN DO THIS twitter.com/Pinboard/statu… 1 year ago
+Poll results just released show a THREE POINT race by @AlyseGalvin in Alaska despite district being ranked "Likely… twitter.com/i/web/status/1… 1 year ago
+Recent Posts
+In Which You Get a Chance to Save Democracy
+Was the past better than now?
+Thought experiment on protocols and noise
+Timing-safe memcmp and API parity
+In Defense of JavaScript Crypto
+Catching up on recent crypto developments
+Digging Into the NSA Revelations
+Archives
+Archives
+RSS
+Register
+Log in
+Entries feed
+Comments feed
+WordPress.com
+Email delivery
+Subscribe to rdist
+Blog at WordPress.com.
+
+:)

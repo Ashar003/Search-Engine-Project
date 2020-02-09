@@ -1,0 +1,156 @@
+
+fresh2refresh.com
+C TUTORIALC++JAVA TUTORIALUNIX TUTORIALSQL TUTORIALPYTHONJSPXMLHEALTH EDUCATIONOTHERS
+C PROGRAMMING TUTORIAL
+C – LANGUAGE PROGRAMMING TRAINING CENTER
+C - LANGUAGE BASICS
+C - PRINTF AND SCANF
+C - DATA TYPES
+C - TOKENS AND KEYWORDS
+C - CONSTANT
+C - VARIABLE
+C - OPERATORS AND EXPRESSIONS
+C - DECISION CONTROL STATEMENT
+C - LOOP CONTROL STATEMENTS
+C - CASE CONTROL STATEMENTS
+C - TYPE QUALIFIERS
+C - STORAGE CLASS SPECIFIERS
+COMPLETE TUTORIAL OF ARRAY IN C
+C - STRING
+C - POINTER
+C - FUNCTION
+C - ARITHMETIC FUNCTIONS
+C - INT, CHAR VALIDATION FUNCTIONS
+C - BUFFER MANIPULATION FUNCTIONS
+C - TIME RELATED FUNCTIONS
+C - DYNAMIC MEMORY ALLOCATION
+C - TYPE CASTING FUNCTIONS
+C - MISCELLANEOUS FUNCTIONS
+GET MORE DETAIL ABOUT STRUCTURE IN C PROGRAMMING
+C - TYPEDEF
+C - UNION
+C - PREPROCESSOR DIRECTIVES
+C - FILE HANDLING
+C PROGRAMS
+LATEST INTERVIEW QUESTIONS FOR C PROGRAMMING
+C INTERVIEW QUESTIONS
+LATEST INTERVIEW QUESTIONS FOR C PROGRAMMING
+C PROGRAMS
+LEARN C PROGRAMMING TUTORIAL IN EASY WAY
+
+C – Language Programming training Center
+PREV     NEXT
+The C programming language is a structure oriented programming language, developed at Bell Laboratories in 1972 by Dennis Ritchie
+C programming language features were derived from an earlier language called “B” (Basic Combined Programming Language – BCPL)
+C language was invented for implementing UNIX operating system
+In 1978, Dennis Ritchie and Brian Kernighan published the first edition “The C Programming Language” and commonly known as K&R C
+In 1983, the American National Standards Institute (ANSI) established a committee to provide a modern, comprehensive definition of C. The resulting definition, the ANSI standard, or “ANSI C”, was completed late 1988.
+C PROGRAMMING LANGUAGE STANDARDS:
+C89/C90 standard – First standardized specification for C language was developed by the American National Standards Institute in 1989. C89 and C90 standards refer to the same programming language.
+C99 standard – Next revision was published in 1999 that introduced new features like advanced data types and other changes.
+C11 AND EMBEDDED C LANGUAGE:
+C11 standard adds new features to C programming language and library like type generic macros, anonymous structures, improved Unicode support, atomic operations, multi-threading and bounds-checked functions. It also makes some portions of the existing C99 library optional and improves compatibility with C++.
+Embedded C includes features not available in C like fixed-point arithmetic, named address spaces, and basic I/O hardware addressing.
+Operating systems, C compiler and all UNIX application programs are written in C language
+It is also called as procedure oriented programming language. The C language is reliable, simple and easy to use. C has been coded in assembly language.
+FEATURES OF C PROGRAMMING LANGUAGE:
+C language is one of the powerful language. Below are some of the features of C language.
+
+
+ 
+
+Reliability
+Portability
+Flexibility
+Interactivity
+Modularity
+Efficiency and Effectiveness
+USES OF C PROGRAMMING LANGUAGE:
+The C programming language is used for developing system applications that forms a major portion of operating systems such as Windows, UNIX and Linux. Below are some examples of C being used.
+
+Database systems
+Graphics packages
+Word processors
+Spreadsheets
+Operating system development
+Compilers and Assemblers
+Network drivers
+Interpreters
+WHICH LEVEL IS C LANGUAGE BELONGING TO?
+There are 3 levels of programming languages. They are,
+
+
+ 
+
+Middle Level languages:
+Middle level languages don’t provide all the built-in functions found in high level languages, but provides all building blocks that we need to produce the result we want. Examples: C, C++
+High Level languages:
+High level languages provide almost everything that the programmer might need to do as already built into the language. Example: Java, Python
+Low Level languages:
+Low level languages provides nothing other than access to the machines basic instruction set. Example: Assembler
+C LANGUAGE IS A STRUCTURED LANGUAGE:
+Structure oriented language:
+
+In this type of language, large programs are divided into small programs called functions
+Prime focus is on functions and procedures that operate on the data
+Data moves freely around the systems from one function to another
+Program structure follows “Top Down Approach”
+Examples: C, Pascal, ALGOL and Modula-2
+Object oriented language:
+
+In this type of language, programs are divided into objects
+Prime focus is in the data that is being operated and not on the functions or procedures
+Data is hidden and cannot be accessed by external functions
+Program structure follows “Bottom UP Approach”
+Examples: C++, JAVA and C# (C sharp)
+Non structure oriented language:
+
+There is no specific structure for programming this language. Examples: BASIC, COBOL, FORTRAN
+KEY POINTS TO REMEMBER IN C LANGUAGE:
+The C language is a structure oriented programming language developed by Dennis Ritchie.
+The C language is belonging to middle level programming language.
+Operating system programs such as Windows, Unix, Linux are written in C language.
+C89/C90 and C99 are two standardized editions of C language.
+C has been written in assembly language.
+REFERENCE C LANGUAGE E-BOOKS & RESEARCH PAPERS:
+[ANSI 89] American National Standards Institute., American National Standard for Information  Programming Language C, X3 159-1989
+[Kernighan 78] B. W. Kernighan and D. M. Ritchie, The C Programming Language, Prentice-Hall: Englewood Cliffs, NJ, 1978. Second edition, 1988.
+[Thinking 90] C* Programming Guide, Thinking Machines Corp.: Cambridge Mass., 1990.
+PREV     NEXT
+
+
+
+
+Share this website !!!
+Facebook Twitter Linkedin
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+Copyright 2019 ©  fresh2refresh.com.  All rights reserved
+Download our Android App here from Google Play Store
+About us | Contact us | Privacy policy
+ 
+Learn More >>

@@ -1,0 +1,536 @@
+
+Search
+Do numbers exist?
+123456Next
+Wheatley
+620
+Many quantities of objects and properties exist. But do numbers exist? Three different views on this.
+
+Platonism. The view that numbers are real an are non-spatiotemporal causally inert objects.
+Nominalism. The view that numbers are just a way of describing the world.
+Fictionalism. The view that numbers don't exist and that all mathematical discourse is false.
+
+Here's a video outlining the three positions and their problems.
+
+Are you a platonist, a nominalst, or a fictionalist?
+What are you? (23 votes)
+Platonist
+26%
+Nominalist
+35%
+Fictionalist
+  0%
+Other/ undecided.
+39%
+2 years agoOptions
+tim wood
+3.4k
+Assuming Pythagoras discovered irrational numbers, what are we to say about irrational numbers before Pythagoras discovered them?
+
+To my way of thinking, there are things and there are ideas. Numbers are ideas. As a working hypothesis, subject to correction, I'll even say that if it's a something, or if it just is, and it is not a thing, then it is an idea. Ideas, of course, can and do evolve - change.
+
+The idea that ideas must somehow be things of some kind is simply an idea that leads to confusion and useless (i.e., without a use) contention.
+
+Do ideas exist? Of course they do! Just not in the same sense that things exist. To ask if ideas exist (as things) is to confuse the two senses of "exist" - to confuse content with substance.
+2 years ago
+litewave
+422
+Assuming Pythagoras discovered irrational numbers, what are we to say about irrational numbers before Pythagoras discovered them?
+— tim wood
+
+I guess the circumference of a circle was just as many times longer than the diameter before the discovery of irrational numbers as it was after the discovery.
+2 years ago
+fishfry
+848
+I guess the circumference of a circle was just as many times longer than the diameter before the discovery of irrational numbers as it was after the discovery.
+— litewave
+
+Yes but there is no such thing as a circle in the world. The circle whose circumference divided by its diameter is exactly pi is not any object that can exist in this mortal world of ours. The circle of mathematics is an ideal circle, a pure mental abstraction.
+
+It's the set of points, whatever they are, in the plane, whatever that is, that are all exactly the same distance from some other point.
+
+Before there were humans, there were round-ish things like planets and stars. But there were no circles. There were no circles until human beings came along and conceived them as an abstraction.
+
+Pi already has abstract mathematical existence. But you can't argue that pi is any realer than that by invoking idealized circles. Circles have exactly the same mode of existence as pi: as idealized mathematical abstractions. Circles and pi are contingent on the evolution of abstract reasoning in humans.
+
+tl;dr: Were there circles before humans?
+2 years ago
+litewave
+422
+↪fishfry
+
+If our space or at least some part of it is continuous and flat then it contains perfect circles. A perfect circle is simply the set of all points in a plane that are the same distance from some point. But even if our space is not continuous and flat, it doesn't mean that a perfect circle is just a mental object. There seems to be no reason why a continuous and flat space couldn't exist; it just would not be the space we live in.
+2 years ago
+fishfry
+848
+If our space or at least some part of it is continuous
+— litewave
+
+That's a wild assumption with very little evidence for it, and considerable physical evidence against it.
+
+and flat
+— litewave
+
+Ditto.
+
+But surely you are not making the claim that mathematical Euclidean space is actually the literal truth about the physical world? If not, please explain what you are claiming. And if so ... well, frankly the burden's on you to provide evidence.
+
+Let me give you some thought questions. If the universe the same as Euclidean space, and points in physical space are like points in Euclidean n-space where I don't care what n is, then is the Continuum hypothesis true or false? That is, how many points are in the unit n-cube?
+
+If anyone seriously believed that physical space was Euclidean space, then set theory would become an experimental science. When the physics postdocs start getting grants to determine the truth value of the large cardinal axioms then maybe you'll have a remote hope of my believing this absurd claim.
+
+Is this the line of argument you are putting forward? If not, then what are you saying exactly?
+
+ps -- I apologize if I sound too emphatic. The physical world and mathematical Euclidean space are very different things. The idea of mathematical continuity is an abstraction.
+
+I will also note for the record that even a discrete space can have a notion of continuity. In fact imagine that the universe consists of a lattice of bowling balls with nothing between them. So there is no continuity as you might think of it.
+
+Nevertheless we can put a metric on a discrete space, and say that the distance is 0 from a point to itself, and 1 between any two distinct points. With this metric, every function whose domain is this discrete space is continuous, by the formal definition of continuity. In topological terms this is the discrete topology, in which every subset is an open set. Math gives us the tools to create many universes; but math can't tell us which model is our universe. My guess would be none of them. Or all of them.
+
+But the major point here is that there are no circles in the real world. Do you believe in the physical reality of dimensionless points?
+2 years ago
+litewave
+422
+Is this the line of argument you are putting forward? If not, then what are you saying exactly?
+— fishfry
+
+I think that our space is probably quantized, as suggested by contemporary physics. In that case there seem to be no measurable perfect circles in our space because no measurement instrument can penetrate into the minimum length interval (Planck length). Still, we might take the Planck length as further divisible but not "physically", that is, beyond possibility of measurement / physical interaction.
+
+And of course, as I said, there may actually exist continuous Euclidean spaces, even though we don't live in one.
+2 years ago
+charleton
+1.2k
+There are no integers in reality since everything is unique. Whatever we chose to nominate as a thing, there is no other thing that is the same as that thing.
+Two oranges are not the same. Numbering the oranges asserts that those oranges are the same and equal to one another. One orange plus another orange is two oranges is not exact but an approximation.
+The universe is analogue, numbers are digital. PI is irresolvable because of this contradiction.
+There are no straight lines in nature; maths imposes them.
+I think the thread is a no brainer.
+2 years ago
+bahman
+527
+Numbers are ideas. They could have instances in reality.
+2 years ago
+charleton
+1.2k
+↪bahman Ideas do not have instances in reality. Ideas can only attempt to represent reality, or try to describe it.
+2 years ago
+fishfry
+848
+And of course, as I said, there may actually exist continuous Euclidean spaces, even though we don't live in one.
+— litewave
+
+Do you suppose that the axiom of choice is true in such a space? Then the Banach-Tarski paradox is true as well. Then matter could be created, contrary to the laws of physics.
+
+Is it possible that you (like me, like Kant, like everybody) have a strong intuition of Euclidean space, yet that intuition is simply misleading? And that in fact mathematical Euclidean space is inconsistent with physical reality?
+2 years ago
+litewave
+422
+Do you suppose that the axiom of choice is true in such a space?
+— fishfry
+
+I don't know. If the axiom of choice is consistent with Euclid's axioms then there can be a Euclidean space with axiom of choice. If the negation of the axiom of choice is consistent with Euclid's axioms then there can be a Euclidean space without axiom of choice.
+
+Then the Banach-Tarski paradox is true as well. Then matter could be created, contrary to the laws of physics.
+— fishfry
+
+I don't claim that our laws of physics apply in such a space. I don't even claim that such a space is bound up with a time dimension into a spacetime.
+
+Is it possible that you (like me, like Kant, like everybody) have a strong intuition of Euclidean space, yet that intuition is simply misleading? And that in fact mathematical Euclidean space is inconsistent with physical reality?
+— fishfry
+
+Our space is generally not Euclidean but in everyday life the curvature is usually negligible.
+2 years ago
+fishfry
+848
+I don't know. If the axiom of choice is consistent with Euclid's axioms
+— litewave
+
+Ah. Interesting point, sort of a category mismatch. When you say Euclidean you mean Euclid's axioms of geometry. When I say Euclidean I mean modern Euclidean space ℝn. The axiom of choice of course applies to the latter (unless one chooses to accept its negation) but not to the former.
+
+Our space is generally not Euclidean but in everyday life the curvature is usually negligible.
+— litewave
+
+It's not the curvature that's the problem, it's the idea of dimensionless points. There's no such thing in physics except as conceptual abstractions.
+
+Dimensionless points are common to both classical and modern definitions of Euclidean space.
+
+How do you justify the idea of dimensionless points as physical entities? Even in an alternate universe?
+2 years ago
+bahman
+527
+↪charleton
+Is number something realizable in external world that we experience and we try to discuss? 1 apple +1 apple=2 apple. Something just appears in our mind which we can individuate it. It shows a property of the world.
+2 years ago
+litewave
+422
+How do you justify the idea of dimensionless points as physical entities? Even in an alternate universe?
+— fishfry
+
+It seems to be no problem in mathematics. What do you mean by "physical"?
+2 years ago
+fishfry
+848
+It seems to be no problem in mathematics. What do you mean by "physical"?
+— litewave
+
+The physical world. The object of study of physicists.
+2 years ago
+litewave
+422
+↪fishfry
+Well, according to physicist Max Tegmark, there's no difference between physical and mathematical structures.
+2 years ago
+fishfry
+848
+Well, according to physicist Max Tegmark, there's no difference between physical and mathematical structures.
+— litewave
+
+That's a speculative idea, not physics. And besides, he's also suggested a stricter idea of the computable universe. If the universe is a computation, then it's not continuous! Because most real numbers are not computable, so the real number line is full of holes. These are interesting ideas but they are not physics.
+
+If you don't understand the distinction between abstract mathematics and the actual, physical world that we live in, that's something you should try to understand. You've fatally weakened your own argument by admitting you don't know the difference between the two.
+2 years ago
+litewave
+422
+If you don't understand the distinction between abstract mathematics and the actual, physical world that we live in, that's something you should try to understand. You've fatally weakened your own argument by admitting you don't know the difference between the two.
+— fishfry
+
+And do you know the difference? You didn't explain it.
+
+If you regard as "physical" only the world we live in, then I already said that Euclidean space is not the space we live in.
+2 years ago
+TheMadFool
+4.2k
+↪Purple Pond I think numbers are some form of code in the sense of a computer program AND in the sense of language. Numbers can carry information that is both passive (like a newsreport) and active (like a software program).
+
+Does that mean numbers are real? May be. I'm not completely sure but there's something odd about how the laws of nature are mathematical. It can't be all coincidence me thinks. Godel's incompleteness theorems, from what I understand, pokes a hole in formal mathematics but I think completeness of math (I don't know how mathematicians call it) is not necessary to understand our world. I could be wrong.
+2 years ago
+Jerry
+5
+↪TheMadFool
+
+Numbers can carry information that is both passive (like a newsreport) and active (like a software program).
+— TheMadFool
+
+I would really like to hear more on what you mean by numbers being passive and active. I'm currently struggling to get my thoughts together on this, but I think we might have very similar views.
+2 years ago
+tim wood
+3.4k
+I would really like to hear more on what you mean by numbers being passive and active.
+— Jerry
+
+Might be a good idea to start with trying to decide - to define - what a number is.
+2 years ago
+Cavacava
+2.4k
+↪TheMadFool Like that thought. Numbers are functional components in some meaningful systems, systems that convey valuations, describe space, time and the rest.
+
+
+Maybe real but not in the same sense as 'that chair is real', rather 'real' as in reflecting the reality of our shared conclusions, as in 'demonstrably real'.
+2 years ago
+apokrisis
+4.5k
+Yes but there is no such thing as a circle in the world. The circle whose circumference divided by its diameter is exactly pi is not any object that can exist in this mortal world of ours.
+— fishfry
+
+So circles and numbers are the idealised limit of physical reality? They represent perfect symmetry and to "physically exists" means always to be individuated - a "materially" broken symmetry. Therefore mathematical forms are not real. There is only imperfect matter and its approximations of these forms - always inevitably marred by "accidents". Every physical circle is a bit bent. Any collection of things may be given a number, but no two things are actually alike.
+
+This is certainly a familiar ontological view. But it should be troubling that physicists are having such a hard time finding the "real matter" that is limited by these "unreal mathematical forms". Talk of this "mortal world of ours" is to accept a fundamental materiality to being which is proving only to be another idealisation.
+
+To make your position secure, you need "matter" to be something that physicists can actually put their hands upon and show to be real. As it stands, that is not the case. Instead - as argued by ontic structural realism, for instance - the formal aspect of nature seems the more real when it comes to the question of why fundamental particles exist.
+
+Materialism is in metaphysical crisis. So the old Aristotelian story on substance - the one that folk trot out to oppose Platonism - no longer works.
+
+The story is better flipped on its head. Limits are what produce individuated materiality. And without limits, you would just have "a world of pure accidents". A vagueness that is no particular kind of thing at all.
+
+So good old solid matter - when stripped of bounding form - becomes just a realm of "perfect fluctuation". Instead of being individuated and having efficient cause, it becomes a state of completely inefficient cause. :)
+
+Anyway, the point is that if mathematicians don't believe form to be real, well physicists are struggling to find matter to be real. And the best way out of that bind is to look to causality and treat that as the best definition of "physical reality". From there, we can see how limits and accidents make a nice complementary pairing. Limits reduce accidents. But accidents prevent limits being reached.
+
+Reality becomes a pattern produced by the suppression of fluctuations - a constraint on freedoms.
+
+Are numbers real? Well it is certainly true that our models of reality are social constructions. Epistemically, they are only "a useful idea". That is acknowledged in agreeing that we are modelling.
+
+However when it then comes to our ontic commitments as they arise from enquiry into nature, then we begin to appreciate that the materiality and individuation of the world is something we have too readily taken for granted. It just seems perceptually obvious that we exist in a world of solid objects - chockful of their own histories of material accidents. A substance ontology is what we experience, and any mathematical notions about form seem so clearly an abstraction produced by the creative human mind.
+
+But again, physics no longer supports this perceptual belief. It went looking for the real solid stuff that is matter and didn't find it. All it could find was fluctuations bounded by symmetries.
+
+Maybe it is time to believe the physics. :-O
+2 years ago
+Michael Ossipoff
+1.7k
+↪Purple Pond
+
+Is there really any question about it?
+
+There are numbers.
+
+They're abstract objects. They're things. Things are what can be referred to.
+
+Things are what facts relate or are about.
+
+"Exist" isn't metaphysically-defined, and so anyone can have their own opinions about what does or doesn't "exist".
+
+Michael Ossipoff
+2 years ago
+fishfry
+848
+According to the solipsists over in another thread, @apokrisis is a figment of my imagination. In that vein I'll take a shot at responding.
+
+So circles and numbers are the idealised limit of physical reality?
+— apokrisis
+
+I said no such thing. Circles and numbers are abstractions. Limits have a technical definition and I would never use that word imprecisely in a mathematical discussion. This is not the first time you've quoted me as saying something I never said.
+
+They represent perfect symmetry
+— apokrisis
+
+I never said that nor do I agree with the statement. Modular forms are said to be the most symmetric mathematical objects but they're beyond me. Circles have lots of symmetries but I don't know what a perfect symmetry would be.
+
+and to "physically exists" means always to be individuated - a "materially" broken symmetry.
+— apokrisis
+
+Not something I would have said nor do I understand what you mean. If someone asked me if I believe that material objects are broken symmetries I'd first try to figure out if the questioner was a crank; and if not, to ask them what they meant by that. Maybe I'd learn something.
+
+Surely I don't have to explain to you the difference between abstract and physical objects. You're just being disingenuous.
+
+Therefore mathematical forms are not real.
+— apokrisis
+
+Mathematical forms are real, they're just not physical.
+
+There is only imperfect matter and its approximations of these forms - always inevitably marred by "accidents".
+— apokrisis
+
+I would not say that matter approximates forms; rather I'd say that mathematical forms are often (but not always) abstracted from familiar physical objects.
+
+I don't know what you mean by the accident bit.
+
+
+Every physical circle is a bit bent.
+— apokrisis
+
+In the British usage of the word?
+
+Any collection of things may be given a number, but no two things are actually alike.
+— apokrisis
+
+This I do believe. Unless you go along with Wheeler's idea that there's only one electron that hurries around a lot. I don't think you can distinguish electrons. But of course electrons are right on the border between the physical and the abstract. I do understand your point that saying that physical things are "really there" is a stretch once we get into the higher realms of physics. Still, one can distinguish between a number and a rock, one being abstract and the other physical. Even you would agree to this distinction, yes?
+
+This is certainly a familiar ontological view.
+— apokrisis
+
+It should be. It's yours, not mine. But then again the solipsists do seem to have a point.
+
+Surely you can understand that my response was to someone claiming that the number pi proves that numbers are physical or have material existence. I'm not on any soapbox about the ontology of physics. I understand the traps therein.
+
+I really can't comment on the rest of it. If I understand your point (and I so rarely do) it's that if I'm pressed to say what's physical, I'll say a rock. Then you'll ask me about electrons, quarks, strings, and quantum amplitudes, and I'll be forced to admit that I don't really know what a physical thing is. Then you'll say, Aha! Then the number pi is just as real as a rock!
+
+That your point?
+
+Ok. I don't disagree.
+
+But the number pi is a lot different from a rock.
+
+I'm going back into my vat now. It's nice and warm in there.
+
+ps --
+
+A substance ontology is what we experience, and any mathematical notions about form seem so clearly an abstraction produced by the creative human mind.
+— apokrisis
+
+Wait!! It seems you agree with me after all. I completely agree with this statement.
+2 years ago
+apokrisis
+4.5k
+I said no such thing. Circles and numbers are abstractions. Limits have a technical definition and I would never use that word imprecisely in a mathematical discussion. This is not the first time you've quoted me as saying something I never said.
+— fishfry
+
+I offered a statement to see how much you might agree with it. The clue was in the question-mark. So when it comes to formal precision, grammatical conventions appear above your paygrade.
+
+Surely I don't have to explain to you the difference between abstract and physical objects. You're just being disingenuous.
+— fishfry
+
+So perhaps you can explain the difference. You might discover that it is not as secure as you want to pretend.
+
+Mathematical forms are real, they're just not physical.
+— fishfry
+
+Yep. They're mental. Or something.
+
+Oh lordy.
+
+But of course electrons are right on the border between the physical and the abstract. I do understand your point that saying that physical things are "really there" is a stretch once we get into the higher realms of physics. Still, one can distinguish between a number and a rock, one being abstract and the other physical. Even you would agree to this distinction, yes?
+— fishfry
+
+Right. So you accept that when we really get down to brass tacks - fundamental particles - suddenly all this idea vs reality ontology feels insecure. We are right on the border - of a different metaphysics.
+
+But hey, let's get back to the safety of classical atomist ontology. Let's go back to the world as we originally chose to imagine it.
+
+Sounds legit. No one could get confused about things at the level of everyday commonsense, could they?
+
+Oh lordy.
+
+Surely you can understand that my response was to someone claiming that the number pi proves that numbers are physical or have material existence. I'm not on any soapbox about the ontology of physics. I understand the traps therein.
+— fishfry
+
+Hmm. But you "prove" that by claiming the reality of material being. And your view of material being is dependent on the fictions of classical physics - the world of substantial objects.
+
+So you are on a soapbox for sure. You are waving the banner for a particular notion of physicalism. And yet you agree also that this particular notion fails when you get down to brass tacks.
+
+A tad "disingenuous", no?
+
+That your point?
+
+Ok. I don't disagree.
+
+But the number pi is a lot different from a rock.
+— fishfry
+
+Again, the point is that a ratio like pi and an object like a rock can be treated as if one is a human invention, a mere accidental notion, while the other is indubitably real in being physical and material. But that is just an ontology endorsing a sharply divided dualism.
+
+It is a highly subjective point of view in that you are happy to assign some objects to "the mind", other objects to "the world". And even the slightest questioning of this paradigm sends you into hyperventilating panic. It constitutes a personal assault.
+
+So I am concerned with better approaches to metaphysics. And the proper relation of the forms of mathematics to the materials of physics is central to that inquiry.
+
+Indeed, it has been ever since Ancient Greece.
+
+Wait!! It seems you agree with me after all.
+— fishfry
+
+A little desperate there?
+2 years ago
+fishfry
+848
+a human invention, a mere accidental notion
+— apokrisis
+
+Yes and No!! Yes, numbers are a human invention. But accidental? No. They don't seem that way. Archimedes wasn't hallucinating. There's some mathematical constant pi "out there." This is a deep mystery. Our abstractions are telling us something about the world. We're not sure what.
+
+I don't think you and I disagree all that much.
+
+But that is just an ontology endorsing a sharply divided dualism.
+— apokrisis
+
+Oh I see. I stand accused of being a dualist. And we know how out of favor they are.
+
+My understanding is that we can accommodate abstract mental constructs quite easily within physicalism. Abstractions are thoughts, biochemical processes in my brain.
+
+But thoughts are still different from rocks. Thoughts and rocks are both physical processes, but they have a different character. One doesn't need dualism.
+
+Even thoughts come in two flavors. Thoughts about physical things, and thoughts about abstract things. Thinking about rocks and thinking about pi. Observations of the world versus dreams. Writing history versus writing fiction. Our brains go quite comfortably back and forth between the real and the unreal. Yet sane people alway know the difference.
+2 years ago
+apokrisis
+4.5k
+This is a deep mystery. Our abstractions are telling us something about the world. We're not sure what.
+
+I don't think you and I disagree all that much.
+— fishfry
+
+Great. I respect that you are strong on the mathematics. So I was hoping for a more productive discussion.
+
+Maths is unreasonably effective. It’s abstractions are more than mere intellectual accidents. There must be a reason for their Platonic seeming necessity. So therefore that is why the nature of mathematical truth remains so central to physicalist inquiry.
+
+If we are not sure, we still ought to be exploring with an open mind.
+
+My understanding is that we can accommodate abstract mental constructs quite easily within physicalism. Abstractions are thoughts, biochemical processes in my brain.
+
+But thoughts are still different from rocks. Thoughts and rocks are both physical processes, but they have a different character. One doesn't need dualism.
+— fishfry
+
+Neuroscience believes thoughts to be informational processes, not biochemical ones. To use the easily abused computational analogy, the "material physics" explains nothing. You could implement the logic of a Turing machine in some system of tin cans and bits of twine.
+
+So a science of the mind definitely does need a dualist physicalism of some kind. There has to be some ontic difference between information and entropy, even if they also arise in some common (mutual) fashion.
+
+But putting that aside, the issue here is the epistemic one of a distinction between observers and observables. Classical physics just presumes that observers are free agents, able to make measurements of reality without disturbing that reality. And this supports the idea that thoughts and rocks are unproblematically separate. Not only are our conceptions of reality a free invention of the human mind, but so do our perceptions of reality enjoy a matching freedom from our ability to invent.
+
+That is, we invent the physics of rock motion. Then rocks have a motion which we can - without getting entangled and changing anything - concretely measure. There is no epistemic concern about the line between what is our ideas and what is reality.
+
+However we now know better. A clean break between observers and observables looks to have become fundamentally impossible.
+
+This epistemic shock doesn't seem to have registered with the mathematical community as far as I can see. The ontological options are still either that maths is a free invention or a perception of Platonic reality. Maths doesn't have to prove itself in the court of the real world, only in the court of logical opinion. It has to conform to the rules of an informational process - the syntax that is grounded in set theory, or category theory, or whatever other fundamental notion of a closed syntactical system happens to be in vogue at the time.
+
+Our brains go quite comfortably back and forth between the real and the unreal. Yet sane people alway know the difference.
+— fishfry
+
+There is nothing so comfortable as a useful habit. Sanity is not having to think, it appears.
+
+But that is simply advising people to give up on physical inquiry. Quantum mechanics is true but seems insane. So don't think about it.
+
+There's some mathematical constant pi "out there."
+— fishfry
+
+Yes, it is out there as a ratio capturing a primal relation of a physical world with some kind of limit-state perfect symmetry. Let that world be not perfectly flat, let it be non-Euclidean, and the value of pi starts to wander accordingly.
+
+Between the hyperbolic and the hyperspheric, there is only one geometry that is absolutely balanced enough that the value of pi is as stable as far as the eye can see. Whether your circles are big or small, now pi remains always the same.
+
+Whoops. Are we talking about the reality of relations here? How physically abstract. Whoops. Are we talking about the presumed scale-invariance of observables? How mentally abstract.
+
+So pi pops out of reality, out of nature, not by accident but because the very possibility of a "physical relation" has some emergent invariant limit. It arises out of the broken symmetry that is a perfect orthogonality. :)
+
+Thus on the one hand, pi - as a position on the number line - looks the purest accident. Why should it have that exact value? On the other, pi is the identity relation when it comes to a limit notion of orthogonal dimensionality. We might as well just give its value as 1. Everything else that is less perfectly broken can be measured as some difference to that.
+2 years ago
+Joshs
+733
+↪tim wood I'm not sure what a 'thing' is, apart from its specific relation to and use by a person encountering it, and thus interpreting its sense. Looks like I've just disturbed the supposed distinction between idea and thing.
+2 years ago
+tim wood
+3.4k
+↪Joshs You can't tell the difference?
+2 years ago
+123456Next
+Sign in or register to add a comment.
+Add a Comment
+Welcome to The Philosophy Forum!
+Get involved in philosophical discussions about knowledge, truth, language, consciousness, science, politics, religion, logic and mathematics, art, history, and lots more. No ads, no clutter, and very little agreement — just fascinating conversations.
+
+Sign In Create Account
+Subscribe
+All Discussions
+Categories
+Events
+Most Viewed
+Categories
+The Lounge
+General Philosophy
+Metaphysics & Epistemology
+Philosophy of Mind
+Ethics
+Political Philosophy
+Philosophy of Art
+Logic & Philosophy of Mathematics
+Philosophy of Religion
+Philosophy of Science
+Philosophy of Language
+Interesting Stuff
+Politics and Current Affairs
+Humanities and Social Sciences
+Science and Technology
+Learning Centre
+Resources
+Books and Papers
+Reading groups
+Questions
+Guest Speakers
+Massimo Pigliucci
+Debates
+Debate Proposals
+Debate Discussion
+Feedback
+Article submissions
+About TPF
+More Discussions
+numbers don't exist outside of God
+a year ago
+God will exist at 7:30pm next Friday
+3 years ago
+Philosopical criticisms of the Einstein thought experiment - do they exist?
+2 years ago
+God will exist
+3 years ago
+Other sites we like
+Social media
+Terms of Service
+Useful Hints and Tips
+Sign In
+Created with PlushForums
+© 2019 The Philosophy Forum

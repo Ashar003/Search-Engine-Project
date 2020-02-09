@@ -1,0 +1,72 @@
+
+Let's All Jailbreak the Sony PS3
+As a computer scientist, I am interested in how Sony PS3 protection works, how it was broken by Fail0verflow, the further contributions of George Hotz, and the steps needed to make the PS3 able to run Linux once again. Since I am actually a computer science professor, I am particularly interested in how this information can best be taught to others who desire to learn it. I do not believe there is anything improper, much less illegal, in teaching people computer science.
+Request for materials: I would like to receive tutorial information on: Sony PS3 access protection mechanisms, the Elliptical Curve Digital Signature Algorithm (ECDSA), the structure of the PS3 hypervisor, METLDR, signing tools, and any other topics necessary for a person reasonably skilled in computer science to be able to gain full access to the PS3. It is my intention to make this information publicly available on my web site here at Carnegie Mellon.
+
+What not to send: Please don't send me encryption keys (I already have them), cracking tool executables (my goal is to teach people, not provide convenient tools for piracy), or information that has been obtained illegally through theft or fraud. Keep in mind that reverse engineering is a legally protected activity under the Digital Millennium Copyright Act (DMCA).
+
+Why I am doing this: Sony is attempting to use the DMCA to deny computer scientists the right to speak about technical details of certain Sony products. This assault on free speech is intolerable and must not go unanswered.
+
+David S. Touretzky
+Research Professor of Computer Science
+Carnegie Mellon University
+Pittsburgh, PA 15213
+Educational Resources for PS3 Hackers:
+
+The Sony PlayStation 3 hack deciphered
+PS3 Development Wiki
+Reversing on the PS3 Linux, from the RVlution message board
+PS3 forum at LAN.st
+Download Center:
+Console Hacking 2010, Fail0verflow's slide presentation from the 27th Chaos Communications Congress (134 page PDF).
+Sony suing Playbackups.com in the UK
+PS3 modchip vendor Playbackups.com is being sued by Sony for selling a PS3 Jailbreak tool (PS3Key).
+Learn more about the device at ps3key.com.
+Mirror of GeoHot's PS3 Jailbreak
+2/9/2011 Update: Sony sinks its own battleship by retweeting the PS3 master key:
+
+1/27/2011 Update: Judge Illston has granted the TRO against George Hotz despite the venue issue still being contested by Hotz's attorney. And I'm out of town. Since CMU has a west coast campus in California and is therefore potentially subject to Judge Illston's jurisdiction, I have disabled my mirror until I can get back to Pittsburgh and look more closely at the current state of things.
+1/19/2011 Update: We finally hear from EFF, which today blasted Sony for "sending a dangerous message" to computer researchers as well as to Sony's own customers. And at Salon.com, Dan Gilmor says that Sony has shown a deeper disrespect for its customers than other technology vendors. Gilmor vows to boycott Sony products until they stop treating people "like chattel instead of customers".
+
+1/16/2011 Update: Sony is facing a consolidated class action lawsuit due to its disabling of the OtherOS feature. The case is Ventura v. Sony Computer Entertainment America Inc., in the United States District Court for the Northern District of California, case no. 3:10-CV-01811. There is a motion hearing on the calendar of the Hon. Richard Seeborg for February 9, 2011, so it appears Sony's earlier efforts to have the suit dismissed were unsuccessful. Here are links to a case summary and online docket.
+
+A reader points out that Sony was denied an injunction by a Spanish court in December 2010; Sony had sought to prevent distribution of the PS3-Jailbreak product. Details on that decision (in Spanish) are available here; Google translation here. The court found that the PS3 is a general purpose computer whose functionality had been impaired by Sony's actions, and it refused to enjoin distribution of the jailbreak product even though prevention of piracy was a legitimate aim, because "there must be limits to public intervention in the protection of cultural works [Sony games]" (my paraphrase from Google translation).
+
+Also in December 2010, Sony lost a criminal case initiated in 2007 against a Spanish vendor of PS2 modchips. The court determined such chips to be legal in Spain. The court's decision (in Spanish) is here; Google translation here.
+
+1/14/2011 Update: This eurogamer.net article explains the crucial mistake Sony made that allowed the recovery of their encryption keys. And a quote from the fail0verflow Twitter page explains the relationship between what the fail0verflow team did and what GeoHot did: "We [fail0verflow] discovered how to get keys. We exploited lv2ldr, then got its keys. Geohot exploited metldr, then used our trick to get its keys."
+
+1/13/2011 Update: My light-hearted use of the editorial "we" above should not mislead anyone into thinking that I an speaking on behalf of Carnegie Mellon. On all my personal web pages hosted by CMU, including this page, I speak only for myself, as does every other faculty member. We have a PR department whose job is to speak for the university.
+
+Two relevant quotes:
+
+The purpose of the suit is to harass and discourage rather than win. The law can be used very easily to harass, and enough harassment on somebody who is simply on the thin edge anyway, well knowing that he is not authorized, will generally be sufficient to cause professional decease. If possible, of course, ruin him utterly.
+-- L. Ron Hubbard (Scientology cult founder), 1955
+Those who would give up Essential Liberty to purchase a little Temporary Safety, deserve neither Liberty nor Safety.
+-- Benjamin Franklin, 1759
+
+You hacked the console, now
+make a t-shirt or
+make a mug, or
+design your own product using this free image containing the decryption keys (click to enlarge).
+
+
+
+January 11, 2011:
+Our friends at Sony are having another bad day: i.e., doing something breathtakingly stupid, presumably because they don't know any better. This time they're suing George Hotz and fail0verflow for publishing PS3 jailbreak information, as reported by EnGadget, Attack of the Fan Boy, and inevitably, Slashdot. The PS3 jailbreak allows PS3 owners to run the software of their choice on a machine they have legally purchased. Hotz's site is geohot.com.
+
+Free speech (and free computing) rights exist only for those determined to exercise them. Trying to suppress those rights in the Internet age is like spitting in the wind.
+
+We will help our friends at Sony understand this by mirroring the geohot jailbreak files at Carnegie Mellon.
+
+GeoHot Mirror
+Click here for usage instructions.
+Note to Sony lawyers: no doubt you're eager to rack up another billable hour by sending legal threats to me and my university. Before you go down that unhappy road, check out what happened the last time a large corporation tried to stop the mirroring of technical information here: The Gallery of CSS Descramblers. Have you learned anything in ten years?
+
+A reader points out that jailbreaking the iPhone is legal in the US thanks to the efforts of the Electronic Frontier Foundation. What bearing this has on the PS3 controversy remains to be seen.
+
+David S. Touretzky
+Research Professor of Computer Science
+Carnegie Mellon University
+Pittsburgh, PA 15213
+Last modified: Wed Jul 13 04:05:33 EDT 2011

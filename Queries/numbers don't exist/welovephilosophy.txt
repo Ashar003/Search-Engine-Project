@@ -1,0 +1,163 @@
+WE LOVE PHILOSOPHY
+Search this website…
+ABOUT
+CONTACT
+Do Numbers Exist?
+DECEMBER 17, 2012 BY ALEC JULIEN
+According to your disposition, you might have an immediate gut reaction to this question. My initial reaction (oh so long ago) was: “Of course numbers don’t exist. You can’t pick up the number 3 and throw it through a window.” That is, my intuition was that the only things that exist are the kinds of things that can be physically manipulated, and numbers, by almost every account, just aren’t this kind of thing.
+
+To be clear about our terms, you can pick up numerals — that is, you can pick up concrete instances of numbers, like the plastic number signs at the gas station telling you how much gas costs, or the printed numerals in a book, denoting page numbers. But you don’t, by virtue of tearing out page three of a book and tossing it out a window, throw the number 3 out the window, any more than you throw me out of a window by drawing a picture of me and throwing that out the window.
+
+Numbers, if they exist, are generally what philosophers call abstract objects, and those who maintain that such things exist claim that they exist outside of space and time. If you’re like me, you shake your head at such talk. “Outside of space and time? What does that even mean? Gibberish!” If you are similarly disposed, you might be a nominalist (in case you’re accumulating self-descriptive philosophical terms), and you are part of a long, proud philosophical tradition that thinks that existence is the exclusive domain of the physical.
+
+However, your nominalism begins to run into problems pretty quickly. Never mind numbers. What about things like, say, novels? What exactly is the novel The Catcher in the Rye? It’s not any of the particular instantiations of it — it’s not the copy on your bookshelf; it’s not the copy on mine. All of the print copies on the planet could be eradicated and still the novel could be able to be said to exist. Is the novel the original manuscript sitting in a safe somewhere? But that could be burned and you could still argue that the novel exists. But if the novel itself is not identified with any of its particular instantiations, then the nominalist is in a bit of a quandary. On this perspective, the copies of the novel are instantiations of the novel itself, and the novel itself is seeming to be something abstract — something non-physical.
+
+So the idea of something somehow existing outside space and time is suddenly not as absurd as it may have seemed. What about numbers, then? Of course there are disanalogies between numbers and novels. Novels are invented by humans, while, on most views of the subject, numbers exist whether or not humans ever happened to discover them. But, putting such differences aside for the moment, perhaps the existence of novels as abstract objects gives us some traction to say that numbers exist as abstract objects.
+
+Abstract objects
+What other sorts of things could be included in the category of abstract objects? The funny thing is that in many seminal texts on the subject, one has to plumb deep to find mention of what would count as an abstract object. Mathematical objects generally top the list (numbers, points, lines, triangles, etc.), followed by things like chess moves, games in general, pieces of music, and propositions. How are these things abstract? We generally think of a chess move, for instance, as something that exists by virtue of a concrete chess player actually moving a concrete chess piece in accordance with the rules of the game (which could themselves be considered abstract, but never mind this for the moment). But that seemingly concrete move can be instantiated in so many concrete ways — you could be replicating someone else’s game on your own chess board, you could make the move on a hundred different boards all at (nearly) the same time, you could make the move in your head before you make it on the board,… and all of these concrete possibilities point to the metaphysical problem here: If you believe there is only one move, and it’s concrete, then which move is the one move? And then what are the other moves? Copies of the move? Or instantiations of the same move? If you believe in abstract objects, you have, on some takes, an easier time of it. The move itself is an abstract object, and every physical version of that move is a concrete instantiation of that move. That is, none of the concrete, physical moves are actually the move — there is only one move and it is abstract, and any physical move is a copy, like a sculpture of a real person. (You can have a thousand sculptures of a person, but there’s only one person. The sculptures are imitations or instantiations of the person.)
+
+This perspective is (loosely) called platonism, named after Plato’s idea that there are ideal “forms” — perfect archetypes of which objects in the real world are imperfect copies.
+
+Why would these ideal forms not exist in space-time? I.e., why would they have to be abstract? Well, objects in space-time (the real world) are all imperfect copies of something. So if an ideal form existed in, say, your living room, then it would be non-ideal by virtue of existing in your living room. To put it perhaps less question-beggingly, if, say a chess move were instantiated in a thousand ways, how would you pick out the ideal version from which all others were copied? All of the instantiations would have similar properties, and so no one instantiation would stand out as different enough to count as the move, the platonic form of that move. Therefore, it makes sense to posit an abstract version of the move — something perfect, and outside of space-time, from which all the worldly versions are copied.
+
+Thinking about geometric objects is perhaps the clearest way to think about abstract objects. A line segment (a true, geometric line segment) is a perfectly straight, one-dimensional object with a determinate length. There are no such objects in space-time. Every object you could possibly interact with is three-dimensional — no matter how thin a piece of, say, plastic you create, it always has a height and a thickness, giving it three dimensions. Nothing, therefore, in the concrete world, is a real geometric line segment. We have things that approximate line segments — very straight, very thin objects. But none of those things will ever be perfectly straight and with zero thickness. So if there does, somehow, exist a true line segment, it certainly isn’t in the concrete world, and therefore it must be in some sort of abstract realm.
+
+Knowledge of abstract objects
+One of the most damning aspects of platonism is its failure to come to terms with how we learn things about abstract objects. The general picture of how we acquire knowledge goes something like this: We perceive an object in the physical world, via physical means (e.g., light bounces off the physical object and hits our eyes), and eventually we process such perceptions in our brains and work with mental representations — i.e., brain states — of the object in question. But an abstract object can’t be processed like this. It is non-physical, and so, e.g., light can’t reflect off of it. So our usual causal theory of knowledge acquisition fails for things like numbers.
+
+Well, then, how is it that we come across any knowledge of abstract objects, if they indeed exist? Some mathematical platonists, like the venerable logician Kurt Gödel, resorted to the idea that we just know truths about mathematical abstracta. As he wrote:
+
+But, despite their remoteness from sense experience, we do have a perception also of the objects of set theory, as is seen from the fact that the axioms force themselves upon us as being true. I don’t see why we should have less confidence in this kind of perception, i.e., in mathematical intuition, than in sense perception…
+
+But this is clearly an unacceptable answer to the problem of knowledge of abstract objects. How exactly do the axioms of set theory force themselves upon us? Waving your hands and saying “they just do” isn’t an account of the process, and leaves us in the dark as to how they just do, which is precisely what we need before we can take the platonist seriously as an epistemologist. (One need merely look at the history of geometry to see one serious problem with seeing the “obvious” truth of axioms. Until Lobachevsky and Riemann came along with consistent non-Euclidean geometries, nearly everyone though that Euclid’s fifth postulate “forced itself upon us”.) How does some feature of a non-spatiotemporal object force itself upon our spatiotemporal brains? The only way would be somewhat magical, and you could look to Descartes to see the folly of such a plan. Descartes posited that minds are distinct substances from brains, and indeed were non-spatiotemporally located. Of course, this leaves the problem of how the mind somehow slips into the brain and affects it. Descartes’ answer was that it crept in through the pineal gland. But this is no answer; it merely delays the answer for a moment. How does the non-spatiotemporal mind creep in through the pineal gland, and then into the brain? Descartes had no answer for this, of course, because the whole thing would be terribly mysterious, explaining how the non-physical interacts with the physical.
+
+Worries like this keep nominalists well-motivated to stay on their side of the debate.
+
+The argument from indispensability
+Even if you’re dead-set against granting the existence of numbers, you think platonism is absurd, you have challenged platonism’s picture of knowledge, and you somehow have all of your nominalist ducks in a row, there is still one very influential argument to contend with as regards numbers’ existence: The argument from indispensability. Hardcore nominalists are often quite scientifically-minded, scientifically-motivated philosophers. And it is this love of science that gets them into trouble with denying the existence of numbers. The argument runs, in broad strokes, like this:
+
+Science is the best arbiter of what exists.
+Therefore, if science says something exists, we should accept it.
+Science relies (heavily and intractably) on mathematics.
+Therefore, science says that numbers exist.
+Therefore, numbers exist.
+If you’re a good nominalist, you’re more than likely feeling obliged to accept this argument as sound. But if you accept its conclusion, then you’re right back to the issue of explaining what numbers are. They can’t be physical objects, therefore they must be abstract. But, as a nominalist you claim that there are no abstract objects! And you are caught in an intractable dilemma.
+
+Many nominalists give up at this point. Hilary Putnam wrote resignedly:
+
+Quantification over mathematical entities is indispensable for science…; but this commits us to accepting the existence of the mathematical entities in question. This type of argument stems, of course, from Quine, who has for years stressed both the indispensability of quantification over mathematical entities and the intellectual dishonesty of denying the existence of what one daily presupposes.
+
+The talk of “quantification” is a bit of logic talk, but we can paraphrase it into regular English: “If science uses numbers, then science is committed to the existence of numbers.” You might see a glimmer of nominalist hope here. Science also uses frictionless planes, for example, and yet no scientist feels committed to the existence of those. Perhaps there is a way out of our commitment to numbers in the same way. Or perhaps, one might argue, frictionless planes actually do exist as platonic, abstract objects.
+
+But there are two more “obvious” ways to be a nominalist about mathematics.
+
+First, you could argue that numbers exist, and are actually physical objects. Penelope Maddy argues something close to this in her early work, Realism in Mathematics. She actually is here arguing for a version of naturalized platonism — the idea being that what is usually thought of as abstract objects are actually somehow existent in the physical world. But, platonist labels aside, the gain for nominalism on this take would be obvious: numbers, if they are physical objects, would be just another part of the down-to-earth nominalist physical world, like cats, trees, and quarks. This brave strategy, however, ultimately fails. It would take us into some metaphysical thickets to explain why, so I have relegated this to a paragraph at the very end of this post.
+
+Second, you could argue that numbers aren’t actually indispensable to science. Hartry Field famously tried this strategy, claiming that science in fact only seems to rely on mathematics. On Field’s view, this seeming reliance is really just a fiction. In order to prove this Field attempted to nominalize a chunk of physics, by removing all reference to numbers within it. This complicated, counterintuitive project has met with equal parts awe and criticism. The consensus is that his project is untenable in the long term.
+
+So do numbers exist or not?
+Well, if you’re a platonist, you would answer “yes, numbers exist”. And further you would claim that they possess a sort of existence that is abstract — different from the sort of existence that stones, trees, and quarks enjoy. Of course, this means you are in the unenviable position of explaining the coherence of this sort of existence, along with the herculean task of explaining how we know about anything in this abstract, non-physical realm.
+
+If you’re a nominalist, you’d probably answer “no, numbers do not exist”. However, now you have the unenviable job of explaining why mathematics seems so indispensable to science, while science is perhaps our best tool for saying which things exist. The two best nominalist answers to this conundrum seem untenable.
+
+Probably, as is usually the case in philosophy, dogmatically sticking to one side of a two-sided debate will be inadequate. Maddy’s attempt at naturalizing platonism was a brave bridge across the nominalist-platonist divide, but clearly isn’t the right bridge. We’ll examine some other options in a future post.
+
+References and Further Reading
+Balaguer, Mark. (1998) Platonism and Anti-platonism in Mathematics. Oxford: Oxford University Press.
+
+Benacerraf, Paul. (1973) “Mathematical Truth”, Journal of Philosophy 70.
+
+Colyvan, Mark. (2001) The Indispensability of Mathematics. Oxford: Oxford University Press.
+
+Irvine, A.D. (1990) Editor. Physicalism in Mathematics. Dordrecht: Kluwer.
+
+Lowe, E. & Zalta, E. (1995) “Naturalized Platonism Versus Platonized Naturalism,” Journal of Philosophy 92.
+
+Maddy, Penelope. (1992) Realism in Mathematics. Oxford: Clarendon Press. Revised paperback edition.
+
+A note on Maddy’s naturalized platonism
+Maddy actually thinks that we perceive sets. Number theory, as many logicians are proud to point out, can be reduced to set theory — i.e., numbers can be reduced to sets, which are, of course, generally seen as just another sort of abstract object. Maddy’s move is to bring those sets into the natural world. So that when we see an egg, we are perceiving that egg, but are also perceiving the set containing that egg. (A set containing an object is different from the object itself, you may recall from your math studies.) And that set containing the egg is a natural object, different from the egg itself. But now we run into trouble. Certainly there must be something different between an egg and a set containing that egg; otherwise ‘set containing that egg’ is just a proper name denoting the egg in question, and nothing metaphysical hangs on the distinction. (If you call me “Alec” or “author of this post”, you are not positing the existence of two people — these are just two different names for the same person.) Well, the usual distinguishing feature of abstracta is that they are not spatiotemporally located; but on Maddy’s scheme sets are spatial objects. The problem: Our egg and the set containing it necessarily co-exist in the same exact region of space-time, and yet they are supposed to be different things. In what does this difference consist? Well, certainly nothing physical, otherwise they wouldn’t co-exist in the exact same region of space-time. But then the difference must be something non-physical — i.e., something about the set must be abstract. And if this is the case, then we’re right back to all of the problems inherent in platonism, particularly the problem of how we can have any knowledge of such abstracta.
+
+Share this:
+TwitterFacebookEmail
+
+Related
+What Is Realism?
+In "Metaphysics"
+God Created the Irrational Numbers
+In "Philosophy of Mathematics"
+What is Philosophy?
+In "General"
+FILED UNDER: METAPHYSICS TAGGED WITH: ABSTRACT OBJECTS, ABSTRACTA, CHESS, EPISTEMOLOGY, FIELD, GODEL, INDISPENSABILITY, KNOWLEDGE, MADDY, METAPHYSICS, NOMINALISM, NOVELS, NUMBERS, PLATO, PLATONISM, PUTNAM, SPACE-TIME
+« The Mostly German Philosophers Love SongPersonal Identity and Lifetime Movies »
+RECENT POSTS
+Google Ngrams
+Random Read: Roger Hancock, 1960
+God Created the Irrational Numbers
+The Doctrine of Double Effect
+Omniscience and Free Will
+CATEGORIES
+Arguing Over Nothing
+Epistemology
+Ethics
+General
+Logic
+Metaphysics
+Philosophy in the Movies
+Philosophy of Language
+Philosophy of Mathematics
+Philosophy of Mind
+Philosophy of Science
+Quandary Corner
+Random Read
+ARCHIVES
+October 2014
+April 2014
+March 2014
+January 2014
+November 2013
+October 2013
+June 2013
+May 2013
+April 2013
+March 2013
+February 2013
+January 2013
+December 2012
+November 2012
+October 2012
+September 2012
+August 2012
+GOODREADS
+A Theory of Justice
+A Theory of Justice
+by John Rawls
+Naming and Necessity
+Naming and Necessity
+by Saul A. Kripke
+Ludwig Wittgenstein: The Duty of Genius
+Ludwig Wittgenstein: The Duty of Genius
+by Ray Monk
+Realistic Rationalism
+Realistic Rationalism
+by Jerrold J. Katz
+Essays in Quasi-Realism
+Essays in Quasi-Realism
+by Simon Blackburn
+
+goodreads.com
+FOLLOW BLOG VIA EMAIL
+Enter your email address to follow this blog and receive notifications of new posts by email.
+
+Enter your email address
+
+Follow
+
+YUP, WE’RE ON TWITTER
+@wlphilosophy
+Return to top of page
+
+Blog at WordPress.com.
+
+:)

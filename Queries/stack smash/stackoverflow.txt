@@ -1,0 +1,246 @@
+Stack Overflow
+Products
+Customers
+Use cases
+Search…
+Log in Sign up
+By using our site, you acknowledge that you have read and understand our Cookie Policy, Privacy Policy, and our Terms of Service.
+
+Home
+PUBLIC
+Stack Overflow
+Tags
+Users
+Jobs
+TEAMS
+What’s this?
+First 25 Users Free
+what is stack smashing (C)?
+Ask Question
+Asked 3 years ago
+Active 3 years ago
+Viewed 24k times
+
+
+5
+
+
+3
+Code:
+
+int str_join(char *a,  const char *b) {
+   int sz =0; 
+   while(*a++) sz++;  
+   char *st = a -1, c;  
+   *st = (char) 32;
+   while((c = *b++)) *++st = c;  
+   *++st = 0;
+   return sz;
+}
+
+....
+
+char a[] = "StringA"; 
+printf("string-1 length = %d, String a = %s\n", str_join(&a[0],"StringB"), a);
+Output:
+
+string-1 length = 7, char *a = StringA StringB
+
+*** stack smashing detected **** : /T02 terminated
+
+Aborted (core dumped)
+
+I don't understand why it's showing stack smashing? and what is *stack smashing? Or is it my compiler's error?
+
+c gcc stack-overflow stack-smash
+shareimprove this question
+edited Nov 4 '16 at 8:29
+
+Sourav Ghosh
+117k1616 gold badges143143 silver badges206206 bronze badges
+asked Nov 4 '16 at 6:23
+
+Gonzalez
+7911 gold badge11 silver badge66 bronze badges
+1
+Possible duplicate of Stack smashing detected – piyushj Nov 4 '16 at 6:24
+add a comment
+2 Answers
+activeoldestvotes
+
+7
+
+Well, stack smashing or stack buffer overflow is a rather detailed topic to be discussed here, you can refer to this wiki article for more info.
+
+Coming to the code shown here, the problem is, your array a is not large enough to hold the final concatenated result.
+
+Thereby, by saying
+
+ while((c = *b++)) *++st = c;
+you're essentially accessing out of bound memory which invokes undefined behavior. This is the reason you're getting the "stack smashing" issue because you're trying to access memory which does not belong to your process.
+
+To solve this, you need to make sure that array a contains enough space to hold both the first and second string concatenated together. You have to provide a larger destination array, in short.
+
+shareimprove this answer
+edited Nov 4 '16 at 8:30
+answered Nov 4 '16 at 6:27
+
+Sourav Ghosh
+117k1616 gold badges143143 silver badges206206 bronze badges
+add a comment
+
+
+3
+
+Stack smashing means you've written outside of ("smashed" past/through) the function's storage space for local variables (this area is called the "stack", in most systems and programming languages). You may also find this type of error called "stack overflow" and/or "stack underflow".
+
+In your code, C is probably putting the string pointed to by a on the stack. In your case, the place that causes the stack-smash is when you increment st beyond the original a pointer and write to where it points, you're writing outside the area the C compiler guarantees to have reserved for the original string assigned into a.
+
+Whenever you write outside an area of memory that is already properly "reserved" in C, that's "undefined behavior" (which just means that the C language/standard doesn't say what happens): usually, you end up overwriting something else in your program's memory (programs typically put other information right next to your variables on the stack, like return addresses and other internal details), or your program tries writing outside of the memory the operating system has "allowed" it to use. Either way, the program typically breaks, sometimes immediately and obviously (for example, with a "segmentation fault" error), sometimes in very hidden ways that don't become obvious until way later.
+
+In this case, your compiler is building your program with special protections to detect this problem and so your programs exits with an error message. If the compiler didn't do that, your program would try to continue to run, except it might end up doing the wrong thing and/or crashing.
+
+The solution comes down to needing to explicitly tell your code to have enough memory for your combined string. You can either do this by explicitly specifying the length of the "a" array to be long enough for both strings, but that's usually only sufficient for simple uses where you know in advance how much space you need. For a general-purpose solution, you'd use a function like malloc to get a pointer to a new chunk of memory from the operating system that has the size you need/want once you've calculated what the full size is going to be (just remember to call free on pointers that you get from malloc and similar functions once you're done with them).
+
+shareimprove this answer
+edited Nov 4 '16 at 6:49
+answered Nov 4 '16 at 6:43
+
+mtraceur
+1,35399 silver badges2222 bronze badges
+add a comment
+Your Answer
+Sign up or log in
+ Sign up using Google
+ Sign up using Facebook
+ Sign up using Email and Password
+Post as a guest
+Name
+Email
+Required, but never shown
+
+Post Your Answer
+By clicking “Post Your Answer”, you agree to our terms of service, privacy policy and cookie policy
+
+Not the answer you're looking for? Browse other questions tagged c gcc stack-overflow stack-smash or ask your own question.
+Blog
+Copying code from Stack Overflow? You might paste security vulnerabilities, too
+Featured on Meta
+Feedback post: Moderator review and reinstatement processes
+Upvotes on questions will now be worth the same as upvotes on answers
+
+Looking for a job?
+Backend Software Engineer (Node.js)
+Map My CustomersNew York, NY
+$100K - $130K
+node.jspostgresql
+Cloud, Network & Security Engineer
+FSAStore.com (Health-E Commerce)New York, NY
+$75K - $115KRELOCATION
+c#asp.net
+Senior Full Stack Engineer (Python)
+MINDBODY Inc.Brooklyn, NY
+$130K - $160KRELOCATION
+reactjspython
+REMOTE Senior Big Data Engineers
+SurgeNo office location
+REMOTE
+bigdataamazon-web-services
+Senior Backend Engineer (Blockchain Mission Based)
+ChainalysisNew York, NY
+javaspring
+View more jobs on Stack Overflow
+19 people chatting
+C
+9 hours ago - Vio Ariton
+Jenna Sloan: Jul 10 at 13:11
+J Boii
+tomsgd
+C++ Questions and Answers
+yesterday - CopperKettle
+Vaillancourt: yesterday
+PeterT: yesterday
+Jerry Coffin: 2 days ago
+nwp: Nov 25 at 5:34
+Josu Goñi
+SK Singh
+tomsgd
+Linked
+225
+Stack smashing detected
+Related
+2204
+What is the difference between #include <filename> and #include “filename”?
+1511
+What is the effect of extern “C” in C++?
+3
+Question with stack smashing protection and buffer overflows
+1910
+What does the C ??!??! operator do?
+1627
+What is “:-!!” in C code?
+3
+Strcat stack smashing behaviour
+0
+Stack smashing in Scrabble mini game program
+Hot Network Questions
+How to resolve the transporter conundrum in a FTL spaceship?
+Confusing Nest function behavior
+If thermodynamics says entropy always increases, how can the universe end in heat death?
+Is Communism intrinsically Authoritarian?
+Mixing 3.5 hdd and 2.5 hdd in LSI RAID 1
+Does driving a speaker with a DC offset AC signal matter?
+Could a chess engine do retro analysis?
+Do fresh chilli peppers have properties that ground chilli peppers do not?
+Extracting solutions from ContourPlot
+Will transcribing music improve my ability to play a song by ear?
+How to avoid getting angry during job interviews?
+Find the length of a number's "base-jumping" path
+What difference does horsepower make? If the engine can spin the propeller fast enough, why does it need power behind it?
+Sending non-work emails to colleagues. Is it rude?
+Local bounding box doesn't work inside a scope
+How to verify router firmware is legit?
+Possible way to counter or sidestep split-second spells (like Trickbind) in a particular situation
+Why is this negated with nicht and not kein?
+Get rows only joined to certain types of row in another table
+Anacruses, Bar Lines, and Line Breaks
+Am I being used by my supervisor?
+Signed overflow in C++ and UB
+Frictional force doesn't depend on surface area, but why does this application work?
+Is it a complete sentence: "Caution murmured: it could be a trick, a lure, a trap."?
+ Question feed
+
+STACK OVERFLOW
+Questions
+Jobs
+Developer Jobs Directory
+Salary Calculator
+Help
+Mobile
+Disable Responsiveness
+PRODUCTS
+Teams
+Talent
+Advertising
+Enterprise
+COMPANY
+About
+Press
+Work Here
+Legal
+Privacy Policy
+Contact Us
+STACK EXCHANGE
+NETWORK
+Technology
+Life / Arts
+Culture / Recreation
+Science
+Other
+Blog
+Facebook
+Twitter
+LinkedIn
+site design / logo © 2019 Stack Exchange Inc; user contributions licensed under cc by-sa 4.0 with attribution required. rev 2019.11.29.35523
+
+ 

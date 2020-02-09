@@ -1,0 +1,42 @@
+UART Open
+
+Open the UART channel with the specified baud rate. If the LINX device has a single UART it is channel 0. If the LINX device has more than one UART the logical first UART is channel 0, the next is channel 1, etc.
+
+For example on myRIO: A/UART maps to LINX UART Channel 0 B/UART maps to LINX UART Channel 1
+
+
+Inputs
+LINX Resource
+Contains LINX connection resources.
+
+UART Channel (0)
+Specifies the UART channel to open.
+
+Baud Rate (9600)
+Specifies the UART baud rate to use.
+
+Error In
+Describes error conditions that occur before this node runs. This input provides standard error in functionality.
+
+Outputs
+LINX Resource
+Contains LINX connection resources.
+
+Actual Baud
+Returns the actual baud rate used (supported baud rates vary between LINX devices).
+
+Error Out
+Contains error information. This output provides standard error out functionality.
+
+Related Links
+UART Close
+UART Get Bytes Available
+UART Read Byte Array
+UART Read String
+UART Set Baud Rate
+UART Write Byte Array
+UART Write String
+LINX VI Reference
+Page Tools
+LabVIEW MakerHub
+Driven by LabVIEW users. Created by NI.

@@ -1,0 +1,462 @@
+Stack Overflow
+Products
+Customers
+Use cases
+Search…
+Log in Sign up
+By using our site, you acknowledge that you have read and understand our Cookie Policy, Privacy Policy, and our Terms of Service.
+
+Home
+PUBLIC
+Stack Overflow
+Tags
+Users
+Jobs
+TEAMS
+What’s this?
+First 25 Users Free
+What is Turing Complete?
+Ask Question
+Asked 11 years, 3 months ago
+Active 5 months ago
+Viewed 154k times
+
+
+460
+
+
+159
+What does the expression "Turing Complete" mean?
+
+Can you give a simple explanation, without going into too many theoretical details?
+
+theory turing-machines turing-complete
+shareimprove this question
+edited Jun 23 '12 at 0:22
+
+belacqua
+51344 silver badges1818 bronze badges
+asked Aug 10 '08 at 18:41
+
+dlinsin
+15.8k1212 gold badges3838 silver badges5151 bronze badges
+1
+Some very nice links at this SO question. – Lazer May 27 '10 at 15:56
+add a comment
+12 Answers
+activeoldestvotes
+
+300
+
+Here's the briefest explanation:
+
+A Turing Complete system means a system in which a program can be written that will find an answer (although with no guarantees regarding runtime or memory).
+
+So, if somebody says "my new thing is Turing Complete" that means in principle (although often not in practice) it could be used to solve any computation problem.
+
+Sometime's it's a joke... a guy wrote a Turing Machine simulator in vi, so it's possible to say that vi is the only computational engine ever needed in the world.
+
+shareimprove this answer
+answered Aug 10 '08 at 20:10
+
+Mark Harrison
+239k106106 gold badges283283 silver badges411411 bronze badges
+17
+For further reading, see The Annotated Turing. Very approachable. amazon.com/Annotated-Turing-Through-Historic-Computability/dp/… – i_am_jorf May 18 '09 at 17:19
+40
+"often not in practice" is incorrect. No system is ever Turing-complete in practice, because no realizable system has an infinite tape. What we really mean is that some systems have the ability to approximate Turing-completeness up to the limits of their available memory. – Shelby Moore III Aug 8 '14 at 22:40
+20
+But Vi is the only computational engine ever needed in the world... ;-) – Joe Edgar Aug 15 '14 at 5:07
+4
+Is Emacs a Turning Machine too? XD – alem0lars Feb 16 '15 at 18:57
+5
+Someone recently showed that PowerPoint is Turing Complete too. – Tagc Apr 30 '17 at 12:57 
+show 4 more comments
+
+
+173
+
+Here is the simplest explanation
+
+Alan Turing created a machine that can take a program, run that program, and show some result. But then he had to create different machines for different programs. So he created "Universal Turing Machine" that can take ANY program and run it.
+
+Programming languages are similar to those machines (although virtual). They take programs and run them. Now, a programing language is called "Turing complete", if that it can run any program (irrespective of the language) that a Turing machine can run given enough time and memory.
+
+For example: Let's say there is a program that takes 10 numbers and adds them. Turing machine can easily run this program. But now imagine that for some reason your programming language can't perform the same addition. This would make it "Turing incomplete" (so to speak). On the other hand, if it can run any program that the universal Turing machine can run, then it's Turing complete.
+
+Most modern programming languages (e.g. Java, JavaScript, Perl, etc.) are all Turing complete because they each implement all the features required to run programs like addition, multiplication, if-else condition, return statements, ways to store/retrieve/erase data and so on.
+
+Update: You can learn more on my blog post: "JavaScript Is Turing Complete" — Explained
+
+shareimprove this answer
+edited Jun 23 at 17:18
+
+Maarten ten Velden
+4955 bronze badges
+answered May 16 '16 at 5:17
+
+Raja Rao
+3,79111 gold badge2020 silver badges2525 bronze badges
+4
+The idea that there would even be a term for this kind of machine makes a lot more sense when I remember Turing and other early computer scientists would build a specific machine each time they wanted to solve a specific problem. We’re used to one machine that can be forever reprogrammed. Thank you for the context, Raja. – Jacob Ford Aug 13 '17 at 14:32
+How JavaScript can be Turing Complete? It lacks file system , proper multithreading API . It has tons of limitations, mainly due to its browser security sandbox nature. It's hardly can be called ' a programming language ' .See how many variants of scripting abstraction exist (react, typescript ..you name it) ,all that to compensate what JS doesn't have. (asm.js should be mentioned here) . Java ,Python or C++ are true 'Turing Complete ' examples. But js? I don't think so. – Michael IV Dec 19 '17 at 22:30
+@MichaelIV The touring machine did not have a file system/threads either. JS is absolutely touring complete. – Bax Jan 21 '18 at 5:34
+@MichaelIV To add to Bax's response, one could consider a modern computer to consist of several Turing machines that work together to allow for all of those nice things that you mention. E.g. the CPU produces "tape" for the GPU to read so that it can write "tape" for the monitor so that the monitor can write "tape" to the user. Likewise, the CPU could produce "tape" for the hard drives, NICs, sound cards, etc. – user3003999 Oct 2 '18 at 14:33
+add a comment
+
+86
+
+From wikipedia:
+
+Turing completeness, named after Alan Turing, is significant in that every plausible design for a computing device so far advanced can be emulated by a universal Turing machine — an observation that has become known as the Church-Turing thesis. Thus, a machine that can act as a universal Turing machine can, in principle, perform any calculation that any other programmable computer is capable of. However, this has nothing to do with the effort required to write a program for the machine, the time it may take for the machine to perform the calculation, or any abilities the machine may possess that are unrelated to computation.
+
+While truly Turing-complete machines are very likely physically impossible, as they require unlimited storage, Turing completeness is often loosely attributed to physical machines or programming languages that would be universal if they had unlimited storage. All modern computers are Turing-complete in this sense.
+
+I don't know how you can be more non-technical than that except by saying "turing complete means 'able to answer computable problem given enough time and space'".
+
+shareimprove this answer
+answered Aug 10 '08 at 18:59
+
+Ran Biron
+5,90544 gold badges3131 silver badges6464 bronze badges
+4
+In this context, what is a "computing device"? – dopatraman Nov 13 '14 at 16:43
+27
+As with most Wikipedia articles, although this quote is technically correct, it provides no value to a person who has no knowledge on the subject and is trying to understand it. Being able to explain things properly is a science of its own :) – Lacho Tomov Sep 25 '17 at 15:19
+add a comment
+
+66
+
+Informal Definition
+A Turing complete language is one that can perform any computation. The Church-Turing Thesis states that any performable computation can be done by a Turing machine. A Turing machine is a machine with infinite random access memory and a finite 'program' that dictates when it should read, write, and move across that memory, when it should terminate with a certain result, and what it should do next. The input to a Turing machine is put in its memory before it starts.
+
+Things that can make a language NOT Turing complete
+A Turing machine can make decisions based on what it sees in memory - The 'language' that only supports +, -, *, and / on integers is not Turing complete because it can't make a choice based on its input, but a Turing machine can.
+
+A Turing machine can run forever - If we took Java, Javascript, or Python and removed the ability to do any sort of loop, GOTO, or function call, it wouldn't be Turing complete because it can't perform an arbitrary computation that never finishes. Coq is a theorem prover that can't express programs that don't terminate, so it's not Turing complete.
+
+A Turing machine can use infinite memory - A language that was exactly like Java but would terminate once it used more than 4 Gigabytes of memory wouldn't be Turing complete, because a Turing machine can use infinite memory. This is why we can't actually build a Turing machine, but Java is still a Turing complete language because the Java language has no restriction preventing it from using infinite memory. This is one reason regular expressions aren't Turing complete.
+
+A Turing machine has random access memory - A language that only lets you work with memory through push and pop operations to a stack wouldn't be Turing complete. If I have a 'language' that reads a string once and can only use memory by pushing and popping from a stack, it can tell me whether every ( in the string has its own ) later on by pushing when it sees ( and popping when it sees ). However, it can't tell me if every ( has its own ) later on and every [ has its own ] later on (note that ([)] meets this criteria but ([]] does not). A Turing machine can use its random access memory to track ()'s and []'s separately, but this language with only a stack cannot.
+
+A Turing machine can simulate any other Turing machine - A Turing machine, when given an appropriate 'program', can take another Turing machine's 'program' and simulate it on arbitrary input. If you had a language that was forbidden from implementing a Python interpreter, it wouldn't be Turing complete.
+
+Examples of Turing complete languages
+If your language has infinite random access memory, conditional execution, and some form of repeated execution, it's probably Turing complete. There are more exotic systems that can still achieve everything a Turing machine can, which makes them Turing complete too:
+
+Untyped lambda calculus
+Conway's game of life
+C++ Templates
+Prolog
+shareimprove this answer
+edited Dec 23 '17 at 21:33
+answered Oct 22 '09 at 23:45
+
+Gordon Gustafson
+32.7k2222 gold badges102102 silver badges148148 bronze badges
+11
+SQL is most definitely turing-complete. It has scripting capabilities that allow for any computation. – nzifnab May 1 '11 at 0:41
+53
+No, you are confusing SQL with extensions such as T-SQL / PL-SQL. ANSI SQL is not turing-complete. But TSQL / PLSQL - is. – Agnius Vasiliauskas Jul 3 '11 at 17:58
+14
+Apparently SQL is turing-complete: stackoverflow.com/questions/900055/… – Newtang Jul 29 '12 at 23:59
+2
+According to turing completeness - system is Turing complete if it can be used to simulate any single-taped Turing machine. But in example above as I understood devs constructed particular cyclic tag system and not universal cyclic tag system. Hence - article doesn't proves SQL turing completeness. (Or I misunderstood something) – Agnius Vasiliauskas Oct 2 '12 at 13:06
+2
+There is no realizable implementation of a Turing-complete language, because there are no infinite tapes. What we really mean is that some languages have the ability to approximate Turing-completeness up to the limits of the available memory of the host machine. – Shelby Moore III Aug 8 '14 at 22:34 
+show 3 more comments
+
+15
+
+Fundamentally, Turing-completeness is one concise requirement, unbounded recursion.
+
+Not even bounded by memory.
+
+I thought of this independently, but here is some discussion of the assertion. My definition of LSP provides more context.
+
+The other answers here don't directly define the fundamental essence of Turing-completeness.
+
+shareimprove this answer
+edited May 23 '17 at 12:02
+
+Community♦
+111 silver badge
+answered Nov 27 '11 at 4:03
+
+Shelby Moore III
+5,47811 gold badge2525 silver badges3232 bronze badges
+Finite state automata are allowed to have unbounded recursion. Case in point: a*. – user824425 Jun 4 '14 at 16:10
+3
+@Rhymoid FSMs have limited memory—the finite # of states)—but unbounded recursion without tail optimization must have unlimited memory. I didn't restrict my definition to the subset of unbounded recursion only with tail optimization. Kindly remove your downvote. – Shelby Moore III Jul 23 '14 at 11:13 
+you kept the definition of unbounded recursion foggy. Do you mean 'recursion' in the 'primitive recursion' sense, and 'unbounded' by making it 'partial' (or 'general', or 'mu-')? Then you may be right. But your current formulation is way too close to the statements criticized in David Harel's "On Folk Theorems". It's important to be rigorous in mathematics, and by leaving precise definitions out, you're ignoring that. By the way: FSMs can be generalized to model interaction; what sets them apart from TMs is that the latter's environment is also modeled (as the tape). – user824425 Jul 23 '14 at 11:26
+@Rhymoid enumeration is the antithesis of precision, e.g. enumerate the maximum precision of the fractions of an inch. Unbounded recursion means every possible form of recursion, which is impossible without an infinite tape. Fully generalized recursion (not just general within the model) is always Turing-complete. I am stating equivalence between generalized recursion and the ability to perform any possible computation. That is an important equivalence to note. – Shelby Moore III Aug 8 '14 at 22:22 
+"Unbounded recursion means every possible form of recursion" That's your reading. To most SO users, 'unbounded recursion' means while (p) { /* ... */ }. "I am stating equivalence between generalized recursion and the ability to perform any possible computation." Church's thesis is a very different matter and should really be discussed separately. – user824425 Aug 8 '14 at 23:20
+show 3 more comments
+
+11
+
+Turing Complete means that it is at least as powerful as a Turing Machine. This means anything that can be computed by a Turing Machine can be computed by a Turing Complete system.
+
+No one has yet found a system more powerful than a Turing Machine. So, for the time being, saying a system is Turing Complete is the same as saying the system is as powerful as any known computing system (see Church-Turing Thesis).
+
+shareimprove this answer
+edited Apr 28 '15 at 11:20
+answered May 18 '09 at 17:09
+
+Waylon Flinn
+17.2k1111 gold badges6262 silver badges6969 bronze badges
+3
+Note that all this disregards wall time. It just says "it can be done". – Thorbjørn Ravn Andersen Sep 27 '10 at 15:53
+@ThorbjørnRavnAndersen actually, it disregards physical computability altogether. Not only could it take longer than the age of the universe, but it might also use more memory than can be constructed with all the fermions and bosons in the universe. – Waylon Flinn May 9 '16 at 17:25
+There is, quitte possibly, no limit to the amount of bosons and fermions in the universe. We don't know, and will probably never know, it's size. Every time you read about the number of X in 'the universe', people are actually talking about the observable universe. Though interesting, it is not an actual physical limit. – Stijn de Witt Jun 23 '17 at 21:59
+add a comment
+
+8
+
+In the simplest terms, a Turing-complete system can solve any possible computational problem.
+
+One of the key requirements is the scratchpad size be unbounded and that is possible to rewind to access prior writes to the scratchpad.
+
+Thus in practice no system is Turing-complete.
+
+Rather some systems approximate Turing-completeness by modeling unbounded memory and performing any possible computation that can fit within the system's memory.
+
+shareimprove this answer
+answered Aug 8 '14 at 22:50
+
+Shelby Moore III
+5,47811 gold badge2525 silver badges3232 bronze badges
+add a comment
+
+2
+
+I think the importance of the concept "Turing Complete" is in the the ability to identify a computing machine (not necessarily a mechanical/electrical "computer") that can have its processes be deconstructed into "simple" instructions, composed of simpler and simpler instructions, that a Universal machine could interpret and then execute.
+
+I highly recommend The Annotated Turing
+
+@Mark i think what you are explaining is a mix between the description of the Universal Turing Machine and Turing Complete.
+
+Something that is Turing Complete, in a practical sense, would be a machine/process/computation able to be written and represented as a program, to be executed by a Universal Machine (a desktop computer). Though it doesn't take consideration for time or storage, as mentioned by others.
+
+shareimprove this answer
+edited Nov 10 '12 at 10:17
+
+alex
+396k181181 gold badges797797 silver badges929929 bronze badges
+answered Aug 20 '08 at 7:23
+
+Brian Leahy
+29.5k99 gold badges4141 silver badges6060 bronze badges
+add a comment
+
+2
+
+What i understand in simple words:
+
+Turing Complete : A programming language / program that can do computation, is Turing complete.
+
+For example :
+
+Can you add two numbers using Just HTML. (Ans is 'No', you have to use javascript to perform addition.), Hence HTML is not Turing Complete.
+
+Languages like Java , C++, Python, Javascript, Solidity for Ethereum etc are Turing Complete because you can do computation like adding two numbers using this languages.
+
+Hope this helps.
+
+shareimprove this answer
+answered Dec 28 '18 at 15:39
+
+Shirish Singh
+37922 silver badges77 bronze badges
+add a comment
+
+-1
+
+As Waylon Flinn said:
+
+Turing Complete means that it is at least as powerful as a Turing Machine.
+
+I believe this is incorrect, a system is Turing complete if it's exactly as powerful as the Turing Machine, i.e. every computation done by the machine can be done by the system, but also every computation done by the system can be done by the Turing machine.
+
+shareimprove this answer
+edited May 23 '17 at 11:47
+
+Community♦
+111 silver badge
+answered Oct 5 '09 at 23:18
+
+ChrisC
+9
+1
+I think you're assuming that the Church-Turing thesis is true to arrive at this conclusion. It has yet to be proven. The property you're describing is called 'Turing Equivalent'. – Waylon Flinn Dec 8 '09 at 13:41
+1
+@WaylonFlinn No, he's right. "Completeness" means both that it is at least as strong as a thing, but also no stronger. Compare with "NP-Complete". – Devin Jeanpierre Jan 23 '12 at 23:19
+3
+@DevinJeanpierre I don't want to start a flame war here but I'm almost certain the computational class you're describing is called "Turing Equivalent". Turing Complete does bear a similar relation to NP-Complete though. NP-Complete is equal to NP if and only if P=NP. In the same way Turing Complete is equal to Turing Equivalent if and only if the Church-Turing thesis is correct. – Waylon Flinn Jan 27 '12 at 15:24
+@Waylon Source? Nothing I read agrees with that (e.g. en.wikipedia.org/wiki/Turing_completeness ) – Devin Jeanpierre Jan 29 '12 at 16:09
+4
+@DevinJeanpierre It says it right there in the wikipedia article you link to. Quoting the Formal definitions section: "A computational system that can compute every Turing-computable function is called Turing complete", "A Turing-complete system is called Turing equivalent if every function it can compute is also Turing computable" – Waylon Flinn Jan 31 '12 at 14:46 
+add a comment
+
+-2
+
+In practical language terms familiar to most programmers, the usual way to detect Turing completeness is if the language allows or allows the simulation of nested unbounded while statements (as opposed to Pascal-style for statements, with fixed upper bounds).
+
+shareimprove this answer
+answered Oct 26 '16 at 20:12
+
+Keith Douglas
+9222 silver badges88 bronze badges
+1
+A single unbounded while loop is enough to simulate a Turing machine. – masterxilo Apr 17 '17 at 22:11
+add a comment
+
+-8
+
+Can a relational database input latitudes and longitudes of places and roads, and compute the shortest path between them - no. This is one problem that shows SQL is not Turing complete.
+
+But C++ can do it, and can do any problem. Thus it is.
+
+shareimprove this answer
+answered Dec 15 '12 at 18:33
+
+Akshay Jain
+2511 bronze badge
+10
+Being able to compute the shortest path between points is not the definition of Turing complete. There is so much more to it than just that one example. – Eva Feb 20 '13 at 23:48
+I'll just put this here... hansolav.net/blog/ImplementingDijkstrasAlgorithmUsingTSQL.aspx – Matthew Whited Oct 23 '15 at 10:46 
+add a comment
+Your Answer
+Sign up or log in
+ Sign up using Google
+ Sign up using Facebook
+ Sign up using Email and Password
+Post as a guest
+Name
+Email
+Required, but never shown
+
+Post Your Answer
+By clicking “Post Your Answer”, you agree to our terms of service, privacy policy and cookie policy
+
+Not the answer you're looking for? Browse other questions tagged theory turing-machines turing-complete or ask your own question.
+Blog
+Copying code from Stack Overflow? You might paste security vulnerabilities, too
+Featured on Meta
+Feedback post: Moderator review and reinstatement processes
+Upvotes on questions will now be worth the same as upvotes on answers
+
+Homer 
+Homer
+Education, Entertainment
+We have great benefits!
+flexible location
+Gym reimbursement
+Paid leave for primary and secondary caregivers
+real revenue, real business
++ 6 more benefits
+Learn more
+Linked
+845
+What is an example of the Liskov Substitution Principle?
+464
+Functional, Declarative, and Imperative Programming
+186
+What is declarative programming?
+157
+Is SQL or even TSQL Turing Complete?
+46
+What are practical guidelines for evaluating a language's “Turing Completeness”?
+53
+Why can Conway’s Game of Life be classified as a universal machine?
+51
+Are Perl regexes turing complete?
+23
+What is the minimum instruction set required for any Assembly language to be considered useful?
+13
+Are there any programming paradigms not based around manipulating variables and functions?
+22
+What is the reason for a Turing complete type system
+see more linked questions…
+Related
+100
+C++ templates Turing-complete?
+267
+What is referential transparency?
+46
+What are practical guidelines for evaluating a language's “Turing Completeness”?
+284
+Is CSS Turing complete?
+48
+How useful is Turing completeness? are neural nets turing complete?
+67
+Is the C99 preprocessor Turing complete?
+8
+Looking for languages that are not Turing complete
+0
+Turing completeness
+11
+Are .NET's regular expressions Turing complete?
+23
+What are the six basic primitives in Turing Complete
+Hot Network Questions
+Selecting Primes from list of list
+Is the Wilcoxon rank-sum test a nonparametric alternative to the two sample t-test? Null hypotheses are different
+Use column from Raster Attribute Table as Legend in Leaflet Map
+How did the Corona (Key Hole) satellites film canisters deorbit?
+Organising child care when giving birth
+Sentinel-1a real azimuth resolution
+Finding how much time it takes for a complete Earth revolution around the Sun
+how to get a list of folders and number files in each folder side by side, in the current directory?
+Should high school teachers say “real numbers” before teaching complex numbers?
+Give a grammar for a language on Σ={a,b,c} that accepts all strings containing exactly one a
+Tablet and Wi-Fi AP can't agree on a channel. Which device is violating the 802.11n standard?
+Aliens kill as an art form, surprised that humans don't appreciate
+Stack Exchange Answerer
+Is it possible to trap yourself in the Nether?
+Random variable vs Statistic?
+Is it a complete sentence: "Caution murmured: it could be a trick, a lure, a trap."?
+Is sometimes "how I shall" = "how shall I"?
+Is it acceptable to have a fraction in an eigenvector?
+Is there a conflict between YAGNI and SRP?
+Is Purusha (mentioned in Purusha suktam) same as Brahman (Parabrahman)?
+What is the point of teaching Coding and robotics to kids as young as 6 years old?
+Was X17 predicted before it was observed?
+How are names of enharmonic notes determined?
+How to compare the signature of two functions?
+ Question feed
+
+STACK OVERFLOW
+Questions
+Jobs
+Developer Jobs Directory
+Salary Calculator
+Help
+Mobile
+Disable Responsiveness
+PRODUCTS
+Teams
+Talent
+Advertising
+Enterprise
+COMPANY
+About
+Press
+Work Here
+Legal
+Privacy Policy
+Contact Us
+STACK EXCHANGE
+NETWORK
+Technology
+Life / Arts
+Culture / Recreation
+Science
+Other
+Blog
+Facebook
+Twitter
+LinkedIn
+site design / logo © 2019 Stack Exchange Inc; user contributions licensed under cc by-sa 4.0 with attribution required. rev 2019.11.29.35523
+
+ 

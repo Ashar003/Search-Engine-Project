@@ -1,0 +1,197 @@
+
+
+Best Products
+Product Reviews
+News
+Original Series
+Buying Guides
+Deals
+Downloads
+More
+Trending Deals:
+Cyber Monday deals you can shop right now
+TVs
+Chromebook for $89
+Laptops
+Instant Pots
+$1500 off Sony 4K TV
+Gaming
+Ring or Nest?
+Gaming
+PS5: Here’s everything we know about the PlayStation 5 so far
+Everything we know about the PlayStation 5, including its release window
+By Gabe Gurwin November 18, 2019 12:17PM PST
+As we near the end of Sony’s fourth-generation console, it’s time to start digging for rumors about its successor — the PlayStation 5. For a while, it seemed like we’d continue getting newer versions of the PlayStation 4 with only slight technical upgrades, such as the PS4 Pro and PS4 Slim, but Sony officially confirmed it’s working on the next (and possibly last) PlayStation gaming console. It won’t be alone: Microsoft is hard at work on a next generation Xbox, codenamed Project Scarlett as well.
+
+Rumors and confirmed details have been circulating the internet, and we’ve done our best to gather it all right here. From hardware to games, here is everything you need to know about the PS5 — and yes, that is the name.
+
+Sony is working on a new console
+ps5 release date specs price news best ps4 games unsplash
+As we have come to expect from Sony, the company didn’t reinvent the wheel when naming the next PlayStation. It’s called the PlayStation 5, also known as the PS5. With the name, Sony is showing that it is taking a true jump into the next generation, rather than a half-step like with the PS4 Pro.
+
+Sony first confirmed that it was actively working on a new console in an interview with the Financial Times. CEO Kenichiro Yoshida confirmed that it is “necessary to have next-generation hardware.” In the same Financial Times report, it was said that the PS5 wouldn’t be radically different in design than the PS4.
+
+This falls in line with what system architect Mark Cerny told Wired during an April 2019 interview. As you’ll find below, Sony’s next console will get a significant upgrade in power.
+
+PlayStation 5 specs
+In the interview with Wired, Mark Cerny revealed that the PS5’s CPU and GPU are AMD chips that will be able to support 3D audio, 8K graphics, and ray tracing, a feature currently found on very powerful PCs. The CPU will be an eight-core chip based on the Ryzen line and use Zen 2 microarchitecture. The GPU will be based on the Radeon Navi line.
+
+Despite specs that significantly outperform current-generation consoles, a recent rumor speculates that the PS5 will still have less power than recent high-end PC graphics cards. Hardware leaker Komachi (thanks, TechRadar) suggested that the PS5’s AMD Oberon APU (which combines CPU and GPU) will run at 2GHz. While that more than doubles the speed of the PS4 Pro and outpaces the Nvidia RTX 2070 Super, it’s not as powerful as the Nvidia RTX 2080 line.
+
+So, what do we know about the chips? In a follow-up interview with Wired, Cerny confirmed that the GPU would be capable of hardware-based ray tracing, rather than a software-side solution.
+
+The PS5 will also be ditching a hard-disk drive in favor of a solid-state drive with higher bandwidth than those used in current PCs. With the move to an SSD drive, loading times should be reduced significantly when compared to Sony’s latest PS4 model, the PlayStation 4 Pro.
+
+In an investors briefing, Sony shared that content that takes more than eight seconds to load on the PlayStation 4 Pro can be done in less than a second on the next-generation console. It is also rumored to be more powerful than Xbox’s Project Scarlett but this is currently unconfirmed.
+
+The PlayStation 5 will support Blu-ray discs, as well as digital downloads and game streaming. The console will be equipped with a 4K Blu-ray player, just like the Xbox One S and Xbox One X, and it will use games with a data capacity of 100GB.
+
+To help mitigate installation times brought on by huge file sizes, Sony will make use of the SSD and allow you to only install the parts of games you want to play, such as a competitive multiplayer mode or campaign. Games can also be loaded to specific modes from the dashboard, so you can join your friend in a match without having to go through the entire starting process like you would on games for PS4.
+
+Backward compatibility
+best ps4 games header
+Mark Cerny confirmed that the PlayStation 5 will be backward compatible with PS4 and PS VR games. This will not include PS3, Ps2, or PS1 games according to the BBC. The reason for this, Cerny cited, was the PS5 and PS4’s similar architecture. Sony later said it planned to use backward compatibility to help players transition into the next-generation system from the PS4.
+
+No information on a potential PS VR 2 has been released, but the PS5 will support the current headset. This means that instead of needing to keep your PS4 and PS5, you could trade in or sell your earlier system.
+
+The next PSVR?
+Though Sony has not outright confirmed a successor to the PlayStation VR yet, the company has made it clear that it intends to improve on the headset’s design with future iterations. Speaking to CNET at the Collision Conference in Toronto, PlayStation’s global head of R&D Dominic Mallinson said that Sony aims to make future versions of PlayStation VR lighter, and less encumbered by wires. It’s possible that there will even be a completely wireless version released in addition to a more traditional model, with the wireless version costing more.
+
+The CNET report also said PlayStation is considering using eye-tracking technology in its headset. This is something we’ve seen in premium headsets like the Vive Pro, and it would make way for more sensitive and intuitive control schemes in virtual reality games.
+
+The PlayStation VR successor will likely not be ready to launch alongside the PS5 itself, particularly because the original headset will be compatible with the new system. However, when it does arrive, Sony is planning on using a different controller than the PS3-era PlayStation Move. With the Vive and Oculus ecosystems both making use of touch controls, they could find their way into PlayStation VR’s technology, as well. Sony is also exploring potentially including mixed reality via pass-through cameras.
+
+PlayStation Now
+Cloud gaming will be possible on the PS5, though the exact extent of this remains unknown. The PlayStation Now subscription service makes game streaming possible on legacy Sony consoles, as well, but Sony will be facing stiff competition.
+
+Microsoft is planning to begin tests for its Project xCloud service later this year, and Google has unveiled Stadia, a streaming service designed to combine the best elements of game players, developers, and content creators.
+
+In its May 2019 investors briefing, Sony shared that it has a three-point approach to game distribution in its next-generation system: Blu-ray discs, downloads, and streaming. For streaming, it is focusing on doing so “with or without a console.”
+
+Most curiously, Sony recently announced a partnership with Microsoft on cloud technology, which will be used both for video game content and artificial intelligence.
+
+Microsoft’s announcement said that it will be exploring the use of its Azure data centers for Sony’s own game streaming services. Microsoft has more than 50 data centers globally, which is more than triple the number currently being used for PlayStation Now.
+
+We know Sony wishes to further invest in mobile platforms for PlayStation Now, which could ultimately lead to something similar to what Microsoft has planned for Project xCloud. PlayStation Now will support at least 1080p resolution in the future, and its 5 Mbps requirement is far below that of Google Stadia.
+
+A next-generation controller
+The DualShock 4 did its job this generation, but it felt like an iterative step from the PlayStation 3’s DualShock 3. That will change with the PlayStation 5’s still-unnamed controller, which is offering larger improvements and new features, including an upgrade speaker.
+
+Speaking to Wired, Sony said that the new controller would feature a larger-capacity battery, which should help to alleviate the battery life issues that have plagued the DualShock 4 for the last generation. The controller will use “adaptive trigger” that offer difference resistance based on the activity you’re doing in a game, and the new haptic feedback replaces traditional rumble. It’s capable of offering feedback to the analog sticks, meaning it will feel different to walk on mud versus snow or grass.
+
+According to images published in Japan’s patent office, the PS5’s controller will also feature a microphone, and its design will be just slightly bulkier than the DualShock 4. The button layout appears to be basically identical, however, with a Share and Options button still located on both sides of the touch pad.
+
+PlayStation 5 games
+Developers are remaining tight-lipped about whether they have PS5 dev kits in hand. Several have made comments that could be construed as hints that they do, however.
+
+cd projekt red cyberpunk 2077 ransom theft header
+During a conference in Bergen, Norway, studio heads from CD Projekt Red (Witcher series) gave a presentation that may have hinted the studio’s next epic, Cyberpunk 2077 (pictured above), could appear on the PS5.
+CD Project Red
+The Witcher 3’s developer, CD Projekt Red, is hard at work on its next epic, Cyberpunk 2077. At a 2018 conference in Bergen, the studio heads gave a presentation about the game which included a slide with the phrase “Rich, true-to-life visuals built on current and next-generation technology.” That could mean a lot of things, of course, but one could interpret that as a nod to the fact that they are simultaneously developing the game for both current- and next-generation consoles, of which the PS5 would have to be one. We do know, however, that the game is at least planned to launch on PS4 in early 2020.
+
+Similarly, Gran Turismo Sport creator Kazunori Yamauchi made a comment that could suggest they are already tinkering with the PS5. On a studio tour, he told Finder.com that new cars take so long to develop because they are “building for future versions of the console rather than the one we see today.”
+
+Sony’s own Death Stranding, which is planned for a PlayStation 4 release in November 2019, could be coming to the PlayStation 5. Speaking to GamingBolt, industry analyst Michael Pachter said the game will “likely be a cross-generational title.” Sony hasn’t done this very often in the past, though a number of third-party games released on both the PlayStation 3 and PlayStation 4 at the beginning of the generation.
+
+ps5 release date specs price news death stranding imago 1
+It has also been reported that the majority of Sony’s own internal development teams have shifted their focus to the PlayStation 5. Industry analyst Daniel Ahmad said that “most” of Sony’s teams were now on the unannounced system, and that it was possible that certain games developed for PlayStation 4 could also see a release on PlayStation 5. Because the system will be backward compatible, Sony could also simply market the PlayStation 4 releases alongside the PlayStation 5, and it recommitted to The Last of Us: Part II, Ghost of Tsushima, and Death Stranding releasing on PS4 during its May 2019 investors briefing.
+
+During the same briefing, the technical demonstration to show off the new console’s capabilities used Spider-Man as an example. Though it was showing an identical game comparison between the new console and the PS4 Pro in order to highlight the newer system’s faster loading sequences, it’s possible the game could be getting an enhanced version.
+
+We do know that developer Bluepoint — famous for its remastered Uncharted: The Nathan Drake Collection and the remade Shadow of the Colossus — currently has a development kit and is working on a large-scale project, but it has not given any hints on just what that means yet.
+
+Don’t expect Sony to stop its games-as-a-service initiative, despite the PlayStation brand’s reputation for single-player games. The briefing touched on “improving competence” in this area, with the MLB: The Show series highlighted as an example. Currently, American players spend more cash on the game than on any other sports title.
+
+In keeping with the “One Sony” model the company is using as a whole, expect PlayStation 5 games to rely more heavily on Sony-produced soundtracks. Sony will also be working with its own artists to bring more virtual reality content to the system.
+
+Bethesda Softworks appears to be one of the game companies most open about its ambition to release upcoming games on next-generation systems. Speaking to Eurogamer at the Gamelab conference in Spain, Bethesda game director Todd Howard revealed that the science-fiction game Starfield will be next-generation in both hardware and software. Given that Bethesda is releasing Starfield before The Elder Scrolls VI, which it also announced at E3 2018, there’s very little doubt that The Elder Scrolls VI will also release on PlayStation 5.
+
+Thanks to a LinkedIn listing, it appears Square Enix is currently working on a game for the system, as well. Users at forum ResetEra spotted a 3D character model artist’s profile, which made mention of a “new AAA title for PS5” at Luminous Production — one of the company’s newest studios. This could confirm that the system will be called the PlayStation 5, as well.
+
+The PlayStation 5 release date
+A final specific release date has not yet been revealed for the PlayStation 5, but Sony has confirmed that it will arrive for the holiday season of 2020. This means it will be going head-to-head with the Xbox Scarlett, just as the PS4 and Xbox One did back in 2013.
+
+It could be the last PlayStation system
+Game streaming services could replace traditional consoles in the future, at least if you ask Ubisoft CEO Yves Guillemot. Speaking to Variety, Guillemot expressed his belief that there will “one more console generation” before the industry completely moves to a streaming-only model.
+
+Guillemot added that this technology would become more accessible to more players over time, but with the loss of net neutrality and data caps in place at many internet service providers, the market for a traditional console with physical media is still strong.
+
+Editors' Recommendations
+Xbox Project Scarlett: Everything we know about the next-gen game console
+Xbox Scarlett vs. PS5: Here’s what we know so far about the consoles
+These are the holiday gifts any PlayStation fan will love
+Best Black Friday Sony PS4 deals in 2019 that are still available
+Save hundreds with these PlayStation VR and PS4 console Black Friday deals
+Save on a year of PlayStation Plus with Amazon’s Black Friday sale
+1 hour ago
+sony playstation plus deal for amazon black friday 2019 nioh header
+Best Black Friday Sony PS4 deals in 2019 that are still available
+tips tricks playstation 4 sony ps4 controller 0001
+Black Friday gaming deals for 2019 still going on: Xbox, PS4, and Switch sales
+black friday gaming deals xbox and nintendo switch bf video games featured
+Save hundreds with these PlayStation VR and PS4 console Black Friday deals
+5 hours ago
+playstationvr outsells htc vive oculus rift psvr
+This is the best Black Friday/Cyber Monday Xbox One bundle deal we’ve found
+9 hours ago
+Xbox One S All-Digital Edition
+The only Nintendo Switch deal you need to see for Black Friday/Cyber Monday
+9 hours ago
+nintendo switch lite review portable
+Cyber Monday gaming deals 2019: PlayStation, Nintendo Switch, Xbox One, more
+7 hours ago
+Save on Star Wars Jedi: Fallen Order and Call of Duty with Black Friday deals
+6 hours ago
+
+Upgrade your lifestyle
+
+Digital Trends helps readers keep tabs on the fast-paced world of tech with all the latest news, fun product reviews, insightful editorials, and one-of-a-kind sneak peeks.
+
+Digital Trends may earn a commission when you buy through links on our site.
+
+Copyright ©2019 Designtechnica Corporation. All rights reserved.
+
+iPhone app on the App Store
+Android app on Google Play
+Add Us To Your Social Channels
+Facebook
+Twitter
+Instragram
+LinkedIn
+Pinterest
+YouTube
+RSS Home
+Subscribe
+Newsletter Landing
+Must Reads
+Best Movies on Netflix
+Best Shows on Netflix
+Best Shows on Hulu
+Best Movies on Hulu
+Best Shows on Amazon Prime
+Best Movies on Amazon Prime
+Best iPhone Games
+Best Android Games
+Best Tech Jobs
+Popular Downloads
+Download Fortnite
+Download Skype
+Download Winrar
+Download Netflix for Android
+Download Spotify for Android
+Download PC games
+Downloads for Windows
+Downloads for Mac
+Downloads for Android
+Who We Are
+About
+Contact Us
+Privacy Policy
+Terms of Use
+Corrections
+Careers
+DT Español
+The Manual
+Podcasts
+Giveaways
+Advertise with Us

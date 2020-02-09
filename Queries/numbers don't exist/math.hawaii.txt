@@ -1,0 +1,306 @@
+ 
+Do Mathematical Entities Really Exist?
+Lee Lady
+
+ 
+
+ 
+A friend in the Philosophy Department at the University of Kansas once said to me that numbers do not exist. They are just as fictional, he said, as the character Frodo in Lord of the Rings.
+
+Certainly my own knowledge of philosophy is at best that of a dilettante. But I know enough to know for certain that on this matter he was wrong. I suggested to him that what was at issue was in large part how one defines the word "exists." But he immediately insisted that existence is a primitive notion which cannot be defined. I didn't want to argue that point further, but in this respect he was even more wrong than in his first statement. The meaning of "exists" is very much contextual. (And in fact, if the context is a discussion of Lord of the Rings, then there does indeed exist a character named Frodo, whereas in the novel there does not exist a character named McGruff the Crime Dog.)
+
+The dispute over the existence (or reality) of mathematical entities is an example of what philosophers call the Problem of Universals, something which goes back as far as Plato. This is the question as to whether abstract concepts have some sort of real existence in the world, or whether they exist only in our minds. Like most philosophical problems, it seems to be more a question about language than a question about the world, although there are certainly philophers who would disagree with me in this respect.
+
+I believe it was Kronecker who said, "The natural numbers were created by God; all the others are the invention of humans." I believe that most contemporary mathematicians would agree that Kronecker was wrong only in his statement about natural numbers; they too are the creation of human minds.
+
+Certainly numbers do not have a tangible existence in the world. They exist in our collective consciousness. And yet they are not arbitrary products of our imaginations in the way that fictional characters are.
+
+For instance, when a mathematician says that there exists a prime number which is the sum of two squares, his statement is not a product of his imagination. It is not a matter of opinion. The prime number 13, in fact, is the sum of 3 squared and 2 squared: 13 = 9 + 4. And when the Indian mathematician Ramanujan said to his fellow mathematician G.H. Hardy that 1729 is the smallest number that can be written as a sum of two cubes in two different ways, he was making a statement of fact:
+
+1729 = 10³ + 9³ = 12³ + 1³.
+
+The fact that no smaller number can be so written can be verified, with the help of a computer program or spreadsheet, by listing the values of  m³ + n³  for  m and n  between 1 and 12 and seeing that there are no duplications smaller than 1729 in the list. (One can also note that if  m³ + n³  is 1729, then one of these two numbers must be larger than 9 and, of course, no larger than 12. This leaves us with only a few possibilities to check.)
+"There exists" is one of the most common phrases in mathematical discourse, and whether one is talking about a prime number with a certain property or the solution to a differential equation, a statement about existence is a statement of fact, not a matter arbitrary choice or opinion.
+
+So numbers do have some sort of objective existence, even though not a tangible existence.
+
+One of the sources of confusion, as I see it, is that in mathematics we think of numbers as nouns. But if we trace the concept down to its roots, we see that, in origin, numbers are adjectives. (Footnote: This statement is colored by the fact that my native language is English. I know that in Japanese, for instance, colors are fundamentally nouns. So perhaps in that language numbers are also nouns.) And as adjectives, one does not have the same dispute as to whether numbers exist or not. There is no question that in the world there do exist collections of five objects. And there exist such things as a half liter of beer or half a quart of milk.
+
+Thus the question as to whether natural numbers and simple fractions exist is like the question as to whether red exists. There is no doubt but whether there exist red objects. Red as a color, on the other hand, is not a tangible object. It is a linguistic construct. Nonetheless, red does exist. For most people, anyway, a statement that red is fictional would be considered simply crazy.
+
+In any case, this question of the existence of numbers is a philosophical one, i.e. one of no practical importance. Certainly almost no contemporary mathematician would think that this question has any relevance to mathematics. And yet it does come up in the teaching of mathematics when students ask, for instance, whether there really exists a square root of minus one. And when the teacher answers, as I usually did, "No. We made it up, just like we made up all the other numbers," students find this a little disconcerting.
+
+When students ask whether negative numbers actually exist, teachers frequently cite the examples of going into debt or negative temperatures on a thermometer. In doing this, one is basically showing the student that negative numbers function as adjectives describing the tangible world. But when it comes to the square root of minus one, it is almost impossible to come up with comparable examples.
+
+ 
+
+George Lakoff & Rafael E. Núñez: Where Mathematics Comes From
+If numbers are just mental inventions whose only existence is in our minds, then how come they are so useful in describing the tangible world?
+
+George Lakoff and Rafael E. Núñez address this issue in their book Where Mathematics Comes From: How the Embodied Mind Brings Mathematics Into Being.
+
+George Lakoff is a brilliant linguist who has extensively studied the way in which we human beings think about abstract concepts. Two of his books devoted to this topic are Metaphors We Live By (written with Mark Johnson) and Women, Fire, and Dangerous Objects. Núñez, on the other hand, is an academic psychologist.
+
+Certainly all our knowledge about the world has its ultimate roots in sensory information. Where then does our knowledge of abstract concepts come from? Certainly this is something we acquire through language, but somehow or other the words we use to create abstractions must themselves be rooted in sensory knowledge of the world.
+
+For Lakoff, the answer lies in the mechanism of metaphor. The word metaphor, as Lakoff uses it, is considerably more intricate and structural than what one learns in literature classes. In Lakoff's usage, spelled out in the book Metaphors We Live By (co-authored with Mark Johnson) one concept is a metaphor for another when there is a detailed parallel between the logical structures underlying the two concepts.
+
+As an example, people often think of arguments in terms of the metaphor of military battles. One attacks an opponent's position and defends one's own. The facts and arguments one uses are one's ammunition. If the argument is not going well, one might be forced to retreat to safer ground. (The parallels are considerably more elaborate than this, but I don't have the book at hand.) Thinking of arguments as battles provides more than mere colorful language. It provides us with a logical structure for understanding the concept of argument.
+
+To a large extent, metaphors function just like adjectives. An adjective is a label for a particular quality of an object, situation, etc. When labels for the qualities one wants to talk about do not exist, or are unduly cumbersome, one can use metaphor, which says essentially, "The qualities which are relevant for entity X are the same as those for entity Y" (where labels usually are available).
+
+Lakoff and Núñez see numbers and other mathematical entities as metaphors. In this sense, then, mathematics is so useful because it enables us to organize our understanding of situations in the tangible world. Although numbers themselves do not have tangible existence, arithmetic has a logical structure which matches, for instance, the structure of the exchange of money that takes place when one buys something in a store and the cashier gives change.
+
+When one advances beyond the level of simple arithmetic, one finds a hierarchy of abstraction, and this seems to be one of the things that makes mathematics difficult for so many students. When I tell people that I teach mathematics (or at least used to), I sometimes get the response,
+
+"I was always really good at mathematics. Until I got to algebra. All that stuff with symbols never made any sense to me."
+Some students can look at an algebraic formula, such as  x² - y² = (x-y)(x+y)  and even follow the proof but never realize that it is simply a schematic way of stating an infinite number of different statements in arithmetic:
+
+3² - 1² = (3 - 1)(3 + 1),   5² - 3² = (5 - 3)(5 + 3),   5² - 4² = (5 - 4)(5 + 4),  etc,
+
+as one can verify by doing the calculations. Many college algebra textbooks foster this difficulty by downplaying the idea that algebraic variables represent numbers and instead promoting the idea that algebra is about manipulating "expressions," i.e. strings of symbols which are in and of themselves meaningless.
+After the student has learned to become comfortable with the use of variables to represent numbers, he goes on to calculus, where now in an expression such as  x² - 3x + 12,   x  no longer represents a particular (but unspecified) number, but rather a variable which changes, and one's concern is with determining the rate at which the function (i.e. the expression above) changes in comparison to the rate at which x changes. And then the next step is the developing the general formula for the derivative, in which we see not a specific expression but as symbol f(x) which represents an arbitrary function. In preparation for this, contemporary calculus textbooks often give problems something like this:
+
+"Find  [f(x+h) - f(x)] /h   if   f(x) = x² - 3x + 12."
+
+I often had students come to me in bewilderment, saying, "I have no idea what this problem means." The increase in level of abstraction is more rapid than many students can deal with.
+At this point, mathematics seems far removed from tangible reality. But fortunately, one can readily point out many examples in the real world (i.e. the world the student is familiar with, even if it's physics or chemistry or economics) for which functions provide a very natural metaphor. The same student who is so bewildered by "Find  [f(x+h) - f(x)] /h" is likely to find that everything becomes clear when he learns that the derivative of distance is velocity and the derivative of velocity is acceleration.
+
+ 
+
+Formal Definitions of the Number Concept
+Lakoff and Núñez make a great deal of the fact that different areas in mathematics define the natural numbers in different ways. For instance, in axiomatic set theory all natural numbers (and in fact, ultimately all mathematical entities) are defined as sets. One defines the number 0 to be the empty set, 1 to be the set whose only element is the empty set (so that 1 itself is not the empty set, but a little like a closet which contains only an empty box; the box is empty but the closet is not), 2 to be the set consisting of 0 and 1, 3 to be the set consisting of 0, 1, and 2, etc. In more formal terms, we have
+1 = {0},   2 = {0, 1},   3 = {0, 1, 2},  etc.
+On the other hand, J.H. Conway, in his theory of games (very different from the concept of game theory in probability theory) defines numbers as games.
+
+Certainly neither Conway's definition nor the set-theoretic definition above explain what numbers really are, (if it even makes any sense to speak in such terms). In fact, even mathematicians themselves do not find it useful to think of numbers this way most of the time. These definitions are an instance of a game (in the non-technical sense of the word) which mathematicians frequently play. When a mathematician is developing the framework for a new mathematical theory, forging ahead into new subject matter (as with Conway's innovative new concept of game), he frequently makes a point of showing how familiar older concepts can be re-defined in terms of his new paradigm. In mathematics, re-inventing the wheel is not necessarily a bad thing. The idea is that, vaguely speaking, when one invents a new technology, one wants to show that it can do all the things that the old technology was good for.
+
+Definitions in Mathematics and in Ordinary Language
+There is a difference between what a mathematician means by the word definition and what this word means in ordinary language. In day to day language a definition is something that explains the meaning of a word which already exists and is commonly used.
+When a mathematician states a definition, he is actually creating a concept. In mathematical research, often the concept created by a definition will be something that did not previously exist (or at least did not previously exist under that label). An example is the word google which Kasner and Newman in their book Mathematics and the Imagination define as the number given by 1 followed by a hundred zeros, which can also be described as 10 raised to the 100 power. Prior to Kasner and Newman's book, "google" had been merely a nonsense sound.
+
+The word "definition" is used in (at least) two different ways in mathematics. In some cases a definition is purely descriptive, such as when one defines a rectangle to be a plane figure with four sides where all the angles are right angles. This is basically the same way definitions are used in other sciences to create important new vocabulary.
+
+But in other cases, a definition actually creates a new entity. For instance, in a beginning calculus course one defines the derivative by giving a formula for it and defines the concept of limit in a somewhat more complicated way.
+
+Now when one is developing a particular topic in mathematics, often what one does it to take concepts which are not new at all but quite well established, but to provide a new development in which these concepts are constructed in new ways.
+
+In the day to day dictionary style of definitions, where the function of the definition is to explain the word, it doesn't make much sense to do this. The only reason to give a new, but equivalent, definition for a word would be that there has been something about the old definition which some people are not able to understand. The goal of the new definition, then, would be to make things clearer.
+
+In mathematics, on the contrary, when a new definition is given for a familiar concept, almost always the new definition is, at least initially, more difficult to understand than the old one. The object of the new definition is not to clarify the meaning of the word, but to fit the word into the context of a new theoretical framework for some area of mathematics.
+
+The concept of number is a very relevant example here. When Conway defines number to be certain types of game, or set-theorists define numbers to be certain special sets, the object is not to explain what numbers are for people who may happen not to know this.
+
+In fact, from the point of view of the ordinary day to day concept of definition, there is no need for a definition of numbers. We all know what numbers are. In fact, even mathematicians who work with numbers (in Number Theory, for instance) will not find Conway's definition or the set-theoretic definition of the natural numbers to be at all helpful. Conway's definition (or construction) of the natural numbers is interesting only to mathematicians who are interested in his theory of games. Once attention shifts away from games to number theory or calculus, Conway's approach is not longer useful and in fact is a pain in the ass.
+
+When the set theorists or Conway state that a number is a set of a particular type or game of a particular type, they are not making a mathematical statement, analogous to an equation. Rather they are saying that if we use the word 'number' for a particular type of set or particular type of game, then this will work, because the concept has all the properties which we require of the concept of "number." To a contemporary mathematician, it is irrelevant what numbers actually are. What is important is the way they behave.
+
+ 
+
+But suppose that instead of thinking about mathematical research and graduate courses in mathematics, we are thinking about kindergarten. A few paragraphs above, I stated that we all know what numbers are. But how did we come to have this knowledge? Certainly we were not born with it. Somehow or other, all of us were taught the concept of number. And certainly the way in which we were initially taught this concept has no resemblance at all to the formal definitions which mathematicians (such as set theorists or Conway) give.
+
+It's not that the way mathematicians do things is wrong. It's simply that they use the word "definition" in a different way than it is used in the ordinary world.
+
+ 
+
+The Two Ways to Mathematically Define a Concept
+There are fundamentally two different types of ways of defining a new concept (or redefining an old one) in mathematics. The first could be called the constructive definition. This might be simply a recipe or formula for creating the concept in question, although in practice constructions are often considerably more complicated. Examples would be the usual definition of the derivative and the integral and limit concept in calculus.
+
+Defining the natural numbers can be defined as particular kinds of sets or games is an example of a constructive definition. One should notice that this is not a definition at all in the normal day to day sense of this term. It does not describe numbers as we commonly know them, and if a person somehow does not know what the word "number" means, these mathematical definitions will not enable him to recognize a number when he encounters it. Furthermore, these definitions do not give us recipes for constructing numbers as they are commonly known.
+
+The set-theoretic definition, for instance, is a recipe for constructing various sets. These sets are not numbers, except to the set-theorists who by fiat state this these are what "we" will now consider numbers to be. The point, though, is that they are entities which correspond in a stated way to numbers as we commonly know them and which can be used, if we so choose, to fulfill all the functions of numbers (although admittedly in a very cumbersome way).
+
+As I re-read this now, I fear that the non-mathematician will take what I say in a rather moralistic way. The point is not that what mathematicians have done in finding such arcane ways of defining concepts such as numbers is wrong. The point is simply that one should not confused this sort of mathematical "definition" with the sort of definition which seeks to explain things.
+
+The second way of mathematically defining a concept is what one might call the functional definition, i.e. seeing how the particular concept actually functions in practice. Almost always this is done by specifying a set of axioms for the concept.
+
+In fact, it is almost always the functional (axiomatic) approach which is commonly used, and in many cases in contemporary mathematics the axiomatic approach is far simpler, because often the underlying constructions are very cumbersome. (Algebraists will think for instance of the concept of tensor product.) In a traditional calculus course, one begins by giving formulas (i.e. constructive definitions) definitions for the concepts of derivative and integral, but then one develops a set of rules so that one almost never needs to go back to these constructive definitions. In fact, students can actually snooze through the basic definitions for the derivative and integral; as long as they learn all the subsequent rules, they can do all the calculations in the homework. (Of course, they will probably lack any understanding of what their calculations mean. But one can also give axioms for the applications of the derivative and integral, as I have done, although with perhaps less than complete clarity, for the integral. )
+
+On the other hand, even when one starts with the axiomatic approach, the constructive definition is not irrelevant. It then serves as an existence theorem, which shows that there actually is a thing that satisfies all the axioms one has stated. Thus one avoids the trap that a number of graduate students have fallen into, where they devote a great deal of effort to proving theorems that are a consequence of a particular set of axioms, only to eventually discover that it is impossible for any mathematical system satisfying these axioms to actually exist.
+
+For the natural numbers, the functional definition was given in the 19th Century by the mathematician Peano, and almost always when someone suggests a new way of defining the natural numbers, the bottom line is that they show that their new concept (i.e. new construction) satisfies the Peano axioms.
+
+Numbers as Quantity and Numbers as Sequence
+From a psychological (non-mathematical) point of view, I believe that there are two different concepts of natural numbers. In the first case, I believe that the most natural definition is: "Numbers are: one, two, three, four, etc."  Of course one can object that this definition is circular, and also presupposes the English language. (If one really wants a definition that works in a greater number of languages, one can say, "Numbers are: 1, 2, 3, 4, 5, etc.") Essentially this is the Definition-By-Pointing-At, just as one defines "dog" for a child by pointing at a dog. This concept is the numbers-as-sequence one, and essentially corresponds to the Peano axioms. It can be refined to include the rational numbers (3 7/25 etc.) by showing how to include these in the sequence between the integers. (Does 3 1/3 come before or after 3 7/25? One can find out by using a common denominator.) One can refine the concept still further to cover all real numbers, if one sees these as decimal expansions.
+Numbers-as-sequence also have an adjectival form, namely first, second, third, etc. Notice that there are no adjectival forms for negative numbers or non-integer numbers such as 1/2 or 3/4.
+
+The other fundamental psychological concept of number is number-as-quantity, which answers the question how many. Here, as I have previously suggested, numbers-as-quantity are fundamentally adjectives, whereas numbers-as-sequence are, if anything, nouns. The number-as-quantity concept (metaphor) can easily accomodate fairly simple fractions, but as one deals with more complicated rational numbers it tends to slip over into a number-as-measurement version. And since measurement scales often have the form of straight lines, we get the numbers-as-points-on-a-line metaphor.
+
+In real life, measurements are always approximate, of course, but Pythagoras and Euclid realized that logic could be applied to measurement, which in turn led to the realization that if we (in accord with some Platonic fantasy) treat measurements as exact, then in principle there are measurements (such as π and the square root of 2) which do not correspond to numbers in the Greek system (which uses letters of the alphabet to denote the natural numbers) or Roman numbering system.
+
+The Real Numbers
+The real numbers, so essential in the development of contemporary mathematics, are (in my opinion) essentially an artifact of the system of writing numbers as decimals which we learned from the Arab world.
+The "real" numbers comprise everything that the ordinary person or scientist recognizes as being a "number": integers, fractions, and even irrational numbers. (They are "real" only inasmuch as they do not involve square roots of negative numbers, which --- as every calculus student knows --- "do not exist." (And in fact they don't exist in the context of the ordinary calculus course.) It is important to realize that here the word "real" in mathematics is a technical term and does not have its ordinary meaning. One should not make the mistake of thinking that the term indicates a danger of being beguiled by bogus numbers.
+
+To a mathematician, the set of real numbers corresponds to the point on a straight line. In fact, mathematicians commonly use the phrase "the real line" as a synonym for the set of real numbers.
+
+ 
+
+Formalism
+To a contemporary mathematician, questions such as the what numbers really mean and whether they really exist are irrelevant. What matters is only the way numbers function in practice, as described by the Peano Axioms, for instance, and all the theorems that follow from these axioms.
+At the beginning of the Twentieth Century, Bertrand Russell and Alfred North Whitehead wrote a very influential book called Principia Mathematica. The book is actually devoted to logic and set theory, and Bertrand Russell in fact made the claim that all mathematics is nothing but logic. In the philosophy of mathematics, this point of view is called logicism. Although logicism is a defensible point of view, as such it is not longer in vogue. But a variation of it became the prevailing orthodoxy among mathematicians of the later Twentieth Century, namely the idea that all mathematics is nothing except set theory. This point of view is what Lakoff and Núñez call formalism.
+
+As an example, for some reason which I didn't quite understand at the time and have never understood thereafter, at the time when I began my graduate studies in Mathematics (circa 1966), it was thought very important to teach calculus students that a function is a set of ordered pairs (with no two pairs having the same first coordinate).
+
+This is not as bizarre as it seems. In terms of the functions one finds in beginning calculus courses, for instance, one can think (although I don't recommend it!) of a function as being identical to its graph. One can then, as is absolutely standard in contemporary mathematics, think of the graph as consisting of a set of points in the Cartesian plane. And then one can think of points as being ordered pairs. So thus, if one accepts all these identifications, which are quite standard and do not pose any logical difficulty, a function does in fact become a set of ordered pairs.
+
+But in practice, when is actually working with functions, it is almost impossible to think of them as sets of ordered pairs. Instead in practice, a mathematician thinks of functions in the way that is given in almost all calculus books written before, say, 1960.
+
+In teaching students formalistic approaches such as thinking of functions are sets of ordered pairs, mathematicians were engaged in a sort of hypocrisy. Students were being taught a point of view which was logically defensible, but which mathematicians themselves do not use in practice. Fortunately, this way of thinking of functions later went very much out of fashion.
+
+The idea that all of mathematics is just set theory was, in my opinion, a mere widespread aberration, not very useful for the most part, but also not very pernicious. But another type of formalism, axiomatic formulism, is not so easy to dismiss.
+
+Axiomatic Formalism
+The axiomatic approach arose during the beginning of the twentieth century, for instance, when mathematicians noticed that the theory that arose in working with the set of solutions to certain types of differential equations was exactly the same as the theory involved in working with the solutions to a system of simultaneous linear algebraic equations. Whether the elements one is working with are n-tupes of real numbers (i.e. singly-indexed arrays, in the language of computer programming) or differentiable functions of a real variable, the logic is exactly the same.
+The natural way to use this insight would be, when working in the theory of linear differential equations, to make statements like, "By analogy to the theory of vectors, we will say that a set of differentiable funtions is linearly independent if...."  But instead, Peano had the idea to define a vector space to be any structure satisfying a certain set of axioms, regardless of whether the elements in this structure are vectors, functions, or whatever. (Essentially the idea is that a vector space is anything consisting of things that can be added and multiplied by scalars --- i.e. real numbers --- and where the usual a rules of algebra are valid.) Peano's idea was fully vindicated over the course of the Twentieth Century when the concept of a vector space turned out to be one of the most important and useful concepts in mathematics.
+
+To the best of my knowledge, this was the first instance of the modern point of view that a mathematical subject is characterized not by its subject matter --- vectors, functions, whatever --- but by its logical structure. And this structure should be given by a set of axioms, which in and of themselves characterize the particular mathematical subject.
+
+In geometry, for instance, the modern axiomatic approach does not beginning by defining the concepts of point and line, as Euclid did. Instead, "point" and "line" are taken as undefined terms, which can in applications be interpreted in any way that makes the axioms true. And, in fact, in some of the most important applications of geometry, points will be given as set of coordinates, one of which might represent, say, temperature another pressure.
+
+And in fact, a contemporary mathematician would comment, one cannot define points and lines as Euclid did, because these do not actually exist in the real world. I.e. there do not exist things in the real world that have position but not size, as points should, or length but not width, as lines should.
+
+In its most extreme form, axiomatic formalism says that all mathematical work can be thought of as a game played with meaningless symbols according to an assigned set of rules. Although that is a logically valid point of view, but I have never met any mathematician above the level of beginning graduate student who thought of his work that way. It is difficult to see how anyone could put in all the work required to find and prove mathematical theorems if he believed that all his research was meaningless.
+
+Another idea, which intrigued me as a student for a while, is that if one studies, for instance group theory, then what one is really studying are not groups but rather the axioms for a group. Again, from a basis of pure logic this is an absolutely correct point of view, but, again, if this is how one thinks of one's work, then why would one bother? (All the theorems one proves must in fact derive from the axioms. But to persevere, the group theorist must believe that his theorems are about something.)
+
+To say that the axiomatic approach involves thinking of the concepts in a particular mathematical subject area as being meaningless is actually quite misleading. What one is in fact doing is what one always does in mathematics: working with variables (words in this case) which can be assigned a number of possible values, and manipulating these variables in ways that are valid regardless of the values assigned.
+
+So if one develops a formal theory of linear algebra in which one gives no specific meaning to the word "vector," it is not because no meaning is possible, but rather because one wants a theory that will be valid in many quite diverse interpretations.
+
+Axiomatic formalism became a very valuable tool over the course of the Twentieth Century (and continues to be one today). Group Theory, for instance, turned out to be extremely useful not only in various parts of mathematics, but also in physics and chemistry. There are many parts of contemporary mathematics where the axiomatic approach is now the only conceivable one.
+
+The book by Lakoff and Núñez reminds us though that there are other mathematical areas, however, where, even though one can certainly state axioms, axiomatic formalism does not play such an essential role. In these areas, mathematics is actually about something, rather than about logical structures which apply to many different things. Number Theory is one obvious example, as well a most forms of geometry, and a great deal of basic analysis (calculus), especially, perhaps, complex analysis (the theory of calculus using compex numbers).
+
+ 
+
+Embodied Mathematics
+In attacking formalism based on set theory, Lakoff and Núñez state (pp. 371--372)
+
+Mathematics, in its totality, has enormously rich and interesting ideas --- ideas like magnitude, space, change, rotation, curves, spheres, spirals, probabilities, knots, equations, roots, recurrence, and so on. Under the Formal Reduction Metaphor, all this conceptual richness is assigned a relatively diminished structure in favor of the relative conceptual poverty of symbol strings and the ideas of set theory: elements sets, n-tuples, a membership relation, a subset relation, unions, intersections, complements, and so on.
+There are two interpretation of this conceptual metaphor. The one that makes sense to us is what we call the cognitive interpretation. According to this interpretation, most practicing mathematicians... unconsciously make use of a metaphorical blend of both the mathematical subject matter and the set-and-symbol structure.... No human mathematician thinks about an algebraic statement about numbers such as
+
+a + b = b + a
+only in terms of set-theoretic structures. Real mathematicians are aware that numbers and arithmetic operations can be thought of as sets, but that doesn't prevent them from thinking in terms of our ordinary ideas of numbers and arithmetic.
+The second interpretation takes the conceptual metaphor as literally true. Numbers and arithmetic operations and in fact all mathematical concepts are in fact simply sets. Under this interpretation, mathematics has no ideas. The very notion of mathematical ideas as constutive of mathematics must appear as nonsense once we think of all of mathematics as consisting of nothing except statements about sets.   [I have paraphrased this quite a bit. --E.L.L.]
+
+Axiomatic formalism, as I have discussed above, says not so much that mathematics has no ideas, but that mathematical subjects have no subject matter, only structure. But the fact that say, group theory, is not about specific groups but rather about the general structure determined by the group axioms doesn't mean that group theory is not actually about anything, but rather that group theory is about all the incredibly many things in mathematics and its applications which have the structure of a group. Otherwise it wouldn't be interesting.
+
+What Lakoff and Núñez proposed instead of formalism is a way of thinking about mathematics that is the antithesis of formalism, and which they call Embodied Mathematics. Their description of this takes two pages, but to me the key point is the following:
+
+In the mind of those millions who have developed and sustained mathematics, conceptions of mathematics have been devised to fit the world as conceived and conceptualized. This is possible because concepts like change, proportion, size, rotation, probability, size, rotation, probability, recurrence, iteration, and hundreds of others are both everyday ideas and ideas that have been mathematicized. The mathematization of ordinary human ideas is an ordinary human enterprise.
+The Case of Geometry
+Although it is true that concepts and theorems in geometry can be applied to situations which are not at all "geometric" in the naive sense of the word, mathematicians who specialize in the study of geometry do not in fact take the point of view that words such as "point" and "line" are undefined terms. And in fact, even while stating that points and lines and other geometric entities do not actually exist in the real world, they actually draw lots of pictures to illustrate their theorems and proofs.
+The usual way to get around the non-existence of points and lines in the world is to define these as being sets of coordinates. But this doesn't really eliminate the problem. No geometer actually thinks of his theorems as being about sets of coordinates.
+
+Furthermore, when one says that a point is specified by coordinates, these coordinates are given by real numbers, which are precise, and as such can in principle be expressed to infinitely many decimal places. But no actual measurement in the world is ever infinitely precise. Thus thinking of points as sets of coordinates does not at all circumvent the problem that points as mathematicians think of them simply do not exist in the tantible world.
+
+But points and lines do exist in the world, even though they may not be tangibly manifested. When Euclid says that a point has zero size and a line has zero width, his statement is an idealization. But it is just as much an idealization when a problem in a calculus book says that the length of a certain line segment is the square root of two.
+
+It is a paradox that mathematics, which is precise, can be useful in the real world, which is never precise. But it is no more paradoxical in geometry than in other applications of mathematics to the real world.
+
+Was Kronecker Correct After All?
+What Lakoff and Núñez are suggesting (without overtly making the suggestion) is contrary to the whole spirit of axiomatic mathematics.
+The prevailing opinion among mathematicians, at least as far as I know, is that mathematics has to do with a man-made universe, a mental universe, completely separate from the "real world," whatever that may be. But it takes a highly intellectually sophisticated mind to think that supernovas and electrons are real but that numbers such as 6 and 59 are not.
+
+It is more reasonable to say that the real world is the world of our experience, experience which is rooted in information from our senses, whose form is in many ways determined by the nature of our sense organs and by the ways in which we experience the world through movement, but also includes of all those cultural entities (such as numbers) which we commonly accept as a part of reality. Lakoff and Núñez are suggesting thinking of the subject matter of mathematics not as abstract axiomatic structures, but as of things that actually exist in the world as we know it.
+
+The point (at least as I see it) is not for mathematics to abandon the study of abstract structures, which has been so powerful in Twenieth Century mathematics, but to realize that this is only one aspect of mathematics, and that concrete (as it were) subject matter is also of great importance.
+
+This brings me back to Kronecker's statement that the natural numbers were created by God and all the rest is due to men. At this point in history, we mostly don't look very favorably on the use of the G-word in science, but there is a certain merit in Kronecker's statement, if one doesn't get carried away and take the religious reference seriously.
+
+It's very plausible to say that the natural numbers were invented by man, but in a way this is like Rousseau's claim that the idea of government arose out of a social contract between citizens and rulers. In fact, one cannot point to any historical moment were people got together and created government by establishing a social contract. (Looking at those historical moments where new nations, such as the United States, came into being, indicates that the reality is more complicated.) And one cannot point to any instance in any known present or historical culture where people set about consciously developing the notion of number.
+
+Natural numbers (which is to say positive integers) are an innate part of the world as we know it. They are not a tangible aspect of the world, but they are one of those cultural things like language that are so innately a part of the world as we know it that we would have trouble imagining a world without them.
+
+And while it seems unlikely that primitive man had occasions to say, "I'll take a half liter of the Bordeaux, please," simple fractions seem to have been a part of human languages as long as language has existed. It seems only slightly fancible to state that they too were invented by God.
+
+However the idea of doing arithmetic with fractions undoubtedly arose quite a bit later. I am not familiar enough with the history of Babylonian and Egytian and early Greek and Arabic mathematics to see if we can trace the development of the arithmetic of the positive rational numbers.
+
+When it comes to negative numbers, however, which are a much simpler concept in terms of their structure, we can indeed find in the writings of medieval algebraists the traces of humankind's conscious development. We find that negative numbers were at first seen as a convenient fantasy, things not actually existing but which could be used in the intermediate steps of calculations without producing error. My guess is that negative numbers began to be seen as completely legitimate at about the time that the West began to learn algebra from the Arabic world.
+
+The Unreal "Real Numbers"
+It was in developing the concept of real numbers that humankind made the real devel with the devil and took mathematics into Never Never Land. And yet, as far as I know, this was done with very little trepidation, very little realization that mathematics was now stepping into the jungle. It was not until the end of the 19th and the beginning of the 20th Centuries that mathematicians such as Cantor and Lesbesgue began to make us aware of all the tigers and cobras we had allowed into our mathematical world.
+Once one had the concept of that the decimal representation of numbers (which we learned during the Renaissance from the Arab world) could include numbers that are not integers, by use of a decimal point and allowing digits to the right of that decimal point, then it would be only a small step (and here I speak speculatively, and not as one who knows the history) to move on to the possibility that numbers written in decimal form could continue to an infinite number of decimal places.
+
+The obvious objection here is that a number with an infinite number of digits could never be completely written down. But the fact that rational numbers (and only rational numbers) have decimal patterns consisting of a repeating sequence of digits shows that one can know some decimal expansions completely even without being able to write down the complete system of digits.
+
+For instance, when I tell you that
+
+22/35 = .3285614285614...
+and the last six digits repeat indefinitely, it would take a very obstinate quibbler to say that the decimal sequence of this number has not been completely specified.
+
+It seems reasonable to say that the decimal expansion of a real number x is completely known if we have a mathod where by for any natural number n, we can determine what the nth digit of x is.
+
+With the help of modern computers, we can now say that we know the decimal expansions for many real numbers such as π or the square too of, say, 7, even though these expansions do not have a repeating pattern. Certainly it is true that even with a very fast computer, finding the millionth digit of π (which will probably involve first finding all the previous digits) will take an enormously long time, but in principle it can be done.
+
+Thus, one is tempted to say, the decimal expansion of any real number can be completely specified, at least by means of a computer program.
+
+But a few examples do not make a theorem. In fact, the disconcerting truth is that the decimal expansions of the great majority of real numbers cannot be completely specified. There is no way of labeling or pointing to the great majority of real numbers. Thus these numbers are like ghosts in the mathematical world; we are sure they exist, but we can never see them.
+
+A computer program would specify the decimal expanion of a real number if it produces as output an integer, constituting the integer part of the number, and for every input of a natural number n, an integer between 0 and 9, giving the nth digit to the right of the decimal point.
+
+By means of a method known as the Cantor Diagonalization Principle it can be shown that any set of computer programs specifying real numbers will leave infinitely many out, even if the set contains infinitely many programs, One can apply this to the set of all computer programs which specify real numbers and see that there must be infinitely many real numbers which are not specifiable by any program. It doesn't make any difference what computer language the programs are written in. In fact, the same is true if instead of computer programs we choose to specify the decimal expansion of a real number by means of a paragraph (or even a book) written in English.
+
+What one does is to take the set of computer programs in question and, roughly speaking, to alphabetize it. More precisely, we first list all the programs, if any, that are only a single character long (almost certainly there are none of these) listed in "alphabetical" order, where our "alphabet" must include all the characters allowable in our particular programming language. We then list alphabetically all programs which are two characters long, etc. The point is to produce a sequential list of all the programs in the set under consideration.
+
+We now show how to produce a decimal expansion which is not in our set. (There is an apparent logical paradox here, and the way around it is by means of what is known as the undecidability of the Halting Problem for computer programs. But I don't want to get too technical, so you'll have to trust me on this one.)
+
+The integer part of the real number we are constructing can be anything we want. And for the first digit to the right of the decimal point, we choose any digit different from the first digit of the expansion produced by computer program number one. Then for the second digit of the number we want, we choose any digit different from the second digit of the expansion produced by program number two. Continuing in this way, we choose the nth digit to the right off the decimal point to be any digit different from the nth digit of the expansion produced by program number n. One can do this in a systematic way so that one does not need to make an infinite number of arbitrary choices. For instance, to make things simple, we can replace every digit by 7 unless the digit in question is itself 7, in which case we replace it by 4. Or we could replace every odd digit by 8 and every even digit by 5. (To forestall a purely technical quibble, it is wise to avoid replacing a 0 with a 9 or vice versa, although this is not really essential.)
+
+You need to take a few minutes to think about this, but what one sees is that for any n there will be a discrepancy between the number we have constructed and the number produced by the nth computer program in at least one digit (viz. the nth digit). Thus the decimal expansion we have constructed cannot be in our original list. (And in fact we see that we can do this in such a way that the anomalous expansion consists of only 7's and 4's.)
+
+In terms of the issue we are discussing, this is quite disturbing. We have argued for the existence of natural numbers, and even rational numbers, by arguing that the natural numbers are deeply rooted in our language and thus in our thinking and that even though numbers have no tangible existence, they do describe very real situations in the world. But real numbers, being infinitely precise, do not accurately describe the world. Furthermore, not only does human language not contain words for most real numbers, but it is not possible to label them even using such contrived tools as computer programs. (No system for labeling the real numbers using finite strings of symbols take from a finite alphabet, no matter how huge, can possibly work.)
+
+And yet the real number system is a very useful and in fact essential part of modern mathematics. It enables us to state and to prove wonderful theorems which are useful in dealing with the real world in astonishing ways. Even such a basic aspect of mathematics as calculus would have to be completely reformulated if we did not have the real number system available. It is not clear that this would even be possible, and it seems certain that in many ways the reformulated version would be far uglier than what we presently have.
+
+To some extent Erret Bishop has done such a reformulation (although with a different justification) in developing what he calls Constructive Analysis (or Constructive Mathematics). I am not qualified to express a judgement on Bishop's work. I can only say that it does not appeal to me.
+
+Infinity
+In the introduction to the book, Núñez states that one of his motivations for looking at mathematics was the desire to understand how human minds manage to comprehend the notion of infinity.
+Certainly one can comprehend the idea of an infinite process, which is to say a process that never ends. But what puzzled Núñez was that mathematics uses the concept of a "completed infinity," i.e. infinity as a unifed while rather than as a process which moves forward without ever reaching closure.
+
+I must say that at first I had a hard time seeing what Núñez was talking about. Because as a mathematician, my attitude is that all numbers are things that we humans have invented, and if we can invent 3 and 7, then why shouldn't we also invent infinity?
+
+But Núñez was not thinking as a mathematician but as a cognitive psychologist. And as such, he knew that, whatever mathematicians may say, most human being do not think of 3 or 7 as being artificially constructed logical devices. Most human beings perceive these as fundamental aspects in the word, just as much a part of the real world, even though not tangible, as a sheep or a steak dinner. Somehow there is something in our minds more than a mere word --- a gestalt, perhaps one could say --- that represents 3 and 7.
+
+We recognize 3 immediately when we see it --- i.e. in its manifestation as a set of three objects. In fact, for some urban individuals, it is possible that we recognize 3 slightly more quickly than we recognize a sheep.
+
+But then how do we manage to think about infinity?
+
+Some people might say: If you get away from city lights and look up at the night sky on a clear night and see all the stars, then you are seeing infinity. But this is a non-mathematician's answer. A mathematician would say that there are in fact only finitely many stars in the whole universe. (At least if Einstein was correct, and there are fairly conclusive reasons to believe he was.) In fact, there are only finitely many atoms in the whole universe.
+
+In the entire physical world, there does not exist an infinite set. Infinity is something that exists only in the world of mathematics.
+
+How then do we humans comprehend the notion of infinity?
+
+The answer that Lakoff and Núñez come up with is basically the same thing I always told students in my calculus classes (although Lakoff and Núñez say it more elaborately): "There is no infinity. When we say that the limit of f(x) as x approaches a is infinity, this is just a short-cut way of saying that there is no limit, but as x gets closer and closer to a, f(x) keeps getting larger and larger without bound."
+
+What I didn't say to them was, "And to me as a mathematician, there isn't any 3 or any 7 either. They're all just things we invented."
+
+ 
+
+ 
+
+Some slight nitpicking follows
+Interestingly enough, Lakoff and Núñez actually take the axiomatic point of view with regard to the real numbers. In the middle of the Twentieth Century, it was proven that there exist mathematical systems which satisfy all the usual axioms for the rational numbers (and thus all the axioms for the real numbers except the "completeness" one) and do contain all the real numbers but also contain elements other than the traditional ones. In fact, they contain the infinitesimals and infinite numbers originally asserted to exist by Leibniz (and rejected as ridiculous by Newton and almost all subsequent mathematicians until non-standard analysis was created in about 1966 by Abraham Robinson). Lakoff and Núñez interpret this as meaning that all of the familiar theorems stated about the real numbers which do not apply to this extended realm are in fact false. For instance, it is incorrect to define an infinite sum as being equal to its limit.
+
+In fact, since these statments are not true in the realm of extended real numbers, they cannot be a valid consequence of the usual axioms for real numbers if one omits the "completeness axiom" that states that every bounded set of real numbers has a least upper bound. (Equivalently, it states that every infinite series having only postive terms must either increase without limit or converge. This axiom fails if one only works with rational numbers, since an infinite series whose terms are rational numbers can converge to an irrational limit such as &pi.) To Lakoff and Núñez, this means that the statements are false. (However they are very careful in the way they state their assertion, and it is mathematically correct as stated.)
+
+But here I venture into treacherous waters, for I am certainly no expert on non-standard analysis. I simply fail to see why Lakoff and Núñez make such a big deal of the fact that certain results in standard analysis fail to hold in non-standard analysis. (Someone may eventually send me some email and explain it to me.)
+
+In their chapter on infinitesimals, Lakoff and Núñez state (pp. 254-255)
+
+[Conceptually, the concepts of non-standard analysis and the concepts in Cantor's set theory] lead to two utterly different notions of "infinite" numbers.... It is not surprising that Cantor did not believe in infinitesimals. After all, the infinitesimals provided a different notion of infinite numbers than his transfinite numbers --- one that characterized infinity and degrees of infinity in a completely different fashion.
+How can there be two different conceptions of "infinite number," both valid in mathematics? By the use of different conceptual metaphors, of course --- in each case, different versions of the Basic Metaphor of Infinity.
+
+The confusion between the two different notions of infinite occurs only in the minds of those who want the same word to have the same meaning in every possible context. And in fact, the usual term for Cantor's concept is "transfinite cardinal" rather than "infinite number."
+
+Moreover, most mathematicians of Cantor's time rejected infinitesimals. One can hardly fault them for this. A mathematician of Cantor's time would have had to be psychic for foresee that there would one day be a solid theoretical foundation (using a theorem in mathematical logical that was completely unknown at the time) for this concept.
+
+The mathematicians of that time also rejected Cantor's work on transfinite numbers, but in this case it was because they were too outraged by his results to be willing to follow his reasoning. Contemporary mathematicians, on the other hand, have no problem "believing in" both. There is no way that the concept of infinity from non-standard calculus can be applied to set theory or vice versa, so there is no conflict between the two. The issue with infinitesimals today is not one of "belief", but the question of whether non-standard analysis, the framework in which infinitesimals exist, is necessary and useful. I believe that the prevailing opinion is that, while having some value, it has yet to really prove its importance.
+
+[ Notes on Teaching Mathematics | Calculus | HOME ]
+ 
+
+ 

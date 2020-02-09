@@ -1,0 +1,168 @@
+Black Friday
+Games
+
+
+Entertainment
+Deals
+News
+Reviews
+Videos
+Forums
+Login / Sign Up
+
+PS5: Release Date Window, Price, Specs, Backwards Compatibility, And What We Know
+PlayStation 5 launches in late 2020, and here's a roundup of all the details that Sony has shared so far.
+By Oscar Dayus | @dayusz on November 20, 2019 at 2:27PM PST
+
+
+Sony's next-generation console is fast approaching with a planned launch of sometime next year during the holiday season. With the upcoming release window known, Sony has started revealing some of the first details, which we're expecting to hear even more about next year.
+
+First, we know that the console's official name. Unsurprisingly, the console is called the PlayStation 5. It will also have PS4 backwards compatibility and SSD storage, and it will support PSVR. The company has also outlined some green, energy-efficient initiatives it is planning for the next generation.
+
+Below you can find all the details known about Sony's upcoming console. It's likely we'll hear more details--big or small--in the coming months, so be sure to bookmark this page and check back often as more gets confirmed.
+
+Table of Contents [hide]
+PS5 Release Date
+PS5 Price
+Will PS5 Be Backwards Compatible With PS4 games?
+PS5 Specs And Disc Drive
+PS5 Controller
+Will PS5 Support PSVR?
+Energy Efficiency
+PS5 Games
+PS5 UI
+PS5 Release Date
+This is surely the question on everybody's lips: when will the PS5 come out? Sony, as you'd expect, is tight-lipped on the matter, but it has now confirmed a "holiday 2020" release window for the PlayStation 5.
+
+
+PS5 Price
+Again, Sony has not stated how much its new console will cost, but it did say just recently that the PS5's price will be attractive to gamers. "I believe that we will be able to release it at an SRP [suggested retail price] that will be appealing to gamers in light of its advanced feature set," said Mark Cerny, the lead architect of the PS4 who's currently working on its successor.
+
+Of course, you wouldn't expect Sony to say anything different, but one gets the feeling the company has learned from the PS3's exorbitant price tag--and the console's subsequent struggles--and the PS4's more reasonable cost and subsequent successes.
+
+Will PS5 Be Backwards Compatible With PS4 games?
+Cerny also confirmed the PS5 will be backwards compatible with PS4 games, as the two consoles are built upon similar internal architectures. This will be welcome news for those who were disappointed by the PS4's lack of backwards compatibility with PS3, PS2, and PS1 games.
+
+SIE president Jim Ryan told GameSpot sister site CNET backwards compatibility and cross-gen are important for the PS5 to help players have a seamless transition.
+
+"Whether it's backwards compatibility or the possibility of cross-generational play, we'll be able to transition that community to next-gen," he said. "It won't be a binary choice about whether you have to be either on PlayStation 4 or next-gen to continue your friendship."
+
+In yet more welcome news, PS4 games will even run faster than they do on your current console, in part because the PS5 will contain a solid state drive, as opposed to hard drives that current consoles ship with. Cerny has demonstrated a load screen from Insomniac's Spider-Man taking less than a second on a PS5 development kit, compared with 15 seconds on a PS4 Pro.
+
+Sony showed off the faster loading times during an investor presentation in May. You can see the video below, which was captured by Wall Street Journal reporter Takashi Mochizuki.
+
+
+Takashi Mochizuki
+✔
+@mochi_wsj
+Sony's official video comparing performance of PS4 Pro vs next-gen PlayStation
+
+Embedded video
+23.6K
+8:26 PM - May 20, 2019
+Twitter Ads info and privacy
+9,627 people are talking about this
+PS5 Specs And Disc Drive
+This is where Sony has been surprisingly forthright with new information. The company has confirmed the PlayStation 5 will contain an AMD chip that has a CPU based on the third-generation Ryzen. It'll have eight cores of the seven-nanometer Zen 2 microchip. The console will also support 8K gameplay, but this will of course be dependent upon TVs catching up.
+
+Graphics will be driven by a custom version of Radeon's Navi line. This graphics chip will support ray-racing, something which is starting to become popular in movies and video games. Although it is traditionally thought of as a lighting technique, Cerny says this technique could also improve game audio. In fact, PS5 will fully support 3D audio.
+
+The aforementioned SSD is a big detail too, as it means games will load faster and be able to handle more objects on-screen at once than current HDD-driven consoles. Characters and cameras could move faster through game worlds, as environments could be loaded in much faster than they are at present.
+
+As one final detail, we know the PS5 will not go the route of the Xbox One S All-Digital Edition, which doesn't include a disc drive. Instead, the PS5 will include a disc drive, so rest assured you'll still be able to buy and play physical games. PS5 discs will have a capacity of 100 GB, and the console will also support 4K Blu-Rays.
+
+Sony has also confirmed that the PS5 is capable of supporting 4K visuals at 120Hz for those who have TVs that can support that. 120Hz is a refresh rate around double the rate of standard TVs.
+
+PS5 Controller
+Sony has opened up on its vision for the PlayStation 5's controller by saying: "One of our goals with the next generation is to deepen the feeling of immersion when you play games, and we had the opportunity with our new controller to reimagine how the sense of touch can add to that immersion.
+
+"To that end, there are two key innovations with the PlayStation 5's new controller. First, we're adopting haptic feedback to replace the 'rumble' technology found in controllers since the 5th generation of consoles. With haptics, you truly feel a broader range of feedback, so crashing into a wall in a race car feels much different than making a tackle on the football field. You can even get a sense for a variety of textures when running through fields of grass or plodding through mud.
+
+"The second innovation is something we call adaptive triggers, which have been incorporated into the trigger buttons (L2/R2). Developers can program the resistance of the triggers so that you feel the tactile sensation of drawing a bow and arrow or accelerating an off-road vehicle through rocky terrain. In combination with the haptics, this can produce a powerful experience that better simulates various actions. Game creators have started to receive early versions of the new controller, and we can't wait to see where their imagination goes with these new features at their disposal."
+
+In addition to the above comments from Sony Interactive Entertainment president Jim Ryan, Sony has also separately confirmed to Wired that the controller "doesn't have a name yet," but contains an improved speaker, USB-C connectivity, and a larger-capacity battery.
+
+Will PS5 Support PSVR?
+The current PSVR will indeed be supported by PS5, as will the PlayStation Move controllers. "I won't go into the details of our VR strategy," Cerny has stated, "beyond saying that VR is very important to us and that the current PSVR headset is compatible with the new console." The system architect stopped short of saying whether a new PSVR device will ever come out, however.
+
+Energy Efficiency
+Though Sony has been generally quiet about the PS5 since its announcement, it came forward to reveal just slightly more information in conjunction with the announcement of a United Nations initiative. The Playing for the Planet alliance aims to make the video game industry more environmentally friendly. To that end, Sony announced that the next generation of its hardware will use dramatically less power when placed into suspend/sleep mode. Just one million PS5 users turning on the energy-efficient feature would save enough electricity to power 1,000 US homes. The company is also conducting a carbon footprint assessment and looking into more energy-efficient data centers.
+
+PS5 Games
+We don't yet know many confirmed games coming to PS5. There were rumors Hideo Kojima's Death Stranding would come to PS5, but that game's sooner-than-expected PS4 release date has cast doubt on that particular rumor. When asked by GameSpot whether Death Stranding would come to PS4, PS5, or both, Sony avoided answering the question directly and simply listed the game as one of many that "PlayStation fans have ... to look forward to on PS4."
+
+Aside from Death Stranding, it's reasonable to presume annual titles like FIFA and Call of Duty would make the jump to PS5, though their developers haven't stated anything concrete.
+
+The only confirmed game to be playable on PS5 is the Final Fantasy VII remake, after Square Enix's president and CEO Yosuke Matsuda said: "I believe that our teams have made it so that the game will support both the next generation and the current generation of consoles. I believe it is being developed so that it is going to be playable on both, so I'm not really concerned about that and I believe that the fans are also going to be able to enjoy it on both, including the next-generation of consoles."
+
+However, it's not clear whether Matsuda was referring to a dedicated PS5 edition of the game, or if he was simply referring to the PS4 version being playable on PS5 via backward compatibility. If it's the latter, then we can technically count every PS4 game as playable on PS5.
+
+Finally, we know Bluepoint Games, the studio behind remakes such as Shadow of the Colossus and Uncharted: The Nathan Drake Collection, is working on a PS5 game that it says is a "big" one.
+
+PS5 UI
+PlayStation 5's new user interface will allow you to see more details about friends' games without opening the applications themselves. "Even though it will be fairly fast to boot games," says Cerny, "We don't want the player to have to boot the game, see what's up, boot the game, see what's up. Multiplayer game servers will provide the console with the set of joinable activities in real time. Single-player games will provide information like what missions you could do and what rewards you might receive for completing them—and all of those choices will be visible in the UI. As a player you just jump right into whatever you like."
+
+Filed under:GametechPlayStation 5
+Got a news tip or want to contact us directly? Email news@gamespot.com
+
+Leave Blank
+ SHARE
+oscardayus
+Oscar Dayus
+Oscar is GameSpot's Staff Writer, and as the youngest member of the UK office he's usually the butt of the joke.
+ @dayusz
+by TaboolaPromoted Links
+From The Web
+Wells Fargo $400 Welcome Bonus Offer. Learn More
+Wells Fargo - Member FDIC
+You Should Look For Your High School Yearbook, It's Free
+Classmates.com
+Earn 3X Points on Popular Streaming Services!
+Wells Fargo
+PS4 Game Deals Black Friday 2019: Select PlayStation Exclusives Are $10
+PS4 Black Friday Games Sale On PSN: Modern Warfare, Borderlands 3, And More
+Black Friday 2019: Here Are The Best PS4 PS Plus Subscription Sales So Far
+MORE NEWS
+Call Of Duty: Modern Warfare First Season Beginning Next Week	
+Call Of Duty: Modern Warfare First Season Beginning Next Week
+Hearthstone Descent Of Dragons Card Reveal: New Mage Legendary	
+Hearthstone Descent Of Dragons Card Reveal: New Mage Legendary
+Apex Legends Update Increasing Level Cap, Adding More Rewards	
+Apex Legends Update Increasing Level Cap, Adding More Rewards
+Baby Yoda Merch Is Here And It Looks Like Cheap Bootlegs	
+Baby Yoda Merch Is Here And It Looks Like Cheap Bootlegs
+Pokemon Global Link Shutting Down, Free Pokemon Being Distributed To Users	
+Pokemon Global Link Shutting Down, Free Pokemon Being Distributed To Users
+We're Giving Away A Pokemon Sword And Shield Bundle	
+We're Giving Away A Pokemon Sword And Shield Bundle
+
+
+© 2019 CBS Interactive Inc. All rights reserved.Privacy PolicyAd ChoiceTerms of UseHelpAdvertisePartnershipsCareers
+MORE SITES
+gamespot.com.br
+giantbomb.com
+gamefaqs.com
+metacritic.com
+gamerankings.com
+REVIEWS
+Latest Reviews
+PC
+PS4
+Xbox One
+Switch
+NEWS
+Latest News
+PC
+PS4
+Xbox One
+Switch
+SHOWS
+True Fiction
+GameSpot Community Fridays
+Audio Logs
+GameSpot of Thrones
+GameSpot Live
+TALK TO US
+Forums
+GameSpot
+GameSpot Entertainment

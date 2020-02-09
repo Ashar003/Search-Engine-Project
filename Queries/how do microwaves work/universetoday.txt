@@ -1,0 +1,142 @@
+Skip to content
+Universe Today
+Universe Today 
+UNIVERSE TODAY
+
+Space and astronomy news
+
+How Do Microwaves Work
+POSTED ONNOVEMBER 18, 2009 BY JOHN CARL VILLANUEVA
+
+ 
+How Do Microwaves Work
+[/caption]Microwave ovens don’t operate in the same manner as conventional ovens. So how do microwaves work then? Microwave ovens take advantage of the behavior of water molecules when subjected to electromagnetic waves found in the microwave band.
+
+To understand how this happens, we’ll have to comprehend the basic properties of water molecules and microwaves (the electromagnetic waves, not the oven).
+
+The mickey mouse-shaped water molecule is actually a dipole. That is, one side is positively charged while the other is negative.
+
+
+ 
+Microwaves used for cooking, on the other hand, are electromagnetic waves possessing frequencies around the 2.45 GHz range. Now, electromagnetic waves are waves made up of alternating electric and magnetic fields. For this discussion, we’re more concerned with the alternating electric fields because charged particles readily react when exposed to them.
+
+That is, when a positively charged particle is exposed to an electric field, it experiences a force (due to the field) pointing in the direction of the field. By contrast, when a negatively charged particle is exposed to the same field, it experiences a force in the direction opposite to the field.
+
+Now, since an electromagnetic wave (like the microwave) is made up of alternating electric fields, a charge exposed to it will experience forces regularly changing in direction. For water molecules, which are dipoles, the net effect would force the molecules into rotation. Again, since the fields are alternating, the rotation will change from clockwise to counterclockwise at regular time intervals.
+
+
+ 
+The agitated water molecules would then possess heat energy that can rub off (much like friction) to nearby molecules. If the water molecules are well distributed in the body subjected to the microwave (like food, for example), then the entire body can heat up quickly – not to mention, uniformly.
+
+Electromagnetic waves in the microwave range are most suitable for this purpose because the water molecules readily rotate when exposed to such frequencies.
+
+Avoid putting in metal into the microwave oven while heating. The reason is because pointed portions of the metal can accumulate high voltages which can cause dielectric breakdown of the air inside the oven. Once this happens, some harmful gases can be produced.
+
+
+ 
+Since microwave ovens normally don’t have heating elements, temperature can drop right away in the inner walls of the oven. So you’ll only need to worry about getting burned by the food and not the walls.
+
+You can read more about electromagnetic waves here in Universe Today. Want to know about how the 25-year old mystery of X-ray emissions was solved? We’ve also written about how astronomers resolved Milky Way’s mysterious X-Ray glow
+
+There’s more about it at NASA and Physics World. Here are a couple of sources there:
+X-Ray Astronomy
+X-ray Beams Thin Out
+
+
+ 
+Here are two episodes at Astronomy Cast that you might want to check out as well:
+X-Ray Astronomy
+Optical Astronomy
+
+Source: Wikipedia
+
+Share this:
+Click to share on Facebook (Opens in new window)Click to share on Pocket (Opens in new window)Click to share on Twitter (Opens in new window)Click to share on LinkedIn (Opens in new window)Click to share on Tumblr (Opens in new window)Click to share on Pinterest (Opens in new window)Click to share on Reddit (Opens in new window)Click to print (Opens in new window)More
+Like this:
+Loading...
+CATEGORIESASTRONOMY, GUIDE TO SPACE
+TAGSELECTROMAGNETIC FIELD, ELECTROMAGNETIC WAVES, HOW DO MICROWAVES WORK, MICROWAVE
+Post navigation
+Previous Post
+PREVIOUS
+What is Einstein’s Theory of Relativity?Next Post
+NEXT
+How Does Geothermal Energy Work
+
+ 
+Member Log in
+Join our Patreon community
+Join our 836 patrons! See no ads on this site, see our videos early, special bonus material, and much more. Join us at patreon.com/universetoday
+
+ Get our new book!
+Search for:
+Search …
+Search
+Home
+Members
+Guide to Space
+Carnival
+Photos
+Videos
+Forum
+Contact
+Privacy
+UNIVERSE TODAY PODCAST
+Universe Today podcasts with Fraser Cain
+Show Podcast Details
+Audio Player
+Play Pause
+Change Playback Rate1x
+Skip Backward15
+Jump Forward15
+Show Episode Text
+Share This Episode
+00:00
+00:00
+Search Episodes
+Episode 597: Q&A 108: Why Are There Meteor Showers Every Year? And More, Featuring Paul Geithner from JWST
+NOV 29, 2019
+Episode 595: Fraser as Guest on the Skeptic's Guide to the Universe
+NOV 27, 2019
+Episode 596: Open Space 54: Dr. Casey Handmer On How Starship Changes Everything
+NOV 27, 2019
+Episode 594: Building Space Telescopes... In Space
+NOV 26, 2019
+Episode 593: Q&A 107: All Your James Webb Questions, Answered
+NOV 22, 2019
+Episode 592: Open Space 53: Live QA with Paul Geithner from James Webb
+NOV 22, 2019
+Episode 591: The History And Future Of The James Webb Space Telescope
+NOV 19, 2019
+Episode 590: Open Space 52: Dustin Gibson from Oceanside Photo and Telescope
+NOV 18, 2019
+Episode 589: Q&A 106: Do Geostationary Satellites Reenter The Atmosphere? And More...
+NOV 15, 2019
+Episode 588: Open Space 51: Where Would I Send A Rover? And More...
+NOV 8, 2019
+LOAD MORE
+Space stories from across the internet, sent to you by email. 
+Name
+
+
+Email
+
+
+We won't use your email for any other purpose and you can unsubscribe any time. Check out our privacy policy if you have any questions.
+FOLLOW US
+Twitter
+ 
+Instagram
+ 
+YouTube
+ 
+Facebook
+ 
+RSS Feed
+ 
+Twitch
+
+ 
+Privacy Policy Proudly powered by WordPress
+Privacy & Cookies: This site uses cookies. By continuing to use this website, you agree to their use.
+To find out more, including how to control cookies, see here: Cookie Policy

@@ -1,0 +1,193 @@
+
+
+
+Newsletter
+Sign inShop
+News
+Books & Culture
+Fiction & Poetry
+Humor & Cartoons
+Magazine
+Crossword
+Video
+Podcasts
+Archive
+Goings On
+
+
+Annals of Technology
+What Are the Odds We Are Living in a Computer Simulation?
+
+By Joshua RothmanJune 9, 2016
+
+The posthuman future has never been easier to imagine—especially for those who work at the forefront of technology.Photograph by Janus Films/Everett
+Last week, Elon Musk, the billionaire founder of Tesla Motors, SpaceX, and other cutting-edge companies, took a surprising question at the Code Conference, a technology event in California. What, a man in the audience asked, did Musk make of the idea that we are living not in the real world, but in an elaborate computer simulation? Musk exhibited a surprising familiarity with this concept. “I’ve had so many simulation discussions it’s crazy,” Musk said. Citing the speed with which video games are improving, he suggested that the development of simulations “indistinguishable from reality” was inevitable. The likelihood that we are living in “base reality,” he concluded, was just “one in billions.”
+
+Musk, it seems, has been persuaded by what philosophers call the “simulation argument,” an idea given its definitive form in a 2003 paper by the Oxford philosopher and futurologist Nick Bostrom. (Raffi Khatchadourian profiled Bostrom for this magazine last year.) The simulation argument begins by noticing several present-day trends in technology, such as the development of virtual reality and the mapping of the human brain. (One such mapping effort, the brain Initiative, has been funded by the Obama Administration.) The argument ends by proposing that we are, in fact, digital beings living in a vast computer simulation created by our far-future descendants. Many people have imagined this scenario over the years, of course, usually while high. But recently, a number of philosophers, futurists, science-fiction writers, and technologists—people who share a near-religious faith in technological progress—have come to believe that the simulation argument is not just plausible, but inescapable.
+
+The argument is based on two premises, both of which can be disputed but neither of which are unreasonable. The first is that consciousness can be simulated in a computer, with logic gates standing in for the brain's synapses and neurotransmitters. (If self-awareness can arise in a lump of neurons, it seems likely that it can thrive in silicon, too.) The second is that advanced civilizations will have access to truly stupendous amounts of computing power. Bostrom speculates, for example, that, thousands of years from now, our space-travelling descendants might use nanomachines to transform moons or planets into giant “planetary computers.” It stands to reason that such an advanced civilization might use that computing power to run an “ancestor simulation”—essentially, a high-powered version of the video game “The Sims,” focussed on their evolutionary history. The creation of just one such simulated world might strike us as extraordinary, but Bostrom figures that thousands or even millions of ancestor simulations could be run by a single computer in the future. If that’s true, then simulated human consciousnesses could vastly outnumber non-simulated ones, in which case we are far more likely to be living inside a simulation right now than to be living outside of one.
+
+Superficially, the simulation argument bears some resemblance to the one made by René Descartes, in the seventeenth century, that there could be an undetectable “evil demon” shaping our perceptions. But, where Descartes’s argument was essentially about skepticism—How do you know you’re not living in the Matrix?—the simulation argument is about how we envision the future. For more than a century, futurists and sci-fi writers have imagined that, someday, human beings will use technology to become “posthuman,” transcending the limits of the human condition. They picture a time when people cheat death by uploading their minds into computers, augment or replace themselves with artificial intelligences, or map the uncharted frontiers of physics, biology, and engineering to colonize the stars. It's possible to discern, in today’s world, the roots of this emerging posthuman future: the computer Watson has won “Jeopardy!”; virtual reality has arrived; a group of researchers has succeeded in simulating the nervous system of a roundworm in a body made of Legos; and, in September, Musk plans to announce his detailed plan for colonizing Mars.
+
+The posthuman future has never been easier to imagine—especially for those, like Musk, who work at the forefront of technology. Yet the idea that we are living in a kind of time loop adds a wrinkle to this dream. Maybe we’ll never reach the posthuman stage; at some point, technological development will cease. Perhaps our posthuman descendants simply won’t want to make simulations (although, given our own interest in doing so, that seems unlikely). Or perhaps our species will go extinct before we learn how to simulate ourselves. “Maybe we should be hopeful that this is a simulation,” Musk concluded, last week, since “either we’re going to create simulations that are indistinguishable from reality or civilization will cease to exist. Those are the two options.” If you hope that humanity will survive into the far future, growing in power and knowledge all the while, then you must accept the possibility that we are being simulated today.
+
+Does it matter that we might be living in a simulation? How should we feel about that prospect? Artists and thinkers have come to various conclusions. The idea of living as a “copy” in a simulated world was explored, for example, in “Permutation City,” a 1994 novel by the science-fiction writer Greg Egan, which imagines life in the early days of simulation-creation. The protagonist, a computer scientist named Paul Durham, becomes his own guinea pig, scanning his brain into a computer to create two Pauls; while the original Paul remains in the real world, the digital Paul lives in a simulated one, which is a little like a modern video game. Standing in his simulated apartment and looking at a painting—Bosch’s “The Garden of Earthly Delights”—Paul can't quite forget that, when he turns around, the simulation will stop rendering it, reducing it to “a single gray rectangle” in an effort to save processing cycles. If we live in a simulated world, then the same thing could be happening to us: Why should a computer simulate every atom in the universe when it knows where our eyes aren’t looking? Simulated people have reasons to be paranoid.
+
+There’s also something melancholy about the idea of simulated life: the thrill of achievement is compromised by the possibility that everything has already happened to our descendants. (Presumably, they find it interesting to watch us fight the battles they have already lost or won.) This sense of belatedness is the theme of “The Talos Principle,” a somber and captivating video game by the Croatian studio Croteam. In the game, a plague has begun to wipe out humanity and, in a desperate bid to preserve something of our history and culture, human engineers have built a small simulated world populated by self-editing computer programs. Over time, the programs improve themselves, and you play as their descendent, a conscious program living long after the demise of humanity. Wandering through picturesque ruins of human civilizations (Greece, Egypt, Gothic Europe), you encounter fragments of ancient human texts—“Paradise Lost,” the Egyptian Book of the Dead, Kant, Schopenhauer, e-mails, blog posts—and wonder what it's all about. The game suggests that simulated life is inescapably elegiac. Even if Elon Musk succeeds in colonizing Mars, he won’t be the first one to do so. History, in a sense, has already happened.
+
+It may be, too, that we should look with some trepidation toward the transitional period—that strange era in which our real-world ways will be disrupted by the introduction of new and bizarre simulated life forms. In “The Age of Em,” a nonfiction work of social-science speculation published earlier this year, the economist and futurist Robin Hanson describes a time in which researchers haven't yet cracked artificial intelligence but have learned to copy themselves into their computers, creating “ems,” or emulated people, who quickly come to outnumber the real ones. Unlike Bostrom, who supposes that our descendants will create simulated worlds for curiosity’s sake, Hanson sees the business case for simulating people: instead of struggling to find a team of programmers, a company will be able to hire a single, brilliant em and then replicate her a million times. An enterprising em might gladly replicate herself to work many jobs at once; after she completes a job, a copied em might choose to delete herself, or “end.” (An em contemplating ending won’t ask “Do I want to die?,” Hanson writes, since other copies will live on; instead, she’ll ask, “Do I want to remember this?”) An em might be copied right after a vacation, so that whenever she is pasted into the simulated workplace, she is cheerful, rested, and ready to work. She might also be run on computer hardware that is more powerful than a human brain, and so think (and live) at a speed millions or even trillions of times faster than an ordinary human being.
+
+VIDEO FROM THE NEW YORKER
+Surfing on Kelly Slater’s Machine-Made Wave
+
+Hanson doesn't think that ems must necessarily live unhappy lives. On the contrary, they may thrive, fall in love, and find fulfillment in their competitive, flexible, high-speed world. Non-simulated people, meanwhile, may retire on the proceeds from their investments in the accelerated and increasingly autonomous em economy—a pleasant vantage point from which to observe the twilight of non-emulated civilization. Many people have imagined that technology will free us from the burden of work; if Hanson is right, that freedom could come through the virtualization of the human race.
+
+It’s possible, too, to find theological implications in the idea that we are living in a simulation. In a 2014 book called “Your Digital Afterlives,” the philosopher Eric Steinhart explores the parallels between the simulation argument and the views of various religions and schools of theological thought. Steinhart focusses on the possibility of nested simulations. If we achieve posthumanity within our simulated universe, we might go on to simulate people of our own, and they may go on to simulate people of their own, in a recursive loop. Meanwhile, the advent of simulation technology will force us to accept that we are likely living in a simulation ourselves. Reality, therefore, may turn out to consist of a vast number of nested simulations. In this possibility, Steinhart sees an infinite, digital version of the “great chain of being.” By the time we perfect simulation technology, he speculates, we will probably have achieved ethical maturity, and so will care about the people we simulate; we may even find ways to “promote” them into our simulation when they die, so that they can embark on an endless process of resurrection-through-ascension. The afterlife may turn out to be an infinite journey into ever-higher levels of simulation. (Bostrom, in his original paper, envisioned a different possibility: if the computational cost of all these nested simulations is too high, he wrote, our simulators might simply click “quit.” The invention of simulation might be the end of the world.)
+
+MORE FROM
+
+Annals of Technology
+
+
+
+
+
+
+
+
+
+The simulation argument is appealing, in part, because it gives atheists a way to talk about spirituality. The idea that we’re living in only a part of reality, with the whole permanently beyond our reach, can be a source of awe. About our simulators, one can ask the same questions one asks about God: Why did the creators of our world decide to include evil and suffering? (Can they change that setting in the preferences?) Where did the original, non-simulated world come from? In that sense, the simulation argument is a thoughtful and expansive materialist fable that is almost, but not quite, religious. There is, of course, no sanctity or holiness in the simulation argument. The people outside the simulation aren’t gods—they’re us.
+
+Considered as a parable, the simulation argument is essentially ironic. In the end, it’s a story about limits. On the one hand, we maximize human potential by creating worlds of our own; on the other, by doing so, we confirm the impossibility of ultimate knowledge about the universe in which we live. Transcendence enforces humility. The fulfillment of godlike ambition makes the universe harder to know.
+
+
+Joshua Rothman, the ideas editor of newyorker.com, has been a writer and an editor at the magazine since 2012.Read more »
+More:Elon MuskFuturePhilosophyTechnology
+
+Get book recommendations, fiction, poetry, and dispatches from the world of literature in your in-box. Sign up for the Books & Fiction newsletter.
+
+Enter your e-mail
+Submit
+
+Most Popular
+1.
+Postscript
+Clive James Got It Right
+By Adam Gopnik
+2.
+Puzzles and Games Dept.
+The Weekend Crossword: Friday, November 29, 2019
+By Natan Last
+3.
+On and Off the Avenue
+The Quiet Protests of Sassy Mom Merch
+By Jia Tolentino
+4.
+Culture Desk
+“63 Up” and the Child in All of Us
+By Sarah Larson
+5.
+culture
+The Twenty-Seven Best Movies of the Decade
+By Richard Brody
+Our Thirty Most Popular
+
+Video
+"World on a Wire"
+
+Richard Brody on Rainer Werner Fassbinder's "World on a Wire" (1973).
+
+Recommended Stories
+Page-Turner
+China’s Arthur C. Clarke
+China’s most popular science-fiction writer writes strange and remarkable fables about human progress—and its limits.
+By Joshua RothmanMar. 06, 2015
+Books
+The Man Who Became a Goat
+Thomas Thwaites was tired of being human—so he did something about it.
+By Joshua RothmanMay 23, 2016
+Postscript
+Clive James Got It Right
+Appetite was the writer’s great engine, but appraisal was his greatest gift.
+By Adam GopnikNov. 30, 2019
+Puzzles and Games Dept.
+The Weekend Crossword: Friday, November 29, 2019
+Hagrid got her for Harry at the Eeylops Owl Emporium: six letters.
+By Natan LastNov. 29, 2019
+
+Listen to the New Yorker Radio HourBuy the CoverPlay the CrosswordPlay the Jigsaw Puzzle
+News & Politics
+Daily Comment
+Our Columnists
+News Desk
+Culture
+Cultural Comment
+Culture Desk
+Goings On About Town
+The Critics
+Business, Science & Tech
+Currency
+Elements
+Humor
+Daily Shouts
+Shouts & Murmurs
+The Borowitz Report
+Cartoons
+Daily Cartoon
+Cartoon Caption Contest
+Cartoon Bank
+Books & Fiction
+Page-Turner
+Books
+Poems
+Fiction
+Magazine
+This Week's Issue
+Archive
+Subscribe
+Photography
+Photo Booth
+Portfolio
+Video
+Culture
+Humor
+News
+Politics
+Science & Tech
+Sports
+Podcasts
+The New Yorker Radio Hour
+Political Scene
+The Writer's Voice
+Fiction
+Poetry
+More
+Customer Care
+Buy the Cover
+Apps
+Crossword Puzzle
+Jigsaw Puzzle
+SecureDrop
+Store
+RSS
+Site Map
+Newsletters
+The Daily
+The New Yorker Recommends
+Daily Humor
+John Cassidy
+The Borowitz Report
+Amy Davidson Sorkin
+Midterms 2018
+Food
+About Us
+About
+Careers
+Contact
+FAQ
+Media Kit
+Press
+Accessibility Help
+Follow Us
+© 2019 Condé Nast. All rights reserved. Use of and/or registration on any portion of this site constitutes acceptance of our User Agreement (updated 5/25/18) and Privacy Policy and Cookie Statement (updated 5/25/18). Your California Privacy Rights. The material on this site may not be reproduced, distributed, transmitted, cached or otherwise used, except with the prior written permission of Condé Nast. The New Yorker may earn a portion of sales from products and services that are purchased through links on our site as part of our affiliate partnerships with retailers. Ad Choices
+

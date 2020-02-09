@@ -1,0 +1,28 @@
+Navigation Panel: (IMAGE)(IMAGE)(IMAGE)(IMAGE) (SWITCH TO TEXT-ONLY VERSION) (IMAGE)(IMAGE) (These buttons explained below)
+UNIVERSITY OF TORONTO
+MATHEMATICS NETWORK
+Answers and Explanations
+
+Do "Imaginary Numbers" Really Exist?
+An "imaginary number" is a multiple of a quantity called "i" which is defined by the property that i squared equals -1. This is puzzling to most people, because it is hard to imagine any number having a negative square. The result: it is tempting to believe that i doesn't really exist, but is just a convenient mathematical fiction.
+This isn't the case. Imaginary numbers do exist. Despite their name, they are not really imaginary at all. (The name dates back to when they were first introduced, before their existence was really understood. At that point in time, people were imagining what it would be like to have a number system that contained square roots of negative numbers, hence the name "imaginary". Eventually it was realized that such a number system does in fact exist, but by then the name had stuck.)
+
+Before discussing why imaginary numbers exist, it's helpful to think about why we're even asking the question. Why is it so hard to accept that there could be numbers with negative squares? One has to come to terms with the things that seem so puzzling and confusing about this concept and see that they are not really so unreasonable after all, before one can move on to accept the existence of imaginary numbers. Having done that, we can move on to seeing why they exist, and what relevance they have.
+
+Therefore, we will address the following questions (you may select any of the items below to see the explanation):
+
+Imaginary Numbers: More Reasonable than they First Appear
+Imaginary Numbers: How To Show They Exist
+Imaginary Numbers: Relevance to the Real World
+This page last updated: September 1, 1997
+Original Web Site Creator / Mathematical Content Developer: Philip Spencer
+Current Network Coordinator and Contact Person: Any Wilk - mathnet@math.toronto.edu
+
+Navigation Panel: (IMAGE)(IMAGE)(IMAGE)(IMAGE) (SWITCH TO TEXT-ONLY VERSION) (IMAGE)(IMAGE)
+(IMAGE) Go backward to Does "Infinity" Exist?
+(IMAGE) Go up to Answers and Explanations -- Index
+(IMAGE) Go down to first subsection Imaginary Numbers: More Reasonable than they First Appear
+(IMAGE) Go forward to Does the Number e Have Special Meaning? (skipping over subsections)
+ (SWITCH TO TEXT-ONLY VERSION)  Switch to text-only version (no graphics)
+(IMAGE) Access printed version in PostScript format (requires PostScript printer)
+(IMAGE) Go to University of Toronto Mathematics Network Home Page
